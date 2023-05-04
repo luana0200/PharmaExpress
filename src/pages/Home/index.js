@@ -11,19 +11,18 @@ import perfume3 from '../Beleza/imagens/perfume3.png'
 import saboneteliq from '../HPessoal/imagens H/sabonete liq.png'
 import creme from '../HPessoal/imagens H/creme facial.webp'
 
-import visa12 from '../../components/Rodape/imagem/visa12.png'
+// import visa12 from '../../components/Rodape/imagem/visa12.png'
 
 export default function Home() {
     return (
-        
-        <div className='conteiner'>
+
+        <div className='container-fluid'>
             <br />
             <CarroselHome />
             <br />
 
-            <div className='container'>
-                <div id="row">
-                    <div className='col-sm'>
+                <div id='row'>
+                    <div className='col-sm-2, col-md-5, col-lg-2'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -35,7 +34,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div classname='col-sm-12, col-md-10, col-lg-2'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -47,7 +46,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div className='col-sm-12, col-md-10, col-lg-2'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -58,7 +57,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div className='col-sm-12, col-md-10, col-lg-2'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -71,9 +70,8 @@ export default function Home() {
                     </div>
                 </div>
 
-
-                <div id="area-loja">
-                    <div className='postagem'>
+                <div id='row'>
+                    <div className='col-sm'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -85,7 +83,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='postagem'>
+                    <div className='col-sm'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -97,7 +95,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='postagem'>
+                    <div className='col-sm'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -109,7 +107,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='postagem'>
+                    <div className='col-sm'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -123,15 +121,5 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="rodape">
-                <img src={visa12} alt="visa" />
-
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-150| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3214, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h5><br />
-
-                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
-            </div>
-        </div>
     )
 }
