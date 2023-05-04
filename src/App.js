@@ -2,10 +2,10 @@ import Rotas from "./router"
 
 export default function App() {
   return (
-    <div >
-     
+     <div className="containerCorpo">
+
       <Rotas/>
+     </div>
       
-    </div>
   );
 }

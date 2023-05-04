@@ -3,11 +3,11 @@ import './header.css'
 
 export default function Header() {
     return (
-        <div className="area-cabecalho">
+        <div className="containerArea-cabecalho">
             <div className='botao2'>
                 <Link to='/'><button></button></Link>
             </div>
-            <div className='corpo'>
+            <div className='containerCorpo'>
               <button><Link to='/'>🏠</Link><br /> </button>
                 <button ><Link to='/Baby'>Baby</Link><br /></button>
                 <button ><Link to='/HPessoal'>Higiene Pessoal</Link><br /></button>
