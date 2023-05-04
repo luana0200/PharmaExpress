@@ -1,0 +1,49 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#area-cabecalho {
+    background-color: lightseagreen;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+} 
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    margin: 0;
+    border: 1px solid red
+}
+
+ #area-loja {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px 320px;
+} 
+
+#rodape img {
+
+    margin-top: 10px;
+
+    margin-left: 1%;
+    width: 700px;
+
+} 
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 15px;
+    
+}
+
+
+ */

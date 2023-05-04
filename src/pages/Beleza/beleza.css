@@ -1,0 +1,17 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+#area-loja {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px 320px;
+    box-shadow: inset;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 15px;
+} */
+

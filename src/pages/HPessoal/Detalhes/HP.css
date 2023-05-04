@@ -1,0 +1,17 @@
+
+.pessoal{
+    justify-content: center;
+    margin: 150px;
+    width: 550px;
+
+}
+
+.pessoal h1, h2{
+    color: black;
+}
+
+.pessoal h4{
+  font-size: 15px;
+ transform: translate(-0%);
+
+}

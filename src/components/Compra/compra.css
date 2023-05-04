@@ -1,0 +1,16 @@
+.compra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+   
+}
+
+b{
+    font-size: 35px;
+}
+
+input{
+    width: 400px;
+}
+

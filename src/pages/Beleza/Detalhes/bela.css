@@ -1,0 +1,22 @@
+.base{
+    justify-content: center;
+    margin: 150px;
+    width: 550px;
+}
+ .base h2{
+    color: black;
+    font-size: 15px;
+}
+
+.base h4{
+    font-size: 15px;
+    transform: translate(0%);
+}
+
+
+.base h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    
+}
+

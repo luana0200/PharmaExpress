@@ -1,0 +1,13 @@
+#rodape img {
+    margin-top: 10px;
+    margin-left: 1%;
+    width: 650px;
+    padding: -15px;
+    margin: 0 auto;
+}
+
+#rodape {
+    text-align: center;
+    background-color:  rgb(228, 228, 228);
+}
+

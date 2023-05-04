@@ -1,0 +1,17 @@
+
+.medica{
+    justify-content: center;
+    margin: 150px;
+    width: 550px;
+
+}
+
+.medica h1, h2{
+    color: black;
+}
+
+.medica h4{
+  font-size: 15px;
+ transform: translate(-0%);
+
+}
