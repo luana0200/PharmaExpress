@@ -35,6 +35,7 @@ export default function Baby() {
                         </h2>
                     </div>
 
+
                     <div class="col-3 containerPostagem">
                         <img width="220px" src={ShampooJonhson} alt="Shampoo" />
                         <h2>
