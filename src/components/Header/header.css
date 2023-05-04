@@ -8,7 +8,7 @@ body {
     font-size: 1rem;
 }
 
-.area-cabecalho {
+.containerAarea-cabecalho {
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -21,14 +21,14 @@ h1 {
     color: rgb(255, 254, 254);
 }
 
-.corpo {
+.containerCorpo {
     position: absolute;
     right: 50px;
     padding: 5px;
 
 }
 
-.corpo a {
+.containerCorpo a {
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
@@ -59,7 +59,7 @@ button {
 }
 
 
-#area-loja {
+#containerArea-loja {
     display: grid;
     grid-template-columns: 306px 306px 306px 306px 306px;
     gap:8px;
@@ -67,7 +67,7 @@ button {
     margin: 8px;
 }
 
-.postagem {
+.containerPostagem {
     padding: 20px;
     background: #FFFFFF;
     margin: 0;
