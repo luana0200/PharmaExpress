@@ -6,7 +6,7 @@ export default function Baseultra() {
    return (
       <div className='container-fluid'>
 
-         <div id="container-fluid">
+         <div id="row">
            <div className='baby'>
             <img src={Locao} alt="Locao" />
             <h4>Loção Hidratante Johnson's Baby</h4>
