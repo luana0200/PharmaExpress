@@ -20,8 +20,9 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 
 export default function Baby() {
     return (
-        <div id="containerArea-principal">
-            <div id='containerArea-cabecalho'><h1>BABY</h1></div>
+        <div id="container-fluid">
+
+            <div id="area-cabecalho"><h1>BABY</h1></div>
             <div id="area-loja">
                 <div className='row'>
 
@@ -191,6 +192,6 @@ export default function Baby() {
 
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
-        </div>
-    )
+ </div>
+     )
 }
