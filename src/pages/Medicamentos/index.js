@@ -84,10 +84,7 @@ export default function Medicamentos() {
 
                 <div class="col-3 containerPostagem">
                     <img src={condres} alt="Condres" />
-                    <h2>Condres Colágeno 90 cápsulas EMS</h2>
-                    <br/>
-
-                    <h2>Condres Colágeno 90 cápsulas </h2>
+                    <h2>Condres Colágeno 90 cápsulas</h2>
                     <h2>EMS</h2>
    
                     <Link to='/condres'>
@@ -178,8 +175,7 @@ export default function Medicamentos() {
 
                 <div class="col-3 containerPostagem">
                     <img src={fendizoato} alt="Fendizoato" />
-                    <h2>Fendizoato De Cloperastina 3,54mg/ml Xarope 120ml</h2>
-                    <h2>Fendizoato De Cloperastina 120ml </h2>
+                    <h2>Fendizoato Xarope 120ml</h2>
                     <h2>EMS</h2>
                     <Link to='/Fendizoato'>
                         <button className='detalhes'>Detalhes</button>
