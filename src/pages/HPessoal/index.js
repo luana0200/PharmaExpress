@@ -42,7 +42,7 @@ export default function HPessoal() {
                     <div class="col-3 containerPostagem">
                         <img width="220px" src={deso} alt="deso M" />
                         <h2> Desodorante Rexona Masc 200 ml</h2><br />
-                        
+
                         <Link to='/DesoM'>
                             <button className='detalhes'>Detalhes</button>
                         </Link>
