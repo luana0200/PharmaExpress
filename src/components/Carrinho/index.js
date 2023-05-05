@@ -8,10 +8,10 @@ import Col from 'react-bootstrap/Col';
 export default function Header() {
     return (
         <Container>
-          <Row md= {4}>
+          <Row md= {1}>
            
           <h2>Carrinho</h2>
-          <Col md = {8}><img src={manutencao} alt="Manutencao" /></Col>
+          <Col md = {11}><img src={manutencao} alt="Manutencao" /></Col>
           </Row>
             </Container>
           )
