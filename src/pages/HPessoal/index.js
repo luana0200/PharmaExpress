@@ -24,11 +24,13 @@ export default function HPessoal() {
 
     return (
 
-        <div id="containerArea-principal">
-            <div id='containerArea-cabecalho'><h1>BABY</h1></div>
-            <div id="area-loja">
-                <div className='row'>
+        <div id="container-fluid">
+        <div ><h1>HIGIENE PESSOAL</h1></div>
 
+       {/* Inicio das postagens */}
+            <div className='row'>
+                <div class="col-3 containerPostagem">
+                    
                     <div class="col-3 containerPostagem">
 
                         <img width="220px" src={desoF} alt="desodorante" />

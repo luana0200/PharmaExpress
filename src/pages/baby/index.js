@@ -26,6 +26,7 @@ export default function Baby() {
            {/* Inicio das postagens */}
                 <div className='row'>
                     <div class="col-3 containerPostagem">
+                        
                         <img width="220px" src={Locao} alt="Locao" />
                         <h2>
                             Loção hidratante Jonhson baby <br />
