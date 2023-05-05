@@ -52,9 +52,8 @@ button {
 
 .botao2 button {
     background-image: url("../Header/imagens/logo1.png");
-    margin: 5px;
-    width: 330px;
-    height: 72px;
+    width: 20.625vw;
+    height: 4.375vw;
 }
 
 

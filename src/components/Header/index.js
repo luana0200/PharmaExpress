@@ -10,18 +10,7 @@ export default function Header() {
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <a class="navbar-brand"> <Link to='/'><button></button></Link></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
-                            <span class="navbar-toggler-icon">
-                                <div class="navbar-nav" data-bs-toggle="collapse" aria-controls="navbarNavAltMarkup">
-                                    <a  ><button><Link to='/'>🏠</Link><br /> </button></a>
-                                    <a ><button ><Link to='/Baby'>Baby</Link><br /></button></a>
-                                    <a ><button ><Link to='/HPessoal'>Higiene Pessoal</Link><br /></button></a>
-                                    <a  ><button > <Link to='/Medicamentos'>Medicamentos</Link><br /></button></a>
-                                    <a > <button > <Link to='/Beleza'>Beleza</Link><br /></button></a>
-                                    <a  ><button ><Link to='Cadastro'>Cadastro</Link><br /></button></a>
-                                    <a >  <button ><Link to='Carrinho'> 🛒 </Link><br /></button></a>
-
-                                </div>
-                            </span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
