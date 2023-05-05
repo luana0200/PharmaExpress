@@ -50,11 +50,11 @@ button {
     margin-top: 10px;
 } */
 
-.botao2 button {
+/* .botao2 button {
     background-image: url("../Header/imagens/logo1.png");
     width: 20.625vw;
     height: 4.375vw;
-}
+} */
 
 
 /* #row {
@@ -77,12 +77,12 @@ button {
     font-size: 10px;
     color:#FFFFFF
  }
-/* 
+
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     font-size: 15px;
-} */
+}
 
  .botao3 button {
     margin: 5px;
@@ -90,3 +90,10 @@ h2 {
     height: 52px;
 }  
 
+img{
+    width: 180px;
+}
+
+.col-3{
+    width: 250px;
+}

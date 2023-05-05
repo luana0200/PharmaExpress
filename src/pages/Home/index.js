@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import CarroselHome from '../../bootstrap/carroselHome.js'
-import './estilo1.css'
+import '../../components/Header/header.css'
 
 import base from "../Beleza/imagens/base.png"
 import batom from '../Beleza/imagens/batom.png'
@@ -21,9 +21,8 @@ export default function Home() {
             <CarroselHome />
             <br />
 
-            <div className='container-fluid'>
                 <div id='row'>
-                    <div className='col-sm-2, col-md-5, col-lg-2'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -35,7 +34,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div classname='col-sm-12, col-md-10, col-lg-2'>
+                    <div classname='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -47,7 +46,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm-12, col-md-10, col-lg-2'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -58,7 +57,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm-12, col-md-10, col-lg-2'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -72,7 +71,7 @@ export default function Home() {
                 </div>
 
                 <div id='row'>
-                    <div className='col-sm'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -84,7 +83,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -96,7 +95,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -108,7 +107,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-sm'>
+                    <div className='col-3'>
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -122,6 +121,5 @@ export default function Home() {
                 </div>
             </div>
 
-        </div>
     )
 }

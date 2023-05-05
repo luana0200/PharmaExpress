@@ -11,7 +11,7 @@ export default function Header() {
           <Row md= {4}>
            
           <h2>Carrinho</h2>
-          <Col><img src={manutencao} alt="Manutencao" /></Col>
+          <Col md = {8}><img src={manutencao} alt="Manutencao" /></Col>
           </Row>
             </Container>
           )
