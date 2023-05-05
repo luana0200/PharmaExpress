@@ -105,3 +105,14 @@ img{
     text-decoration: none;
     position: relative;
 }
+
+
+
+.cabecalho{
+    background-color: #6ed4cc;
+    color: #FFFFFF;
+}
+
+.cabecalho h1{
+    text-align: center;
+}
