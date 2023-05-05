@@ -27,25 +27,13 @@ export default function HPessoal() {
         <div id="containerArea-principal">
             <div id='containerArea-cabecalho'><h1>BABY</h1></div>
             <div id="area-loja">
-
-                <div class="postagem">
-                    <img width="220px" src={deso} alt="deso M" />
-                    <h2> Desodorante Rexona Masc 200 ml</h2><br />
-
-                    <Link to='/DesoM'>
-                    <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="postagem">
-                    <img width="220px" src={shampoo} alt="shampoo" />
-                    <h2> Shampoo Pantene 450 ml </h2> <br />
                 <div className='row'>
 
                     <div class="col-3 containerPostagem">
 
                         <img width="220px" src={desoF} alt="desodorante" />
                         <h2>Desodorante Rexona Fem 200 ml</h2><br />
+
                         <Link to='/DesoF'>
                             <button className='detalhes'>Detalhes</button>
                         </Link>
@@ -54,6 +42,7 @@ export default function HPessoal() {
                     <div class="col-3 containerPostagem">
                         <img width="220px" src={deso} alt="deso M" />
                         <h2> Desodorante Rexona Masc 200 ml</h2><br />
+                        
                         <Link to='/DesoM'>
                             <button className='detalhes'>Detalhes</button>
                         </Link>
@@ -181,7 +170,7 @@ export default function HPessoal() {
                     </div>
                 </div>
             </div>
-            
+
             <div id="rodape">
                 <img src={visa12} alt="visa" />
 
