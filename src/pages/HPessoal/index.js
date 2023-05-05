@@ -25,11 +25,11 @@ export default function HPessoal() {
     return (
 
         <div id="container-fluid">
-        <div ><h1>HIGIENE PESSOAL</h1></div>
+         <div className='cabecalho' ><h1>HIGIENE PESSOAL</h1></div>
 
        {/* Inicio das postagens */}
             <div className='row'>
-                <div class="col-3 containerPostagem">
+               
                     
                     <div class="col-3 containerPostagem">
 
@@ -171,7 +171,7 @@ export default function HPessoal() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            
 
             <div id="rodape">
                 <img src={visa12} alt="visa" />

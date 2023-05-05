@@ -28,7 +28,7 @@ export default function Beleza() {
     return (
 
         <div id="container-fluid">
-        <div ><h1>BELEZA</h1></div>
+        <div className='cabecalho' ><h1>BELEZA</h1></div>
 
        {/* Inicio das postagens */}
             <div className='row'>
