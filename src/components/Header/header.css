@@ -1,18 +1,6 @@
- /* * {
+  * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-    font-size: 1rem;
-} */
-
- .btn {
-    background-color: #6ed4cc;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*.row a{
@@ -50,10 +38,6 @@ button {
     margin-top: 10px;
 } */
 
-.botao2 button {
-    width: 30%;
-    height: 4.375vw;
-}
 
 
 /* #row {
@@ -98,19 +82,20 @@ img{
     flex-direction: row;
     justify-content: center;
 }
-
-.me-auto  {
+.dark {
     background-color: #6ed4cc;
     align-items: center;
     text-decoration: none;
-    position: relative;
-}
-
-
+    position:relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
 
 .cabecalho{
-    background-color: #6ed4cc;
+    background-color: lightseagreen;
     color: #FFFFFF;
+    margin:0;
+    padding: 0;
+
 }
 
 .cabecalho h1{

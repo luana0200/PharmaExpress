@@ -26,7 +26,7 @@ export default function Baby() {
             {/* Inicio das postagens */}
             <div className='row'>
 
-                <div class="col-3 containerPostagem">
+             <div class=" col-3">
                     <img width="220px" src={Locao} alt="Locao" />
                     <h2>
                         Loção hidratante Jonhson baby <br />
@@ -37,7 +37,7 @@ export default function Baby() {
                 </div>
 
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="220px" src={ShampooJonhson} alt="Shampoo" />
                     <h2>
                         Shampoo Jonhson baby 200 ml<br />
@@ -47,7 +47,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="220px" src={Mamadeira} alt="Mamadeira" />
                     <h2>
                         Mamadeira Rosa 250 ml<br />
@@ -57,7 +57,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="110px" src={Lenco} alt="Lenco" />
                     <h2>
                         Lenço Umidecido Jonhson Baby <br />
@@ -67,7 +67,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="110px" src={Fralda} alt="Fralda" />
                     <h2>
                         Fralda Pampers <br />
@@ -78,7 +78,7 @@ export default function Baby() {
                 </div>
 
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="110px" src={Sabonet} alt="Sabonet" />
                     <h2>
                         Sabonete Liquido Jonhson baby <br />
@@ -88,7 +88,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3">
                     <img width="110px" src={Pomada} alt="Pomada" />
                     <h2>
                         Pomada Hipogloss<br />
@@ -98,7 +98,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={Chupetas} alt="Chupetas" />
                     <h2>
                         Chupetas<br />
@@ -108,7 +108,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={Formula} alt="Formula" />
                     <h2>
                         Formula Aptamil <br />
@@ -118,7 +118,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={lenco} alt="lenco" />
                     <h2>
                         Lenço Umidecido  Pampers <br />
@@ -128,7 +128,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={Rosa} alt="Rosa" />
                     <h2>
                         Kit Escova Rosa<br />
@@ -140,7 +140,7 @@ export default function Baby() {
 
 
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={Kit} alt="Kit Azul" />
                     <h2>
                         Kit Escova Azul<br />
@@ -150,7 +150,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={mama} alt="mama" />
                     <h2>
                         Mamadeira Azul 250 ml<br />
@@ -161,7 +161,7 @@ export default function Baby() {
                 </div>
 
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={sbonete} alt="sabonete" />
                     <h2>
                         Sabonete em Barra Jonhson Baby <br />
@@ -171,7 +171,7 @@ export default function Baby() {
                     </h2>
                 </div>
 
-                <div class="col-3 containerPostagem">
+                <div class="col-3 ">
                     <img width="110px" src={talco} alt='talco' />
                     <h2>
                         Talco Johnson <br />
