@@ -1,4 +1,4 @@
-* {
+ /* * {
     margin: 0;
     padding: 0;
 }
@@ -6,7 +6,7 @@
 body {
     background-color: rgb(255, 255, 255);
     font-size: 1rem;
-}
+} */
 
 .row {
     background-color: #6ed4cc;
@@ -22,9 +22,9 @@ body {
  }
 
 
-/* .container {
+ /* .container {
     position: absolute;
-} */
+} 
 
 .containerCorpo  {
     text-decoration: none;
@@ -33,7 +33,7 @@ body {
     position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-}
+} */
 
 button {
     border: none;
@@ -42,13 +42,13 @@ button {
     margin: 0px 5px;
     border-radius: 9px;
 }
-
+/* 
 .carrinho {
     width: 30px;
     height: 30px;
     margin-left: 15px;
     margin-top: 10px;
-}
+} */
 
 .botao2 button {
     background-image: url("../Header/imagens/logo1.png");
@@ -58,40 +58,36 @@ button {
 }
 
 
-#row {
+/* #row {
     display: grid;
     grid-template-columns: 306px 306px 306px 306px 306px;
     gap:8px;
     margin-left: 10px;
     margin: 8px;
-}
-
+} */
+/* 
 .containerPostagem {
-    /* padding: 20px; */
     background: #FFFFFF;
-    /* margin: 0; */
-    /* border: 3px solid #ddd8d8; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-}
+} */
 
 .promocao button{
     background-color: red;
-    /* padding: 5px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     color:#FFFFFF
  }
-
+/* 
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     font-size: 15px;
-}
+} */
 
-/* .botao3 button {
+ .botao3 button {
     margin: 5px;
     width: 150px;
     height: 52px;
-} */
+}  
+
