@@ -7,7 +7,7 @@ import Eudora from '../bootstrap/imagens/mae.jpg'
 
 export default function CarroselHome() {
     return (
-        <div className='container'>
+        <div className='containerCabGeral'>
 
         <Carousel className='carroselhome'>
             <Carousel.Item>
