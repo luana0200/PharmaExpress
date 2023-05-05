@@ -1,12 +1,12 @@
 import './carrinho.css'
 import '../Header/header.css'
-// import manutenção from '../Carrinho/imagens/manutenção'
+import manutencao from "./imagens/manutencao.png"
 
 export default function Header() {
     return (
         <div>
-          <h2>Em Manutenção</h2>
-          {/* <img src={manutenção} alt="Manutenção"  ></img>         */}
+          <h2>Carrinho</h2>
+          <img src={manutencao} alt="Manutencao" />
             </div>
           )
 }
