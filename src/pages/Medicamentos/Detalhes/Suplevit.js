@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './medica.css'
+
 import suplevit from '../imagens/suplevit.png'
 
 export default function Suplevit() {

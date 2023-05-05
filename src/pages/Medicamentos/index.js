@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 import '../../../src/components/Rodape/rodape.css'
 
 import acetilcisteína from "./imagens/acetilcisteína.png"
@@ -28,13 +27,13 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 export default function Medicamentos() {
     return (
 
-        <div id="area-principal">
+        <div id="container-fluid">
+        <div className='cabecalho' ><h1>MEDICAMENTOS</h1></div>
 
-            <div id="area-cabecalho">
-                <h1>MEDICAMENTOS</h1> </div>
+       {/* Inicio das postagens */}
+            <div className='row'>
 
-            <div id="area-loja">
-
+                <div class="col-3 containerPostagem">
                 <div class="postagem">
                     <img src={acetilcisteína} alt="Acetilcisteína" />
                     <h2>Acetilcisteína 600mg </h2> 
@@ -45,7 +44,7 @@ export default function Medicamentos() {
                 </div>
 
 
-                <div class="postagem">
+              <div class="col-3 containerPostagem">
                     <img src={allexofedrin} alt="Allexofredrin" />
                     <h2>Allexofedrin 120mg 10 Comprimidos </h2>
                         <h2>EMS </h2>
@@ -54,7 +53,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={ambroxol} alt="Ambroxol" />
                     <h2>Ambroxol  Xarope 120ml </h2>
                     <h2>EMS</h2>
@@ -63,7 +62,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={carbocisteína} alt="Carbocisteína" />
                     <h2>Carbocisteína Xarope 100ml </h2>
                         <h2>EMS</h2>
@@ -74,7 +73,7 @@ export default function Medicamentos() {
 
 
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={complexo} alt="Complexo b" />
                     <h2>Complexo B 100 Comprimidos </h2>
                     <h2>EMS</h2>
@@ -83,7 +82,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={condres} alt="Condres" />
                     <h2>Condres Colágeno 90 cápsulas EMS</h2>
                     <br/>
@@ -96,7 +95,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={doricin} alt="Doricin" />
                     <h2>Doricin  300mg 36 Comprimidos </h2>
                     <h2>EMS</h2>
@@ -105,7 +104,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={declofenaco} alt="Diclofenaco" />
                     <h2>Diclofenaco Gel Creme Com 60g </h2>
                     <h2>EMS</h2>
@@ -114,7 +113,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={desloratadina} alt="Desloratadina" />
                     <h2>Desloratadina 30 Comprimidos</h2>
                     <h2>EMS</h2>
@@ -123,7 +122,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={dipirona} alt="Dipirona" />
                     <h2>Dipirona Sódica  10ml </h2>
                     <h2>EMS</h2>
@@ -132,7 +131,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={cystex} alt="Cystex" />
                     <h2>Cystex  15mg </h2>
                     <h2>EMS</h2>
@@ -141,7 +140,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={dorspan} alt="Dorspan" />
                     <h2> Dorspan  20ml </h2>
                     <h2>EMS</h2>
@@ -150,7 +149,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={emsgrip} alt="Emsgrip" />
                     <h2>EMSGRIP Limão e Mel Sachê </h2>
                     <h2>EMS</h2>
@@ -159,7 +158,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={ibuprofeno} alt="Ibuprofeno" />
                     <h2>Ibuprofeno 200mg 20 Comprimidos </h2>
                     <h2>EMS</h2>
@@ -168,7 +167,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={gemax} alt="Gelmax" />
                     <h2>Gelmax Sabor Limão </h2>
                     <h2>EMS</h2>
@@ -177,7 +176,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={fendizoato} alt="Fendizoato" />
                     <h2>Fendizoato De Cloperastina 3,54mg/ml Xarope 120ml</h2>
                     <h2>Fendizoato De Cloperastina 120ml </h2>
@@ -187,7 +186,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={paracetamol} alt="Paracetamol" />
                     <h2>Paracetamol 750mg 20 Comprimidos</h2>
                     <h2>EMS</h2>
@@ -196,7 +195,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={simeticona} alt="Simeticona" />
                     <h2>Simeticona 15ml </h2>
                     <h2>EMS</h2>
@@ -205,7 +204,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={sominex} alt="Sominex" />
                     <h2>Sominex Composto 20 Comprimidos </h2>
                     <h2>EMS</h2>
@@ -214,8 +213,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
 
-
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={suplevit} alt="Suplevit" />
                     <h2>Suplevit 30 Cápsulas </h2>
                     <h2>EMS</h2>
@@ -233,6 +231,7 @@ export default function Medicamentos() {
 
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
+        </div>
         </div>
 
 
