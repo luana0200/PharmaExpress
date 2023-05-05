@@ -16,13 +16,14 @@ import creme from '../HPessoal/imagens H/creme facial.webp'
 export default function Home() {
     return (
 
-        <div className='container-fluid'>
+        <div className='container'>
             <br />
             <CarroselHome />
             <br />
 
-                <div id='row'>
-                    <div className='col-3'>
+            <div className='container-fluid'>
+                <div className='row'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -34,7 +35,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div classname='col-3'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -46,7 +47,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-3'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -57,7 +58,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-3'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -68,22 +69,10 @@ export default function Home() {
                             <button className='detalhes'>Detalhes</button>
                         </Link>
                     </div>
-                </div>
-
-                <div id='row'>
-                    <div className='col-3'>
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
-                        </div>
-                        <img src={rimel} alt="Rimel" />
-                        <h2>Máscara Para Cílios</h2>
-                        <h2>Super Up 8mg</h2>
-                        <Link to='/Rimel'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
-
-                    <div className='col-3'>
+</div>
+<div className='container-fluid'>
+                <div className='row'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -95,7 +84,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-3'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -107,7 +96,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className='col-3'>
+                    <div class="col-3 containerPostagem">
                         <div className='promocao'>
                             <button>PROMOÇAO 10%</button>
                         </div>
@@ -118,8 +107,23 @@ export default function Home() {
                             <button className='detalhes'>Detalhes</button>
                         </Link>
                     </div>
+
+                    <div class="col-3 containerPostagem">
+                        <div className='promocao'>
+                            <button>PROMOÇAO 10%</button>
+                        </div>
+                       <img src={rimel} alt="Rimel" />
+                    <h2>Máscara Para Cílios</h2>
+                    <h2>Super Up 8mg</h2>
+                    <Link to='/Rimel'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+                    </div>
+
                 </div>
             </div>
+            </div>
+        </div>
 
     )
 }

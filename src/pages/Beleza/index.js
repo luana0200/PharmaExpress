@@ -27,12 +27,12 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 export default function Beleza() {
     return (
 
-        <div id="containerArea-principal">
-            <div id='area-loja'><h1>BABY</h1></div>
-            
-                <div className='row'>
+        <div id="container-fluid">
+        <div ><h1>BELEZA</h1></div>
 
-            <div class="col-3 containerPostagem">
+       {/* Inicio das postagens */}
+            <div className='row'>
+                <div class="col-3 containerPostagem">
                     <img src={base} alt="Base" />
                     <h2>Base Líquida Ultra Matte</h2>
                     <h2>25ml</h2>
@@ -44,7 +44,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={batom} alt="Batom" />
                     <h2>Batom Líquido Matte Tint</h2>
                     <h2>Rosé Vintage</h2>
@@ -56,7 +56,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={delineador} alt="Deliniador" />
                     <h2>Deliniador Líquido Para Olhos</h2>
                     <h2>Preto Essencial  2,5ml</h2>
@@ -65,7 +65,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={paleta} alt="Paleta" />
                     <h2>Palette de Sombras Crystal</h2>
                     <h2>Ninna Secrets 16,5g</h2>
@@ -79,7 +79,7 @@ export default function Beleza() {
 
 
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={rimel} alt="Rimel" />
                     <h2>Máscara Para Cílios</h2>
                     <h2>Super Up 8mg</h2>
@@ -93,7 +93,7 @@ export default function Beleza() {
 
 
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={perfume1} alt="Perfume" />
                     <h2>Desodorante Colônia</h2>
                     <h2>95ml</h2>
@@ -102,7 +102,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={perfume2} alt="Perfume" />
                     <h2>Pulse Desodorante Côlonia</h2>
                     <h2>100ml</h2>
@@ -111,7 +111,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={hidratante} alt="Hidratante" />
                     <h2>Loção Hidratante Desodorante</h2>
                     <h2>Corporal 150ml</h2>
@@ -120,7 +120,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={perfume3} alt="Perfume" />
                     <h2>La Victorie</h2>
                     <h2>Eau de Parfum 75ml</h2>
@@ -132,7 +132,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={perfume4} alt="Perfume" />
                     <h2>Magnific Audaz</h2>
                     <h2>Eau de Parfum 75ml</h2>
@@ -143,7 +143,7 @@ export default function Beleza() {
 
 
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={protetorsolar} alt="Protetor Solar" />
                     <h2>Protetor Solar Facial</h2>
                     <h2>FPS 50 50g</h2>
@@ -152,7 +152,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={gelsecativo} alt="Gel Secativo" />
                     <h2>Gel Secativo Pele com Acne</h2>
                     <h2>Ação Rápida 15g</h2>
@@ -161,7 +161,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={demaquilante} alt="demaquilante" />
                     <h2>Demaquilante 100ml</h2>
                     <br />
@@ -170,7 +170,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={esfoliante} alt="Esfoliante" />
                     <h2>Máscara Esfoliante Enzimática</h2>
                     <h2>75g</h2>
@@ -179,7 +179,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={shampoomorango} alt="shampoomorango" />
                     <h2>Combo Frutas Vermelhas</h2>
                     <br />
@@ -193,7 +193,7 @@ export default function Beleza() {
 
 
 
-                <div class="postagem">
+                 <div class="col-3 containerPostagem">
                     <img src={shampooacai} alt="Shampoo Acai" />
                     <h2>Combo Açai e Bambu</h2>
                     <Link to='/Shampooacai'>
@@ -201,7 +201,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={shampookarite} alt="Shampoo Karité" />
                     <h2>Combo Karité</h2>
                     <Link to='/Shampookarite'>
@@ -209,7 +209,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={esmaltepreto} alt="Esmalte Preto" />
                     <h2>Esmalte Preto Essencial 7ml</h2>
                     <Link to='/Esmaltepreto'>
@@ -217,7 +217,7 @@ export default function Beleza() {
                     </Link>
                 </div>
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={esmaltevermelho} alt="esmalte vermelho" />
                     <h2>Esmalte Vermelho Sofisticado 7ml</h2>
                     <Link to='/Esmaltevermelho'>
@@ -226,7 +226,7 @@ export default function Beleza() {
                 </div>
 
 
-                <div class="postagem">
+                <div class="col-3 containerPostagem">
                     <img src={esmaltebranco} alt="Esmalte Branco" />
                     <h2>Esmalte Branco Intensific 7ml</h2>
                     <Link to='/EsmalteBranco'>
