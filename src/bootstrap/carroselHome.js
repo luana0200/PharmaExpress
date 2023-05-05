@@ -7,6 +7,8 @@ import Eudora from '../bootstrap/imagens/mae.jpg'
 
 export default function CarroselHome() {
     return (
+        <div className='containerCabGeral'>
+
         <Carousel className='carroselhome'>
             <Carousel.Item>
                 <img width={'300px'} src={escovadental} alt='escova dental colgate' />
@@ -22,5 +24,6 @@ export default function CarroselHome() {
 
 
         </Carousel>
+        </div>
     );
 }
