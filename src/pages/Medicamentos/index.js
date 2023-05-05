@@ -34,7 +34,7 @@ export default function Medicamentos() {
             <div className='row'>
 
                 <div class="col-3 containerPostagem">
-                <div class="postagem">
+                
                     <img src={acetilcisteína} alt="Acetilcisteína" />
                     <h2>Acetilcisteína 600mg </h2> 
                        <h2> EMS</h2>
@@ -222,6 +222,7 @@ export default function Medicamentos() {
                     </Link>
                 </div>
             </div>
+
             <div id="rodape">
                 <img src={visa12} alt="visa"/>
 
@@ -232,7 +233,7 @@ export default function Medicamentos() {
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
         </div>
-        </div>
+        
 
 
 

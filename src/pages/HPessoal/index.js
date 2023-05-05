@@ -29,7 +29,7 @@ export default function HPessoal() {
 
        {/* Inicio das postagens */}
             <div className='row'>
-                <div class="col-3 containerPostagem">
+               
                     
                     <div class="col-3 containerPostagem">
 
@@ -171,7 +171,7 @@ export default function HPessoal() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            
 
             <div id="rodape">
                 <img src={visa12} alt="visa" />
