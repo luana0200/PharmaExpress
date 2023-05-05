@@ -98,3 +98,10 @@ img{
     width: 250px;
 }
 
+.cabecalho {
+    background-color: lightseagreen;
+    color: #FFFFFF;
+}
+.cabecalho h1{
+text-align: center;
+}

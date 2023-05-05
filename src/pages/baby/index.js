@@ -21,12 +21,12 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 export default function Baby() {
     return (
         <div id="container-fluid">
-            <div ><h1>BABY</h1></div>
+            <div className='cabecalho' ><h1>BABY</h1></div>
 
            {/* Inicio das postagens */}
                 <div className='row'>
                     <div class="col-3 containerPostagem">
-                        
+
                         <img width="220px" src={Locao} alt="Locao" />
                         <h2>
                             Loção hidratante Jonhson baby <br />
