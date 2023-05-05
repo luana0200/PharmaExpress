@@ -8,14 +8,14 @@ body {
     font-size: 1rem;
 } */
 
-/* .row {
+ .btn {
     background-color: #6ed4cc;
     align-items: center;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.row a{
+/*.row a{
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
@@ -50,11 +50,10 @@ button {
     margin-top: 10px;
 } */
 
-/* .botao2 button {
-    background-image: url("../Header/imagens/logo1.png");
-    width: 20.625vw;
+.botao2 button {
+    width: 30%;
     height: 4.375vw;
-} */
+}
 
 
 /* #row {
@@ -100,11 +99,9 @@ img{
     justify-content: center;
 }
 
-.cabecalho {
-    background-color: lightseagreen;
-    color: #FFFFFF;
+.me-auto  {
+    background-color: #6ed4cc;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
 }
-.cabecalho h1{
-text-align: center;
-}
-
