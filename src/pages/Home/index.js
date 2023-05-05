@@ -21,6 +21,7 @@ export default function Home() {
             <CarroselHome />
             <br />
 
+            <div className='container-fluid'>
                 <div id='row'>
                     <div className='col-sm-2, col-md-5, col-lg-2'>
                         <div className='promocao'>
@@ -121,5 +122,6 @@ export default function Home() {
                 </div>
             </div>
 
+        </div>
     )
 }
