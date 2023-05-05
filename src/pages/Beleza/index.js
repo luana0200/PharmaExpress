@@ -27,14 +27,12 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 export default function Beleza() {
     return (
 
-        <div id="area-principal">
+        <div id="containerArea-principal">
+            <div id='area-loja'><h1>BABY</h1></div>
+            
+                <div className='row'>
 
-            <div id="area-cabecalho">
-                <h1>BELEZA</h1> </div>
-
-            <div id="area-loja">
-
-                <div class="postagem">
+            <div class="col-3 containerPostagem">
                     <img src={base} alt="Base" />
                     <h2>Base Líquida Ultra Matte</h2>
                     <h2>25ml</h2>
@@ -246,5 +244,6 @@ export default function Beleza() {
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
         </div>
+        
     )
 }
