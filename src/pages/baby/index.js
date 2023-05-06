@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../../../src/components/Rodape/rodape.css'
 
+
 import ShampooJonhson from "./imagens/ShampooJonhson.webp"
 import Mamadeira from "./imagens/Mamadeira Rosa.jpg"
 import Lenco from "./imagens/Lenco umidecido.png"
