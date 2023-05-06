@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './header.css'
 
 import Container from 'react-bootstrap/Container';
@@ -40,25 +40,24 @@ import logo from './imagens/logo1.png'
 export default function Header() {
     return (
 
-        <div className='container-fluid'>
-            <Navbar expand="xxl" className='nave'>
-                <Container className='dark'>
-                    <img src={logo} alt='logo' />
+        <Container className='dark'>
+                <Navbar expand="xxl" className='nave'>
+                    <a class="botao2"> <Link to='/'><button> <img src={logo} /></button></Link></a>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/"><button>🏠</button></Nav.Link>
-                            <Nav.Link href="/Baby"><button>Baby</button></Nav.Link>
-                            <Nav.Link href="/HPessoal"><button>HP</button></Nav.Link>
-                            <Nav.Link href="/Medicamentos"><button>Medicamentos</button></Nav.Link>
-                            <Nav.Link href="/Beleza"><button>Beleza</button></Nav.Link>
-                            <Nav.Link href="Cadastro"><button>Cadastro</button></Nav.Link>
-                            <Nav.Link href="Carrinho"><button>🛒</button></Nav.Link>
-                        </Nav>
+                        <div class="navbar-nav">
+                            <a nav-link href="/" ><button>🏠</button></a>
+                            <a nav-link href="/Baby"><button >Baby</button></a>
+                            <a nav-link href="/HPessoa"><button >Higiene Pessoal</button></a>
+                            <a nav-link href="/Medicamentos"><button >Medicamentos</button></a>
+                            <a nav-link href="/Beleza"> <button > Beleza</button></a>
+                            <a nav-link href="/Cadastro"><button >Cadastro</button></a>
+                            <a nav-link href="/Carrinho">  <button > 🛒 </button></a>
+
+                        </div>
                     </Navbar.Collapse>
-                </Container>
-            </Navbar >
-        </div>
+                </Navbar >
+        </Container>
 
     )
 }

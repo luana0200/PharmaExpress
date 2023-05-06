@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import '../../../src/components/Rodape/rodape.css'
+// import '../../../src/components/Rodape/rodape.css'
+import Container from 'react-bootstrap/esm/Container'
+import '../../components/Header/header.css'
 
 
 import ShampooJonhson from "./imagens/ShampooJonhson.webp"
@@ -21,7 +23,7 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 
 export default function Baby() {
     return (
-        <div id="container-fluid">
+        <Container>
             <div className='cabecalho' ><h1>BABY</h1></div>
 
             {/* Inicio das postagens */}
@@ -29,157 +31,157 @@ export default function Baby() {
 
                 <div class="col-3 containerPostagem">
                     <img width="220px" src={Locao} alt="Locao" />
-                    <h2>
-                        Loção hidratante Jonhson baby <br />
-                        <Link to='/Locao'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Loção hidratante Jonhson baby <br />
+                    <Link to='/Locao'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
 
                 <div class="col-3 containerPostagem">
                     <img width="220px" src={ShampooJonhson} alt="Shampoo" />
-                    <h2>
-                        Shampoo Jonhson baby 200 ml<br />
-                        <Link to='/ShampooJonhson'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Shampoo Jonhson baby 200 ml<br />
+                    <Link to='/ShampooJonhson'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="220px" src={Mamadeira} alt="Mamadeira" />
-                    <h2>
-                        Mamadeira Rosa 250 ml<br />
-                        <Link to='/MamaRosa'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Mamadeira Rosa 250 ml<br />
+                    <Link to='/MamaRosa'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Lenco} alt="Lenco" />
-                    <h2>
-                        Lenço Umidecido Jonhson Baby <br />
-                        <Link to='/Lenco'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Lenço Umidecido Jonhson Baby <br />
+                    <Link to='/Lenco'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Fralda} alt="Fralda" />
-                    <h2>
-                        Fralda Pampers <br />
-                        <Link to='/Fralda'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Fralda Pampers <br />
+                    <Link to='/Fralda'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Sabonet} alt="Sabonet" />
-                    <h2>
-                        Sabonete Liquido Jonhson baby <br />
-                        <Link to='/Sabao'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Sabonete Liquido Jonhson baby <br />
+                    <Link to='/Sabao'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Pomada} alt="Pomada" />
-                    <h2>
-                        Pomada Hipogloss<br />
-                        <Link to='/Pomada'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Pomada Hipogloss<br />
+                    <Link to='/Pomada'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Chupetas} alt="Chupetas" />
-                    <h2>
-                        Chupetas<br />
-                        <Link to='/Chupetas'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Chupetas<br />
+                    <Link to='/Chupetas'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Formula} alt="Formula" />
-                    <h2>
-                        Formula Aptamil <br />
-                        <Link to='/Aptamil'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Formula Aptamil <br />
+                    <Link to='/Aptamil'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={lenco} alt="lenco" />
-                    <h2>
-                        Lenço Umidecido  Pampers <br />
-                        <Link to='/lenco2'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Lenço Umidecido  Pampers <br />
+                    <Link to='/lenco2'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Rosa} alt="Rosa" />
-                    <h2>
-                        Kit Escova Rosa<br />
-                        <Link to='/rosa'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Kit Escova Rosa<br />
+                    <Link to='/rosa'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
 
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={Kit} alt="Kit Azul" />
-                    <h2>
-                        Kit Escova Azul<br />
-                        <Link to='/kit'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Kit Escova Azul<br />
+                    <Link to='/kit'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={mama} alt="mama" />
-                    <h2>
-                        Mamadeira Azul 250 ml<br />
-                        <Link to='/Mamadeira'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Mamadeira Azul 250 ml<br />
+                    <Link to='/Mamadeira'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={sbonete} alt="sabonete" />
-                    <h2>
-                        Sabonete em Barra Jonhson Baby <br />
-                        <Link to='/Sabonete'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Sabonete em Barra Jonhson Baby <br />
+                    <Link to='/Sabonete'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
 
                 <div class="col-3 containerPostagem">
                     <img width="110px" src={talco} alt='talco' />
-                    <h2>
-                        Talco Johnson <br />
-                        <Link to='/talco'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </h2>
+
+                    Talco Johnson <br />
+                    <Link to='/talco'>
+                        <button className='detalhes'>Detalhes</button>
+                    </Link>
+
                 </div>
             </div>
 
@@ -193,6 +195,6 @@ export default function Baby() {
 
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
-        </div>
+        </Container>
     )
 }
