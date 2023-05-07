@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 
-export default function Header() {
+export default function Carrinho() {
     return (
       <div className='car'>
          <Container>
