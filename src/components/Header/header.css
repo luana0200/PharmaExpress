@@ -3,6 +3,28 @@
     padding: 0;
 }  
 
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: black;
+  font-size: 15px;
+    }
+    
+     .botao3 button {
+  margin: 5px;
+  width: 150px;
+  height: 52px;
+    }
+
+.Container button{
+    background-color:  lightseagreen;
+    cursor: pointer;
+    border: none;
+background-color: lightseagreen;
+margin: 0px 5px;
+border-radius: 9px;
+justify-content: center;
+}
+    
 .Container Button a {
     text-decoration: none;
     color: #FFFFFF;
@@ -35,12 +57,21 @@
     flex-direction: row;
     justify-content: center;
 }
+
 .dark {
     background-color: #6ed4cc;
     align-items: center;
     text-decoration: none;
     position:relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+.me-auto{
+    background-color: #6ed4cc;
+    align-items: center;
+    text-decoration: none;
     position: relative;
     width: 100%;
 }
