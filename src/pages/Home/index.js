@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import CarroselHome from '../../bootstrap/carroselHome.js'
-// import './estilo1.css'
 import '../../components/Header/header.css'
 
 import Container from 'react-bootstrap/Container'
