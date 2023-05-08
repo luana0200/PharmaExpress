@@ -2,9 +2,15 @@ import './HP.css'
 import shampoo from '../imagens H/shampoo.webp'
 import { Link } from 'react-router-dom'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Shampoo() {
     return (
-        <div className="pessoal">
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={shampoo} alt="shampoo" />
             <img width="220px" src={shampoo} alt="shampoo" />
             <h4> Shampoo Pantene 450 ml</h4><br />
                 hidratar e fortalecer os fios instantaneamente, sem comprometer os resultados dos tratamentos realizados. 
@@ -14,7 +20,10 @@ export default function Shampoo() {
             <h1>
                 R$ 21,99
             </h1>
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

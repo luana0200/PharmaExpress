@@ -1,11 +1,15 @@
 import './HP.css'
 import creme from '../imagens H/creme facial.png'
 import { Link } from 'react-router-dom'
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 
 export default function CremeFacial() {
     return (
-        <div className="pessoal">
-            <img width="220px" src={creme} alt="creme" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={creme} alt="creme" />
 
             <h4> Creme Facial 100 g </h4><br />
             O NIVEA Creme tem várias aplicações e benefícios: desde queimaduras,
@@ -15,7 +19,10 @@ export default function CremeFacial() {
             <h1>
                 R$ 24,62
             </h1>
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }
