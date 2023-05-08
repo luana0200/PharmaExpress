@@ -27,7 +27,7 @@ import visa12 from '../../components/Rodape/imagem/visa12.png'
 export default function Medicamentos() {
     return (
 
-        <div id="container-fluid">
+        <div >
         <div className='cabecalho' ><h1>MEDICAMENTOS</h1></div>
 
        {/* Inicio das postagens */}
