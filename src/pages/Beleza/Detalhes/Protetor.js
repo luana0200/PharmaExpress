@@ -1,10 +1,16 @@
 import './bela.css'
 import protetorsolar from '../imagens/protetorsolar.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Perfume() {
     return (
-        <div className='base'>
-            <img src={protetorsolar} alt="ProtetorSolar" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={protetorsolar} alt="ProtetorSolar" />
             <h4>Protetor Solar Facial FPS 50 50g</h4>
 
             - Hidrata profundamente;
@@ -16,7 +22,10 @@ export default function Perfume() {
                 R$ 84,99
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }

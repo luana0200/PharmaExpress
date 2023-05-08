@@ -1,22 +1,20 @@
-/* .base{
+.Card{
     justify-content: center;
-    margin: 150px;
-    width: 550px;
-}
- .base h2{
-    color: black;
-    font-size: 15px;
 }
 
-.base h4{
-    font-size: 15px;
-    transform: translate(0%);
+.detail{
+    width:17rem;
 }
 
-
-.base h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000000;
+/* .Container h4{
+  font-size: 15px;
+} 
+.Container Button {
+    border: none;
+    background-color: lightseagreen;
+    margin: 0px 5px;
+    border-radius: 9px;
+    justify-content: center;
     
 } */
 

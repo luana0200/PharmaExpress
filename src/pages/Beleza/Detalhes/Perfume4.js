@@ -1,10 +1,16 @@
 import './bela.css'
 import perfume4 from '../imagens/perfume4.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Perfume() {
     return (
-        <div className='base'>
-            <img src={perfume4} alt="Perfume4" />
+       <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={perfume4} alt="Perfume4" />
             <h4>Magnific Audaz Eau de Parfum 75ml</h4>
 
             Eudora Magnific Audaz Eau de Parfum é um tributo à coragem e audácia das
@@ -15,7 +21,11 @@ export default function Perfume() {
                 R$ 209,99
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+       
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }

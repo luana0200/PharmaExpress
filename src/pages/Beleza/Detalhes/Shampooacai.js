@@ -1,10 +1,16 @@
 import './bela.css'
 import shampooacai from '../imagens/shampooacai.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Shampoo() {
     return (
-        <div className='base'>
-            <img src={shampooacai} alt="Shampooacai" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={shampooacai} alt="Shampooacai" />
             <h4>Combo Açai e Bambu</h4>
 
             O Combo Instance Açaí e Bambu entrega um tratamento ideal para garantir fios longos, macios,
@@ -18,7 +24,11 @@ export default function Shampoo() {
             <h1>
                 R$ 52,98
             </h1> <br />
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+           
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }

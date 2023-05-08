@@ -2,11 +2,16 @@ import './bela.css'
 import baseUltra from '../imagens/base.png'
 import { Link } from 'react-router-dom'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
+
 export default function BaseUltra() {
     return (
-        <div className='base'>
-            
-            <img src={baseUltra} alt="Base" />
+        <Container >
+        <Card className='m-2, p-2'>
+           <Card.Img className='detail' variant="top" src={baseUltra} alt="Base" />
             <h4>Base Líquida Ultra Matte 25ml</h4>
             Essa Base traz um novo conceito totalmente repensado
             A marca que traduz moda esta repaginada com produtos ainda melhores e mais modernos
@@ -22,7 +27,10 @@ export default function BaseUltra() {
                 R$ 44,91
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
-    )
+            <div className='Container llog'>
+               <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+            </div>
+         </Card>
+      </Container >
+   )
 }

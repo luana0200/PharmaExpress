@@ -1,10 +1,16 @@
 import './bela.css'
 import rimel from '../imagens/rimel.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Rimel() {
     return (
-        <div className='base'>
-            <img src={rimel} alt="Rimel" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={rimel} alt="Rimel" />
             <h4>Máscara Para Cílios Super Up 8mg</h4>
 
             Máscara Super Up Niina Secrets Eudora: 13x mais volume e curvatura nas alturas.
@@ -21,21 +27,11 @@ export default function Rimel() {
                 R$ 49,41
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+         
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
