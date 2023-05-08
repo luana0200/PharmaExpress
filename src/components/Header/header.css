@@ -1,7 +1,7 @@
   * {
     margin: 0;
     padding: 0;
-}
+}  */
 
 /*.row a{
     text-decoration: none;
@@ -23,13 +23,14 @@
 
 } */
 
-button {
+/* button {
     border: none;
     padding: 8px;
     background-color: lightseagreen;
     margin: 0px 5px;
     border-radius: 9px;
-}
+} */
+
 /* 
 .carrinho {
     width: 30px;
@@ -54,28 +55,28 @@ button {
     flex-direction: column;
 } */
 
-.promocao button{
+/* .promocao button{
     background-color: red;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     color:#FFFFFF
- }
+ } */
 
-h2 {
+/* h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     font-size: 15px;
-}
+} */
 
- .botao3 button {
+ /* .botao3 button {
     margin: 5px;
     width: 150px;
     height: 52px;
-}  
-
+}   */
+/* 
 img{
     width: 180px;
-}
+} */
 
 .col-3{
     width: 250px;
@@ -100,4 +101,4 @@ img{
 
 .cabecalho h1{
     text-align: center;
-}
+} 
