@@ -1,10 +1,16 @@
 import './bela.css'
 import shampoomorango from '../imagens/shampoomorango.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Shampoo() {
     return (
-        <div className='base'>
-            <img src={shampoomorango} alt="Shampoomorango" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={shampoomorango} alt="Shampoomorango" />
             <h4>Combo Frutas Vermelhas</h4>
 
             A escolha ideal para quem quer fios hidratados, robustos e extremamente protegidos. O Combo
@@ -22,7 +28,11 @@ export default function Shampoo() {
             <h1>
                 R$ 47,68
             </h1> <br />
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+     
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }

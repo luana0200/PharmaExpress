@@ -1,11 +1,17 @@
 import './bela.css'
 import gelsecativo from '../imagens/gelsecativo.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Gelsecativo() {
     return (
 
-        <div className='base'>
-            <img src={gelsecativo} alt="Gelsecativo" />
+        <Container >
+            <Card className='m-2, p-2'>
+                <Card.Img className='detail' variant="top"  src={gelsecativo} alt="Gelsecativo" />
             <h4>Gel Secativo Pele com AcneAção Rápida 15g</h4>
 
             Você tem espinhas que insistem em permanecer em seu rosto?O Gel Secativo Pele com Acne Ação Rápida 
@@ -14,7 +20,10 @@ export default function Gelsecativo() {
             <h1>
                 R$ 32,99
             </h1> <br />
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }

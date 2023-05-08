@@ -1,4 +1,4 @@
-
+/* 
 .pessoal{
     justify-content: center;
     margin: 150px;
@@ -14,4 +14,13 @@
   font-size: 15px;
  transform: translate(-0%);
 
+} */
+
+.Card{
+    justify-content: center;
 }
+
+.detail{
+    width:17rem;
+}
+

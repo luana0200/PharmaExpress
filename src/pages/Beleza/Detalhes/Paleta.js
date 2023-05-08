@@ -1,10 +1,16 @@
 import './bela.css'
 import paleta from '../imagens/paleta.png'
 import { Link } from 'react-router-dom'
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Paleta() {
     return (
-        <div className='base'>
-            <img src={paleta} alt="Paleta" />
+        <Container >
+            <Card className='m-2, p-2'>
+                <Card.Img className='detail' variant="top" src={paleta} alt="Paleta" />
             <h4>Palette de Sombras CrystalNinna Secrets 16,5g</h4>
 
             Com cores e pigmentação inspirados no brilho dos cristais, a Palette de Sombras Crystal Niina Secrets é para quem ama versatilidade nas suas  maquiagens.
@@ -19,12 +25,13 @@ export default function Paleta() {
             <h1>
                 R$ 134,99
             </h1> <br />
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container >
     )
 }
-
-
 
 
 
