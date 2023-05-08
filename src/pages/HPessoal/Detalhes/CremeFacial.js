@@ -1,5 +1,5 @@
 import './HP.css'
-import creme from '../imagens H/creme facial.webp'
+import creme from '../imagens H/creme facial.png'
 import { Link } from 'react-router-dom'
 
 export default function CremeFacial() {
