@@ -104,6 +104,7 @@ img{
     align-items: center;
     text-decoration: none;
     position: relative;
+    width: 100%;
 }
 
 
@@ -111,6 +112,7 @@ img{
 .cabecalho{
     background-color: #6ed4cc;
     color: #FFFFFF;
+    width: 100%;
 }
 
 .cabecalho h1{

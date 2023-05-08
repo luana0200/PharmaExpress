@@ -27,7 +27,7 @@ export default function HPessoal() {
         <div id="container-fluid">
          <div className='cabecalho' ><h1>HIGIENE PESSOAL</h1></div>
 
-       /* Inicio das postagens */
+        {/* Inicio das postagens  */}
             <div className='row'>
                
                     
