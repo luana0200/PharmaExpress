@@ -25,11 +25,8 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Baby() {
     return (
-
-        <Container>
-
+    <Container>
             <div className="nave"><h1>BABY</h1></div>
-
             <Row>
                 <Card className='m-2' style={{ width: '15rem' }}>
                     <Card.Img variant="top" width="220px" src={ShampooJonhson} alt="Shampoo" />
@@ -172,7 +169,6 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-
                 <Card className='m-2' style={{ width: '15rem' }}>
                     <Card.Img variant="top" width="220px" src={talco} alt='talco' />
                     <Card.Body>
@@ -188,8 +184,7 @@ export default function Baby() {
                 <img src={visa12} alt="creme" /> 
                 <br/>   
                 <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h5><br />
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:</h5>
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
                 </div>
         </Container>
