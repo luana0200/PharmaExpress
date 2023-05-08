@@ -1,4 +1,4 @@
-#rodape img {
+/* #rodape img {
     margin-top: 10px;
     margin-left: 1%;
     width: 650px;
@@ -6,8 +6,8 @@
     margin: 0 auto;
 }
 
-#rodape {
+#Container rodape {
     text-align: center;
     background-color:  rgb(228, 228, 228);
-}
+} */
 

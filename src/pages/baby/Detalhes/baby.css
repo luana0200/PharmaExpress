@@ -1,17 +1,19 @@
-
-.baby{
+.Card{
     justify-content: center;
-    margin: 150px;
-    width: 550px;
-
 }
 
-.baby h1, h2{
-    color: black;
+.detail{
+    width:17rem;
 }
 
-.row h4{
+/* .Container h4{
   font-size: 15px;
- transform: translate(-0%);
-
-}
+} 
+.Container Button {
+    border: none;
+    background-color: lightseagreen;
+    margin: 0px 5px;
+    border-radius: 9px;
+    justify-content: center;
+    
+} */

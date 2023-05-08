@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 import CarroselHome from '../../bootstrap/carroselHome.js'
+// import './estilo1.css'
 import '../../components/Header/header.css'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge'
+
 
 import base from "../Beleza/imagens/base.png"
 import batom from '../Beleza/imagens/batom.png'
@@ -9,121 +17,114 @@ import rimel from '../Beleza/imagens/rimel.png'
 import esmaltevermelho from '../Beleza/imagens/esmaltevermelho.png'
 import perfume3 from '../Beleza/imagens/perfume3.png'
 import saboneteliq from '../HPessoal/imagens H/sabonete liq.png'
-import creme from '../HPessoal/imagens H/creme facial.webp'
+import creme from '../HPessoal/imagens H/creme facial.png'
 
-// import visa12 from '../../components/Rodape/imagem/visa12.png'
+import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Home() {
     return (
-
-        <div className='container'>
+        <Container>
             <br />
             <CarroselHome />
             <br />
 
-            <div className='container-fluid'>
-                <div className='row'>
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+            <Row>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={base} />
+                    <Card.Body>
+                        <Card.Title><h2>Base Líquida Ultra Matte</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img src={base} alt="Base" />
-                        <h2>Base Líquida Ultra Matte</h2>
-                        <h2>25ml</h2>
-                        <Link to='/BaseUltra'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
+                    </Card.Body>
+                </Card>
 
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={batom} />
+                    <Card.Body>
+                        <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img src={batom} alt="Batom" />
-                        <h2>Batom Líquido Matte Tint</h2>
-                        <h2>Rosé Vintage</h2>
-                        <Link to='/Batom'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
+                    </Card.Body>
+                </Card>
 
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={esmaltevermelho} />
+                    <Card.Body>
+                        <Card.Title><h2>Esmalte Vermelho Sofisticado</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img src={esmaltevermelho} alt="esmalte vermelho" />
-                        <h2>Esmalte Vermelho Sofisticado 7ml</h2><br />
-                        <Link to='/Esmaltevermelho'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
+                    </Card.Body>
+                </Card>
 
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={shampoo} />
+                    <Card.Body>
+                        <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img src={shampoo} alt="shampoomorango" />
-                        <h2>Combo Frutas Vermelhas</h2>
-                        <br />
-                        <Link to='/Shampoomorango'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
-</div>
-<div className='container-fluid'>
-                <div className='row'>
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={rimel} />
+                    <Card.Body>
+                        <Card.Title><h2>Máscara Para Cílios Super Up</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img width="220px" src={saboneteliq} alt="sabonete liq" />
-                        <h2> Sabonete Liquido Luz 200ml </h2> <br />
+                    </Card.Body>
+                </Card>
 
-                        <Link to='/Saboneteliq'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
-
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
+                    <Card.Body>
+                        <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img width="220px" src={creme} alt="creme" />
-                        <h2>Creme Facial 100 g </h2> <br />
+                    </Card.Body>
+                </Card>
 
-                        <Link to='/CremeFacial'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
-
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
+                    <Card.Body>
+                        <Card.Title><h2>La Victori Eau de Parfum 75ml</h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                        <img src={perfume3} alt="Perfume" />
-                        <h2>La Victorie</h2>
-                        <h2>Eau de Parfum 75ml</h2>
-                        <Link to='/Perfume3'>
-                            <button className='detalhes'>Detalhes</button>
-                        </Link>
-                    </div>
+                    </Card.Body>
+                </Card>
 
-                    <div class="col-3 containerPostagem">
-                        <div className='promocao'>
-                            <button>PROMOÇAO 10%</button>
+                <Card className='m-1' style={{ width: '17rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={creme} alt="creme" />
+                    <Card.Body>
+                        <Card.Title><h2>Creme Facial 100 g </h2></Card.Title>
+                        <div className='Container details'>
+                            <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
-                       <img src={rimel} alt="Rimel" />
-                    <h2>Máscara Para Cílios</h2>
-                    <h2>Super Up 8mg</h2>
-                    <Link to='/Rimel'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                    </div>
+                    </Card.Body>
+                </Card>
+            </Row>
 
+                <div className='fluid '>
+                <img src={visa12} alt="creme" />    
+                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h5><br />
+                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
                 </div>
-            </div>
-            </div>
-        </div>
-
+        </Container>
     )
 }
