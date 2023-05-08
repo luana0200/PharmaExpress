@@ -10,7 +10,7 @@ import condicionador from "./imagens H/Condicionador.webp"
 import pasta from "./imagens H/pasta de dente C.jpeg"
 import pastadental from "./imagens H/pasta dental.png"
 import absorvente from "./imagens H/absorvente.webp"
-import creme from "./imagens H/creme facial.webp"
+import creme from "./imagens H/creme facial.png"
 import protetor from "./imagens H/protetor.webp"
 import escovacarvao from "./imagens H/escova colgate carvao.jpg"
 import listerine from "./imagens H/listerine.webp"
@@ -27,7 +27,7 @@ export default function HPessoal() {
         <div id="container-fluid">
          <div className='cabecalho' ><h1>HIGIENE PESSOAL</h1></div>
 
-       {/* Inicio das postagens */}
+        {/* Inicio das postagens  */}
             <div className='row'>
                
                     

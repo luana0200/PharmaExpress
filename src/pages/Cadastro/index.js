@@ -14,10 +14,8 @@ function Cadastro() {
     }
 
     return (
-        <div>
-            <div id='area-cabecalho'>
-
-                <h1>CADASTRO</h1> </div>
+        <div id="container-fluid">
+        <div className='cabecalho' ><h1>CADASTRO</h1></div>
             <form onSubmit={handleCadastro}>
                 <br/>
             <p> <label>Nome:</label>
