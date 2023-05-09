@@ -1,24 +1,38 @@
 import React, { useState } from "react";
 import './estilo.css'
 
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
+
 function Cadastro() {
 
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
     const [sexo, setSexo] = useState('')
-    const [cpf, setCpf] = useState('')
+
+    // const cpf = document.querySelector("#cpf");
+    // const [cpf, setCpf]= useState ('')
+
+    // cpf.addEventListener("blur", () => {
+    //     let value = cpf.value.replace(/^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/, "$1.$2.$3-$4");
+
+    //     cpf.value = 'value';
+    // });
 
     function handleCadastro() {
-        alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n Cpf: ${cpf}`)
+        alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n `)
     }
 
+
+
     return (
-        <div id="container-fluid">
-        <div className='cabecalho' ><h1>CADASTRO</h1></div>
-            <form onSubmit={handleCadastro}>
-                <br/>
-            <p> <label>Nome:</label>
+        <Container fluid>
+            <div className='cabecalho' ><h1>CADASTRO</h1></div>
+            <div className="compra">
+                <form onSubmit={handleCadastro}>
+                    <br />
+                    <p> <label>Nome:</label>
                         <input
                             type="text"
                             value={nome}
@@ -46,18 +60,21 @@ function Cadastro() {
                         </select></p>
 
                     <p>   <label>CPF:</label>
-                        < input
+                        {/* < input
                             type="number"
                             pattern="\d(3).\d(3).\d(3)-\d(2)"
-                            title="xxx.xxx.xxx-xx"
+                            // title="xxx.xxx.xxx-xx"
                             placeholder="xxx.xxx.xxx-xx"
                             value={cpf}
-                            onChange={(e) => setCpf(e.target.value)} /></p>
+                            onChange={(e) => querySelector(e.target.value)} /></p> */}
 
 
-                    <p>   <button type="submit">Enviar</button></p>
-            </form>
-        </div>
+                        {/* <input type='text' value='' id='cpf' /> */}
+                        </p>
+                        <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
+                </form>
+            </div>
+        </Container>
     )
 }
 

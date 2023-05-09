@@ -1,41 +1,30 @@
-/* * {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 200px;
-    height: 200px;
-}
-
-#area-cabecalho {
-    background-color: lightseagreen;
-    padding: 5px;
-    text-align: center;
-    margin: 0;
-    text-decoration: none;
-}
-
-.postagem {
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #FFFFFF;
-    margin: 0;
-}
-
-h2, h4 , h1{
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-}
-
- h1{
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    color: #FFFFFF;
-    font-size: 50px;
- }
-
 
 input[type="number"]::-webkit-outer-spin-button, 
  input[type="number"]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     margin: 0; 
-} */
+} 
+
+.compra{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  b{
+      font-size: 35px;
+  }
+  
+  .compra Button{
+    background-color:  lightseagreen;
+    cursor: pointer;
+    border: none;
+  margin: 0px 5px;
+  border-radius: 9px;
+  justify-content: center;
+  }
+    
+  .compra Button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    align-items: left;
+  }
