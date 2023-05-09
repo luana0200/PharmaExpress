@@ -1,15 +1,3 @@
-/* 
-.carroselhome{
-    width: 90%;
-    height:450px;
-    margin: 0 auto;
-    justify-items: center;
-}
-.carroselhome img {
-    width: 100%;
-    height: 450px;
-} */
-
 .carroselhome {
      width:100%;
    height:25rem;
@@ -17,4 +5,10 @@
 .carroselhome img {
     justify-items: center;
    height:100%;
+}
+@media screen and (max-width:850px){
+    .carroselhome {
+        width: 100%;
+        height: 15rem;
+    }
 }
