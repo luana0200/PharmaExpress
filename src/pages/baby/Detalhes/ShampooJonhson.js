@@ -11,7 +11,7 @@ export default function kitAzul() {
         <Container >
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={ShampooJonhson} alt="Shampoo" />
-                <h4> Johnson's Baby 200ml</h4>
+                <h4> Johnson's Baby 400ml</h4>
                 <br />
                 Johnson's Baby ajuda a realçar a beleza dos cabelos claros, além de limpar suavemente,
                 sem agredir o couro cabeludo do bebê.

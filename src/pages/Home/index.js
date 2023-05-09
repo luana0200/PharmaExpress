@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom'
 
 import CarroselHome from '../../bootstrap/carroselHome.js'
-
-
 import '../../components/Header/header.css'
 
-
-
-
 import Container from 'react-bootstrap/Container'
-
 import Row from 'react-bootstrap/Row';
-
 import Button from 'react-bootstrap/Button';
-
 import Card from 'react-bootstrap/Card';
-
 import Badge from 'react-bootstrap/Badge'
 
 import base from "../Beleza/imagens/base.png"
@@ -41,7 +32,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
                         <Card.Title><h2>Base Líquida Ultra Matte</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -52,7 +43,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={batom} />
                     <Card.Body>
                         <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -63,7 +54,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={esmaltevermelho} />
                     <Card.Body>
                         <Card.Title><h2>Esmalte Vermelho Sofisticado</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -74,7 +65,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={shampoo} />
                     <Card.Body>
                         <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -85,7 +76,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
                         <Card.Title><h2>Máscara Para Cílios Super Up</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -96,7 +87,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
                     <Card.Body>
                         <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -107,7 +98,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
                     <Card.Body>
                         <Card.Title><h2>La Victori Eau de Parfum 75ml</h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -118,7 +109,7 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <Card.Body>
                         <Card.Title><h2>Creme Facial 100 g </h2></Card.Title>
-                        <div className=' details'>
+                        <div className='Container llog'>
                             <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>

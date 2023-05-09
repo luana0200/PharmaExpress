@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom'
 import '../../../src/components/Rodape/rodape.css'
 
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge'
+
 import acetilcisteína from "./imagens/acetilcisteína.png"
 import allexofedrin from "./imagens/allexofedrin.png"
 import ambroxol from "./imagens/ambroxol.png"
@@ -22,216 +28,264 @@ import simeticona from "./imagens/simeticona.jpg"
 import sominex from "./imagens/sominex.png"
 import suplevit from "./imagens/suplevit.png"
 
-import visa12 from '../../components/Rodape/imagem/visa12.png'
+
+import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Medicamentos() {
     return (
+        <Container>
+            <div className='cabecalho'><h1>HIGIENE PESSOAL</h1></div>
+            <Row>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={acetilcisteína} alt="Acetilcisteína" />
+                    <Card.Body>
+                        <Card.Title><h2>Acetilcisteína 600mg EMS</h2></Card.Title>
+                        <br />
+                        <div className='Container llog'>
+                            <Link to='/Acetilcisteína'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-        <div >
-        <div className='cabecalho' ><h1>MEDICAMENTOS</h1></div>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={allexofedrin} alt="Allexofredrin" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Allexofedrin 120mg 10 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Allexofedrin'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-       {/* Inicio das postagens */}
-            <div className='row'>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={ambroxol} alt="Ambroxol" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Ambroxol  Xarope 120ml EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Ambroxol'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-                <div class="col-3 containerPostagem">
-                
-                    <img src={acetilcisteína} alt="Acetilcisteína" />
-                    <h2>Acetilcisteína 600mg </h2> 
-                       <h2> EMS</h2>
-                    <Link to='/Acetilcisteína'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={carbocisteína} alt="Carbocisteína" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Carbocisteína Xarope 100ml EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Carbocisteína'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={complexo} alt="Complexo b" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Complexo B 100 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Complexob'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={condres} alt="Condres" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Condres Colágeno 90 cápsulas EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/condres'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={doricin} alt="Doricin" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Doricin  300mg 36 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Doricin'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={declofenaco} alt="Diclofenaco" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Diclofenaco Gel Creme Com 60g EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Declofenaco'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={desloratadina} alt="Desloratadina" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Desloratadina 30 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Desloratadina'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={dipirona} alt="Dipirona" />
+                    <br />
+                    <Card.Body>
+                        <Card.Title><h2> Dipirona Sódica  10ml EMS</h2></Card.Title> <p />
+                        <div className='Container llog'>
+                            <Link to='/Dipirona'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={cystex} alt="Cystex" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Cystex  15mg EMS</h2></Card.Title>
+                        <p />
+                        <div className='Container llog'>
+                            <Link to='/Cystex'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={dorspan} alt="Dorspan" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Dorspan  20ml EMS</h2></Card.Title> <p />
+                        <div className='Container llog'>
+                            <Link to='/Dorspan'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={simeticona} alt="Simeticona" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Simeticona 15ml EMS</h2></Card.Title><p/>
+                        <div className='Container llog'>
+                            <Link to='/Simeticona'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={gemax} alt="Gelmax" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Gelmax Sabor Limão EMS</h2></Card.Title><p />
+                        <div className='Container llog'>
+                            <Link to='/Gemax'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={suplevit} alt="Suplevit" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p/>
+                        <div className='Container llog'>
+                            <Link to='/Suplevit'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
 
-              <div class="col-3 containerPostagem">
-                    <img src={allexofedrin} alt="Allexofredrin" />
-                    <h2>Allexofedrin 120mg 10 Comprimidos </h2>
-                        <h2>EMS </h2>
-                    <Link to='/Allexofedrin'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={fendizoato} alt="Fendizoato" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Fendizoato Xarope 120ml EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Fendizoato'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-                <div class="col-3 containerPostagem">
-                    <img src={ambroxol} alt="Ambroxol" />
-                    <h2>Ambroxol  Xarope 120ml </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Ambroxol'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={emsgrip} alt="Emsgrip" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>EMSGRIP Limão e Mel Sachê EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Emsgrip'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-                <div class="col-3 containerPostagem">
-                    <img src={carbocisteína} alt="Carbocisteína" />
-                    <h2>Carbocisteína Xarope 100ml </h2>
-                        <h2>EMS</h2>
-                    <Link to='/Carbocisteína'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={paracetamol} alt="Paracetamol" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Paracetamol 750mg 20 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Paracetamol'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
 
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={sominex} alt="Sominex" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Sominex Composto 20 Comprimidos  EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Sominex'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
 
-                <div class="col-3 containerPostagem">
-                    <img src={complexo} alt="Complexo b" />
-                    <h2>Complexo B 100 Comprimidos </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Complexob'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={condres} alt="Condres" />
-                    <h2>Condres Colágeno 90 cápsulas</h2>
-                    <h2>EMS</h2>
-   
-                    <Link to='/condres'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={doricin} alt="Doricin" />
-                    <h2>Doricin  300mg 36 Comprimidos </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Doricin'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={declofenaco} alt="Diclofenaco" />
-                    <h2>Diclofenaco Gel Creme Com 60g </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Declofenaco'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={desloratadina} alt="Desloratadina" />
-                    <h2>Desloratadina 30 Comprimidos</h2>
-                    <h2>EMS</h2>
-                    <Link to='/Desloratadina'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={dipirona} alt="Dipirona" />
-                    <h2>Dipirona Sódica  10ml </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Dipirona'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={cystex} alt="Cystex" />
-                    <h2>Cystex  15mg </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Cystex'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={dorspan} alt="Dorspan" />
-                    <h2> Dorspan  20ml </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Dorspan'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={emsgrip} alt="Emsgrip" />
-                    <h2>EMSGRIP Limão e Mel Sachê </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Emsgrip'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={ibuprofeno} alt="Ibuprofeno" />
-                    <h2>Ibuprofeno 200mg 20 Comprimidos </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Ibuprofeno'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={gemax} alt="Gelmax" />
-                    <h2>Gelmax Sabor Limão </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Gemax'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={fendizoato} alt="Fendizoato" />
-                    <h2>Fendizoato Xarope 120ml</h2>
-                    <h2>EMS</h2>
-                    <Link to='/Fendizoato'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={paracetamol} alt="Paracetamol" />
-                    <h2>Paracetamol 750mg 20 Comprimidos</h2>
-                    <h2>EMS</h2>
-                    <Link to='/Paracetamol'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={simeticona} alt="Simeticona" />
-                    <h2>Simeticona 15ml </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Simeticona'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={sominex} alt="Sominex" />
-                    <h2>Sominex Composto 20 Comprimidos </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Sominex'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-
-                <div class="col-3 containerPostagem">
-                    <img src={suplevit} alt="Suplevit" />
-                    <h2>Suplevit 30 Cápsulas </h2>
-                    <h2>EMS</h2>
-                    <Link to='/Suplevit'>
-                        <button className='detalhes'>Detalhes</button>
-                    </Link>
-                </div>
-            </div>
-
-            <div id="rodape">
-                <img src={visa12} alt="visa"/>
-
-            <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-150| Horário de Atendimento: De Segunda à Domingo 
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3214, Dúvidas, elogios e reclamações:
-                     atendimento@pharmaexpress.com.br.</h5><br />
-
+                <Card className='m-1' style={{ width: '15rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={ibuprofeno} alt="Ibuprofeno" />
+                    <Card.Body>
+                        <br />
+                        <Card.Title><h2>Ibuprofeno 200mg 20 Comprimidos EMS</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/Ibuprofeno'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+                </Row>
+            <div className='fluid '>
+                <img src={visa12} alt="creme" />
+                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h5><br />
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>
-        </div>
-        
-
-
-
+        </Container>
     )
 }

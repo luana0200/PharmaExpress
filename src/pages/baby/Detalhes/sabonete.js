@@ -11,7 +11,7 @@ export default function Baseultra() {
       <Container >
          <Card className='m-2, p-2'>
             <Card.Img className='detail' variant="top" src={Sabonete} alt="sabonete" />
-            <h4>Sabonete em Barra Johnson</h4><br />
+            <h4>Sabonete em Barra Johnson 80g</h4><br />
             
             O Sabonete JOHNSON'S® em Barra Original é enriquecido com hidratante que evita o ressecamento e
             é suave e delicado o suficiente para ser usado no corpo e rosto do bebê.

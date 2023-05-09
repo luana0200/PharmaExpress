@@ -12,7 +12,7 @@ export default function Aptamil() {
         <Container >
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={aptamil} alt="Aptamil" />
-                <h4 >Formula Aptamil 1800 g</h4><br />
+                <h4 >Formula Aptamil 800g</h4><br />
                 Aptamil Premium 1 é uma fórmula infantil de partida, indicada para alimentação de bebês
                 lactentes desde o nascimento até o 6º mês de vida, adicionada de prebióticos.
                 O produto contém proteínas lácteas, ácidos graxos poli-insaturados de cadeia longa (DHA e ARA), prebióticos, nucleotídeos e taurina.

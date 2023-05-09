@@ -1,6 +1,6 @@
 import './baby.css'
 import { Link } from 'react-router-dom'
-import rosa from '../imagens/Rosa.webp'
+import rosa from '../imagens/EscovaRosa.jpg'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

@@ -13,6 +13,7 @@ export default function Chupetas() {
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={chupetas} alt="Chupetas" />
                 <h4>Chupetas</h4><br />
+                Chupeta fiona soft 100% silicone anatômico tamanho 2 - Cor: 1 Azul e 1 Rosa
                 <h1>
                     R$ 9,90
                 </h1>

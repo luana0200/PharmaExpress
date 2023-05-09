@@ -10,9 +10,9 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function Header() {
     return (
       
-            <Container>
+            <Container fluid>
                     <Navbar expand="xxl" className='nave'>
-                        <Container className='dark'>
+                        <Container fluid className='dark'>
                             <img src={logo} alt='logo' />
                             <Navbar.Toggle aria-controls="basic-navbar-nav" id='Row' />
                             <Navbar.Collapse id="basic-navbar-nav">

@@ -11,7 +11,6 @@ export default function Shampoo() {
         <Container >
         <Card className='m-2, p-2'>
             <Card.Img className='detail' variant="top" src={shampoo} alt="shampoo" />
-            <img width="220px" src={shampoo} alt="shampoo" />
             <h4> Shampoo Pantene 450 ml</h4><br />
                 hidratar e fortalecer os fios instantaneamente, sem comprometer os resultados dos tratamentos realizados. 
                 É ideal para cabelos que passaram por tratamentos químicos que causam danos à estrutura protetora do cabelo,
