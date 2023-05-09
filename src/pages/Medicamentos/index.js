@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 import acetilcisteína from "./imagens/acetilcisteína.png"
 import allexofedrin from "./imagens/allexofedrin.png"
-import ambroxol from "./imagens/ambroxol.png"
+import ambroxol from "./imagens/ambroxoll.png"
 import carbocisteína from "./imagens/carbocisteína.png"
 import complexo from "./imagens/complexo.png"
 import condres from "./imagens/condres.png"
@@ -61,7 +61,7 @@ export default function Medicamentos() {
 
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={ambroxol} alt="Ambroxol" />
+                    <Card.Img variant="top" width="100px" src={ambroxol} alt="Ambroxol" />
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Ambroxol  Xarope 120ml EMS</h2></Card.Title>
