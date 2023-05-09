@@ -12,6 +12,9 @@ export default function Ambroxol() {
 
             <Card.Img className='detail' variant="top"src={ambroxol} alt="Ambroxol" />
 
+
+            <Card.Img className='detail' variant="top"src={ambroxol} alt="Ambroxol" />
+
         <Card.Img variant="top" width='100px' src={ambroxol} alt="Ambroxol" />
         <Card.Img variant="top"  src={ambroxol} alt="Ambroxol" />
 
