@@ -34,7 +34,8 @@ export default function Medicamentos() {
     return (
         <Container>
             <div className='cabecalho'><h1>HIGIENE PESSOAL</h1></div>
-            <Row>
+            <Row className='d-flex justify-content-center'>
+
                 <Card className='m-1' style={{ width: '15rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={acetilcisteína} alt="Acetilcisteína" />

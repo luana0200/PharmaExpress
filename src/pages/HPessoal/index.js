@@ -30,10 +30,11 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 export default function HPessoal() {
 
     return (
-        <Container>
+        <Container fluid>
              <div className='cabecalho'><h1>HIGIENE PESSOAL</h1></div>
-            <Row>
-                <Card className='m-1' style={{ width: '15rem' }}>
+             <Row  className='d-flex justify-content-center'>
+
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={desoF} alt="desodorante" />
                     <Card.Body>
@@ -45,7 +46,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={deso} alt="deso M" />
                     <Card.Body>
@@ -57,12 +58,12 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={shampoo} alt="shampoo" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Shampoo Pantene 450 ml</h2></Card.Title>
+                        <Card.Title><h2>Shampoo Pantene 470 ml</h2></Card.Title>
                         <br />
                         <div className='Container llog'>
                             <Link to='/Shampoo'><Button variant="secondary">Detalhes</Button></Link>
@@ -70,7 +71,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={condicionador} alt="condicionador" />
                     <Card.Body>
@@ -82,7 +83,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={pasta} alt="pasta" />
                     <Card.Body>
@@ -94,7 +95,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={pastadental} alt="pasta dental" />
                     <Card.Body>
@@ -106,7 +107,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={absorvente} alt="absorvente" />
                     <Card.Body>
@@ -118,7 +119,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <br />
@@ -130,7 +131,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={protetor} alt="absorvente" />
                     <Card.Body>
@@ -142,19 +143,19 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sabonetedove} alt="sabonete dove" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Sabonete Dove 85 g</h2></Card.Title>
+                        <Card.Title><h2>Sabonete Dove 87 g</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/SaboneteDove'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
                     <br />
@@ -166,31 +167,31 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sabonete} alt="sabonete" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Sabonete Protex em Barra 85 g</h2></Card.Title>
+                        <Card.Title><h2>Sabonete Protex em Barra 87 g</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/SaboneteProtex'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={listerine} alt="listerine" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Listerine 500 ml</h2></Card.Title>  <br />
+                        <Card.Title><h2>Listerine 700 ml</h2></Card.Title>  <br />
                         <div className='Container llog'>
                             <Link to='/Listerine'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={escovacarvao} alt="escova de dente" />
                     <Card.Body>
@@ -203,7 +204,7 @@ export default function HPessoal() {
                 </Card>
 
 
-                <Card className='m-1' style={{ width: '15rem' }}>
+                <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={escova} alt="escova de dente" />
                     <Card.Body>
@@ -216,11 +217,11 @@ export default function HPessoal() {
                 </Card>
             </Row>
             <div className='fluid '>
-                <img src={visa12} alt="creme" />
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h5><br />
-                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
+                <img src={visa12} alt="creme" /><br/>
+                <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3217, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h7><br />
+                <p> <h7>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h7> </p>
             </div>
         </Container>
     )

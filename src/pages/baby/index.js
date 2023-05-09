@@ -29,7 +29,7 @@ export default function Baby() {
         <Container >
             <div className='cabecalho'><h1>BABY</h1></div>
             
-            <Row className='xxl' >
+            <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '15rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={ShampooJonhson} alt="Shampoo" />

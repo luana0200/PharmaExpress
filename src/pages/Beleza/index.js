@@ -35,7 +35,8 @@ export default function Beleza() {
     return (
         <Container>
         <div className='cabecalho' ><h1>BELEZA</h1></div>
-        <Row>
+        <Row className='d-flex justify-content-center'>
+
                 <Card className='m-1' style={{ width: '15rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />

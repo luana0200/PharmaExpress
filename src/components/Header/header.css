@@ -23,7 +23,6 @@ h2 {
     background-color:  lightseagreen;
     cursor: pointer;
     border: none;
-background-color: lightseagreen;
 margin: 0px 5px;
 border-radius: 9px;
 justify-content: center;
@@ -81,10 +80,8 @@ justify-content: center;
 }
 
 .cabecalho{
-    background-color: lightseagreen;
+    background-color:lightseagreen;
     color: #FFFFFF;
-    margin:0;
-    padding: 0;
     width: 100%;
     align-items: center;
     justify-items: center;

@@ -26,7 +26,7 @@ export default function Home() {
             <CarroselHome />
             <br />
 
-            <Row>
+            <Row className='d-flex justify-content-center'>
                 <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
