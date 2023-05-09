@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import ibuprofeno from '../imagens/ibuprofeno.png'
 
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 export default function Ibuprofeno() {
     return (
-            <div className='medica'>
-                <img src={ibuprofeno} alt="ibuprofeno" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"ssrc={ibuprofeno} alt="ibuprofeno" />
             <h4>Ibuprofeno 200mg 20 Comprimidos Ems</h4><br />
             
             Ibuprofeno é um medicamento indicado para redução da febre e para o alívio de dores, tais como:
@@ -17,7 +22,10 @@ export default function Ibuprofeno() {
                 R$ 12,58
             </h1> <br />
 
-              <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

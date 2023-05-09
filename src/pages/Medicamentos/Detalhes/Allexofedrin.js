@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import './medica.css'
 import allexofedrin from '../imagens/allexofedrin.png'
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 
 export default function Allexofedrin() {
     return (
-            <div className='medica'>
-                <img src={allexofedrin} alt="Allexofedrin" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={allexofedrin} alt="Allexofedrin" />
             <h4>Allexofedrin Cloridrato De Fexofenadina 120mg 10 Comprimidos</h4><br />
 
             Está indicado para o alívio das manifestações alérgicas, tais como: rinite
@@ -20,7 +24,10 @@ export default function Allexofedrin() {
                 R$ 33,99
             </h1> <br />
 
-           <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

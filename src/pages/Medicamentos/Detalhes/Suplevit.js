@@ -3,10 +3,15 @@ import './medica.css'
 
 import suplevit from '../imagens/suplevit.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Suplevit() {
     return (
-            <div className='medica'>
-                <img src={suplevit} alt="Suplevit" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={suplevit} alt="Suplevit" />
             <h4>Suplevit Cabelos E Unhas Com 30 Cápsulas Ems</h4><br />
 
             É um suplemento alimentar enriquecido com vitaminas
@@ -15,8 +20,10 @@ export default function Suplevit() {
             <h1>
                 R$ 25,90
             </h1> <br />
-
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

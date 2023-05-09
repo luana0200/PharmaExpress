@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom'
 import './medica.css'
 import carbocisteína from '../imagens/carbocisteína.png'
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 
 export default function Acetilcisteína() {
     return (
-            <div className='medica'>
-                <img src={carbocisteína} alt="Carbocisteína" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={carbocisteína} alt="Carbocisteína" />
+
             <h4>Carbocisteína 50mg/ml Xarope 100ml Prati Donaduzzi Genérico Ems</h4> <br />
             A carbocisteína é indicada em afecções agudas ou crônicas do trato
             respiratório, nas quais a secreção abundante e/ou viscosa do muco seja
@@ -18,7 +23,10 @@ export default function Acetilcisteína() {
                 R$ 19,97
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import doricin from '../imagens/doricin.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Doricin() {
     return (
-            <div className='medica'>
-                <img src={doricin} alt="Doricin" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={doricin} alt="Doricin" />
             <h4>Doricin Dipirona Monohidratada 300mg + Citrato De Orfenadrina 35mg + Cafeína 50mg 36 Comprimidos Ems</h4><br />
             
             Doricin é indicado no alívio da dor associada a contraturas musculares, incluindo dor de cabeça tensional.
@@ -13,7 +18,10 @@ export default function Doricin() {
                 R$ 13,29
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

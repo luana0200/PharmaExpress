@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import declofenaco from '../imagens/declofenaco.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Declofenaco() {
     return (
-            <div className='medica'>
-                <img src={declofenaco} alt="Declofenaco" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={declofenaco} alt="Declofenaco" />
             <h4>Diclofenaco Dietilamônio 11,6mg/g Ems Gel Creme Com 60g Ems</h4><br />
 
             O diclofenaco dietilamônio foi indicado para aliviar a dor e reduzir os sintomas
@@ -18,7 +23,10 @@ export default function Declofenaco() {
                 R$ 14,30
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

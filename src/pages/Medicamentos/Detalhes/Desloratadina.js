@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import desloratadina from '../imagens/desloratadina.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Desloratadina() {
     return (
-            <div className='medica'>
-                <img src={desloratadina} alt="Desloratadina" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={desloratadina} alt="Desloratadina" />
             <h4>Desloratadina 5mg 30 Comprimidos Ems Genérico</h4><br />
 
             Desloratadina é indicado para o alívio rápido dos sintomas associados à rinite alérgica
@@ -19,7 +24,10 @@ export default function Desloratadina() {
                 R$ 65,50
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

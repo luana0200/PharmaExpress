@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import sominex from '../imagens/sominex.png'
 
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 export default function Sominex() {
     return (
-            <div className='medica'>
-                <img src={sominex} alt="Sominex" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={sominex} alt="Sominex" />
             <h4>Sominex Composto 20 Comprimidos Ansiedade E Insônia Ems</h4><br />
 
             Sominex Composto é um fitoterápico que auxilia nos sintomas de insônia e ansiedade, favorecendo a qualidade do sono.
@@ -16,7 +21,10 @@ export default function Sominex() {
                 R$ 27,90
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }
