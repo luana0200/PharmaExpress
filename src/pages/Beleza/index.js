@@ -55,6 +55,8 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Beleza() {
     return (
         <Container fluid>
+            
+            <div className='cabecalho'><h1>BELEZA</h1></div>
         <Row className='d-flex justify-content-center'>
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
