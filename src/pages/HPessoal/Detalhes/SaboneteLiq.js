@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
+
 export default function SaboneteLiq() {
     return (
         <Container >
@@ -14,7 +16,9 @@ export default function SaboneteLiq() {
             O Sabonete Lux Botanicals hidrata profundamente, deixando a pele bonita,
             radiante e suavemente perfumada. Sua fórmula com Óleo Hidrafloral proporciona uma pele protegida do ressecamento
             e danos do dia- a-dia, deixando uma leve fragrância em sua pele. Explosão de fragrâncias inspiradas na natureza.
-
+            <div className='promocao'>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    </div>
             <h1>R$7,64</h1>
 
             <div className='Container llog'>

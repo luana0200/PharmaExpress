@@ -1,7 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-import Container from 'react-bootstrap/Container'
-
 import './style.css'
 import escovadental from '../bootstrap/imagens/escovadente.webp'
 import Pampers from '../bootstrap/imagens/Pampers.jpg'

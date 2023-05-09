@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function Rimel() {
     return (
@@ -20,7 +21,7 @@ export default function Rimel() {
             - Pincel exclusivo Niina com fibras que preenchem por completo.
             - Tecnologia Secrets que nutre os fios.
             <div className='promocao'>
-                        <button>PROMOÇAO 10%</button>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
                     </div>
                     <br/>
             <h1>

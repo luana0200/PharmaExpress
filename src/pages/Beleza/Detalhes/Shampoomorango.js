@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function Shampoo() {
     return (
@@ -23,8 +24,8 @@ export default function Shampoo() {
             01 Condicionador Instance Frutas Vermelhas, 300 ml.
             <br />
             <div className='promocao'>
-                <button>PROMOÇAO 10%</button>
-            </div>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    </div>
             <h1>
                 R$ 47,68
             </h1> <br />

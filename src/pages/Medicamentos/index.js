@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge'
 
 import acetilcisteína from "./imagens/acetilcisteína.png"
 import allexofedrin from "./imagens/allexofedrin.png"

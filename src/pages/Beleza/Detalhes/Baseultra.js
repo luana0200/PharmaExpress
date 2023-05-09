@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 
 export default function BaseUltra() {
@@ -21,14 +22,14 @@ export default function BaseUltra() {
             <br/>
 
             <div className='promocao'>
-                <button>PROMOÇAO 10%</button>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
             </div>
             <h1>
                 R$ 44,91
             </h1> <br />
 
             <div className='Container llog'>
-               <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+               <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
             </div>
          </Card>
       </Container >

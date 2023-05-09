@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function Perfume() {
     return (
@@ -18,6 +19,9 @@ export default function Perfume() {
             e a sofisticação das madeiras quentes. Uma combinação explosiva que reflete a felicidade de viver intensamente cada momento.
             A tuberosa, sofisticada flor de contrastes e singularidades, exala feminilidade durante o dia e ao entardecer, desvenda uma fragrância intensa e inebriante floral.
             Viva intensamente a felicidade de cada momento com La Victorie Intense.
+            <div className='promocao'>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    </div>
             <h1>
                 R$ 188,99
             </h1> <br />

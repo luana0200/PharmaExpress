@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function Batom() {
     return (
@@ -20,7 +21,7 @@ export default function Batom() {
             Com fácil aplicação, o batom matte tint também é totalmente livre de testes em animais e 100% vegano.
             <br/>
             <div className='promocao'>
-                        <button>PROMOÇAO 10%</button>
+            <Badge bg="danger">PROMOÇAO 10%</Badge>
                     </div>
             <h1>
                 R$ 43,98
