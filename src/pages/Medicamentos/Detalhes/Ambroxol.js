@@ -10,7 +10,11 @@ export default function Ambroxol() {
         <Container >
         <Card className='m-2, p-2'>
 
+            <Card.Img className='detail' variant="top"src={ambroxol} alt="Ambroxol" />
+
         <Card.Img variant="top" width='100px' src={ambroxol} alt="Ambroxol" />
+        <Card.Img variant="top"  src={ambroxol} alt="Ambroxol" />
+
             <h4>Cloridrato De Ambroxol 30mg/5ml Xarope 120ml Ems Genérico</h4><br />
 
             Este medicamento é indicado para o tratamento das doenças
