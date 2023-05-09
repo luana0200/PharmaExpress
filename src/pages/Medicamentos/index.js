@@ -60,10 +60,11 @@ export default function Medicamentos() {
                 </Card>
 
                 <Card className='m-1' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="100px" src={ambroxol} alt="Ambroxol" />
+                 
+                    <div className='rmd'>
+                    <Card.Img variant="top" width="50px" src={ambroxol} alt="Ambroxol" />
+                    </div>
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Ambroxol  Xarope 120ml EMS</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Ambroxol'><Button variant="secondary">Detalhes</Button></Link>

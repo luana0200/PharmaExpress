@@ -94,5 +94,12 @@ justify-content: center;
 }
 
 .Card Img{
-    width: 100px;
+    width: 6.25rem;
 } 
+
+.rmd img{
+ width: 12.5rem;
+ justify-items: center;
+ padding: 1.875rem;
+  
+}
