@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import condres from '../imagens/condres.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Condres() {
     return (
-            <div className='medica'>
-                <img src={condres} alt="Condres" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={condres} alt="Condres" />
             <h4>Condres Colágeno 90 cápsulas EMS</h4><br />
             Condres colágeno não hidrolisado
             Tipo ii - 90 cápsulas
@@ -17,8 +22,10 @@ export default function Condres() {
                 R$ 211,52
             </h1>
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

@@ -2,10 +2,14 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import complexo from '../imagens/complexo.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 export default function Complexo() {
     return (
-            <div className='medica'>
-                <img src={complexo} alt="Complexo" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={complexo} alt="Complexo" />
             <h4>Complexo B Polivitamínico 100 Comprimidos Ems</h4><br />
             Complexo B® é indicado para o tratamento de carência múltipla de vitaminas
             do complexo B e suas manifestações. Tem ação reguladora das carências
@@ -17,8 +21,10 @@ export default function Complexo() {
                 R$ 24,90
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

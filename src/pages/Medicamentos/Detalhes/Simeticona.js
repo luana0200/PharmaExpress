@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import simeticona from '../imagens/simeticona.jpg'
 
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 export default function Simeticona() {
     return (
-            <div className='medica'>
-                <img src={simeticona} alt="Simeticona" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={simeticona} alt="Simeticona" />
             <h4>Simeticona 75mg/ml Sabor Morango Gotas 15ml Ems Genérico</h4><br />
 
             A Simeticona é indicada para pacientes com excesso de gases no aparelho digestivo.
@@ -19,7 +24,10 @@ export default function Simeticona() {
                 R$ 9,19
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import emsgrip from '../imagens/emsgrip.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Emsgrip() {
     return (
-            <div className='medica'>
-                <img src={emsgrip} alt="Emsgrip" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={emsgrip} alt="Emsgrip" />
             <h4>EMSGRIP Limão e Mel Sachê EMS</h4>
 
             EMSGrip Limão e Mel Sachê EMS (paracetamol) é utilizado para alívio temporário da dor de cabeça, febre e dores no corpo
@@ -14,8 +19,10 @@ export default function Emsgrip() {
             <h1>
                 R$ 10,00
             </h1> <br />
-
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

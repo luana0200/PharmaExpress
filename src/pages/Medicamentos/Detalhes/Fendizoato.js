@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import fendizoato from '../imagens/fendizoato.png'
 
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
+
 export default function Fendizoato() {
     return (
-            <div className='medica'>
-                <img src={fendizoato} alt="Fendizoato" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"src={fendizoato} alt="Fendizoato" />
             <h4>Fendizoato De Cloperastina 3,54mg/ml Xarope 120ml + Copo Do Sador Ems Genéricoems</h4><br />
             Fendizoato de cloperastina 3,54mg é um medicamento. Seu uso pode trazer riscos.
             Procure um médico ou um farmacêutico. Leia a bula..
@@ -14,7 +19,10 @@ export default function Fendizoato() {
             R$ 17,00
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import './medica.css'
 import dorspan from '../imagens/dorspan.png'
 
+
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 export default function Dorspan() {
     return (
-            <div className='medica'>
-                <img src={dorspan} alt="Dorspan" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top" src={dorspan} alt="Dorspan" />
             <h4>Escopolamina + Dipirona - Dorspan Composto Gotas 20ml Ems</h4><br />
             
             Dorspan® Composto é indicado como analgésico e antiespasmódico, em estados
@@ -15,7 +20,10 @@ export default function Dorspan() {
                 R$ 16,09
             </h1> <br />
 
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link>
-        </div>
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }

@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import './medica.css'
 import ambroxol from '../imagens/ambroxol.png'
+import Container from 'react-bootstrap/esm/Container'
+import Button from 'react-bootstrap/esm/Button'
+import Card from 'react-bootstrap/Card'
 
 export default function Ambroxol() {
     return (
-            <div className='medica'>
-                <img src={ambroxol} alt="Ambroxol" />
+        <Container >
+        <Card className='m-2, p-2'>
+            <Card.Img className='detail' variant="top"rc={ambroxol} alt="Ambroxol" />
             <h4>Cloridrato De Ambroxol 30mg/5ml Xarope 120ml Ems Genérico</h4><br />
 
             Este medicamento é indicado para o tratamento das doenças
@@ -17,8 +21,10 @@ export default function Ambroxol() {
             <h1>
                 R$ 15,69
             </h1>
-            <Link to='/Compra'><button className='detalhes'>COMPRAR</button></Link> 
-
-        </div >
+            <div className='Container llog'>
+                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                </div>
+            </Card>
+        </Container>
     )
 }
