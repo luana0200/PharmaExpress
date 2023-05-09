@@ -1,6 +1,5 @@
 import './estilo.css'
 import { Link } from 'react-router-dom'
-import '../../../src/components/Rodape/rodape.css'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';

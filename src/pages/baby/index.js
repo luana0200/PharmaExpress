@@ -26,11 +26,11 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Baby() {
     return (
-        <Container >
+        <Container fluid >
             <div className='cabecalho'><h1>BABY</h1></div>
             
             <Row className='d-flex justify-content-center'>
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={ShampooJonhson} alt="Shampoo" />
                     <Card.Body>
@@ -42,7 +42,7 @@ export default function Baby() {
                 </Card>
 
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Sabonet} alt="Sabonet" />
                     <Card.Body>
@@ -53,7 +53,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Locao} alt="Locao" />
                     <Card.Body>
@@ -64,7 +64,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sbonete} alt="sabonete" />
                     <Card.Body>
@@ -76,7 +76,7 @@ export default function Baby() {
                 </Card>
 
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={talco} alt='talco' />
                     <Card.Body>
@@ -87,7 +87,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Lenco} alt="Lenco" />
                     <Card.Body>
@@ -98,7 +98,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={lenco} alt="Locao" />
                     <Card.Body>
@@ -109,7 +109,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Fralda} alt="Fralda" />
                     <Card.Body>
@@ -120,7 +120,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Pomada} alt="Pomada" />
                     <Card.Body>
@@ -131,7 +131,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Formula} alt="Formula" />
                     <Card.Body>
@@ -142,7 +142,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Chupetas} alt="Chupetas" />
                     <Card.Body>
@@ -154,7 +154,7 @@ export default function Baby() {
                 </Card>
 
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Rosa} alt="Rosa" />
                     <Card.Body>
@@ -166,7 +166,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Kit} alt="Kit Azul" />
                     <Card.Body>
@@ -178,18 +178,18 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={mama} alt="mama" />
                     <Card.Body>
-                        <Card.Title><h2>   Mamadeira Azul 250 ml</h2></Card.Title>
+                        <Card.Title><h2>   Mamadeira Azul 270 ml</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Mamadeira'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '15rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Mamadeira} alt="Mamadeira" />
                     <Card.Body>
@@ -204,9 +204,9 @@ export default function Baby() {
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
                 <br />
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-5985 | SAC – Serviço de Atendimento ao Cliente: 5985-3217, Dúvidas, elogios e reclamações:</h5>
-                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
+                <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-7987 | SAC – Serviço de Atendimento ao Cliente: 7987-3217, Dúvidas, elogios e reclamações:</h7>
+                <p> <h7>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h7> </p>
             </div>
         </Container >
     )

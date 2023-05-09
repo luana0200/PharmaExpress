@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import '../Beleza/Detalhes/bela.css'
-import '../../../src/components/Rodape/rodape.css'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
@@ -33,10 +32,10 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Beleza() {
     return (
-        <Container>
+        <Container fluid>
         <div className='cabecalho' ><h1>BELEZA</h1></div>
-        <Row className='d-flex justify-content-center'>
 
+        <Row className='d-flex justify-content-center'>
                 <Card className='m-1' style={{ width: '15rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />

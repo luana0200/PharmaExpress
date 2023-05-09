@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../../../src/components/Rodape/rodape.css'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
@@ -32,8 +31,8 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Medicamentos() {
     return (
-        <Container>
-            <div className='cabecalho'><h1>HIGIENE PESSOAL</h1></div>
+        <Container fluid>
+            <div className='cabecalho'><h1>MEDICAMENTOS</h1></div>
             <Row className='d-flex justify-content-center'>
 
                 <Card className='m-1' style={{ width: '15rem' }}>
