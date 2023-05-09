@@ -14,19 +14,22 @@ export default function Compra() {
     return (
         <Container fluid>
             <div className='compra'>
-                <b>Já sou cliente</b>
-                <p>Faça o login para acelerar a compra:</p>
-                <label>E-mail</label>
-                <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <div>
 
-                <label>Senha</label>
-                <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} /> <br />
-                <Link to='/Carrinho'><Button variant="secondary">Login</Button> </Link>
-                <br/>
-                <br />
-                <b>Ainda não sou cliente</b>
-                <p>Cadastre-se para finalizar sua compra.</p>
-                <Link to='/Cadastro'><Button variant="secondary">Cadastre-se</Button></Link>
+                    <b>Já sou cliente</b>
+                    <p>Faça o login para acelerar a compra:</p>
+                    <label>E-mail</label>
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} /><br /><p/>
+
+                    <label>Senha</label>
+                    <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} /> <br />
+                    <Link to='/Carrinho'><Button variant="secondary">Login</Button> </Link>
+                </div>
+                <div className='comprar'>
+                    <b>Ainda não sou cliente</b>
+                    <p>Cadastre-se para finalizar sua compra.</p>
+                    <Link to='/Cadastro'><Button variant="secondary">Cadastre-se</Button></Link>
+                </div>
             </div>
         </Container>
     )
