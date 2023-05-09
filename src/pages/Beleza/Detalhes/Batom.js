@@ -27,8 +27,8 @@ export default function Batom() {
                 R$ 43,98
             </h1> <br />
             <div className='Container llog'>
-               <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
-            </div>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
+                </div>
          </Card>
       </Container >
     )

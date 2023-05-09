@@ -19,7 +19,7 @@ export default function SaboneteProtex(){
                 R$ 5,87
             </h1>
             <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container>

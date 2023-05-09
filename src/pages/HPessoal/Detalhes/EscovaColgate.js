@@ -14,7 +14,7 @@ export default function EscovaColgate(){
                
                 <h1> R$ 20,90</h1>
                 <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container>

@@ -18,7 +18,7 @@ export default function Chupetas() {
                     R$ 9,90
                 </h1>
                 <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>
         </Container>
