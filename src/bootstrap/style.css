@@ -1,4 +1,4 @@
-
+/* 
 .carroselhome{
     width: 90%;
     height:450px;
@@ -8,4 +8,13 @@
 .carroselhome img {
     width: 100%;
     height: 450px;
+} */
+
+.carroselhome {
+     width:90%;
+   height:25rem;
+}
+.carroselhome img {
+    justify-items: center;
+   height:100%;
 }

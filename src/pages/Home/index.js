@@ -21,13 +21,13 @@ import creme from '../HPessoal/imagens H/creme facial.png'
 import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Home() {
     return (
-        <Container>
+        <Container fluid>
             <br />
             <CarroselHome />
             <br />
 
             <Row>
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
@@ -38,7 +38,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={batom} />
                     <Card.Body>
@@ -49,7 +49,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={esmaltevermelho} />
                     <Card.Body>
@@ -60,7 +60,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={shampoo} />
                     <Card.Body>
@@ -71,7 +71,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
@@ -82,7 +82,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
                     <Card.Body>
@@ -93,7 +93,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
                     <Card.Body>
@@ -104,7 +104,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-1' style={{ width: '19rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <Card.Body>
@@ -119,8 +119,8 @@ export default function Home() {
 
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3217, Dúvidas, elogios e reclamações:
+                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:19010-190| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3219, Dúvidas, elogios e reclamações:
                     atendimento@pharmaexpress.com.br.</h5><br />
                 <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
             </div>

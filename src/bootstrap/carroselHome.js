@@ -1,30 +1,32 @@
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+
+import Container from 'react-bootstrap/Container'
 
 import './style.css'
 import escovadental from '../bootstrap/imagens/escovadente.webp'
 import Pampers from '../bootstrap/imagens/Pampers.jpg'
 import Eudora from '../bootstrap/imagens/mae.jpg'
 
-import Container from 'react-bootstrap/esm/Container'
-
 export default function CarroselHome() {
     return (
-       <Container>
-        <Carousel className='carroselhome'>
+        <Carousel>
             <Carousel.Item>
-                <img width={'300px'} src={escovadental} alt='escova dental colgate' />
+            <div class="carroselhome">
+                        <img className="d-block w-100" src={escovadental} />
+                    </div>
             </Carousel.Item>
 
             <Carousel.Item>
-                <img width={'300px'} src={Pampers} alt='Fralda Pamapers pequeno' />
-            </Carousel.Item>
+                    <div class="carroselhome">
+                        <img className="d-block w-100" src={Pampers} />
+                    </div>
 
+            </Carousel.Item>
             <Carousel.Item>
-                <img width={'300px'} src={Eudora} alt='Eudora' />
+                    <div class="carroselhome">
+                        <img className="d-block w-100" src={Eudora} />
+                    </div>
             </Carousel.Item>
-
-
         </Carousel>
-      </Container>
     );
 }
