@@ -1,16 +1,24 @@
 .compra{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-   
+  flex-direction: column;
 }
 
 b{
     font-size: 35px;
 }
 
-input{
-    width: 400px;
+.compra Button{
+  background-color:  lightseagreen;
+  cursor: pointer;
+  border: none;
+margin: 0px 5px;
+border-radius: 9px;
+justify-content: center;
+}
+  
+.compra Button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  align-items: left;
 }
 

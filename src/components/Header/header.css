@@ -94,6 +94,7 @@ justify-content: center;
 }
 
 .Card Img{
+
     width: 6.25rem;
 } 
 
@@ -101,5 +102,12 @@ justify-content: center;
  width: 12.5rem;
  justify-items: center;
  padding: 1.875rem;
-  
+    width: 100px;
+} 
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
