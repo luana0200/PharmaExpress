@@ -22,7 +22,7 @@ export default function Header() {
                                     <Nav.Link href="/Medicamentos"><Button variant="secondary"> Medicamentos</Button ></Nav.Link>
                                     <Nav.Link href="/Beleza"><Button variant="secondary" >Beleza</Button ></Nav.Link>
                                     <Nav.Link href="/Cadastro"><Button variant="secondary" >Cadastro</Button ></Nav.Link>
-                                    <Nav.Link href="/Carrinh"><Button variant="secondary">🛒 </Button></Nav.Link>
+                                    <Nav.Link href="/Carrinho"><Button variant="secondary">🛒 </Button></Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
