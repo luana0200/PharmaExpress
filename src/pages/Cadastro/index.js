@@ -36,7 +36,7 @@ function Cadastro() {
 
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Genêro</Form.Label>
+                        <Form.Label>Data de nascimento</Form.Label>
                         <Form.Control
                             as={IMaskInput}
                             mask="00/00/0000"
@@ -49,11 +49,11 @@ function Cadastro() {
                         <Form.Control
                             as={IMaskInput}
                             mask="000.000.000-00"
-                            placeholder="Digite se CPF"
+                            placeholder="Digite seu CPF"
                         />
                     </Form.Group>
                 </div>
-                
+
                 <div className="comprar">
                     <Form.Group className="mb-3">
                         <Form.Label>E-mail</Form.Label>
