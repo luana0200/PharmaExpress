@@ -2,10 +2,6 @@
       margin: 0;
       padding: 0;
   }
-/* Tamanho logo */
-  img{
-    widht:80px
-  }
 
   items-center {
       align-items: center;
@@ -18,35 +14,34 @@
       font-size: 15px;
   }
 
-/* Incio Botoes */
+  /* Incio Botoes */
 
-.Container button {
-    background-color: lightseagreen;
-    cursor: pointer;
-    border: none;
-    margin: 0px 5px;
-    border-radius: 9px;
-    justify-content: center;
-}
+  .Container button {
+      background-color: lightseagreen;
+      cursor: pointer;
+      border: none;
+      margin: 0px 5px;
+      border-radius: 9px;
+  }
 
-.Container Button a {
-    text-decoration: none;
-    color: #FFFFFF;
-    align-items: center;
-}
+  .Container Button a {
+      text-decoration: none;
+      color: #FFFFFF;
+  }
 
-.botao2 button {
-    width: 330px;
+  .botao2 button {
+      width: 330px;
       height: 72px;
-    }
-    
-    .botao3 button {
-        margin: 5px;
-        width: 150px;
-        height: 52px;
-    }
-    /* Fim botoes */
- 
+  }
+
+  .botao3 button {
+      margin: 5px;
+      width: 150px;
+      height: 52px;
+  }
+
+  /* Fim botoes */
+
 
   .fluid {
       text-align: center;
@@ -57,20 +52,24 @@
       width: 440px;
   }
 
-  
-  .Container llog {
-      width: 13rem;
-      margin-left: 6, 25rem;
-      background-color: #6ed4cc;
-      z-index: 1;
+
+  .llog {
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
   }
 
-  /* .col-3 {
+  /* Imagem dos card */
+  .m-2{
+    text-align: center;
+  }
+  .m-2 img {
       width: 250px;
       flex-direction: row;
       justify-content: center;
-  } */
+  }
 
+  /* area principal */
   .dark {
       background-color: #6ed4cc;
       align-items: center;
@@ -107,7 +106,6 @@
       justify-content: center;
   }
 
-
   .Container remedio img {
       width: 10.5rem;
   }
@@ -118,3 +116,4 @@
       justify-content: space-around;
       align-items: center;
   }
+  /* // */
