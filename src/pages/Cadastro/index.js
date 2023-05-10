@@ -3,6 +3,7 @@ import './estilo.css'
 
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 function Cadastro() {
 
@@ -10,27 +11,18 @@ function Cadastro() {
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
     const [sexo, setSexo] = useState('')
-
-    // const cpf = document.querySelector("#cpf");
-    // const [cpf, setCpf]= useState ('')
-
-    // cpf.addEventListener("blur", () => {
-    //     let value = cpf.value.replace(/^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/, "$1.$2.$3-$4");
-
-    //     cpf.value = 'value';
-    // });
+    const [cpf, setCpf] = useState('')
 
     function handleCadastro() {
-        alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n `)
+        alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n Cpf: ${cpf}`)
     }
 
-
-
+    
     return (
         <Container fluid>
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
             <div className="compra">
-                <form onSubmit={handleCadastro}>
+                <Form onSubmit={handleCadastro}>
                     <br />
                     <p> <label>Nome:</label>
                         <input
@@ -60,19 +52,16 @@ function Cadastro() {
                         </select></p>
 
                     <p>   <label>CPF:</label>
-                        {/* < input
+                        < input
                             type="number"
                             pattern="\d(3).\d(3).\d(3)-\d(2)"
                             // title="xxx.xxx.xxx-xx"
-                            placeholder="xxx.xxx.xxx-xx"
+                            placeholder="000.000.000-00"
                             value={cpf}
-                            onChange={(e) => querySelector(e.target.value)} /></p> */}
+                            onChange={(e) => setCpf(e.target.value)} /></p>
 
-
-                        {/* <input type='text' value='' id='cpf' /> */}
-                        </p>
-                        <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
-                </form>
+                    <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
+                </Form>
             </div>
         </Container>
     )

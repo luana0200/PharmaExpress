@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 import CarroselHome from '../../bootstrap/carroselHome.js'
 import '../../components/Header/header.css'
 
@@ -26,8 +25,9 @@ export default function Home() {
             <CarroselHome />
             <br />
 
-            <Row className='d-flex justify-content-center'>
-                <Card className='m-1' style={{ width: '19rem' }}>
+            <Row  className='d-flex justify-content-center'>
+
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
@@ -38,78 +38,78 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={batom} />
                     <Card.Body>
                         <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={esmaltevermelho} />
                     <Card.Body>
                         <Card.Title><h2>Esmalte Vermelho Sofisticado</h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={shampoo} />
                     <Card.Body>
                         <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
                         <Card.Title><h2>Máscara Para Cílios Super Up</h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
                     <Card.Body>
                         <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
                     <Card.Body>
                         <Card.Title><h2>La Victori Eau de Parfum 75ml</h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '19rem' }}>
+                <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <Card.Body>
                         <Card.Title><h2>Creme Facial 100 g </h2></Card.Title>
-                        <div className='Container llog'>
+                        <div className=' Container llog'>
                             <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -118,13 +118,12 @@ export default function Home() {
 
 
             <div className='fluid '>
-                <img src={visa12} alt="creme" />
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:19010-190| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3219, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h5><br />
-                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
+                <img src={visa12} alt="creme" /><br/>
+                <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3217, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h7><br />
+                <p> <h7>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h7> </p>
             </div>
-        </Container >
-
+        </Container>
     )
 }

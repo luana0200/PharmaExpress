@@ -1,113 +1,120 @@
   * {
-    margin: 0;
-    padding: 0;
-}  
+      margin: 0;
+      padding: 0;
+  }
 
-items-center{
-    align-items: center;
-    
-}
+  items-center {
+      align-items: center;
 
-h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: black;
-  font-size: 15px;
-    }
+  }
 
-.botao3 button {
-  margin: 5px;
-  width: 150px;
-  height: 52px;
-    }
+  h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+  }
 
-.Container button{
-    background-color:  lightseagreen;
-    cursor: pointer;
-    border: none;
-margin: 0px 5px;
-border-radius: 9px;
-justify-content: center;
-}
-    
-.Container Button a {
-    text-decoration: none;
-    color: #FFFFFF;
-    align-items: left;
-}
+  /* Incio Botoes */
 
-.botao2 button {
-    width: 330px;
-    height: 72px;
-}
+  .Container button {
+      background-color: lightseagreen;
+      cursor: pointer;
+      border: none;
+      margin: 0px 5px;
+      border-radius: 9px;
+  }
 
-.fluid {
+  .Container Button a {
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+
+  .botao2 button {
+      width: 330px;
+      height: 72px;
+  }
+
+  .botao3 button {
+      margin: 5px;
+      width: 150px;
+      height: 52px;
+  }
+
+  /* Fim botoes */
+
+
+  .fluid {
+      text-align: center;
+      background-color: rgb(228, 228, 228);
+  }
+
+  .fluid img {
+      width: 440px;
+  }
+
+
+  .llog {
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+  }
+
+  /* Imagem dos card */
+  .m-2{
     text-align: center;
-    background-color: rgb(228, 228, 228);
-}
+  }
+  .m-2 img {
+      width: 250px;
+      flex-direction: row;
+      justify-content: center;
+  }
 
-.fluid img {
-    width: 440px;
-}
+  /* area principal */
+  .dark {
+      background-color: #6ed4cc;
+      align-items: center;
+      text-decoration: none;
+      position: relative;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: relative;
+      width: 100%;
+  }
 
-.Container llog {
-    width: 13rem;
-    margin-left: 6, 25rem;
-    background-color:#6ed4cc ;
-    z-index: 1;
-}
+  .me-auto {
+      background-color: #6ed4cc;
+      align-items: center;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+  }
 
-.col-3{
-    width: 250px;
-    flex-direction: row;
-    justify-content: center;
-}
+  .cabecalho {
+      background-color: lightseagreen;
+      color: #FFFFFF;
+      width: 100%;
+      align-items: center;
+      justify-items: center;
+  }
 
-.dark {
-    background-color: #6ed4cc;
-    align-items: center;
-    text-decoration: none;
-    position:relative;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    width: 100%;
-}
+  .cabecalho h1 {
+      text-align: center;
+      font-size: 20px;
+  }
 
-.me-auto{
-    background-color: #6ed4cc;
-    align-items: center;
-    text-decoration: none;
-    position: relative;
-    width: 100%;
-}
+  /* importaçao img da page MEDICAMENTOS */
+  .Container remedio {
+      justify-content: center;
+  }
 
-.cabecalho{
-    background-color:lightseagreen;
-    color: #FFFFFF;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
+  .Container remedio img {
+      width: 10.5rem;
+  }
 
-.cabecalho h1{
-    text-align: center;
-    font-size: 20px;
-}
-
-.Card Img{
-
-    width: 6.25rem;
-} 
-
-.rmd img{
- width: 12.5rem;
- justify-items: center;
- padding: 1.875rem;
-    width: 100px;
-} 
-
-.compra{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
+  .compra {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  /* // */

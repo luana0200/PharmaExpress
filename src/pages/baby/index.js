@@ -34,8 +34,8 @@ export default function Baby() {
                     <br />
                     <Card.Img variant="top" width="220px" src={ShampooJonhson} alt="Shampoo" />
                     <Card.Body>
-                        <Card.Title><h2>Shampoo Jonhson baby 400 ml</h2></Card.Title>
-                        <div className='Container llog'>
+                        <Card.Title><h2>Shampoo Jonhson Baby 400 ml</h2></Card.Title>
+                        <div className='Container   llog'>
                             <Link to='/ShampooJonhson'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
@@ -102,7 +102,7 @@ export default function Baby() {
                     <br />
                     <Card.Img variant="top" width="220px" src={lenco} alt="Locao" />
                     <Card.Body>
-                        <Card.Title><h2>Lenço Umidecido  Pampers 48 unidade</h2></Card.Title>
+                        <Card.Title><h2>Lenço Umidecido  Pampers 48 un.</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Lenco2' ><Button variant="secondary">Detalhes</Button></Link>
                         </div>

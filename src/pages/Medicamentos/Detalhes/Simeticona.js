@@ -11,7 +11,7 @@ export default function Simeticona() {
         <Container >
         <Card className='m-2, p-2'>
             <Card.Img className='detail' variant="top"src={simeticona} alt="Simeticona" />
-            <h4>Simeticona 75mg/ml Sabor Morango Gotas 15ml Ems Genérico</h4><br />
+            <h4>Simeticona Sabor Morango Gotas 15ml Ems Genérico</h4><br />
 
             A Simeticona é indicada para pacientes com excesso de gases no aparelho digestivo.
             O acúmulo de gases no estômago e no intestino chama-se flatulência,

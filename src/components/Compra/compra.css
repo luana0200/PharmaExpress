@@ -1,6 +1,6 @@
 .compra{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 b{
@@ -22,3 +22,8 @@ justify-content: center;
   align-items: left;
 }
 
+@media screen and( max-width:550px) {
+  .comprar{
+    flex-direction: column;
+  }
+}

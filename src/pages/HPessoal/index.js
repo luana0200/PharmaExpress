@@ -1,4 +1,3 @@
-import './estilo.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
@@ -99,7 +98,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={pastadental} alt="pasta dental" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Pasta de Dente Oral-Bg</h2></Card.Title>
+                        <Card.Title><h2>Pasta de Dente Oral-B</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/PastaDental'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -111,7 +110,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={absorvente} alt="absorvente" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Absorvente 32 unidades</h2></Card.Title>  <br />
+                        <Card.Title><h2>Absorvente 32 unidades</h2></Card.Title> 
                         <div className='Container Container llog'>
                             <Link to='/Absorvente'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -123,7 +122,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <br />
                     <Card.Body>  <br />
-                        <Card.Title><h2>Creme Facial 100 g </h2></Card.Title>  <br />
+                        <Card.Title><h2>Creme Facial 100 g </h2></Card.Title> 
                         <div className='Container Container llog'>
                             <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -183,7 +182,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={listerine} alt="listerine" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Listerine 700 ml</h2></Card.Title>  <br />
+                        <Card.Title><h2>Listerine 700 ml</h2></Card.Title>  
                         <div className='Container llog'>
                             <Link to='/Listerine'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -195,7 +194,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={escovacarvao} alt="escova de dente" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Escova Dental Colgate 4 unidade</h2></Card.Title>
+                        <Card.Title><h2>Escova Dental 4 unidades </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/EscovaColgate'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -208,7 +207,7 @@ export default function HPessoal() {
                     <Card.Img variant="top" width="220px" src={escova} alt="escova de dente" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Escova Dental  2 unidade </h2></Card.Title>  <br />
+                        <Card.Title><h2>Escova Dental  2 unidades </h2></Card.Title>  
                         <div className='Container llog'>
                             <Link to='/EscovaDental'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
