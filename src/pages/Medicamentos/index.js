@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 import acetilcisteína from "./imagens/acetilcisteína.png"
 import allexofedrin from "./imagens/allexofedrin.png"
-import ambroxol from "./imagens/ambroxoll.png"
+import ambroxol from "./imagens/ambroxol.png"
 import carbocisteína from "./imagens/carbocisteína.png"
 import complexo from "./imagens/complexo.png"
 import condres from "./imagens/condres.png"
@@ -38,9 +38,10 @@ export default function Medicamentos() {
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={acetilcisteína} alt="Acetilcisteína" />
+                     <br/>
                     <Card.Body>
-                        <Card.Title><h2>Acetilcisteína 600mg EMS</h2></Card.Title>
-                        <br />
+                        <Card.Title><h2>Acetilcisteína Xarope 120ml EMS</h2></Card.Title>
+                     
                         <div className='Container llog'>
                             <Link to='/Acetilcisteína'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -60,12 +61,14 @@ export default function Medicamentos() {
                 </Card>
 
                 <Card className='m-1' style={{ width: '17rem' }}>
-                 
-                    <div className='rmd'>
-                    <Card.Img variant="top" width="50px" src={ambroxol} alt="Ambroxol" />
+                <br/><br/>
+                    <div className='remedio'> 
+                        <Card.Img variant="top" width="220px" src={ambroxol} alt="Ambroxol" />
                     </div>
                     <Card.Body>
+                        <br/><br/>
                         <Card.Title><h2>Ambroxol  Xarope 120ml EMS</h2></Card.Title>
+                        <br/>
                         <div className='Container llog'>
                             <Link to='/Ambroxol'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -186,7 +189,7 @@ export default function Medicamentos() {
                     <Card.Img variant="top" width="220px" src={simeticona} alt="Simeticona" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Simeticona 17ml EMS</h2></Card.Title><p/>
+                        <Card.Title><h2>Simeticona 17ml EMS</h2></Card.Title><p />
                         <div className='Container llog'>
                             <Link to='/Simeticona'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -210,7 +213,7 @@ export default function Medicamentos() {
                     <Card.Img variant="top" width="220px" src={suplevit} alt="Suplevit" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p/>
+                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p />
                         <div className='Container llog'>
                             <Link to='/Suplevit'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -278,7 +281,7 @@ export default function Medicamentos() {
                         </div>
                     </Card.Body>
                 </Card>
-                </Row>
+            </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" /> <br />
                 <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
