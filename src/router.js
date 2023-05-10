@@ -17,7 +17,7 @@ import EscovaDental from './pages/HPessoal/Detalhes/EscovaDental'
 import Listerine from './pages/HPessoal/Detalhes/Listerine'
 import PastaDental from './pages/HPessoal/Detalhes/PastaDental'
 import Pasta from './pages/HPessoal/Detalhes/PastaDente'
-import ProtetorNivea from './pages/HPessoal/Detalhes/Protetor'
+import ProtetorNivea from './pages/HPessoal/Detalhes/ProtetorNivea'
 import SaboneteLiq from './pages/HPessoal/Detalhes/SaboneteLiq'
 import SaboneteProtex from './pages/HPessoal/Detalhes/SaboneteProtex'
 import SaboneteDove from './pages/HPessoal/Detalhes/SaboneteDove'
@@ -101,7 +101,7 @@ export default function Rotas() {
                 <Route path='/Listerine' element={<Listerine />} />
                 <Route path='/Pastadental' element={<PastaDental />} />
                 <Route path='/Pastadente' element={<Pasta />} />
-                <Route path='/Protetor' element={<ProtetorNivea />} />
+                <Route path='/ProtetorNivea' element={<ProtetorNivea />} />
                 <Route path='/SaboneteLiq' element={<SaboneteLiq />} />
                 <Route path='/SaboneteDove' element={<SaboneteDove />} />
                 <Route path='/SaboneteProtex' element={<SaboneteProtex />} />
