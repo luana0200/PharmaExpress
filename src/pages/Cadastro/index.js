@@ -71,8 +71,10 @@ function Cadastro() {
                             placeholder="Digite sua Senha"
                         />
                     </Form.Group>
-                    <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
-                </div>
+                  
+                    <p>   <Button variant='secondary' type="submit">Enviar</Button></p> 
+                    </div>
+              
             </Form>
         </Container>
     )
