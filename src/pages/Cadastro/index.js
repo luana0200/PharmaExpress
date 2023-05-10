@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import './estilo.css'
+import { IMaskInput } from 'react-imask';
+import Form from 'react-bootstrap/Form';
+import Container from "react-bootstrap/esm/Container";
+import Button from "react-bootstrap/esm/Button";
 
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
 
 function Cadastro() {
 
@@ -17,52 +18,62 @@ function Cadastro() {
         alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n Cpf: ${cpf}`)
     }
 
-    
+
     return (
         <Container fluid>
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
-            <div className="compra">
-                <Form onSubmit={handleCadastro}>
+            <Form onSubmit={handleCadastro}>
+                <div className="compra">
                     <br />
-                    <p> <label>Nome:</label>
-                        <input
-                            type="text"
-                            value={nome}
-                            onChange={(e) => setNome(e.target.value)} /></p>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Nome</Form.Label>
+                        <Form.Control
+                            as={IMaskInput}
 
-                    <p> <label>Email:</label>
-                        <input
-                            type="text"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)} /></p>
+                            placeholder="Digite seu nome"
+                        />
+                    </Form.Group><br />
 
-                    <p>   <label>Senha</label>
-                        < input
+
+                    <Form.Group className="mb-3">
+                        <Form.Label>Genêro</Form.Label>
+                        <Form.Control
+                            as={IMaskInput}
+                            mask="00/00/0000"
+                            placeholder="data de nascimento"
+                        />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3">
+                        <Form.Label>CPF</Form.Label>
+                        <Form.Control
+                            as={IMaskInput}
+                            mask="000.000.000-00"
+                            placeholder="Digite se CPF"
+                        />
+                    </Form.Group>
+                </div>
+                
+                <div className="comprar">
+                    <Form.Group className="mb-3">
+                        <Form.Label>E-mail</Form.Label>
+                        <Form.Control
+                            as={IMaskInput}
+
+                            placeholder="Digite seu E-mail"
+                        />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3">
+                        <Form.Label>Senha</Form.Label>
+                        <Form.Control
                             type="password"
-                            value={senha}
-                            onChange={(e) => setSenha(e.target.value)} /></p>
-
-                    <p> <label>Genêro</label>
-                        <select
-                            value={sexo}
-                            onChange={(e) => setSexo(e.target.value)} >
-                            <option value=""></option>
-                            <option value="femenino">Feminino</option>
-                            <option value="masculino">Masculino</option>
-                        </select></p>
-
-                    <p>   <label>CPF:</label>
-                        < input
-                            type="number"
-                            pattern="\d(3).\d(3).\d(3)-\d(2)"
-                            // title="xxx.xxx.xxx-xx"
-                            placeholder="000.000.000-00"
-                            value={cpf}
-                            onChange={(e) => setCpf(e.target.value)} /></p>
-
+                            placeholder="Digite sua Senha"
+                        />
+                    </Form.Group>
                     <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
-                </Form>
-            </div>
+                </div>
+            </Form>
         </Container>
     )
 }
