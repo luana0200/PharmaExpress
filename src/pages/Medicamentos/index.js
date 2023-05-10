@@ -35,20 +35,19 @@ export default function Medicamentos() {
             <div className='cabecalho'><h1>MEDICAMENTOS</h1></div>
             <Row className='d-flex justify-content-center'>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={acetilcisteína} alt="Acetilcisteína" />
                     <Card.Body>
                         <Card.Title><h2>Acetilcisteína 600mg EMS</h2></Card.Title>
-                        <br />
                         <div className='Container llog'>
                             <Link to='/Acetilcisteína'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-              
-                <Card className='m-1' style={{ width: '18rem' }}>
+
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={emsgrip} alt="Emsgrip" />
                     <Card.Body>
@@ -60,11 +59,10 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
-                 
-                <div className='remedio'>
-                    <Card.Img className='detail' variant="top" src={ambroxol} alt="Ambroxol" />
-                </div>
+                <Card className='m-2' style={{ width: '18rem' }}>
+                    <div className='remedio'>
+                        <Card.Img className='detail' variant="top" src={ambroxol} alt="Ambroxol" />
+                    </div>
                     <Card.Body>
                         <Card.Title><h2>Ambroxol  Xarope 120ml EMS</h2></Card.Title>
                         <div className='Container llog'>
@@ -73,7 +71,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={carbocisteína} alt="Carbocisteína" />
                     <Card.Body>
@@ -85,19 +83,20 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={complexo} alt="Complexo b" />
+                    <Card.Img variant="top" width="220px" src={fendizoato} alt="Fendizoato" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Complexo B 100 Comprimidos EMS</h2></Card.Title>
+                        <Card.Title><h2>Fendizoato Xarope 120ml EMS</h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/Complexob'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/Fendizoato'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={condres} alt="Condres" />
                     <Card.Body>
@@ -109,7 +108,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={doricin} alt="Doricin" />
                     <Card.Body>
@@ -121,7 +120,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={declofenaco} alt="Diclofenaco" />
                     <Card.Body>
@@ -133,7 +132,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={desloratadina} alt="Desloratadina" />
                     <Card.Body>
@@ -145,19 +144,19 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={simeticona} alt="Simeticona" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Simeticona Sabor Morango Gotas 15ml EMS</h2></Card.Title><p/>
+                        <Card.Title><h2>Simeticona Sabor Morango Gotas 15ml EMS</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Simeticona'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
-                
-                <Card className='m-1' style={{ width: '18rem' }}>
+
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={dipirona} alt="Dipirona" />
                     <br />
@@ -169,7 +168,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={cystex} alt="Cystex" />
                     <Card.Body>
@@ -182,7 +181,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={dorspan} alt="Dorspan" />
                     <Card.Body>
@@ -194,9 +193,8 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-               --
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={gemax} alt="Gelmax" />
                     <Card.Body>
@@ -208,33 +206,31 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={suplevit} alt="Suplevit" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p/>
+                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p />
                         <div className='Container llog'>
                             <Link to='/Suplevit'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={fendizoato} alt="Fendizoato" />
+                    <Card.Img variant="top" width="220px" src={complexo} alt="Complexo b" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Fendizoato Xarope 120ml EMS</h2></Card.Title>
+                        <Card.Title><h2>Complexo B 100 Comprimidos EMS</h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/Fendizoato'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/Complexob'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={allexofedrin} alt="Allexofredrin" />
                     <Card.Body>
@@ -246,7 +242,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={paracetamol} alt="Paracetamol" />
                     <Card.Body>
@@ -259,7 +255,7 @@ export default function Medicamentos() {
                 </Card>
 
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sominex} alt="Sominex" />
                     <Card.Body>
@@ -271,7 +267,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '18rem' }}>
+                <Card className='m-2' style={{ width: '18rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={ibuprofeno} alt="Ibuprofeno" />
                     <Card.Body>
@@ -282,7 +278,7 @@ export default function Medicamentos() {
                         </div>
                     </Card.Body>
                 </Card>
-                </Row>
+            </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" /> <br />
                 <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:18010-180| Horário de Atendimento: De Segunda à Domingo
