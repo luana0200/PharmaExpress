@@ -86,7 +86,7 @@ import Compra from './components/Compra/Compra'
 
 export default function Rotas() {
     return (
-        <BrowserRouter >
+        <BrowserRouter>
             <Header />
             <Routes>
                 
