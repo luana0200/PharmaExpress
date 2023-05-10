@@ -20,12 +20,13 @@ import creme from '../HPessoal/imagens H/creme facial.png'
 import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Home() {
     return (
-        <Container>
+        <Container fluid>
             <br />
             <CarroselHome />
             <br />
 
-            <Row>
+            <Row  className='d-flex justify-content-center'>
+
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
@@ -117,13 +118,12 @@ export default function Home() {
 
 
             <div className='fluid '>
-                <img src={visa12} alt="creme" />
-                <h5>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:20010-200| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6985 | SAC – Serviço de Atendimento ao Cliente: 6985-3220, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h5><br />
-                <p> <h5>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h5> </p>
+                <img src={visa12} alt="creme" /><br/>
+                <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3217, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h7><br />
+                <p> <h7>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h7> </p>
             </div>
-        </Container >
-
+        </Container>
     )
 }

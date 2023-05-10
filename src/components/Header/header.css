@@ -98,12 +98,15 @@ justify-content: center;
     width: 6.25rem;
 } 
 
-.rmd img{
- width: 12.5rem;
- justify-items: center;
- padding: 1.875rem;
-    width: 100px;
-} 
+/* importaçao img da page MEDICAMENTOS */
+.Container remedio{
+    justify-content: center;
+}
+
+
+.Container remedio img {
+    width: 10.5rem;
+}
 
 .compra{
     display: flex;

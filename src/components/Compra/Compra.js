@@ -23,7 +23,7 @@ export default function Compra() {
 
                     <label>Senha</label>
                     <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} /> <br />
-                    <Link to='/Carrinho'><Button variant="secondary">Login</Button> </Link>
+                    <br /><Link to='/Carrinho'><Button variant="secondary">Login</Button> </Link>
                 </div>
                 <div className='comprar'>
                     <b>Ainda não sou cliente</b>
