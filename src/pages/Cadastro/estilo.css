@@ -6,25 +6,31 @@ input[type="number"]::-webkit-outer-spin-button,
 } 
 
 .compra{
-    display: flex;
+  display: flex;
+  flex-direction: row;
+}
+
+b{
+    font-size: 35px;
+}
+
+.compra Button{
+  background-color:  lightseagreen;
+  cursor: pointer;
+  border: none;
+margin: 0px 5px;
+border-radius: 9px;
+justify-content: center;
+}
+  
+.compra Button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  align-items: left;
+}
+
+@media screen and( max-width:550px) {
+  .comprar{
     flex-direction: column;
   }
-  
-  b{
-      font-size: 35px;
-  }
-  
-  .compra Button{
-    background-color:  lightseagreen;
-    cursor: pointer;
-    border: none;
-  margin: 0px 5px;
-  border-radius: 9px;
-  justify-content: center;
-  }
-    
-  .compra Button a {
-    text-decoration: none;
-    color: #FFFFFF;
-    align-items: left;
-  }
+}
