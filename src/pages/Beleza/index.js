@@ -74,6 +74,7 @@ export default function Beleza() {
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={batom} />
+                    <br/>
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
@@ -86,9 +87,10 @@ export default function Beleza() {
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={delineador} alt="Deliniador" />
+                    <br/>
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Deliniador Líquido Preto Essencial </h2></Card.Title>
+                        <Card.Title><h2>Deliniador Líquido </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Deliniador'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -96,11 +98,11 @@ export default function Beleza() {
                 </Card>
 
                 <Card className='m-1' style={{ width: '17rem' }}>
-                    <br />
+                    <br /><br/>
                     <Card.Img variant="top" width="220px" src={paleta} alt="Paleta" />
                     <Card.Body>
-                        <br />
-                        <Card.Title><h2>Palette de Sombras Crystal Ninna Secrets 16,7g</h2></Card.Title>
+                        <br /><br/><br/>
+                        <Card.Title><h2>Palette de Sombras Crystal</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Paleta'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -123,8 +125,8 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={perfume1} alt="Perfume" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Desodorante Colônia 97ml</h2></Card.Title>
-                        <br />
+                        <Card.Title><h2>Desodorante Colônia </h2></Card.Title>
+                        
                         <div className='Container llog'>
                             <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -136,7 +138,7 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={perfume2} alt="Perfume" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Pulse Desodorante Côlonia 100ml</h2></Card.Title>
+                        <Card.Title><h2>Pulse Desodorante Côlonia </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Perfume2'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -148,7 +150,7 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>La Victori Eau de Parfum 77ml</h2></Card.Title>
+                        <Card.Title><h2>La Victorie Eau de Parfum </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -160,7 +162,7 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={perfume4} alt="Perfume" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Magnific Audaz Eau de Parfum 77ml</h2></Card.Title>
+                        <Card.Title><h2>Magnific Audaz Eau de Parfum </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Perfume4'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -172,7 +174,7 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={protetorsolar} alt="Protetor Solar" />
                     <Card.Body>
                         <br />
-                        <Card.Title><h2>Protetor Solar Facia FPS 70 70g</h2></Card.Title>
+                        <Card.Title><h2>Protetor Solar Facial FPS 70 </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Protetor'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -205,7 +207,7 @@ export default function Beleza() {
 
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={demaquilante} alt="demaquilante" />
+                    <Card.Img variant="top" width="150px" src={demaquilante} alt="demaquilante" />
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Demaquilante 100ml</h2></Card.Title>

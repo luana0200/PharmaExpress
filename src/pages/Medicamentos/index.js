@@ -223,10 +223,10 @@ export default function Medicamentos() {
                 </Card>
 
                 <Card className='m-1' style={{ width: '17rem' }}>
-                    <br />
+                    <br /><br/><br/>
                     <Card.Img variant="top" width="220px" src={ibuprofeno} alt="Ibuprofeno" />
                     <Card.Body>
-                        <br />
+                        <br /><br/>
                         <Card.Title><h2>Ibuprofeno 200mg 20 Comprimidos EMS</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Ibuprofeno'><Button variant="secondary">Detalhes</Button></Link>

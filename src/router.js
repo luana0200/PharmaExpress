@@ -56,7 +56,7 @@ import Perfume1 from './pages/Beleza/Detalhes/Perfume1'
 import Perfume2 from './pages/Beleza/Detalhes/Perfume2'
 import Perfume3 from './pages/Beleza/Detalhes/Perfume3'
 import Perfume4 from './pages/Beleza/Detalhes/Perfume4'
-import Protetor from './pages/Beleza/Detalhes/Protetor'
+import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
 import Rimel from './pages/Beleza/Detalhes/Rimel'
 import Shampooacai from './pages/Beleza/Detalhes/Shampooacai'
 import Shampookarite from './pages/Beleza/Detalhes/Shampookarite'
@@ -148,7 +148,7 @@ export default function Rotas() {
                 <Route path='/Perfume2' element={<Perfume2 />} />
                 <Route path='/Perfume3' element={<Perfume3 />} />
                 <Route path='/Perfume4' element={<Perfume4 />} />
-                <Route path='/Protetor' element={<Protetor />} />
+                <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
                 <Route path='/Rimel' element={<Rimel />} />
                 <Route path='/Shampooacai' element={<Shampooacai />} />
                 <Route path='/Shampookarite' element={<Shampookarite />} />

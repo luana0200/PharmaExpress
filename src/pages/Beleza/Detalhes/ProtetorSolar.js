@@ -1,5 +1,5 @@
 import './bela.css'
-import protetorsolar from '../imagens/protetorsolar.png'
+import Protetorsolar from '../imagens/protetorsolar.png'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
@@ -10,7 +10,7 @@ export default function Perfume() {
     return (
         <Container >
         <Card className='m-2, p-2'>
-            <Card.Img className='detail' variant="top" src={protetorsolar} alt="ProtetorSolar" />
+            <Card.Img className='detail' variant="top" src={Protetorsolar} alt="ProtetorSolar" />
             <h4>Protetor Solar Facial FPS 50 50g</h4>
 
             - Hidrata profundamente;
