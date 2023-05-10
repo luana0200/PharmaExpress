@@ -3,6 +3,7 @@ import './estilo.css'
 
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 function Cadastro() {
 
@@ -21,7 +22,7 @@ function Cadastro() {
         <Container fluid>
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
             <div className="compra">
-                <form onSubmit={handleCadastro}>
+                <Form onSubmit={handleCadastro}>
                     <br />
                     <p> <label>Nome:</label>
                         <input
@@ -60,7 +61,7 @@ function Cadastro() {
                             onChange={(e) => setCpf(e.target.value)} /></p>
 
                     <p>   <Button variant='secondary' type="submit">Enviar</Button></p>
-                </form>
+                </Form>
             </div>
         </Container>
     )
