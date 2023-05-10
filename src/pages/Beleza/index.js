@@ -207,7 +207,7 @@ export default function Beleza() {
 
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={demaquilante} alt="demaquilante" />
+                    <Card.Img variant="top" width="150px" src={demaquilante} alt="demaquilante" />
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Demaquilante 100ml</h2></Card.Title>
