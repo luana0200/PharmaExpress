@@ -14,7 +14,7 @@ import pasta from "./imagens H/pasta de dente C.jpeg"
 import pastadental from "./imagens H/pasta dental.png"
 import absorvente from "./imagens H/absorvente.webp"
 import creme from "./imagens H/creme facial.png"
-import protetor from "./imagens H/protetor.webp"
+import protetor from "./imagens H/nivea.webp"
 import escovacarvao from "./imagens H/escova colgate carvao.jpg"
 import listerine from "./imagens H/listerine.webp"
 import escova from './imagens H/escova de dente.webp'
@@ -131,12 +131,12 @@ export default function HPessoal() {
 
                 <Card className='m-1' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={protetor} alt="absorvente" />
+                    <Card.Img variant="top" width="220px" src={protetor} alt="protetor nivea" />
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Protetor Solar Nivea 200 ml</h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/Protetor'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/ProtetorNivea'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

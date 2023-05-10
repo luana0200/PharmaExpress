@@ -176,7 +176,7 @@ export default function Beleza() {
                         <br />
                         <Card.Title><h2>Protetor Solar Facial FPS 70 </h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/Protetor'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/ProtetorSolar'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

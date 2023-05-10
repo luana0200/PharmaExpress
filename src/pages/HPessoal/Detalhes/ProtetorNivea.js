@@ -1,5 +1,5 @@
 import './HP.css'
-import protetor from '../imagens H/protetor.webp'
+import nivea from '../imagens H/nivea.webp'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
@@ -11,7 +11,7 @@ export default function Protetor(){
        
         <Container >
             <Card className='m-2, p-2'>
-                <Card.Img className='detail' variant="top"src={protetor} alt="absorvente" />
+                <Card.Img className='detail' variant="top"src={nivea} alt="protetor nivea" />
 
 
             <h4> Protetor Solar Nivea 200 ml</h4><br/>
