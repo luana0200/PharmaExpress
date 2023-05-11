@@ -8,17 +8,16 @@ import Button from "react-bootstrap/esm/Button";
 
 function Cadastro() {
 
-    const [nome, setNome] = useState('')
-    const [email, setEmail] = useState('')
-    const [senha, setSenha] = useState('')
-    const [sexo, setSexo] = useState('')
-    const [cpf, setCpf] = useState('')
+    const [nome, ] = useState('')
+    const [email, ] = useState('')
+    const [senha,] = useState('')
+    const [sexo, ] = useState('')
+    const [cpf, ] = useState('')
 
     function handleCadastro() {
-        alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n Cpf: ${cpf}`)
+        alert(`CADASTRO FEITO COM SUCESSO`)
     }
 
-    
 
 
     return (
