@@ -10,15 +10,14 @@
   }
 
   /* Incio Botoes */
-
   .Container button {
       background-color: lightseagreen;
       cursor: pointer;
       border: none;
-      margin: 0px 5px;
+      margin: px 5px;
+      padding: auto;
       border-radius: 9px;
   }
-
   .Container Button a {
       text-decoration: none;
       color: #FFFFFF;
@@ -30,7 +29,6 @@
       text-align: center;
       background-color: rgb(228, 228, 228);
   }
-
   .fluid img {
       width: 20.5rem;
   }
@@ -60,20 +58,15 @@
       text-decoration: none;
       position: relative;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      position: relative;
-      width: 100%;
       text-align: center;
-      display: flex;
-      justify-content: center;
   }
-
-   /* .me-auto {
-      background-color: lightseagreen;
-      cursor: pointer;
-      border: none;
-      margin: 0px 5px;
-      border-radius: 9px;
-  }  */
+  .dark img{
+    width: 17rem;
+  }
+.center{
+    margin-left: 550px;
+    display: flex;
+}
 
   /* Faixa com os nomes das pastas */
   .cabecalho {
@@ -83,7 +76,6 @@
       align-items: center;
       justify-items: center;
   }
-
   .cabecalho h1 {
       text-align: center;
       font-size: 20px;
@@ -93,18 +85,15 @@
   .Container remedio {
       justify-content: center;
   }
-
   .Container remedio img {
       width: 10.5rem;
   }
-
   .compra {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
   }
-  /* // */
 
   /* cadastro */
   .mb-3{

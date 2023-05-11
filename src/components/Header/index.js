@@ -1,4 +1,5 @@
 import './header.css'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
@@ -12,9 +13,10 @@ export default function Header() {
         <Container fluid>
             <Navbar expand="xxl" className='nave'>
                 <Container fluid className='dark'>
-                    <img src={logo} alt='logo' />
-                    <Navbar.Toggle  aria-controls="basic-navbar-nav" id='Row' />
+                    <Link to='/'><img src={logo} alt='logo' /></Link>
+                    <Navbar.Toggle  aria-controls="basic-navbar-nav" id='Row'  />
                     <Navbar.Collapse id="basic-navbar-nav">
+                        <div className='center'>
                         <Nav className="Container button" >
                             <Nav.Link href="/"><Button variant="secondary">🏠 </Button></Nav.Link>
                             <Nav.Link href="/Baby"><Button variant="secondary" >Baby</Button ></Nav.Link>
@@ -24,6 +26,7 @@ export default function Header() {
                             <Nav.Link href="/Cadastro"><Button variant="secondary" >Cadastro</Button ></Nav.Link>
                             <Nav.Link href="/Carrinho"><Button variant="secondary">🛒 </Button></Nav.Link>
                         </Nav>
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
