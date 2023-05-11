@@ -14,16 +14,16 @@ import paleta from "./imagens/paleta.png"
 import rimel from "./imagens/rimel.png"
 import perfume1 from "./imagens/perfume1.png"
 import perfume2 from "./imagens/perfume2.png"
-import hidratante from "./imagens/hidratante.png"
 import perfume3 from "./imagens/perfume3.png"
 import perfume4 from "./imagens/perfume4.png"
+import hidratante from './imagens/Hidratante2.png'
 import protetorsolar from "./imagens/protetorsolar.png"
 import gelsecativo from "./imagens/gelsecativo.png"
-import demaquilante from "./imagens/demaquilante.png"
-import esfoliante from "./imagens/esfoliante.png"
-import shampoomorango from "./imagens/shampoomorango.png"
-import shampooacai from "./imagens/shampooacai.png"
-import shampookarite from "./imagens/shampookarite.png"
+import demaquilante from "./imagens/Demaquilante2.png"
+import esfoliante from "./imagens/Esfoliante2.png"
+import shampoomorango from "./imagens/shampoomorango2.png"
+import shampooacai from "./imagens/shampooacai2.png"
+import shampookarite from "./imagens/shampookarite2.png"
 import esmaltepreto from "./imagens/esmaltepreto.png"
 import esmaltevermelho from "./imagens/esmaltevermelho.png"
 import esmaltebranco from "./imagens/esmaltebranco.png"
@@ -41,7 +41,6 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
                         <br />
-                        <br />
                         <Card.Title><h2>Base Líquida Ultra Matte</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
@@ -54,7 +53,6 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={batom} />
                     <br/>
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
@@ -67,7 +65,6 @@ export default function Beleza() {
                     <Card.Img variant="top" width="220px" src={delineador} alt="Deliniador" />
                     <br/>
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Deliniador Líquido </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Deliniador'><Button variant="secondary">Detalhes</Button></Link>
@@ -76,10 +73,10 @@ export default function Beleza() {
                 </Card>
 
                 <Card className='m-2' style={{ width: '17rem' }}>
-                    <br /><br/>
+                    <br />
                     <Card.Img variant="top" width="220px" src={paleta} alt="Paleta" />
+                        <br />
                     <Card.Body>
-                        <br /><br/><br/>
                         <Card.Title><h2>Palette de Sombras Crystal</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Paleta'><Button variant="secondary">Detalhes</Button></Link>

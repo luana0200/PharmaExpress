@@ -1,5 +1,5 @@
 import './bela.css'
-import shampoomorango from '../imagens/shampoomorango.png'
+import shampoomorango from '../imagens/shampoomorango2.png'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

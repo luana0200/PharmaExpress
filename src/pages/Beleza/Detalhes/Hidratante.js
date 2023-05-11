@@ -1,5 +1,5 @@
 import './bela.css'
-import hidratante from '../imagens/hidratante.png'
+import hidratante from '../imagens/Hidratante2.png'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
