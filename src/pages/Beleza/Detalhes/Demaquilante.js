@@ -11,7 +11,7 @@ export default function Demaquilante() {
         <Container >
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={demaquilante} alt="Demaquilante" />
-                <h4>Gel Secativo Pele com AcneAção Rápida 15g</h4>
+                <h4>Demaquilante Cleansing Oil 100ml</h4>
 
                 O Cleansing Oil de Niina Skin é um demaquilante não comedogênico inspirado na nossa rainha
                 a maquiagem com Óleo de Jojoba e Óleo de Rosa Mosqueta. Essa fórmula inovadora especialmente desenvolvida:
