@@ -13,9 +13,9 @@ export default function Header() {
             <Navbar expand="xxl" className='nave'>
                 <Container fluid className='dark'>
                     <img src={logo} alt='logo' />
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" id='Row' />
+                    <Navbar.Toggle  aria-controls="basic-navbar-nav" id='Row' />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="Container button">
+                        <Nav className="Container button" >
                             <Nav.Link href="/"><Button variant="secondary">🏠 </Button></Nav.Link>
                             <Nav.Link href="/Baby"><Button variant="secondary" >Baby</Button ></Nav.Link>
                             <Nav.Link href="/HPessoal"><Button variant="secondary" >Higiene Pessoal</Button ></Nav.Link>
