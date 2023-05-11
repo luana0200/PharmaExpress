@@ -65,9 +65,10 @@
     text-align: center;
   }
   .m-2 img {
-      width: 250px;
+      width: 250´x;
       flex-direction: row;
       justify-content: center;
+      border: 1px solid red;
   }
 
   /* area principal */

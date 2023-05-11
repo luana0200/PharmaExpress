@@ -1,5 +1,5 @@
 import './bela.css'
-import demaquilante from '../imagens/demaquilante.png'
+import demaquilante from '../imagens/demaquilante.jpg'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
