@@ -18,6 +18,8 @@ function Cadastro() {
         alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha} \n Sexo: ${sexo} \n Cpf: ${cpf}`)
     }
 
+    
+
 
     return (
         <Container fluid>
@@ -71,7 +73,7 @@ function Cadastro() {
                             placeholder="Digite sua Senha"
                         />
                     </Form.Group>
-                  
+                  <div className="llog"></div>
                     <p>   <Button variant='secondary' type="submit">Enviar</Button></p> 
                     </div>
               

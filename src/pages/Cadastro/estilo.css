@@ -14,7 +14,7 @@ b{
     font-size: 35px;
 }
 
-.compra Button{
+.comprar Button{
   background-color:  lightseagreen;
   cursor: pointer;
   border: none;
@@ -34,3 +34,10 @@ justify-content: center;
     flex-direction: column;
   }
 }
+
+.mb-3{
+    width: 50%;
+    padding: 5px;
+
+}
+
