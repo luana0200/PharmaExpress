@@ -32,48 +32,43 @@ export default function HPessoal() {
              <div className='cabecalho'><h1>HIGIENE PESSOAL</h1></div>
              <Row  className='d-flex justify-content-center'>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={desoF} alt="desodorante" />
                     <Card.Body>
-                        <br />
-                        <Card.Title><h2>Desodorante Rexona Fem 200 ml</h2></Card.Title>
+                        <Card.Title><h2>Desodorante Rexona 200 ml</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/DesoF'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={deso} alt="deso M" />
                     <Card.Body>
-                        <br />
-                        <Card.Title><h2> Desodorante Rexona Masc 200 ml </h2></Card.Title>
+                        <Card.Title><h2> Desodorante Rexona 200 ml </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/DesoM'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={shampoo} alt="shampoo" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Shampoo Pantene 470 ml</h2></Card.Title>
-                        <br />
                         <div className='Container llog'>
                             <Link to='/Shampoo'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={condicionador} alt="condicionador" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Condicionador Pantene 400 ml</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Condicionador'><Button variant="secondary">Detalhes</Button></Link>
@@ -81,11 +76,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={pasta} alt="pasta" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Pasta de Dente Colgate 90 g</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Pasta de Dente'><Button variant="secondary">Detalhes</Button></Link>
@@ -93,11 +87,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={pastadental} alt="pasta dental" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Pasta de Dente Oral-B</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/PastaDental'><Button variant="secondary">Detalhes</Button></Link>
@@ -105,11 +98,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={absorvente} alt="absorvente" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Absorvente 32 unidades</h2></Card.Title> 
                         <div className='Container Container llog'>
                             <Link to='/Absorvente'><Button variant="secondary">Detalhes</Button></Link>
@@ -117,11 +109,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
-                    <br />
-                    <Card.Body>  <br />
+                    <Card.Body> 
                         <Card.Title><h2>Creme Facial 100 g </h2></Card.Title> 
                         <div className='Container Container llog'>
                             <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
@@ -129,11 +120,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={protetor} alt="protetor nivea" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Protetor Solar Nivea 200 ml</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/ProtetorNivea'><Button variant="secondary">Detalhes</Button></Link>
@@ -141,11 +131,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sabonetedove} alt="sabonete dove" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Sabonete Dove 87 g</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/SaboneteDove'><Button variant="secondary">Detalhes</Button></Link>
@@ -153,10 +142,9 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
-                    <br />
                     <Card.Body>
                         <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
                         <div className='Container llog'>
@@ -165,11 +153,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sabonete} alt="sabonete" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Sabonete Protex em Barra 87 g</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/SaboneteProtex'><Button variant="secondary">Detalhes</Button></Link>
@@ -177,11 +164,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={listerine} alt="listerine" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Listerine 700 ml</h2></Card.Title>  
                         <div className='Container llog'>
                             <Link to='/Listerine'><Button variant="secondary">Detalhes</Button></Link>
@@ -189,11 +175,10 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={escovacarvao} alt="escova de dente" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Escova Dental 4 unidades </h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/EscovaColgate'><Button variant="secondary">Detalhes</Button></Link>
@@ -202,11 +187,10 @@ export default function HPessoal() {
                 </Card>
 
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={escova} alt="escova de dente" />
                     <Card.Body>
-                        <br />
                         <Card.Title><h2>Escova Dental  2 unidades </h2></Card.Title>  
                         <div className='Container llog'>
                             <Link to='/EscovaDental'><Button variant="secondary">Detalhes</Button></Link>

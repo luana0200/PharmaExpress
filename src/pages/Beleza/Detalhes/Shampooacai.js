@@ -1,5 +1,5 @@
 import './bela.css'
-import shampooacai from '../imagens/shampooacai.png'
+import shampooacai from '../imagens/shampooacai2.png'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

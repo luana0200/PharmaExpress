@@ -24,7 +24,7 @@ export default function Ambroxol() {
                     R$ 15,69
                 </h1>
                 <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+            <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container>
