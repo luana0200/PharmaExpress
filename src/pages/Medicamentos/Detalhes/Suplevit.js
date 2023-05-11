@@ -21,7 +21,7 @@ export default function Suplevit() {
                 R$ 25,90
             </h1> <br />
             <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container>

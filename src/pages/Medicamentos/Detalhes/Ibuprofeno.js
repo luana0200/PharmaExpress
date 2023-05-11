@@ -23,7 +23,7 @@ export default function Ibuprofeno() {
             </h1> <br />
 
             <div className='Container llog'>
-                    <Link to='/Compra'> <Button variant="secondary">Detalhes</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container>
