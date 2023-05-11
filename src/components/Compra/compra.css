@@ -28,18 +28,20 @@ justify-content: center;
   }
 }
 
+/* parte da compra */
+
 .comprinha{
   width: 50%;
-  margin-right: -250px
+  margin: 3%;
 }
 
 .comprando{
   display: table;
   margin: 0 auto;
- 
+ width: 100%;
 }
 .cadastrando{
-  display: flex;
+display: table-cell;
 flex-direction: column;
-margin-left: 350px;
+text-align: right;
 }
