@@ -61,7 +61,7 @@ function Cadastro() {
                     <Form.Label>E-mail</Form.Label>
                         <Form.Control
                             as={IMaskInput}
-                            mask="00/00/0000"
+                            
                             placeholder="Digite seu E-mail"
                         />
                     </Form.Group>
