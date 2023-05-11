@@ -22,7 +22,7 @@ export default function Fralda() {
                 <h1>
                     R$ 31,90
                 </h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>

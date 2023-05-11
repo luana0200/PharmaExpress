@@ -19,7 +19,7 @@ export default function Shampoo() {
             <h1>
                 R$ 21,99
             </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

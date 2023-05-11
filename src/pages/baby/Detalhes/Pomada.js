@@ -20,7 +20,7 @@ export default function Pomada() {
                 <h1>
                     R$ 39,90
                 </h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>

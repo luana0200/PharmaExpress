@@ -13,7 +13,7 @@ export default function EscovaDental(){
             <h4> Escova Dental 2 unidades </h4>
 
             <h1>  R$ 13,50 </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

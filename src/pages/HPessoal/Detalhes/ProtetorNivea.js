@@ -24,7 +24,7 @@ export default function Protetor(){
             <h1>
                 R$ 45,90
             </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

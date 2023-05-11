@@ -18,7 +18,7 @@ export default function Doricin() {
                 R$ 13,29
             </h1> <br />
 
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

@@ -18,7 +18,7 @@ export default function Listerine(){
             Faça bochechos com 20 mL por 30 segundos 2x ao dia após escovação e uso de fio dental. NÃO DILUIR. 
             Manter fora do alcance de crianças.
             <h1> R$ 20,17 </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

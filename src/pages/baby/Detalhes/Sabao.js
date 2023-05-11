@@ -21,7 +21,7 @@ export default function kitAzul() {
                 <h1>
                     R$ 29,90
                 </h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>

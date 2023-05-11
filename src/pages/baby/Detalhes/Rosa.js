@@ -17,7 +17,7 @@ export default function MamadeiraRosa() {
                 <h1>
                     R$ 7,99
                 </h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>

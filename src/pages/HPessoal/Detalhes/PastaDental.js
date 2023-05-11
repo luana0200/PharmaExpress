@@ -18,7 +18,7 @@ export default function PastaDental(){
             Branqueamento, Gengiva e Esmalte.
 
             <h1> R$ 5,69 </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
