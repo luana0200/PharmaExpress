@@ -27,3 +27,19 @@ justify-content: center;
     flex-direction: column;
   }
 }
+
+.comprinha{
+  width: 50%;
+  margin-right: -250px
+}
+
+.comprando{
+  display: table;
+  margin: 0 auto;
+ 
+}
+.cadastrando{
+  display: flex;
+flex-direction: column;
+margin-left: 350px;
+}
