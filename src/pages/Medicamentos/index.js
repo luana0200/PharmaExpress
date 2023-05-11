@@ -35,7 +35,7 @@ export default function Medicamentos() {
             <div className='cabecalho'><h1>MEDICAMENTOS</h1></div>
             <Row className='d-flex justify-content-center'>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={acetilcisteína} alt="Acetilcisteína" />
                     <Card.Body>
@@ -46,7 +46,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={allexofedrin} alt="Allexofredrin" />
                     <Card.Body>
@@ -57,7 +57,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={ambroxol} alt="Ambroxol" />
                     <Card.Body>
@@ -68,7 +68,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={carbocisteína} alt="Carbocisteína" />
                     <Card.Body>
@@ -79,7 +79,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={complexo} alt="Complexo b" />
                     <Card.Body>
@@ -90,7 +90,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={condres} alt="Condres" />
                     <Card.Body>
@@ -103,7 +103,7 @@ export default function Medicamentos() {
 
 
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={declofenaco} alt="Diclofenaco" />
                     <Card.Body>
@@ -114,7 +114,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={desloratadina} alt="Desloratadina" />
                     <Card.Body>
@@ -126,7 +126,7 @@ export default function Medicamentos() {
                 </Card>
 
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
 
                     <br />
                     <Card.Img variant="top" width="220px" src={emsgrip} alt="Emsgrip" />
@@ -138,7 +138,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={doricin} alt="Doricin" />
                     <Card.Body>
@@ -149,7 +149,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={cystex} alt="Cystex" />
                     <Card.Body>
@@ -160,7 +160,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={simeticona} alt="Simeticona" />
                     <Card.Body>
@@ -173,7 +173,7 @@ export default function Medicamentos() {
 
 
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={dipirona} alt="Dipirona" />
                     <Card.Body>
@@ -184,7 +184,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={fendizoato} alt="Fendizoato" />
                     <Card.Body>
@@ -195,7 +195,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={gemax} alt="Gelmax" />
                     <Card.Body>
@@ -206,7 +206,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={ibuprofeno} alt="Ibuprofeno" />
                     <Card.Body>
@@ -217,7 +217,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={paracetamol} alt="Paracetamol" />
                     <Card.Body>
@@ -228,7 +228,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={dorspan} alt="Dorspan" />
                     <Card.Body>
@@ -239,7 +239,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={sominex} alt="Sominex" />
                     <Card.Body>
@@ -250,7 +250,7 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={suplevit} alt="Suplevit" />
                     <Card.Body>

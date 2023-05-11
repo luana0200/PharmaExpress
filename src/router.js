@@ -86,11 +86,10 @@ import Compra from './components/Compra/Compra'
 
 export default function Rotas() {
     return (
-        <BrowserRouter >
+        <BrowserRouter>
             <Header />
             <Routes>
-                
-                <Route path='/HPessoal' element={<HPessoal />} />
+                <Route path='build/HPessoal' element={<HPessoal />} />
                 <Route path='/Absorvente' element={<Absorvente />} />
                 <Route path='/Condicionador' element={<Condicionador />} />
                 <Route path='/CremeFacial' element={<CremeFacial />} />
