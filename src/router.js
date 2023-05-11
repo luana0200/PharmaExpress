@@ -89,7 +89,7 @@ export default function Rotas() {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='build/HPessoal' element={<HPessoal />} />
+                <Route path='/HPessoal' element={<HPessoal />} />
                 <Route path='/Absorvente' element={<Absorvente />} />
                 <Route path='/Condicionador' element={<Condicionador />} />
                 <Route path='/CremeFacial' element={<CremeFacial />} />
