@@ -22,7 +22,7 @@ export default function Lenco() {
             <h1>
                 R$ 19,90
             </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
                 </Card>

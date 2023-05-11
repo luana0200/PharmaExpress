@@ -17,7 +17,7 @@ export default function DesoF() {
                 Proporciona frescor, conforto e segurança.
 
                 <h1>R$ 16,99</h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

@@ -28,7 +28,7 @@ export default function Esfoliante() {
                 <h3>
                     R$ 56,99
                 </h3> <br />
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

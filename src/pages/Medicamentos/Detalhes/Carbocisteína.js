@@ -23,7 +23,7 @@ export default function Acetilcisteína() {
                 R$ 19,97
             </h1> <br />
 
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

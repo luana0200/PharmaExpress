@@ -23,7 +23,7 @@ export default function CremeFacial() {
             <h1>
                 R$ 24,62
             </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

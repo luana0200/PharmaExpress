@@ -16,7 +16,7 @@ export default function PastaDente(){
             Após a limpeza, você percebe, sim, seus dentes mais claros, mas não tão brancos como após um clareamento dental.
 
             <h1> R$ 13,90 </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

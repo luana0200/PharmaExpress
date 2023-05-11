@@ -20,7 +20,7 @@ export default function SaboneteDove(){
             <h1>
                 R$ 5,99
             </h1>
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

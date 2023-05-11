@@ -28,7 +28,7 @@ export default function BaseUltra() {
                 R$ 44,91
             </h1> <br />
 
-            <div className='Container llog'>
+            <div className='Container button'>
                <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
             </div>
          </Card>

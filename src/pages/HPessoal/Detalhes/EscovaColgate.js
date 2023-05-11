@@ -16,7 +16,7 @@ export default function EscovaColgate(){
                 sem causar desconfortos. Uso diário. A embalagem contém 4 unidades.
                
                 <h1> R$ 20,90</h1>
-                <div className='Container llog'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>

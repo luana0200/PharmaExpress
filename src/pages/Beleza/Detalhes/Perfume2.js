@@ -20,7 +20,7 @@ export default function Perfume() {
             <h1>
                 R$ 59,99
             </h1> <br />
-            <div className='Container llog'>
+            <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
