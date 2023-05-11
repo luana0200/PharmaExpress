@@ -38,11 +38,11 @@ function Cadastro() {
 
 
                     <Form.Group className="mb-3">
-                        <Form.Label>E-mail</Form.Label>
+                          <Form.Label>Data de Nascimento</Form.Label>
                         <Form.Control
                             as={IMaskInput}
-                           
-                            placeholder="Digite seu E-mail"
+                            mask="00/00/0000"
+                            placeholder="Digite sua Data de Nascimento"
                         />
                     </Form.Group>
 
@@ -58,11 +58,11 @@ function Cadastro() {
 
                 <div className="comprar">
                     <Form.Group className="mb-3">
-                        <Form.Label>Data de Nascimento</Form.Label>
+                    <Form.Label>E-mail</Form.Label>
                         <Form.Control
                             as={IMaskInput}
                             mask="00/00/0000"
-                            placeholder="Digite sua Data de Nascimento"
+                            placeholder="Digite seu E-mail"
                         />
                     </Form.Group>
 
