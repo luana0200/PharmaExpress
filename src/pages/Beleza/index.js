@@ -37,7 +37,7 @@ export default function Beleza() {
             <div className='cabecalho'><h1>BELEZA</h1></div>
         <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '17rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Badge bg="danger">PROMOÇAO 10%1</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
                         <br />
