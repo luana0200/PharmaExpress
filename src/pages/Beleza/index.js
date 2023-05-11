@@ -14,16 +14,16 @@ import paleta from "./imagens/paleta.png"
 import rimel from "./imagens/rimel.png"
 import perfume1 from "./imagens/perfume1.png"
 import perfume2 from "./imagens/perfume2.png"
-import hidratante from "./imagens/Hidratante2.png"
+import hidratante from "./imagens/hidratante.png"
 import perfume3 from "./imagens/perfume3.png"
 import perfume4 from "./imagens/perfume4.png"
 import protetorsolar from "./imagens/protetorsolar.png"
 import gelsecativo from "./imagens/gelsecativo.png"
-import demaquilante from "./imagens/Demaquilante2.png"
+import demaquilante from "./imagens/demaquilante.png"
 import esfoliante from "./imagens/esfoliante.png"
-import shampoomorango from "./imagens/shampoomorango2.png"
-import shampooacai from "./imagens/shampooacai2.png"
-import shampookarite from "./imagens/shampookarite2.png"
+import shampoomorango from "./imagens/shampoomorango.png"
+import shampooacai from "./imagens/shampooacai.png"
+import shampookarite from "./imagens/shampookarite.png"
 import esmaltepreto from "./imagens/esmaltepreto.png"
 import esmaltevermelho from "./imagens/esmaltevermelho.png"
 import esmaltebranco from "./imagens/esmaltebranco.png"
@@ -36,7 +36,7 @@ export default function Beleza() {
             
             <div className='cabecalho'><h1>BELEZA</h1></div>
         <Row className='d-flex justify-content-center'>
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
@@ -49,7 +49,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={batom} />
                     <br/>
@@ -62,7 +62,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={delineador} alt="Deliniador" />
                     <br/>
@@ -75,7 +75,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br /><br/>
                     <Card.Img variant="top" width="220px" src={paleta} alt="Paleta" />
                     <Card.Body>
@@ -87,7 +87,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
@@ -99,7 +99,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}><br />
+                <Card className='m-2' style={{ width: '17rem' }}><br />
                     <Card.Img variant="top" width="220px" src={perfume1} alt="Perfume" />
                     <Card.Body>
                         <br />
@@ -111,7 +111,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={perfume2} alt="Perfume" />
                     <Card.Body>
@@ -123,7 +123,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
                     <Card.Body>
@@ -135,7 +135,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={perfume4} alt="Perfume" />
                     <Card.Body>
@@ -147,7 +147,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={protetorsolar} alt="Protetor Solar" />
                     <Card.Body>
@@ -159,7 +159,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={gelsecativo} alt="Gel Secativo" />
                     <Card.Body>
@@ -171,7 +171,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={hidratante} alt="Hidratante" />
                     <Card.Body>
@@ -183,7 +183,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="150px" src={demaquilante} alt="demaquilante" />
                     <Card.Body>
@@ -196,7 +196,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={esfoliante} alt="Esfoliante" />
                     <Card.Body>
@@ -208,7 +208,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={shampooacai} alt="Shampoo Acai" />
                     <Card.Body>
@@ -221,7 +221,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={shampoomorango} />
                     <Card.Body>
@@ -233,7 +233,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={shampookarite} alt="Shampoo Karité" />
                     <Card.Body>
@@ -245,7 +245,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={esmaltepreto} alt="Esmalte Preto" />
                     <Card.Body>
@@ -257,7 +257,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={esmaltebranco} alt="Esmalte Branco" />
                     <Card.Body>
@@ -269,7 +269,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='M-2' style={{ width: '17rem' }}>
+                <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={esmaltevermelho} />
                     <Card.Body>
