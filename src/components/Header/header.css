@@ -64,8 +64,8 @@
     width: 17rem;
   }
 .center{
-    margin-left: 550px;
     display: flex;
+    text-align: center;
 }
 
   /* Faixa com os nomes das pastas */

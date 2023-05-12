@@ -75,18 +75,6 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={talco} alt='talco' />
-                    <Card.Body>
-                        <Card.Title><h2>   Talco Johnson 200g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/talco'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={Lenco} alt="Lenco" />
@@ -108,6 +96,18 @@ export default function Baby() {
                         </div>
                     </Card.Body>
                 </Card>
+
+                <Card className='m-2' style={{ width: '17rem' }}>
+                    <br />
+                    <Card.Img variant="top" width="220px" src={talco} alt='talco' />
+                    <Card.Body>
+                        <Card.Title><h2>   Talco Johnson 200g</h2></Card.Title>
+                        <div className='Container llog'>
+                            <Link to='/talco'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
