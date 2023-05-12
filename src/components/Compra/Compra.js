@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-// import '../Header/header.css'
 import './compra.css'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
+
+import { IMaskInput } from 'react-imask';
+import Form from 'react-bootstrap/Form';
+import Container from "react-bootstrap/esm/Container";
+import Button from "react-bootstrap/esm/Button";
+
 
 
 export default function Compra() {
@@ -16,11 +19,21 @@ export default function Compra() {
                 <div>
                     <b>Já sou cliente</b>
                     <p>Faça o login para acelerar a compra:</p>
-                    <label>E-mail</label>
-                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} /><br /><p />
+                    <Form.Group className="mb-1">
+                        <Form.Label>E-mail</Form.Label>
+                        <Form.Control
+                            as={IMaskInput}
+                            placeholder="Digite seu E-mail"
+                        />
+                    </Form.Group>
 
-                    <label>Senha</label>
-                    <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} /> <br />
+                    <Form.Group className="mb-1">
+                        <Form.Label>Senha</Form.Label>
+                        <Form.Control
+                            type="password"
+                            placeholder="Digite sua Senha"
+                        />
+                    </Form.Group>
                     <br /><Link to='/Carrinho'><Button variant="secondary">Login</Button> </Link>
                 </div>
 
