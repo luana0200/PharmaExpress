@@ -31,7 +31,7 @@ function Cadastro() {
                         <Form.Control
                             as={IMaskInput}
 
-                            placeholder="Digite seu nome"
+                            // placeholder="Digite seu nome"
                         />
                     </Form.Group><br />
 
