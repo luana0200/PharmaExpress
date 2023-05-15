@@ -1,4 +1,3 @@
-import './bela.css'
 import paleta from '../imagens/paleta.png'
 import { Link } from 'react-router-dom'
 

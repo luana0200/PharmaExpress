@@ -1,4 +1,3 @@
-import './baby.css'
 import lenco from '../imagens/Lenco umidecido.png' 
 import { Link } from 'react-router-dom'
 

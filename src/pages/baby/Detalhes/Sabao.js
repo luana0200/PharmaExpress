@@ -1,5 +1,3 @@
-
-import './baby.css'
 import Sabao from '../imagens/Sabonet Liquido.webp'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,3 @@
-import './HP.css'
 import absorvente from '../imagens H/absorvente.webp'
 import { Link } from 'react-router-dom'
 

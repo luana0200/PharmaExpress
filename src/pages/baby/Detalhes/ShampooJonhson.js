@@ -1,4 +1,3 @@
-import './baby.css'
 import { Link } from 'react-router-dom'
 import ShampooJonhson from '../imagens/ShampooJonhson.webp'
 

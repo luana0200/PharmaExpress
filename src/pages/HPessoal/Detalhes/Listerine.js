@@ -1,4 +1,3 @@
-import './HP.css'
 import listerine from '../imagens H/listerine.webp'
 import { Link } from 'react-router-dom'
 

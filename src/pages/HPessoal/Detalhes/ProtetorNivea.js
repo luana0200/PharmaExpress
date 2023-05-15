@@ -1,4 +1,3 @@
-import './HP.css'
 import nivea from '../imagens H/nivea.webp'
 import { Link } from 'react-router-dom'
 

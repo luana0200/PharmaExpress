@@ -1,4 +1,3 @@
-import './HP.css'
 import creme from '../imagens H/creme facial.png'
 import { Link } from 'react-router-dom'
 

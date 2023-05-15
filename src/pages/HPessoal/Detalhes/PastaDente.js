@@ -1,4 +1,3 @@
-import './HP.css'
 import pasta from '../imagens H/pasta de dente C.jpeg'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,3 @@
-import './bela.css'
 import rimel from '../imagens/rimel.png'
 import { Link } from 'react-router-dom'
 

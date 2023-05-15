@@ -1,5 +1,3 @@
-// import '../../../components/Header/header.css'
-import './baby.css'
 import { Link } from 'react-router-dom'
 import aptamil from '../imagens/Formula Aptamil.webp'
 

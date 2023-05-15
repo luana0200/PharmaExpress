@@ -1,4 +1,3 @@
-import './baby.css'
 import pomada from '../imagens/Pomada.webp'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,3 @@
-import './bela.css'
 import esmaltepreto from '../imagens/esmaltepreto.png'
 import { Link } from 'react-router-dom'
 

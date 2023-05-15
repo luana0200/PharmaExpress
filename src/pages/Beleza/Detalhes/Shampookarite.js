@@ -1,4 +1,3 @@
-import './bela.css'
 import shampookarite from '../imagens/shampookarite2.png'
 import { Link } from 'react-router-dom'
 

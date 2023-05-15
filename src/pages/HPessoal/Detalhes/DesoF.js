@@ -1,4 +1,3 @@
-import './HP.css'
 import desoF from '../imagens H/desoF.webp'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'

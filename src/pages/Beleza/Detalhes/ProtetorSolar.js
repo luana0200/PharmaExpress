@@ -1,4 +1,3 @@
-import './bela.css'
 import Protetorsolar from '../imagens/protetorsolar.png'
 import { Link } from 'react-router-dom'
 

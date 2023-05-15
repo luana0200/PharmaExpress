@@ -18,6 +18,7 @@ import saboneteliq from '../HPessoal/imagens H/sabonete liq.png'
 import creme from '../HPessoal/imagens H/creme facial.png'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
+
 export default function Home() {
     return (
         <Container fluid>

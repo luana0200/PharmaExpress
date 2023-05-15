@@ -1,4 +1,3 @@
-import './HP.css'
 import shampoo from '../imagens H/shampoo.webp'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,3 @@
-import './bela.css'
 import esfoliante from '../imagens/Esfoliante2.png'
 import { Link } from 'react-router-dom'
 

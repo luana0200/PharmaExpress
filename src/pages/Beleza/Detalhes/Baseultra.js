@@ -1,4 +1,3 @@
-import './bela.css'
 import baseUltra from '../imagens/base.png'
 import { Link } from 'react-router-dom'
 

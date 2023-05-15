@@ -1,4 +1,3 @@
-import './HP.css'
 import sabonetedove from '../imagens H/sabonete dove.jpg'
 import { Link } from 'react-router-dom'
 

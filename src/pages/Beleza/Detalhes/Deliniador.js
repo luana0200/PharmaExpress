@@ -1,4 +1,3 @@
-import './bela.css'
 import delineador from '../imagens/delineador.png'
 import { Link } from 'react-router-dom'
 

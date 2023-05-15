@@ -1,4 +1,3 @@
-import './HP.css'
 import deso from '../imagens H/deso M.webp'
 import { Link } from 'react-router-dom'
 

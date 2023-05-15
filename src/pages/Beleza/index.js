@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../Beleza/Detalhes/bela.css'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
@@ -35,6 +34,7 @@ export default function Beleza() {
         <Container fluid>
             
             <div className='cabecalho'><h1>BELEZA</h1></div>
+            
         <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%1</Badge>

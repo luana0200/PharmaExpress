@@ -1,4 +1,3 @@
-import './baby.css'
 import talco from '../imagens/Talco.jpg'
 import { Link } from 'react-router-dom'
 
@@ -19,8 +18,8 @@ export default function Baseultra() {
                R$ 6,99
             </h1>
             <div className='Container button'>
-                    <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
-                </div>
+               <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
+            </div>
          </Card>
       </Container >
    )

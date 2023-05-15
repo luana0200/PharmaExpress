@@ -1,4 +1,3 @@
-import './HP.css'
 import escova from '../imagens H/escova de dente.webp'
 import { Link } from 'react-router-dom'
 

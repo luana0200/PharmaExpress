@@ -1,4 +1,3 @@
-import './HP.css'
 import sabonete from '../imagens H/sabonete protex.webp'
 import { Link } from 'react-router-dom'
 

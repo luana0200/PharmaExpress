@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom'
-import './medica.css'
 import declofenaco from '../imagens/declofenaco.png'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

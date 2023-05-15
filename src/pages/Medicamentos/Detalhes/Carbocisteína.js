@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import './medica.css'
 import carbocisteína from '../imagens/carbocisteína.png'
+import { Link } from 'react-router-dom'
+
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
@@ -9,7 +9,7 @@ export default function Acetilcisteína() {
     return (
         <Container >
         <Card className='m-2, p-2'>
-            <Card.Img className='detail' variant="top" src={carbocisteína} alt="Carbocisteína" />
+            <Card.Img  variant="top" src={carbocisteína} alt="Carbocisteína" />
 
             <h4>Carbocisteína 50mg/ml Xarope 100ml Prati Donaduzzi Genérico Ems</h4> <br />
             A carbocisteína é indicada em afecções agudas ou crônicas do trato

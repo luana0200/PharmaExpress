@@ -1,4 +1,3 @@
-import './baby.css'
 import fralda from '../imagens/Fralda.webp'
 import { Link } from 'react-router-dom'
 

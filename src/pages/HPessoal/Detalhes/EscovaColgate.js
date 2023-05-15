@@ -1,4 +1,3 @@
-import './HP.css'
 import escovacarvao from '../imagens H/escova colgate carvao.jpg'
 import { Link } from 'react-router-dom'
 

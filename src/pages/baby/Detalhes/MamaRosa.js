@@ -1,4 +1,3 @@
-import './baby.css'
 import Mamadeira from '../imagens/Mamadeira Rosa.jpg'
 import { Link } from 'react-router-dom'
 

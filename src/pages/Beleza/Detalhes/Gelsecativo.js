@@ -1,4 +1,3 @@
-import './bela.css'
 import gelsecativo from '../imagens/gelsecativo.png'
 import { Link } from 'react-router-dom'
 

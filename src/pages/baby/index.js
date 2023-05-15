@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import './Detalhes/baby.css'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
