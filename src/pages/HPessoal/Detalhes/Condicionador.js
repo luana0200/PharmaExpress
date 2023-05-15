@@ -1,5 +1,7 @@
 import condicionado from '../imagens H/Condicionador.webp'
+import './HP.css'
 import { Link } from 'react-router-dom'
+
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'

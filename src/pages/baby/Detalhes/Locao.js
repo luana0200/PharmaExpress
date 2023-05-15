@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
 import Locao from '../imagens/Locao hidratante.jpg'
+import './baby.css'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

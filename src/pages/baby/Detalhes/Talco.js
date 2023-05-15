@@ -1,4 +1,5 @@
 import talco from '../imagens/Talco.jpg'
+import './baby.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

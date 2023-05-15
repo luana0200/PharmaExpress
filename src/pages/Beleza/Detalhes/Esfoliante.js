@@ -1,4 +1,5 @@
 import esfoliante from '../imagens/Esfoliante2.png'
+import './bela.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

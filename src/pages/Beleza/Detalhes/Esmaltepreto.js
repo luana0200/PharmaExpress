@@ -1,4 +1,5 @@
 import esmaltepreto from '../imagens/esmaltepreto.png'
+import './bela.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

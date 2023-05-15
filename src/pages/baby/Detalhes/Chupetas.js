@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
 import chupetas from '../imagens/Chupetas.png'
+import './baby.css'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

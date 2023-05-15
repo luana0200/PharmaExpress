@@ -1,4 +1,5 @@
 import fendizoato from '../imagens/fendizoato.png'
+import './medica.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
