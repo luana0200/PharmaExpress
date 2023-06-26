@@ -38,7 +38,7 @@ function Cadastro() {
 
                     <Form.Group className="mb-3">
                           <Form.Label>Data de Nascimento</Form.Label>
-                        <Form.Control
+                        <Form.Control 
                             as={IMaskInput}
                             mask="00/00/0000"
                             placeholder="Digite sua Data de Nascimento"
