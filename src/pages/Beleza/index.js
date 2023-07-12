@@ -32,10 +32,10 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Beleza() {
     return (
         <Container fluid>
-            
+
             <div className='cabecalho'><h1>BELEZA</h1></div>
-            
-        <Row className='d-flex justify-content-center'>
+
+            <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%1</Badge>
                     <Card.Img variant="top" width="220px" src={base} />
@@ -51,7 +51,7 @@ export default function Beleza() {
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={batom} />
-                    <br/>
+                    <br />
                     <Card.Body>
                         <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
                         <div className='Container llog'>
@@ -63,7 +63,7 @@ export default function Beleza() {
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={delineador} alt="Deliniador" />
-                    <br/>
+                    <br />
                     <Card.Body>
                         <Card.Title><h2>Deliniador Líquido </h2></Card.Title>
                         <div className='Container llog'>
@@ -75,7 +75,7 @@ export default function Beleza() {
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={paleta} alt="Paleta" />
-                        <br />
+                    <br />
                     <Card.Body>
                         <Card.Title><h2>Palette de Sombras Crystal</h2></Card.Title>
                         <div className='Container llog'>
@@ -101,7 +101,7 @@ export default function Beleza() {
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Desodorante Colônia </h2></Card.Title>
-                        
+
                         <div className='Container llog'>
                             <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
