@@ -1,6 +1,5 @@
-
-import './baby.css'
 import Sabao from '../imagens/Sabonet Liquido.webp'
+import './baby.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

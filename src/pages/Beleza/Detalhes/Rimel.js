@@ -1,5 +1,5 @@
-import './bela.css'
 import rimel from '../imagens/rimel.png'
+import './bela.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

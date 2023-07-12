@@ -1,5 +1,5 @@
-import './baby.css'
 import kit from '../imagens/Kit Escova Azul.jpg'
+import './baby.css'
 import { Link } from 'react-router-dom'
 
 

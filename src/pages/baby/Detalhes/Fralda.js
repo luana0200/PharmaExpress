@@ -1,5 +1,5 @@
-import './baby.css'
 import fralda from '../imagens/Fralda.webp'
+import './baby.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

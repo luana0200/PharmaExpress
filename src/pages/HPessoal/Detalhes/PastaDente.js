@@ -1,5 +1,5 @@
-import './HP.css'
 import pasta from '../imagens H/pasta de dente C.jpeg'
+import './HP.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

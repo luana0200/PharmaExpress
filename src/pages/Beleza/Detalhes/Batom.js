@@ -1,7 +1,6 @@
-import './bela.css'
 import batom from '../imagens/batom.png'
+import './bela.css'
 import { Link } from 'react-router-dom'
-
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

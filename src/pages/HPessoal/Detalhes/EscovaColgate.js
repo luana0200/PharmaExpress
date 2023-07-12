@@ -1,5 +1,5 @@
-import './HP.css'
 import escovacarvao from '../imagens H/escova colgate carvao.jpg'
+import './HP.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

@@ -1,6 +1,6 @@
+import ShampooJonhson from '../imagens/ShampooJonhson.webp'
 import './baby.css'
 import { Link } from 'react-router-dom'
-import ShampooJonhson from '../imagens/ShampooJonhson.webp'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
@@ -20,7 +20,7 @@ export default function kitAzul() {
                     R$ 49,90
                 </h1>
                 <div className='Container button'>
-                    <Link to='/Compra'> <Button variant="secondary">COMPRA</Button></Link>
+                    <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>
             </Card>
         </Container >

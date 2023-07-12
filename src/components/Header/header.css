@@ -44,6 +44,7 @@
   /* Imagem dos card */
   .m-2{
     text-align: center;
+    
   }
   .m-2 img {
       width: 250´x;
@@ -63,11 +64,6 @@
   .dark img{
     width: 17rem;
   }
-.center{
-    display: flex;
-    text-align: center;
-}
-
   /* Faixa com os nomes das pastas */
   .cabecalho {
       background-color: lightseagreen;

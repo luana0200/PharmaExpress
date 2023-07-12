@@ -1,5 +1,5 @@
-import './HP.css'
 import pastadental from '../imagens H/pasta dental.png'
+import './HP.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'

@@ -1,7 +1,6 @@
-// import '../../../components/Header/header.css'
+import aptamil from '../imagens/Formula Aptamil.webp'
 import './baby.css'
 import { Link } from 'react-router-dom'
-import aptamil from '../imagens/Formula Aptamil.webp'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'

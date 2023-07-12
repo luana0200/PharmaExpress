@@ -1,5 +1,5 @@
-import './bela.css'
 import gelsecativo from '../imagens/gelsecativo.png'
+import './bela.css'
 import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
