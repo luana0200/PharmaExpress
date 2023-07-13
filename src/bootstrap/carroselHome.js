@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './style.css'
 import escovadental from '../bootstrap/imagens/escovadente.webp'
 import Pampers from '../bootstrap/imagens/Pampers.jpg'
-import Eudora from '../bootstrap/imagens/mae.jpg'
+import Eudora from '../bootstrap/imagens/EUDORA.jpg'
 
 
 export default function CarroselHome() {

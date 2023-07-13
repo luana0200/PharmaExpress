@@ -19,9 +19,9 @@ export default function Condicionador() {
             Agora você pode adicionar esses tratamentos ao seu cronograma capilar,
             até que seus cabelos alcancem a aparência e textura ideais.
 
-            <h2>
+            <h1>
                 R$ 27,90
-            </h2>
+            </h1>
             
             <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>

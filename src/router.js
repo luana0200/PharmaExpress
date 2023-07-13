@@ -15,8 +15,8 @@ import DesoM from './pages/HPessoal/Detalhes/DesoM'
 import EscovaColgate from './pages/HPessoal/Detalhes/EscovaColgate'
 import EscovaDental from './pages/HPessoal/Detalhes/EscovaDental'
 import Listerine from './pages/HPessoal/Detalhes/Listerine'
-import PastaDental from './pages/HPessoal/Detalhes/PastaDental'
-import Pasta from './pages/HPessoal/Detalhes/PastaDente'
+import PastaDentalOral from './pages/HPessoal/Detalhes/PastaDentalOral'
+import PastaDenteColgate from './pages/HPessoal/Detalhes/PastaDenteColgate'
 import ProtetorNivea from './pages/HPessoal/Detalhes/ProtetorNivea'
 import SaboneteLiq from './pages/HPessoal/Detalhes/SaboneteLiq'
 import SaboneteProtex from './pages/HPessoal/Detalhes/SaboneteProtex'
@@ -51,7 +51,8 @@ import Esmaltevermelho from './pages/Beleza/Detalhes/Esmaltevermelho'
 import Hidratante from './pages/Beleza/Detalhes/Hidratante'
 import Paleta from './pages/Beleza/Detalhes/Paleta'
 import Perfume1 from './pages/Beleza/Detalhes/Perfume1'
-import Perfume3 from './pages/Beleza/Detalhes/Perfume3'
+import Perfume2 from './pages/Beleza/Detalhes/Perfume2'
+import Perfume4 from './pages/Beleza/Detalhes/Perfume4'
 import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
 import Rimel from './pages/Beleza/Detalhes/Rimel'
 import Shampooacai from './pages/Beleza/Detalhes/Shampooacai'
@@ -88,8 +89,8 @@ export default function Rotas() {
                 <Route path='/EscovaColgate' element={<EscovaColgate />} />
                 <Route path='/EscovaDental' element={<EscovaDental />} />
                 <Route path='/Listerine' element={<Listerine />} />
-                <Route path='/Pastadental' element={<PastaDental />} />
-                <Route path='/Pastadente' element={<Pasta />} />
+                <Route path='/PastaDentalOral' element={<PastaDentalOral />} />
+                <Route path='/PastadenteColgate' element={<PastaDenteColgate />} />
                 <Route path='/ProtetorNivea' element={<ProtetorNivea />} />
                 <Route path='/SaboneteLiq' element={<SaboneteLiq />} />
                 <Route path='/SaboneteDove' element={<SaboneteDove />} />
@@ -132,7 +133,8 @@ export default function Rotas() {
                 <Route path='/Hidratante' element={<Hidratante />} />
                 <Route path='/Paleta' element={<Paleta />} />
                 <Route path='/Perfume1' element={<Perfume1 />} />
-                <Route path='/Perfume3' element={<Perfume3 />} />
+                <Route path='/Perfume2' element={<Perfume2 />} />
+                <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
                 <Route path='/Rimel' element={<Rimel />} />
                 <Route path='/Shampooacai' element={<Shampooacai />} />

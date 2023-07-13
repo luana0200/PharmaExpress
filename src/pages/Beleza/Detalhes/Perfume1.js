@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function Perfume() {
     return (
@@ -23,7 +24,9 @@ export default function Perfume() {
                 <h1>
                     R$ 99,99
                 </h1> <br />
-
+                <div className='promocao'>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                </div>
                 <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
                 </div>

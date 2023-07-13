@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
-export default function PastaDente(){
+export default function PastaDenteColgate(){
     return(
         <Container >
         <Card className='m-2, p-2'>
