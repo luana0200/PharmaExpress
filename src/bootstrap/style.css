@@ -5,6 +5,7 @@
 .carroselhome img {
     justify-items: center;
    height:100%;
+   mix-blend-mode: normal;
 }
 @media screen and (max-width:850px){
     .carroselhome {
