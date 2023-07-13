@@ -23,7 +23,6 @@ export default function Header() {
                             <Nav.Link href="/HPessoal"><Button variant="secondary" >Higiene Pessoal</Button ></Nav.Link>
                             <Nav.Link href="/Medicamentos"><Button variant="secondary"> Medicamentos</Button ></Nav.Link>
                             <Nav.Link href="/Beleza"><Button variant="secondary" >Beleza</Button ></Nav.Link>
-                            <Nav.Link href="/Cadastro"><Button variant="secondary" >Cadastro</Button ></Nav.Link>
                             <Nav className='test'>
                                 <Nav.Link href="/"><BsFillHouseFill size='1.5rem' color='white' /></Nav.Link>
                                 <Nav.Link href="/Cadastro"><BsPersonFill size='1.5rem' color='white' /></Nav.Link>
