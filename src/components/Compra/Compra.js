@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
 import './compra.css'
 
 import { IMaskInput } from 'react-imask';
@@ -10,8 +9,6 @@ import Button from "react-bootstrap/esm/Button";
 
 
 export default function Compra() {
-    const [email, setEmail] = useState('')
-    const [senha, setSenha] = useState('')
 
     return (
         <Container fluid>
