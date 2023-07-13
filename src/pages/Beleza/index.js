@@ -108,29 +108,8 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={perfume2} alt="Perfume" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Pulse Desodorante Côlonia </h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Perfume2'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>La Victorie Eau de Parfum </h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+        
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
@@ -156,17 +135,6 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={gelsecativo} alt="Gel Secativo" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Gel Secativo Pele com Acne Ação Rápida 17g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Gelsecativo' ><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
@@ -232,36 +200,12 @@ export default function Beleza() {
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={shampookarite} alt="Shampoo Karité" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Combo Karité</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Shampookarite'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
                     <Card.Img variant="top" width="220px" src={esmaltepreto} alt="Esmalte Preto" />
                     <Card.Body>
                         <br />
                         <Card.Title><h2>Esmalte Preto Essencial 7ml</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Esmaltepreto'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={esmaltebranco} alt="Esmalte Branco" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Esmalte Branco Intensific 7ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/EsmalteBranco'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

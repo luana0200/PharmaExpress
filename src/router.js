@@ -46,28 +46,20 @@ import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
 import Deliniador from './pages/Beleza/Detalhes/Deliniador'
 import Demaquilante from './pages/Beleza/Detalhes/Demaquilante'
 import Esfoliante from './pages/Beleza/Detalhes/Esfoliante'
-import EsmalteBranco from './pages/Beleza/Detalhes/EsmalteBranco'
 import Esmaltepreto from './pages/Beleza/Detalhes/Esmaltepreto'
 import Esmaltevermelho from './pages/Beleza/Detalhes/Esmaltevermelho'
-import Gelsecativo from './pages/Beleza/Detalhes/Gelsecativo'
 import Hidratante from './pages/Beleza/Detalhes/Hidratante'
 import Paleta from './pages/Beleza/Detalhes/Paleta'
 import Perfume1 from './pages/Beleza/Detalhes/Perfume1'
-import Perfume2 from './pages/Beleza/Detalhes/Perfume2'
 import Perfume3 from './pages/Beleza/Detalhes/Perfume3'
-import Perfume4 from './pages/Beleza/Detalhes/Perfume4'
 import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
 import Rimel from './pages/Beleza/Detalhes/Rimel'
 import Shampooacai from './pages/Beleza/Detalhes/Shampooacai'
-import Shampookarite from './pages/Beleza/Detalhes/Shampookarite'
 import Shampoomorango from './pages/Beleza/Detalhes/Shampoomorango'
 
 import Acetilcisteína from'./pages/Medicamentos/Detalhes/Acetilcisteína'
-import Allexofedrin from'./pages/Medicamentos/Detalhes/Allexofedrin'
 import Ambroxol from'./pages/Medicamentos/Detalhes/Ambroxol'
-import Carbocisteína from'./pages/Medicamentos/Detalhes/Carbocisteína'
 import Complexob from'./pages/Medicamentos/Detalhes/Complexob'
-import Condres from'./pages/Medicamentos/Detalhes/Condres'
 import Cystex from'./pages/Medicamentos/Detalhes/Cystex'
 import Declofenaco from'./pages/Medicamentos/Detalhes/Declofenaco'
 import Desloratadina from'./pages/Medicamentos/Detalhes/Desloratadina'
@@ -77,11 +69,9 @@ import Dorspan from'./pages/Medicamentos/Detalhes/Dorspan'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
 import Fendizoato from'./pages/Medicamentos/Detalhes/Fendizoato'
 import Gemax from'./pages/Medicamentos/Detalhes/Gemax'
-import Ibuprofeno from'./pages/Medicamentos/Detalhes/Ibuprofeno'
 import Paracetamol from'./pages/Medicamentos/Detalhes/Paracetamol'
 import Simeticona from'./pages/Medicamentos/Detalhes/Simeticona'
 import Sominex from'./pages/Medicamentos/Detalhes/Sominex'
-import Suplevit from'./pages/Medicamentos/Detalhes/Suplevit'
 import Compra from './components/Compra/Compra'
 
 export default function Rotas() {
@@ -137,30 +127,22 @@ export default function Rotas() {
                 <Route path='/Deliniador' element={<Deliniador />} />
                 <Route path='/Demaquilante' element={<Demaquilante />} />
                 <Route path='/Esfoliante' element={<Esfoliante />} />
-                <Route path='/EsmalteBranco' element={<EsmalteBranco />} />
                 <Route path='/Esmaltepreto' element={<Esmaltepreto />} />
                 <Route path='/Esmaltevermelho' element={<Esmaltevermelho />} />
-                <Route path='/Gelsecativo' element={<Gelsecativo />} />
                 <Route path='/Hidratante' element={<Hidratante />} />
                 <Route path='/Paleta' element={<Paleta />} />
                 <Route path='/Perfume1' element={<Perfume1 />} />
-                <Route path='/Perfume2' element={<Perfume2 />} />
                 <Route path='/Perfume3' element={<Perfume3 />} />
-                <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
                 <Route path='/Rimel' element={<Rimel />} />
                 <Route path='/Shampooacai' element={<Shampooacai />} />
-                <Route path='/Shampookarite' element={<Shampookarite />} />
                 <Route path='/Shampoomorango' element={<Shampoomorango />} />
 
 
                 <Route path='/Medicamentos' element={<Medicamentos />} />
                 <Route path='/Acetilcisteína' element={<Acetilcisteína />} />
-                <Route path='/Allexofedrin' element={<Allexofedrin />} />
                 <Route path='/Ambroxol' element={<Ambroxol />} />
-                <Route path='/Carbocisteína' element={<Carbocisteína />} />
                 <Route path='/Complexob' element={<Complexob/>} />
-                <Route path='/Condres' element={<Condres/>} />
                 <Route path='/Cystex' element={<Cystex/>} />
                 <Route path='/Declofenaco' element={<Declofenaco />} />
                 <Route path='/Desloratadina' element={<Desloratadina/>} />
@@ -170,11 +152,9 @@ export default function Rotas() {
                 <Route path='/emsgrip' element={<Emsgrip />} />
                 <Route path='/Fendizoato' element={<Fendizoato />} />
                 <Route path='/Gemax' element={<Gemax />} />
-                <Route path='/Ibuprofeno' element={<Ibuprofeno />} />
                 <Route path='/Paracetamol' element={<Paracetamol />} />
                 <Route path='/Simeticona' element={<Simeticona />} />
                 <Route path='/Sominex' element={<Sominex />} />
-                <Route path='/Suplevit' element={<Suplevit />} />
 
                 
                 <Route path='/Compra' element={<Compra />} />
