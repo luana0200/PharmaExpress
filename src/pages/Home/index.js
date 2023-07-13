@@ -12,9 +12,9 @@ import base from "../Beleza/imagens/base.png"
 import batom from '../Beleza/imagens/batom.png'
 import shampoo from '../Beleza/imagens/shampoomorango2.png'
 import rimel from '../Beleza/imagens/rimel.png'
-import esmaltevermelho from '../Beleza/imagens/esmaltevermelho.png'
+import perfume1 from '../Beleza/imagens/perfume1.png'
 import Perfume2 from '../Beleza/imagens/perfume2.png'
-import saboneteliq from '../HPessoal/imagens H/sabonete liq.png'
+import deso from '../HPessoal/imagens H/deso M.webp'
 import creme from '../HPessoal/imagens H/creme facial.png'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -50,17 +50,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '20rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={esmaltevermelho} />
-                    <Card.Body>
-                        <Card.Title><h2>Esmalte Vermelho Sofisticado</h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
+              
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={shampoo} />
@@ -85,9 +75,21 @@ export default function Home() {
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
+                    <Card.Img variant="top" width="220px" src={perfume1} />
                     <Card.Body>
-                        <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
+                        <Card.Title><h2>Desodorante Colônia 95ml</h2></Card.Title>
+                        <div className=' Container llog'>
+                            <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+
+
+                <Card className='m-1' style={{ width: '20rem' }}>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                    <Card.Img variant="top" width="220px" src={deso} alt="sabonete liq" />
+                    <Card.Body>
+                        <Card.Title><h2>Desodorante Rexona Masc 200 ml</h2></Card.Title>
                         <div className=' Container llog'>
                             <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
@@ -98,9 +100,9 @@ export default function Home() {
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={Perfume2} alt="Perfume" />
                     <Card.Body>
-                        <Card.Title><h2>La Victori Eau de Parfum 75ml</h2></Card.Title>
+                        <Card.Title><h2>Perfume Colônia  Masculino Pulse 100ml</h2></Card.Title>
                         <div className=' Container llog'>
-                            <Link to='/Perfume3'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/Perfume2'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

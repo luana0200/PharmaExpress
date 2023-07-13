@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
+import Badge from 'react-bootstrap/esm/Badge'
 
 export default function DesoM() {
     return (
@@ -17,6 +18,9 @@ export default function DesoM() {
                 Protege 3 vezes mais do que os antitranspirantes comuns.
                 Controla o suor excessivo e previne o mau odor por 96 horas.
                 Proporciona frescor, conforto e segurança.
+                <div className='promocao'>
+                    <Badge bg="danger">PROMOÇAO 10%</Badge>
+                </div>
                 <h1>R$ 16,99</h1>
                 <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
