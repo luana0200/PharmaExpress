@@ -17,12 +17,10 @@ export default function EscovaDental() {
                 Limpa a placa bacteriana nos dentes posteriores.
                 Cerdas de borracha que aderem ao creme dental.
 
+
                 <h1>  R$ 13,50 </h1>
-                <div className='Container llog'>
-            <h1>  R$ 13,50 </h1>
-            <div className='Container button'>
+                <div className='Container button'>
                     <Link to='/Compra'> <Button variant="secondary">COMPRAR</Button></Link>
-                </div>
                 </div>
             </Card>
         </Container>

@@ -10,10 +10,10 @@ import Badge from 'react-bootstrap/Badge'
 
 import base from "../Beleza/imagens/base.png"
 import batom from '../Beleza/imagens/batom.png'
-import shampoo from '../Beleza/imagens/shampoomorango.png'
+import shampoo from '../Beleza/imagens/shampoomorango2.png'
 import rimel from '../Beleza/imagens/rimel.png'
 import esmaltevermelho from '../Beleza/imagens/esmaltevermelho.png'
-import perfume3 from '../Beleza/imagens/perfume3.png'
+import Perfume2 from '../Beleza/imagens/perfume2.png'
 import saboneteliq from '../HPessoal/imagens H/sabonete liq.png'
 import creme from '../HPessoal/imagens H/creme facial.png'
 
@@ -96,7 +96,7 @@ export default function Home() {
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={perfume3} alt="Perfume" />
+                    <Card.Img variant="top" width="220px" src={Perfume2} alt="Perfume" />
                     <Card.Body>
                         <Card.Title><h2>La Victori Eau de Parfum 75ml</h2></Card.Title>
                         <div className=' Container llog'>

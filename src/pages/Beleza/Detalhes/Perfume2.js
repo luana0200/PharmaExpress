@@ -1,4 +1,4 @@
-import perfume3 from '../imagens/perfume3.png'
+import perfume2 from '../imagens/perfume2.png'
 import './bela.css'
 import { Link } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ export default function Perfume() {
     return (
         <Container >
         <Card className='m-2, p-2'>
-            <Card.Img className='detail' variant="top" src={perfume3} alt="Perfume3" />
+            <Card.Img className='detail' variant="top" src={perfume2} alt="Perfume2" />
             <h4>La Victorie Eau de Parfum 75ml</h4>
 
             La Victorie Intense Eau de Parfum é a nova fragrância de Eudora, que apresenta um novo floral amadeirado cremoso, 

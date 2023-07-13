@@ -82,7 +82,7 @@ export default function HPessoal() {
                     <Card.Body>
                         <Card.Title><h2>Pasta de Dente Colgate 90 g</h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/Pasta de Dente'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/PastaDenteColgate'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
@@ -93,7 +93,7 @@ export default function HPessoal() {
                     <Card.Body>
                         <Card.Title><h2>Pasta de Dente Oral-B</h2></Card.Title>
                         <div className='Container llog'>
-                            <Link to='/PastaDental'><Button variant="secondary">Detalhes</Button></Link>
+                            <Link to='/PastaDentalOral'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
