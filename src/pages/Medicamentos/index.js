@@ -6,11 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import acetilcisteína from "./imagens/acetilcisteína.png"
-import allexofedrin from "./imagens/allexofedrin.png"
 import ambroxol from "./imagens/ambroxol.png"
-import carbocisteína from "./imagens/carbocisteína.png"
 import complexo from "./imagens/complexo.png"
-import condres from "./imagens/condres.png"
 import cystex from "./imagens/cystex.png"
 import declofenaco from "./imagens/declofenaco.png"
 import desloratadina from "./imagens/desloratadina.png"
@@ -20,11 +17,9 @@ import dorspan from "./imagens/dorspan.png"
 import emsgrip from "./imagens/emsgrip.png"
 import fendizoato from "./imagens/fendizoato.png"
 import gemax from "./imagens/gemax.png"
-import ibuprofeno from "./imagens/ibuprofeno.png"
 import paracetamol from "./imagens/paracetamol.png"
 import simeticona from "./imagens/simeticona.jpg"
 import sominex from "./imagens/sominex.png"
-import suplevit from "./imagens/suplevit.png"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -48,17 +43,6 @@ export default function Medicamentos() {
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={allexofedrin} alt="Allexofredrin" />
-                    <Card.Body>
-                        <Card.Title><h2>Allexofedrin 120mg 10 Comprimidos EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Allexofedrin'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
                     <Card.Img variant="top" width="220px" src={ambroxol} alt="Ambroxol" />
                     <Card.Body>
                         <Card.Title><h2>Cloridrato De Ambroxol  Xarope 120ml EMS</h2></Card.Title>
@@ -68,16 +52,6 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={carbocisteína} alt="Carbocisteína" />
-                    <Card.Body>
-                        <Card.Title><h2>Carbocisteína Xarope 100ml EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Carbocisteína'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
@@ -86,17 +60,6 @@ export default function Medicamentos() {
                         <Card.Title><h2>Complexo B 100 Comprimidos EMS</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Complexob'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={condres} alt="Condres" />
-                    <Card.Body>
-                        <Card.Title><h2>Condres Colágeno 90 cápsulas EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/condres'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
@@ -208,17 +171,6 @@ export default function Medicamentos() {
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
-                    <Card.Img variant="top" width="220px" src={ibuprofeno} alt="Ibuprofeno" />
-                    <Card.Body>
-                        <Card.Title><h2>Ibuprofeno 200mg 20 Comprimidos EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Ibuprofeno'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
                     <Card.Img variant="top" width="220px" src={paracetamol} alt="Paracetamol" />
                     <Card.Body>
                         <Card.Title><h2>Paracetamol 770mg 20 Comprimidos EMS</h2></Card.Title>
@@ -246,17 +198,6 @@ export default function Medicamentos() {
                         <Card.Title><h2>Sominex Composto 20 Comprimidos  EMS</h2></Card.Title>
                         <div className='Container llog'>
                             <Link to='/Sominex'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={suplevit} alt="Suplevit" />
-                    <Card.Body>
-                        <Card.Title><h2>Suplevit 30 Cápsulas EMS</h2></Card.Title><p />
-                        <div className='Container llog'>
-                            <Link to='/Suplevit'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

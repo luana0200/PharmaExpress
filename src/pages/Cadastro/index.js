@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import './estilo.css'
 import { IMaskInput } from 'react-imask';
 import Form from 'react-bootstrap/Form';
@@ -7,12 +6,6 @@ import Button from "react-bootstrap/esm/Button";
 
 
 function Cadastro() {
-
-    const [nome, ] = useState('')
-    const [email, ] = useState('')
-    const [senha,] = useState('')
-    const [sexo, ] = useState('')
-    const [cpf, ] = useState('')
 
     function handleCadastro() {
         alert(`CADASTRO FEITO COM SUCESSO`)
@@ -38,7 +31,7 @@ function Cadastro() {
 
                     <Form.Group className="mb-3">
                           <Form.Label>Data de Nascimento</Form.Label>
-                        <Form.Control
+                        <Form.Control 
                             as={IMaskInput}
                             mask="00/00/0000"
                             placeholder="Digite sua Data de Nascimento"
