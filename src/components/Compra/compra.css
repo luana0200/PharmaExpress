@@ -1,47 +1,52 @@
-.compra{
+.compra {
   display: flex;
   flex-direction: row;
 }
 
-b{
-    font-size: 35px;
+b {
+  font-size: 35px;
 }
 
-.compra Button{
-  background-color:  lightseagreen;
+.compra Button {
+  background-color: lightseagreen;
   cursor: pointer;
   border: none;
-margin: 0px 5px;
-border-radius: 9px;
-justify-content: center;
+  margin: 0px 5px;
+  border-radius: 9px;
+  justify-content: center;
 }
-  
+
 .compra Button a {
   text-decoration: none;
   color: #FFFFFF;
   align-items: left;
 }
 
-@media screen and( max-width:550px) {
-  .comprar{
+@media screen and(max-width:550px) {
+  .comprar {
     flex-direction: column;
   }
 }
 
+.mb-1{
+  width: 50%;
+  padding: 5px;
+}
 /* parte da compra */
 
-.comprinha{
+.comprinha {
   width: 50%;
   margin: 3%;
 }
 
-.comprando{
+.comprando {
   display: table;
   margin: 0 auto;
- width: 100%;
+  width: 100%;
 }
-.cadastrando{
-display: table-cell;
-flex-direction: column;
-text-align: right;
+
+.cadastrando {
+  display: table-cell;
+  flex-direction: column;
+  text-align: right;
 }
