@@ -9,6 +9,12 @@
       text-align: center;
   }
 
+  .Container Menu{
+    display: flex;
+    justify-content: flex-end;
+
+
+  }
   /* Incio Botoes */
   .Container Button {
       background-color: lightseagreen;
@@ -18,13 +24,16 @@
       padding: auto;
       border-radius: 9px;
       position: relative;
+    justify-content: center;   
     text-align: center;
-    justify-content: center;
-     
+    /* display: flex;
+    width: 100%; */
+
   }
   Button a {
       text-decoration: none;
       color: #FFFFFF;
+      
   }
 
   .test{
@@ -62,8 +71,7 @@
   .m-2 img {
       width: 250px;
       flex-direction: row;
-      justify-content: center;
-      
+      justify-content: center;     
   }
 
   /* area principal */

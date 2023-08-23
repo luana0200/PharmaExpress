@@ -26,7 +26,7 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Baby() {
     return (
         <Container fluid >
-            <div className='cabecalho'><h1>lunanannanffdgdb</h1></div>
+            <div className='cabecalho'><h1>BABY</h1></div>
             
             <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '17rem' }}>
