@@ -71,7 +71,9 @@
   .m-2 img {
       width: 250px;
       flex-direction: row;
-      justify-content: center;     
+      justify-content: center;
+    
+      
   }
 
   /* area principal */
