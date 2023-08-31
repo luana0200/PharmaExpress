@@ -66,13 +66,8 @@ import Declofenaco from'./pages/Medicamentos/Detalhes/Declofenaco'
 import Desloratadina from'./pages/Medicamentos/Detalhes/Desloratadina'
 import Dipirona from'./pages/Medicamentos/Detalhes/Dipirona'
 import Doricin from'./pages/Medicamentos/Detalhes/Doricin'
-import Dorspan from'./pages/Medicamentos/Detalhes/Dorspan'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
-import Fendizoato from'./pages/Medicamentos/Detalhes/Fendizoato'
-import Gemax from'./pages/Medicamentos/Detalhes/Gemax'
-import Paracetamol from'./pages/Medicamentos/Detalhes/Paracetamol'
 import Simeticona from'./pages/Medicamentos/Detalhes/Simeticona'
-import Sominex from'./pages/Medicamentos/Detalhes/Sominex'
 import Compra from './components/Compra/Compra'
 
 export default function Rotas() {
@@ -150,13 +145,8 @@ export default function Rotas() {
                 <Route path='/Desloratadina' element={<Desloratadina/>} />
                 <Route path='/Dipirona' element={<Dipirona />} />
                 <Route path='/Doricin' element={<Doricin/>} />
-                <Route path='/Dorspan' element={<Dorspan />} />
                 <Route path='/emsgrip' element={<Emsgrip />} />
-                <Route path='/Fendizoato' element={<Fendizoato />} />
-                <Route path='/Gemax' element={<Gemax />} />
-                <Route path='/Paracetamol' element={<Paracetamol />} />
                 <Route path='/Simeticona' element={<Simeticona />} />
-                <Route path='/Sominex' element={<Sominex />} />
 
                 
                 <Route path='/Compra' element={<Compra />} />

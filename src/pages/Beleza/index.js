@@ -157,66 +157,7 @@ export default function Beleza() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={esfoliante} alt="Esfoliante" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Máscara Esfoliante Enzimática 77g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esfoliante'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={shampooacai} alt="Shampoo Acai" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Combo Açai e Bambu</h2></Card.Title>
-                        <br />
-                        <div className='Container llog'>
-                            <Link to='/Shampooacai'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                   
-                    <Card.Img variant="top" width="220px" src={shampoomorango} />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={esmaltepreto} alt="Esmalte Preto" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Esmalte Preto Essencial 7ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esmaltepreto'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                   
-                    <Card.Img variant="top" width="220px" src={esmaltevermelho} />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Esmalte Vermelho Sofisticado 7ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+           
 
             </Row>
             <div className='fluid '>

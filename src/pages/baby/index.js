@@ -27,7 +27,7 @@ export default function Baby() {
     return (
         <Container fluid >
             <div className='cabecalho'><h1>BABY</h1></div>
-            
+
             <Row className='d-flex justify-content-center'>
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
@@ -141,63 +141,6 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={Chupetas} alt="Chupetas" />
-                    <Card.Body>
-                        <Card.Title><h2> Chupetas</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Chupetas'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={Rosa} alt="Rosa" />
-                    <Card.Body>
-                        <br/>
-                        <Card.Title><h2>   Kit Escova Rosa</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/rosa'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={Kit} alt="Kit Azul" />
-                    <Card.Body>
-                        <br/>
-                        <Card.Title><h2>   Kit Escova Azul</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/kit'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={mama} alt="mama" />
-                    <Card.Body>
-                        <Card.Title><h2>   Mamadeira Azul 270 ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Mamadeira'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={Mamadeira} alt="Mamadeira" />
-                    <Card.Body>
-                        <Card.Title><h2> Mamadeira Rosa 330 ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/MamaRosa'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
             </Row>
 
             <div className='fluid '>

@@ -13,13 +13,8 @@ import declofenaco from "./imagens/declofenaco.png"
 import desloratadina from "./imagens/desloratadina.png"
 import dipirona from "./imagens/dipirona.png"
 import doricin from "./imagens/doricin.png"
-import dorspan from "./imagens/dorspan.png"
 import emsgrip from "./imagens/emsgrip.png"
-import fendizoato from "./imagens/fendizoato.png"
-import gemax from "./imagens/gemax.png"
-import paracetamol from "./imagens/paracetamol.png"
 import simeticona from "./imagens/simeticona.jpg"
-import sominex from "./imagens/sominex.png"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -147,60 +142,6 @@ export default function Medicamentos() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={fendizoato} alt="Fendizoato" />
-                    <Card.Body>
-                        <Card.Title><h2>Fendizoato Xarope 120ml EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Fendizoato'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={gemax} alt="Gelmax" />
-                    <Card.Body>
-                        <Card.Title><h2>Gelmax Sabor Limão EMS</h2></Card.Title><p />
-                        <div className='Container llog'>
-                            <Link to='/Gemax'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={paracetamol} alt="Paracetamol" />
-                    <Card.Body>
-                        <Card.Title><h2>Paracetamol 770mg 20 Comprimidos EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Paracetamol'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={dorspan} alt="Dorspan" />
-                    <Card.Body>
-                        <Card.Title><h2>Dorspan Composto Gotas 20ml EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Dorspan'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={sominex} alt="Sominex" />
-                    <Card.Body>
-                        <Card.Title><h2>Sominex Composto 20 Comprimidos  EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Sominex'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
 
             </Row>
             <div className='fluid '>
