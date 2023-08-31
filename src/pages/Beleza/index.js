@@ -16,11 +16,11 @@ import perfume4 from "./imagens/perfume4.png"
 import hidratante from './imagens/Hidratante2.png'
 import protetorsolar from "./imagens/protetorsolar.png"
 import demaquilante from "./imagens/Demaquilante2.png"
-import esfoliante from "./imagens/Esfoliante2.png"
-import shampoomorango from "./imagens/shampoomorango2.png"
-import shampooacai from "./imagens/shampooacai2.png"
-import esmaltepreto from "./imagens/esmaltepreto.png"
-import esmaltevermelho from "./imagens/esmaltevermelho.png"
+// import esfoliante from "./imagens/Esfoliante2.png"
+// import shampoomorango from "./imagens/shampoomorango2.png"
+// import shampooacai from "./imagens/shampooacai2.png"
+// import esmaltepreto from "./imagens/esmaltepreto.png"
+// import esmaltevermelho from "./imagens/esmaltevermelho.png"
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 

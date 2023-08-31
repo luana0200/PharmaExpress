@@ -6,19 +6,19 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import ShampooJonhson from "./imagens/ShampooJonhson.webp"
-import Mamadeira from "./imagens/Mamadeira Rosa.jpg"
+// import Mamadeira from "./imagens/Mamadeira Rosa.jpg"
 import Lenco from "./imagens/Lenco umidecido.png"
 import Fralda from "./imagens/Fralda.webp"
 import Sabonet from "./imagens/Sabonet Liquido.webp"
 import Pomada from "./imagens/Pomada.webp"
-import Chupetas from "./imagens/Chupetas.png"
+// import Chupetas from "./imagens/Chupetas.png"
 import Formula from "./imagens/Formula Aptamil.webp"
-import Kit from "./imagens/Kit Escova Azul.jpg"
+// import Kit from "./imagens/Kit Escova Azul.jpg"
 import Locao from "./imagens/Locao hidratante.jpg"
-import Rosa from "./imagens/EscovaRosa.jpg"
+// import Rosa from "./imagens/EscovaRosa.jpg"
 import talco from './imagens/Talco.jpg'
 import lenco from "./imagens/lenco humidecido.png"
-import mama from "./imagens/mama azul.webp"
+// import mama from "./imagens/mama azul.webp"
 import sbonete from "./imagens/sbonete barra.webp"
 
 import visa12 from '../../components/Header/imagens/visa12.png'

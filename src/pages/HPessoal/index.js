@@ -15,12 +15,7 @@ import pastadental from "./imagens H/pasta dental.png"
 import absorvente from "./imagens H/absorvente.webp"
 import creme from "./imagens H/creme facial.png"
 import protetor from "./imagens H/nivea.webp"
-import escovacarvao from "./imagens H/escova colgate carvao.jpg"
-import listerine from "./imagens H/listerine.webp"
-import escova from './imagens H/escova de dente.webp'
 import sabonetedove from "./imagens H/sabonete dove.jpg"
-import sabonete from "./imagens H/sabonete protex.webp"
-import saboneteliq from "./imagens H/sabonete liq.png"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'

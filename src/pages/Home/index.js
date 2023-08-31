@@ -10,10 +10,10 @@ import Badge from 'react-bootstrap/Badge'
 
 import base from "../Beleza/imagens/base.png"
 import batom from '../Beleza/imagens/batom.png'
-import shampoo from '../Beleza/imagens/shampoomorango2.png'
+// import shampoo from '../Beleza/imagens/shampoomorango2.png'
 import rimel from '../Beleza/imagens/rimel.png'
 import perfume1 from '../Beleza/imagens/perfume1.png'
-import Perfume2 from '../Beleza/imagens/perfume2.png'
+// import Perfume2 from '../Beleza/imagens/perfume2.png'
 import deso from '../HPessoal/imagens H/deso M.webp'
 import creme from '../HPessoal/imagens H/creme facial.png'
 
@@ -26,7 +26,7 @@ export default function Home() {
             <CarroselHome />
             <br />
 
-            <Row  className='d-flex justify-content-center'>
+            <Row className='d-flex justify-content-center'>
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
@@ -50,17 +50,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-              
-                <Card className='m-1' style={{ width: '20rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={shampoo} />
-                    <Card.Body>
-                        <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
@@ -96,16 +86,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '20rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={Perfume2} alt="Perfume" />
-                    <Card.Body>
-                        <Card.Title><h2>Perfume Colônia  Masculino Pulse 100ml</h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/Perfume2'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
@@ -121,7 +102,7 @@ export default function Home() {
 
 
             <div className='fluid '>
-                <img src={visa12} alt="creme" /><br/>
+                <img src={visa12} alt="creme" /><br />
                 <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
                     das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3217, Dúvidas, elogios e reclamações:
                     atendimento@pharmaexpress.com.br.</h7><br />
