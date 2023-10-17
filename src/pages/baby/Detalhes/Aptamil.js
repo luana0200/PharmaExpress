@@ -1,15 +1,46 @@
 import aptamil from '../imagens/Formula Aptamil.webp'
 import './baby.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import apiBack from '../../../services/apiBack'
+import { useNavigate } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
 
 export default function Aptamil() {
-    return (
+    const navigation = useNavigate()
+    const [produtos, setProdutos] = useState([''])
 
-        
+
+    // async function listarProdutos() {
+
+    //     await apiBack.get('/ListarPdtUnico')
+
+    //     navigation('/Carrinho')
+    // }
+
+
+
+
+    async function listarProdutos() {
+        const response = await apiBack.get('/ListarPdtUnico', {
+            params: {
+                baseURL: 'http://localhost:3334',
+                language: 'pt-BR'
+
+            }
+        }
+        )
+        console.log(response.data)
+        navigation('/Carrinho')
+    }
+
+
+
+
+    return (
         <Container >
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={aptamil} alt="Aptamil" />
@@ -22,9 +53,14 @@ export default function Aptamil() {
                     R$ 49,90
                 </h1>
                 <div className='Container button'>
-                    <Link to='/Carrinho'> <Button variant="secondary">COMPRA</Button></Link>
+                    {produtos.map((produtos) => {
+                        return (
+                            <Button variant="secondary"
+                                onClick={() => listarProdutos(produtos.id)}>COMPRA</Button>
+                        )
+                    })}
                 </div>
             </Card>
-        </Container>
+        </Container >
     )
 }

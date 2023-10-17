@@ -1,16 +1,30 @@
 import fralda from '../imagens/Fralda.webp'
 import './baby.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import apiBack from '../../../services/apiBack'
+import { useNavigate } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
 
 export default function Fralda() {
+
+    const navigation = useNavigate()
+    const [produtos, setProdutos] = useState([''])
+
+    async function cadastrarProdutos() {
+        // await  apiBack.post('/CriarProdutos')
+        // await apiBack.get('/ListarProdutos')
+        // toast.success('Produto Adicionado ao Carrinho')
+        navigation('/Carrinho')
+    }
+
     return (
 
         <Container >
-                   <Card className='m-2, p-2'>
+            <Card className='m-2, p-2'>
 
                 <Card.Img className='detail' variant="top" src={fralda} alt="Fralda" />
                 <h4> Fralda Pampers 24 unidades</h4><br />
@@ -23,7 +37,8 @@ export default function Fralda() {
                     R$ 31,90
                 </h1>
                 <div className='Container button'>
-                    <Link to='/Carrinho'> <Button variant="secondary">COMPRA</Button></Link>
+                    <Button variant="secondary"
+                        onClick={() => cadastrarProdutos(produtos.id)}>COMPRA</Button>
                 </div>
             </Card>
         </Container>
