@@ -10,7 +10,7 @@ export default function Carrinho() {
     <Container fluid>
       <div className='cabecalho'><h1>CARRINHO DE COMPRAS</h1></div>
       <Row md={1}>
-        <img src={manutencao} alt="Manutencao" />
+        {/* <img src={manutencao} alt="Manutencao" /> */}
       </Row>
     </Container>
   )
