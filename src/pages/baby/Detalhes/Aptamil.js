@@ -8,6 +8,8 @@ import Card from 'react-bootstrap/Card'
 
 export default function Aptamil() {
     return (
+
+        
         <Container >
             <Card className='m-2, p-2'>
                 <Card.Img className='detail' variant="top" src={aptamil} alt="Aptamil" />
