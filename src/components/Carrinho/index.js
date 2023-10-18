@@ -8,7 +8,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 export default function Carrinho() {
-  const [produtos, setProdutos] = useState([''])
 
   return (
     <Container fluid>
@@ -16,8 +15,7 @@ export default function Carrinho() {
         <h1>CARRINHO DE COMPRAS</h1></div>
 
 
-      <article> {produtos.nome}  </article>
-
+    <h1>oiiii</h1>
     </Container>
   )
 }
