@@ -11,10 +11,10 @@ import complexo from "./imagens/complexo.png"
 import cystex from "./imagens/cystex.png"
 import declofenaco from "./imagens/declofenaco.png"
 import desloratadina from "./imagens/desloratadina.png"
-import dipirona from "./imagens/dipirona.png"
-import doricin from "./imagens/doricin.png"
-import emsgrip from "./imagens/emsgrip.png"
-import simeticona from "./imagens/simeticona.jpg"
+// import dipirona from "./imagens/dipirona.png"
+// import doricin from "./imagens/doricin.png"
+// import emsgrip from "./imagens/emsgrip.png"
+// import simeticona from "./imagens/simeticona.jpg"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -82,66 +82,6 @@ export default function Medicamentos() {
                         </div>
                     </Card.Body>
                 </Card>
-
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-
-                    <br />
-                    <Card.Img variant="top" width="220px" src={emsgrip} alt="Emsgrip" />
-                    <Card.Body>
-                        <Card.Title><h2>EMSGRIP Limão e Mel Sachê EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Emsgrip'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={doricin} alt="Doricin" />
-                    <Card.Body>
-                        <Card.Title><h2>Doricin  300mg 36 Comprimidos EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Doricin'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={cystex} alt="Cystex" />
-                    <Card.Body>
-                        <Card.Title><h2>Cystex  17mg EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Cystex'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={simeticona} alt="Simeticona" />
-                    <Card.Body>
-                        <Card.Title><h2>Simeticona 17ml EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Simeticona'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={dipirona} alt="Dipirona" />
-                    <Card.Body>
-                        <Card.Title><h2> Dipirona Sódica  10ml EMS</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Dipirona'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
 
             </Row>
             <div className='fluid '>
