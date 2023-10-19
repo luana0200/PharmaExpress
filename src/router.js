@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from "./components/Header"
 import Cadastro from "./pages/Cadastro"
 import Home from "./pages/Home"
-import Medicamentos from "./pages/Medicamentos"
 import Carrinho from './components/Carrinho'
+import Login from './pages/Cadastro/Login'
 
 import HPessoal from "./pages/HPessoal"
 import Absorvente from './pages/HPessoal/Detalhes/Absorvente'
@@ -43,16 +43,17 @@ import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
 import Rimel from './pages/Beleza/Detalhes/Rimel'
 
 
-import Acetilcisteína from'./pages/Medicamentos/Detalhes/Acetilcisteína'
-import Ambroxol from'./pages/Medicamentos/Detalhes/Ambroxol'
-import Complexob from'./pages/Medicamentos/Detalhes/Complexob'
-import Cystex from'./pages/Medicamentos/Detalhes/Cystex'
-import Declofenaco from'./pages/Medicamentos/Detalhes/Declofenaco'
-import Desloratadina from'./pages/Medicamentos/Detalhes/Desloratadina'
-import Dipirona from'./pages/Medicamentos/Detalhes/Dipirona'
-import Doricin from'./pages/Medicamentos/Detalhes/Doricin'
+import Medicamentos from "./pages/Medicamentos"
+import Acetilcisteína from './pages/Medicamentos/Detalhes/Acetilcisteína'
+import Ambroxol from './pages/Medicamentos/Detalhes/Ambroxol'
+import Complexob from './pages/Medicamentos/Detalhes/Complexob'
+import Cystex from './pages/Medicamentos/Detalhes/Cystex'
+import Declofenaco from './pages/Medicamentos/Detalhes/Declofenaco'
+import Desloratadina from './pages/Medicamentos/Detalhes/Desloratadina'
+import Dipirona from './pages/Medicamentos/Detalhes/Dipirona'
+import Doricin from './pages/Medicamentos/Detalhes/Doricin'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
-import Simeticona from'./pages/Medicamentos/Detalhes/Simeticona'
+import Simeticona from './pages/Medicamentos/Detalhes/Simeticona'
 import Compra from './components/Compra/Compra'
 
 export default function Rotas() {
@@ -74,8 +75,9 @@ export default function Rotas() {
 
 
                 <Route path='/Cadastro' element={<Cadastro />} />
-                <Route path='/' element={<Home />}/>
+                <Route path='/' element={<Home />} />
                 <Route path='/Carrinho' element={<Carrinho />} />
+                <Route path='/Login' element={<Login />} />
 
 
                 <Route path='/Baby' element={<Baby />} />
@@ -90,8 +92,8 @@ export default function Rotas() {
                 <Route path='Lenco2' element={<Lenco2 />} />
                 <Route path='Talco' element={<Talco />} />
 
-                
-                
+
+
                 <Route path='/Beleza' element={<Beleza />} />
                 <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
@@ -103,23 +105,23 @@ export default function Rotas() {
                 <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
                 <Route path='/Rimel' element={<Rimel />} />
-               
+
 
                 <Route path='/Medicamentos' element={<Medicamentos />} />
                 <Route path='/Acetilcisteína' element={<Acetilcisteína />} />
                 <Route path='/Ambroxol' element={<Ambroxol />} />
-                <Route path='/Complexob' element={<Complexob/>} />
-                <Route path='/Cystex' element={<Cystex/>} />
+                <Route path='/Complexob' element={<Complexob />} />
+                <Route path='/Cystex' element={<Cystex />} />
                 <Route path='/Declofenaco' element={<Declofenaco />} />
-                <Route path='/Desloratadina' element={<Desloratadina/>} />
+                <Route path='/Desloratadina' element={<Desloratadina />} />
                 <Route path='/Dipirona' element={<Dipirona />} />
-                <Route path='/Doricin' element={<Doricin/>} />
+                <Route path='/Doricin' element={<Doricin />} />
                 <Route path='/emsgrip' element={<Emsgrip />} />
                 <Route path='/Simeticona' element={<Simeticona />} />
 
-                
+
                 <Route path='/Compra' element={<Compra />} />
- </Routes>
+            </Routes>
 
         </BrowserRouter>
 
