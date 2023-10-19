@@ -80,7 +80,7 @@ export default function Baby() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
+                {/* <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
                     <Card.Img variant="top" width="220px" src={lenco} alt="Locao" />
                     <Card.Body>
@@ -134,7 +134,20 @@ export default function Baby() {
                             <Link to='/Aptamil'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
-                </Card>
+                </Card> */}
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/>
 
             </Row>
 

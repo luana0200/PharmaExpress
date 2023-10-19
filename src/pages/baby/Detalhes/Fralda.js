@@ -21,6 +21,19 @@ export default function Fralda() {
         navigation('/Carrinho')
     }
 
+
+    async function listarProdutos() {
+        const response = await apiBack.get('/ListarPdtUnico', {
+            params: {
+                baseURL: 'http://localhost:3334',
+                language: 'pt-BR'
+
+            }
+        }
+        )
+        console.log(response.data)
+        navigation('/Carrinho')
+    }
     return (
 
         <Container >
@@ -36,9 +49,18 @@ export default function Fralda() {
                 <h1>
                     R$ 31,90
                 </h1>
-                <div className='Container button'>
+                {/* <div className='Container button'>
                     <Button variant="secondary"
                         onClick={() => cadastrarProdutos(produtos.id)}>COMPRA</Button>
+                </div> */}
+
+                <div className='Container button'>
+                    {produtos.map((produtos) => {
+                        return (
+                            <Button variant="secondary"
+                                onClick={() => listarProdutos(produtos.id)}>COMPRA</Button>
+                        )
+                    })}
                 </div>
             </Card>
         </Container>
