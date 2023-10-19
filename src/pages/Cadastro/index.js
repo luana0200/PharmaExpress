@@ -1,12 +1,13 @@
 import './estilo.css'
 import { useState } from 'react'
-import { IMaskInput } from 'react-imask';
+import { IMaskInput } from 'react-imask'
+import { Link } from 'react-router-dom'
 // import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import Form from 'react-bootstrap/Form';
-import Container from "react-bootstrap/esm/Container";
-import Button from "react-bootstrap/esm/Button";
-import api from '../../services/apiBack';
+import Form from 'react-bootstrap/Form'
+import Container from "react-bootstrap/esm/Container"
+import Button from "react-bootstrap/esm/Button"
+import api from '../../services/apiBack'
 
 
 export default function Cadastro() {
@@ -29,7 +30,7 @@ export default function Cadastro() {
                 toast.warn('As senhas são diferentes')
                 return
             } else if (password === passwordC) {
-               const resposta = await api.post('/CriarUsuarios', {
+                const resposta = await api.post('/CriarUsuarios', {
                     name,
                     dateN,
                     cpf_cnpj,
@@ -118,6 +119,8 @@ export default function Cadastro() {
                         />
                     </Form.Group>
                     <p>   <Button type="submit" variant='secondary' >Enviar</Button></p>
+
+                    <h1>Faça seu Login <Link to='/Login'>AQUI</Link></h1>
                 </div>
 
             </Form>
