@@ -1,4 +1,5 @@
 import './estilo.css'
+import {useNavigate } from 'react-router-dom'
 
 import { IMaskInput } from 'react-imask'
 import Form from 'react-bootstrap/Form'
@@ -10,6 +11,7 @@ import api from '../../services/apiBack'
 
 export default function Login() {
 
+     const navigation = useNavigate()
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
@@ -28,6 +30,7 @@ export default function Login() {
         } catch (err) {
             toast.error(err.response.data.error)
         }
+        navigation('/')
     }
 
     return (
