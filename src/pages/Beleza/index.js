@@ -90,8 +90,18 @@ export default function Beleza() {
                         </div>
                     </Card.Body>
                 </Card>
-
-
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/>
             </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
