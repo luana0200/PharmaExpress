@@ -28,7 +28,7 @@ export default function Login() {
             toast.success('Login Efetuado com Sucesso')
             // console.log(response)
         } catch (err) {
-            toast.error(err.response.data.error)
+           
         }
         navigation('/')
     }
