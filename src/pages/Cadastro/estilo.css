@@ -1,13 +1,14 @@
 
-input[type="number"]::-webkit-outer-spin-button, 
+/* input[type="number"]::-webkit-outer-spin-button, 
  input[type="number"]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     margin: 0; 
-} 
+}  */
 
 .compra{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
 }
 
 b{
@@ -28,15 +29,3 @@ justify-content: center;
   color: #FFFFFF;
   align-items: left;
 }
-
-@media screen and( max-width:550px) {
-  .comprar{
-    flex-direction: column;
-  }
-}
-
-.mb-3{
-    width: 50%;
-    padding: 5px;
-}
-

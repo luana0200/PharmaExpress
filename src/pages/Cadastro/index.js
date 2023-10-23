@@ -51,10 +51,9 @@ export default function Cadastro() {
 
         <Container fluid>
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
-            <Form onSubmit={cadastraUsuario}>
-                <div className="compra" >
-                    <br />
-                    <Form.Group className="mb-3">
+            <div className="compra" >
+                <Form onSubmit={cadastraUsuario}>
+                    <Form.Group>
                         <Form.Label>Nome</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -62,10 +61,10 @@ export default function Cadastro() {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
-                    </Form.Group><br />
+                    </Form.Group>
 
 
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>Data de Nascimento</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -76,7 +75,7 @@ export default function Cadastro() {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>CPF/CNPJ</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -86,10 +85,8 @@ export default function Cadastro() {
                             onChange={(e) => setCpf_cnpj(e.target.value)}
                         />
                     </Form.Group>
-                </div>
 
-                <div className="comprar">
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>E-mail</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -99,7 +96,7 @@ export default function Cadastro() {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>Senha:</Form.Label>
                         <Form.Control
                             type="password"
@@ -109,7 +106,7 @@ export default function Cadastro() {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>Confirme sua Senha:</Form.Label>
                         <Form.Control
                             type="password"
@@ -120,10 +117,9 @@ export default function Cadastro() {
                     </Form.Group>
                     <p>   <Button type="submit" variant='secondary' >Enviar</Button></p>
 
-                    <h1>Faça seu Login <Link to='/Login'>AQUI</Link></h1>
-                </div>
-
-            </Form>
+                    <a>Faça seu Login <Link to='/Login'>AQUI</Link></a>
+                </Form>
+            </div>
         </Container>
     )
 }
