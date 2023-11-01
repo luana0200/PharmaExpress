@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Cadastro {
+  id        String    @id @default(uuid())
+  name      String
+  dateN     String
+  cpf_cnpj  String
+  email     String
+  password  String
+  create_at DateTime? @default(now())
+  update_at DateTime? @default(now())
+
+  @@map("cadastro")
+}
+
+model Produtos {
+  id          String    @id @default(uuid())
+  name        String
+  value       String
+  quantity    String
+  provider    String
+  description String
+  banner      String
+  create_at   DateTime? @default(now()) // para salvar a data que foi criado
+  update_at   DateTime? @default(now()) //para qunado tiver alteracoes salvar a data
+
+  categorias  Categorias @relation(fields: [categoriaId], references: [id])
+  categoriaId String
+
+  @@map("produtos")
+}
+
+model Categorias {
+  id        String    @id @default(uuid())
+  name      String
+  create_at DateTime? @default(now())
+  update_at DateTime? @default(now())
+
+  produtos Produtos[]
+
+  @@map("categorias")
+}
