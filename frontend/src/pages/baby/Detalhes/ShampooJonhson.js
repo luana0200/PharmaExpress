@@ -1,8 +1,8 @@
 import ShampooJonhson from '../imagens/ShampooJonhson.webp'
 import './baby.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 import apiBack from '../../../services/apiBack'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
@@ -10,8 +10,8 @@ import Card from 'react-bootstrap/Card'
 
 export default function shampooJonhson() {
 
-    const navigation = useNavigate()
-    const [produtos, setProdutos] = useState('')
+    // const navigation = useNavigate()
+    // const [produtos, setProdutos] = useState('')
 
     async function listarProdutos() {
         const response = await apiBack.get('/ListarPdtUnico', {
@@ -23,7 +23,7 @@ export default function shampooJonhson() {
         }
         )
         console.log(response.data)
-        navigation('/Carrinho')
+        // navigation('/Carrinho')
     }
     return (
 
@@ -43,12 +43,12 @@ export default function shampooJonhson() {
                 </div> */}
 
                 <div className='Container button'>
-                    {produtos.map((produtos) => {
+                    {/* {produtos.map((produtos) => {
                         return (
                             <Button variant="secondary"
                                 onClick={() => listarProdutos(produtos.id)}>COMPRA</Button>
                         )
-                    })}
+                    })} */}
                 </div>
             </Card>
         </Container >
