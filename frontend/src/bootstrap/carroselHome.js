@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './style.css'
 import escovadental from '../bootstrap/imagens/escovadente.webp'
 import Pampers from '../bootstrap/imagens/Pampers.jpg'
-import Eudora from '../bootstrap/imagens/EUDORA.jpg'
+import Bebe from '../bootstrap/imagens/bebe.jpg'
 
 
 export default function CarroselHome() {
@@ -28,9 +28,10 @@ export default function CarroselHome() {
                 </div>
 
             </Carousel.Item>
+
             <Carousel.Item>
                 <div class="carroselhome">
-                    <img className="d-block w-100" src={Eudora} />
+                    <img className="d-block w-100" src={Bebe} />
                 </div>
             </Carousel.Item>
         </Carousel>
