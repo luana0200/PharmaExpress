@@ -7,12 +7,12 @@ interface CriarProdutos {
     quantidade: string
     descricao: string
     banner: string
-    categoriasId: string
+    categoriasID: string
 }
-  
+
 class CriarProdutosServices {
-    async execute({ nome, preco, fornecedor, quantidade, descricao,  banner, categoriasId }: CriarProdutos) {
- 
+    async execute({ nome, preco, fornecedor, quantidade, descricao, banner, categoriasID }: CriarProdutos) {
+
         const produtos = await prismaClient.produtos.create({
             data: {
                 name: nome,
@@ -21,7 +21,7 @@ class CriarProdutosServices {
                 quantity: quantidade,
                 description: descricao,
                 banner: banner,
-                categoriaId: categoriasId
+                categoriaId: categoriasID
             }
         })
         return produtos

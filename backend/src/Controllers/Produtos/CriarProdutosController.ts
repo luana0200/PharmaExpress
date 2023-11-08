@@ -3,7 +3,7 @@ import { CriarProdutosServices } from "../../Services/Produtos/CriarProdutosServ
 
 class CriarProdutosController {
     async handle(req: Request, res: Response) {
-        const { nome, preco, fornecedor, quantidade, descricao, categoriasId } = req.body
+        const { nome, preco, fornecedor, quantidade, descricao, categoriasID } = req.body
 
         if (!req.file) {
             throw new Error('Imagem com Problemas')
@@ -20,7 +20,7 @@ class CriarProdutosController {
                 quantidade,
                 descricao,
                 banner,
-                categoriasId
+                categoriasID
 
             })
             return res.json(resposta)
