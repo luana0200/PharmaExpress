@@ -1,8 +1,7 @@
 import './estilo.css'
 import { useState } from 'react'
 import { IMaskInput } from 'react-imask'
-import { Link } from 'react-router-dom'
-// import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Form from 'react-bootstrap/Form'
 import Container from "react-bootstrap/esm/Container"
@@ -12,7 +11,7 @@ import api from '../../services/apiBack'
 
 export default function Cadastro() {
 
-    // const navigation = useNavigate()
+     const navigation = useNavigate()
     const [name, setName] = useState('')
     const [dateN, setDateN] = useState('')
     const [cpf_cnpj, setCpf_cnpj] = useState('')
@@ -38,6 +37,7 @@ export default function Cadastro() {
                     password
                 })
                 toast.success(resposta.data.dados)
+                navigation('/')
             }
         } catch (err) {
             toast.error(err.response.data.error)

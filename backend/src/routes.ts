@@ -2,9 +2,11 @@ import { Router } from 'express'
 import multer from 'multer'
 import uploadConfig from './config/multer'
 
+import { isAutenticado } from './middleware/isAutenticado'
+
 //Criar
 import { CriarUsuariosController } from './Controllers/Usuarios/CriarUsuariosController'
-import { AuthLoginController } from './Controllers/Usuarios/AuthLoginController'
+import { AuthLoginController } from './Controllers/Login/AuthLoginController'
 import { CriarCategoriasController } from './Controllers/Categorias/CriarCategoriasController'
 import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosController'
 

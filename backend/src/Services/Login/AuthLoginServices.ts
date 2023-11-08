@@ -5,11 +5,11 @@ import { compare } from "bcryptjs";
 
 interface AuthLogin {
     email: string
-   senha: string
+    senha: string
 }
 
 class AuthLoginServices {
-    async execute({ email,senha }: AuthLogin) {
+    async execute({ email, senha }: AuthLogin) {
         const user = await prismaClient.cadastro.findFirst({
             where: {
                 email: email
@@ -20,20 +20,26 @@ class AuthLoginServices {
             throw new Error('Usuário/Senha Inconrreto')
         }
 
-        const autenticado = await compare (senha, user.password)
+        const autenticado = await compare(senha, user.password)
 
-        if(!autenticado) {
+        if (!autenticado) {
             throw new Error('Usuário/Senha Inconrreto')
         }
 
-        // const token = sign(
-        //     {
-
-        //     }
-        // )
-        return {
+        //criando token
+        const token = sign({
             id: user.id,
             email: user.email
+        },
+            process.env.JWT_SECRET,
+            {
+                subject: user.id,
+                expiresIn: '2h'
+            })
+        return {
+            id: user.id,
+            email: user.email,
+            token: token
         }
     }
 }
