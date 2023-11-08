@@ -12,7 +12,7 @@ import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosCon
 import { ListarUsuariosController } from './Controllers/Usuarios/ListarUsuarioController'
 import { ListarProdutosController } from './Controllers/Produtos/ListarProdutosController'
 import { ListarCategoriasController } from './Controllers/Categorias/ListarCategoriasController'
-
+import { ListarProdutoCarrinhoController } from './Controllers/Carrinho/ListarProdutoCarrinhoController'
 //Deletar
 import { DeletarUsuariosController } from './Controllers/Usuarios/DeletarUsuariosController'
 import { ListarProdutosUnicoController } from './Controllers/Produtos/ListarProdutosUnicoController'
@@ -37,6 +37,9 @@ router.get('/ListarCategorias', new ListarCategoriasController().handle)
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', new ListarProdutosController().handle)
 router.get('/ListarPdtUnico', new ListarProdutosUnicoController().handle)
+
+//carrinho
+router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
 
 
 export { router }
