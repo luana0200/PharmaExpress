@@ -12,7 +12,11 @@ class ListarProdutosUnicoServices {
                 id: id
             },
             select: {
-                name: true
+                name: true,
+                description: true,
+                value: true,
+                banner: true,
+                id: true
             }
         })
 

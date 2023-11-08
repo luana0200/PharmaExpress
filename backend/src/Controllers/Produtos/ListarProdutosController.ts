@@ -9,6 +9,16 @@ class ListarProdutosController {
         return res.json(resposta)
     }
 
+    async findByCategory(req: Request, res: Response) {
+        const { id } = req.params
+        const listarProdutosServices = new ListarProdutosServices()
+        const resposta = await listarProdutosServices.findByCategory({
+            id
+        })
+
+        return res.json(resposta)
+    }
+
 }
 
 export { ListarProdutosController }

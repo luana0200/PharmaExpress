@@ -32,11 +32,13 @@ router.delete('/DeletarUsuarios', new DeletarUsuariosController().handle)
 //categorias
 router.post('/CriarCategorias', new CriarCategoriasController().handle)
 router.get('/ListarCategorias', new ListarCategoriasController().handle)
+router.get('/categoryName/:id', new ListarCategoriasController().findCategoryName)
 
 //produtos
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', new ListarProdutosController().handle)
-router.get('/ListarPdtUnico', new ListarProdutosUnicoController().handle)
+router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
+router.get('/ListarProdutos/:id', new ListarProdutosController().handle)
 
 
 export { router }

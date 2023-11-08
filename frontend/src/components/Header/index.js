@@ -6,10 +6,22 @@ import Button from 'react-bootstrap/Button';
 import logo from './imagens/logo1.png'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import apiBack from '../../services/apiBack'
+import React, { useEffect, useState } from 'react';
 
 export default function Header() {
+    const [data, setData] = useState([]);
+      
+    useEffect(() => {
+      const fetchData = async () => {
+        const result = await apiBack.get('listarCategorias');
+  
+        setData(result.data);
+      };
+  
+      fetchData();
+    }, []);
     return (
-
         <Container fluid>
             <Navbar expand="xxl" className='nave'>
                 <Container fluid className='dark'>
@@ -19,10 +31,9 @@ export default function Header() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="Container button" >
 
-                                <Nav.Link href="/Baby"><Button variant="secondary" >Baby</Button ></Nav.Link>
-                                <Nav.Link href="/HPessoal"><Button variant="secondary" >Higiene Pessoal</Button ></Nav.Link>
-                                <Nav.Link href="/Medicamentos"><Button variant="secondary"> Medicamentos</Button ></Nav.Link>
-                                <Nav.Link href="/Beleza"><Button variant="secondary" >Beleza</Button ></Nav.Link>
+                                {data.map((item, index) => (
+                                        <Nav.Link href={item.id}><Button variant="secondary" >{item.name}</Button ></Nav.Link>
+                                ))}
                                 <Nav className='test'>
                                     <Nav.Link href="/"><BsFillHouseFill size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link href="/Cadastro"><BsPersonFill size='1.5rem' color='white' /></Nav.Link>
