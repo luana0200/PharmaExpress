@@ -36,6 +36,8 @@ model Produtos {
 
   categorias  Categorias @relation(fields: [categoriaId], references: [id])
   categoriaId String
+  Carrinho    Carrinho?  @relation(fields: [carrinhoId], references: [id])
+  carrinhoId  String?
 
   @@map("produtos")
 }
@@ -49,4 +51,14 @@ model Categorias {
   produtos Produtos[]
 
   @@map("categorias")
+}
+
+model Carrinho {
+  id        String    @id @default(uuid())
+  create_at DateTime? @default(now())
+  update_at DateTime? @default(now())
+
+  produtos Produtos[]
+
+  @@map("carrinho")
 }
