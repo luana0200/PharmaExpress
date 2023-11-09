@@ -1,7 +1,8 @@
 import './header.css'
 import { Link } from 'react-router-dom'
 import { BsCart2, BsFillHouseFill, BsPersonFill } from 'react-icons/bs'
-import { LiaAndroid } from 'react-icons/lia'
+import { LiaHomeSolid} from 'react-icons/lia'
+import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
@@ -26,10 +27,10 @@ export default function Header() {
                                 <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link>
                                 <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link>
                                 <Nav className='test'>
-                                    <Nav.Link href='/'><BsFillHouseFill size='1.5rem' color='white' /></Nav.Link>
-                                    <Nav.Link href='/Cadastro'><BsPersonFill size='1.5rem' color='white' /></Nav.Link>
+                                    <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
-                                    <Nav.Link href='/Login'><LiaAndroid size='2rem' color='white' /></Nav.Link>
+                                    <Nav.Link href='/'><LiaHomeSolid size='1.5rem' color='white' /></Nav.Link>
+                                    <Nav.Link href='/Login'><IoExitOutline size='1.5rem' color='white' /></Nav.Link>
 
 
                                 </Nav>
