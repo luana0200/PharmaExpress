@@ -1,11 +1,23 @@
 import prismaClient from "../../prisma";
 
-class ListarUsuarioServices {
-    async execute() {
-        const resposta = await prismaClient.cadastro.findMany()
+interface TokenId {
+    id: string
+}
+class ListarUsuarioTokenServices {
+    async execute({ id }: TokenId) {
+        const resposta = await prismaClient.cadastro.findUnique({
+            where: {
+                id: id
+            },
+            select: {
+                id: true,
+                name: true,
+                email: true
+            }
+        })
 
-        return (resposta)
+        return resposta
     }
 }
 
-export { ListarUsuarioServices }
+export { ListarUsuarioTokenServices }
