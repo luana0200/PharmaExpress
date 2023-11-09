@@ -1,13 +1,16 @@
 import { Request, Response } from 'express'
-import { ListarUsuarioServices } from '../../Services/Usuarios/ListarUsuarioServices'
+import { ListarUsuarioTokenServices } from '../../Services/Usuarios/ListarUsuarioServices'
 
-class ListarUsuariosController {
+class ListarUsuariosTokenController {
     async handle(req: Request, res: Response) {
-        const listarUsuarioServices = new ListarUsuarioServices()
-        const response = await listarUsuarioServices.execute()
+        const id = req.usuario_id
+        const listarUsuarioTokenServices = new ListarUsuarioTokenServices()
+        const response = await listarUsuarioTokenServices.execute({
+            id
+        })
 
         return res.json(response)
     }
 }
 
-export { ListarUsuariosController }
+export { ListarUsuariosTokenController }
