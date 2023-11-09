@@ -1,4 +1,4 @@
-import batom from '../imagens/batom.png'
+//import batom from '../imagens/batom.png'
 import './bela.css'
 import { Link } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ export default function Batom() {
     return (
         <Container >
         <Card className='m-2, p-2'>
-           <Card.Img className='detail' variant="top" src={batom} alt="Batom"  />
+           {/* <Card.Img className='detail' variant="top" src={batom} alt="Batom"  /> */}
             <h4>Batom Líquido Matte Tint Rosé Vintage </h4><br />
             O Batom Líquido GLAM Matte Tint é o batom que não sai!
             Sua fórmula matte inovadora proporciona cor intensa aos seus lábios por até 18 horas seguidas, com apenas uma camada,

@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/esm/Badge';
 
 import base from "./imagens/base.png"
-import batom from "./imagens/batom.png"
+//import batom from "./imagens/batom.png"
 import delineador from "./imagens/delineador.png"
 import paleta from "./imagens/paleta.png"
 import rimel from "./imagens/rimel.png"
@@ -45,10 +45,10 @@ export default function Beleza() {
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={batom} />
+                    {/* <Card.Img variant="top" width="220px" src={batom} /> */}
                     <br />
                     <Card.Body>
-                        <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title>
+                        {/* <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title> */}
                         <div className='Container llog'>
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
