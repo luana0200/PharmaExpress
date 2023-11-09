@@ -7,6 +7,44 @@ import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
 
 export default function kitAzul() {
+
+    // async function handleLogin(e) { // faznedo sem o AUTHCONTEXT
+    //     e.preventDefault()
+    //     if (!email || !password) {            // diminui o trafego
+    //         toast.warn('Existem Campos em Branco')
+    //     }
+
+    //     try {
+    //         const resposta = await apiLocal.post('/LoginUsuarios', {  //indo para o banco de dados
+    //             id
+    //         })
+
+    //         if (resposta.data.id) {  //pega o id
+    //             const token = resposta.data.token  //pega o token
+    //             localStorage.setItem('@tklogin2023', JSON.stringify(token)) //armazena no localstorage o token  //JSON.stringify= tramforma o token em string
+    //             toast.success('Login Efetuado com Sucesso')
+    //         }
+
+    //         const response = await apiLocal.get('/ListarLoginUsuarios', {  //indo para o banco de dados
+    //             headers: {
+    //                 Authorization: 'Bearer ' + `${token}`
+    //             }
+    //         })
+    //         if (resposta.data.dados) {
+    //             navigation('/')
+    //             // alert('Token Inválido')
+    //             return
+    //         }
+
+
+
+    //     } catch (err) {
+    //         console.log('erro')
+    //         // console.log(err.response.data.err)
+    //     }
+
+
+    // }
     return (
         <Container >
             <Card className='m-2, p-2'>
@@ -20,7 +58,7 @@ export default function kitAzul() {
                 <h1>
                     R$ 29,90
                 </h1>
-                <div className='Container button'>
+                <div  className='Container button'>
                     <Link to='/Carrinho'> <Button variant="secondary">COMPRA</Button></Link>
                 </div>
             </Card>
