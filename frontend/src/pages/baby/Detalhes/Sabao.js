@@ -2,6 +2,7 @@ import Sabao from '../imagens/Sabonet Liquido.webp'
 import './baby.css'
 import { Link } from 'react-router-dom'
 
+import { IoIosCart } from "react-icons/io";
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
@@ -60,8 +61,8 @@ export default function kitAzul() {
                 </h1>
                
                 <div  className='Container button'>
-                    <Link to='/Carrinho'> <Button variant="secondary"> Adicionar ao Carrinho</Button></Link>
                     <Link to='/Carrinho'> <Button variant="secondary">COMPRA</Button></Link>
+                   <Link to='/Carrinho'> <Button variant="secondary"><IoIosCart size='1.5rem' color='sss' /> </Button></Link>
                     
                 </div>
             </Card>
