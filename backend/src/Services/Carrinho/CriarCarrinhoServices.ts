@@ -6,8 +6,14 @@ interface CriarCarrinho {
 }
 
 class CriarCarrinhoServices {
-    async execute() {
+    async execute({ id }: CriarCarrinho) {
+        const response = await prismaClient.carrinho.create({
+            data: {
+                id: id
+            }
+        })
 
+        console.log(response)
     }
 }
 
