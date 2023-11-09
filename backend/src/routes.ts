@@ -39,7 +39,7 @@ router.get('/ListarCategorias', new ListarCategoriasController().handle)
 //produtos
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', new ListarProdutosController().handle)
-router.get('/ListarPdtUnico', new ListarProdutosUnicoController().handle)
+router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
 
 //carrinho
 router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
