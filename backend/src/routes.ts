@@ -26,7 +26,7 @@ const upload = multer(uploadConfig.upload('./tmp'))
 
 //usuarios
 router.post('/CriarUsuarios', new CriarUsuariosController().handle)
-router.get('/ListarUsuariosToken', new ListarUsuariosTokenController().handle)
+router.get('/ListarUsuariosToken', isAutenticado, new ListarUsuariosTokenController().handle)
 router.post('/Login', new AuthLoginController().handle)
 
 //delete

@@ -3,12 +3,17 @@ import '../Header/header.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
 import Container from 'react-bootstrap/Container';
+import api from '../../services/apiBack'
 
 export default function Carrinho() {
+
   const [produtos, setProdutos] = useState([])
+  const navigation = useNavigate()
+
   useEffect(() => {
     const minhaLista = localStorage.getItem('@produtocarrinho')
     setProdutos(JSON.parse(minhaLista) || [])
@@ -20,12 +25,38 @@ export default function Carrinho() {
     })
     setProdutos(filtroProdutos)
     localStorage.setItem('@produtocarrinho', JSON.stringify(filtroProdutos))
-
   }
 
-  const navigation = useNavigate()
 
-  useEffect(() => { }, [])
+  //verificando token 
+  useEffect(() => {
+    const iToken = localStorage.getItem('@phlogin2k23')
+    const token = JSON.parse(iToken)
+
+    if (!token) {
+      toast.warning('Faça Login')
+      navigation('/Login')
+      // return
+    } else if (token) {
+
+      async function verificarToken() {
+        const result = await api.get('/ListarUsuarioToken', {
+          headers: {
+            Authorization: 'Bearer ' + `${token}`
+          }
+        })
+
+        if (result.data.dados) {
+          navigation('/Login')
+          return
+        }
+
+        // console.log
+      }
+      verificarToken()
+
+    }
+  }, [])
 
   return (
     <Container fluid>

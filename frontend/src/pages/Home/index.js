@@ -102,11 +102,11 @@ export default function Home() {
 
 
             <div className='fluid '>
-                <img src={visa12} alt="creme" /><br />
-                <h7>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:17010-170| Horário de Atendimento: De Segunda à Domingo
-                    das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3217, Dúvidas, elogios e reclamações:
-                    atendimento@pharmaexpress.com.br.</h7><br />
-                <p> <h7>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h7> </p>
+                <img src={visa12} alt="creme" /> <br />
+                <h2>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:18010-180| Horário de Atendimento: De Segunda à Domingo
+                    das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3218, Dúvidas, elogios e reclamações:
+                    atendimento@pharmaexpress.com.br.</h2><br />
+                <h2>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h2> 
             </div>
         </Container>
     )

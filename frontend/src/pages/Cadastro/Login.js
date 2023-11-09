@@ -30,10 +30,8 @@ export default function Login() {
                     }
                 })
 
-                if (resulta.data.dados) {
-                    navigation('/Login')
-                    return
-                }
+             
+                console.log(resulta)
             }
             verificarToken()
         }
@@ -54,7 +52,7 @@ export default function Login() {
             if (result.data.id) {
                 const token = result.data.token
                 localStorage.setItem('@phlogin2k23', JSON.stringify(token))
-                console.log(token)
+                // console.log(token)
                 // toast.success('Login Efetuado com Sucesso')
             }
         } catch (err) {
