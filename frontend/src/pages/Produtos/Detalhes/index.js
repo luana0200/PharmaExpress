@@ -8,24 +8,24 @@ import React, {useEffect, useState} from 'react'
 
 export default function Details () {
 const {id} = useParams()
-const[data, setData] = useState([])
+const[dados, setDados] = useState([])
 
 useEffect(() => {
 const fetchData = async () => {
 const result = await apiBack.get('/ListarPdtUnico' + id)
-setData(result.data)
+setDados(result.dados)
 }
 fetchData()
 }, [])
 return(
     <Container>
         <Card className='m-2, p-2'>
-            <Card.Img className='detail' variant='top' src={data.file} alt='shampoo' />
-            <h4>{data.name}</h4>
+            <Card.Img className='detail' variant='top' src={dados.banner}  />
+            <h4>{dados.name}</h4>
             <br/>
-            {data.description}
+            {dados.description}
             <h1>
-                R$ {data.value}
+                R$ {dados.value}
             </h1>
             {<div className='Container button' onClick={""}>
                 <Link to='/Carrinho'><Button variant='secondary'>COMPRAR</Button></Link>

@@ -25,7 +25,7 @@ export default function Header() {
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
                                 <Nav.Link href='/HPessoal'><Button variant='secondary' >Higiene Pessoal</Button ></Nav.Link>
                                 <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link>
-                                <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link>
+                                {/* <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link> */}
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>

@@ -13,7 +13,6 @@ export default function Aptamil() {
     const navigation = useNavigate()
     const [produtos, setProdutos] = useState([''])
 
-
     // async function listarProdutos() {
 
     //     await apiBack.get('/ListarPdtUnico')

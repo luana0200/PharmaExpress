@@ -33,17 +33,17 @@ import Talco from './pages/baby/Detalhes/Talco'
 import Produtos from './pages/Produtos'
 import Detalhes from './pages/Produtos/Detalhes'
 import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
-import Beleza from "./pages/Beleza"
-import Batom from './pages/Beleza/Detalhes/Batom'
-import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
-import Deliniador from './pages/Beleza/Detalhes/Deliniador'
-import Demaquilante from './pages/Beleza/Detalhes/Demaquilante'
-import Hidratante from './pages/Beleza/Detalhes/Hidratante'
-import Paleta from './pages/Beleza/Detalhes/Paleta'
-import Perfume1 from './pages/Beleza/Detalhes/Perfume1'
-import Perfume4 from './pages/Beleza/Detalhes/Perfume4'
-import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
-import Rimel from './pages/Beleza/Detalhes/Rimel'
+// import Beleza from "./pages/Beleza"
+// import Batom from './pages/Beleza/Detalhes/Batom'
+// import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
+// import Deliniador from './pages/Beleza/Detalhes/Deliniador'
+// import Demaquilante from './pages/Beleza/Detalhes/Demaquilante'
+// import Hidratante from './pages/Beleza/Detalhes/Hidratante'
+// import Paleta from './pages/Beleza/Detalhes/Paleta'
+// import Perfume1 from './pages/Beleza/Detalhes/Perfume1'
+// import Perfume4 from './pages/Beleza/Detalhes/Perfume4'
+// import ProtetorSolar from './pages/Beleza/Detalhes/ProtetorSolar'
+// import Rimel from './pages/Beleza/Detalhes/Rimel'
 
 
 import Medicamentos from "./pages/Medicamentos"
@@ -58,6 +58,8 @@ import Doricin from './pages/Medicamentos/Detalhes/Doricin'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
 import Simeticona from './pages/Medicamentos/Detalhes/Simeticona'
 import Compra from './components/Compra/Compra'
+
+import Beleza from './pages/Beleza/index'
 
 export default function Rotas() {
     return (
@@ -100,6 +102,8 @@ export default function Rotas() {
                 <Route path='/Produtos' element={<Produtos />} />
                 <Route path='/:id' element={<ProdutosPorCategoria />} />
                 <Route path='/Beleza' element={<Beleza />} />
+
+                 {/* <Route path='/Beleza' element={<Beleza />} />
                 <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />
@@ -109,7 +113,7 @@ export default function Rotas() {
                 <Route path='/Perfume1' element={<Perfume1 />} />
                 <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
-                <Route path='/Rimel' element={<Rimel />} />
+                <Route path='/Rimel' element={<Rimel />} />  */}
 
 
                 <Route path='/Medicamentos' element={<Medicamentos />} />
