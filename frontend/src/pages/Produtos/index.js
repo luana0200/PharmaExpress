@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
@@ -31,31 +32,30 @@ export default function Index() {
 
         listarPdt()
     }, [])
+
+
     return (
-        <Container fluid >
+        <div>
             <div className='cabecalho'><h1>Produtos</h1></div>
 
 
             {data.map((item, file) => (
-                <Row className='d-flex justify-content-center'>
-                    <Card className='m-2' style={{ width: '17rem' }}>
+                <div className='d-flex justify-content-center'>
+                    <div>
                         <br />
                         {/* <Card.Img src={`http://localhost:3334/CriarProdutos/${file.originalname}`} />  */}
-                        {/* <img src={`http://localhost:3334/CriarProdutos/${file.banner}`} />  */}
-                        <Card.Body>
-                            <Card.Title><h2>
+                        <img src= {item.banner}/>
+                        <div>
+                            <article><h2>
                                 {item.name}<br />
                                 {item.value}
-                               
-                                
-                              
-                                </h2></Card.Title>
+                            </h2></article>
                             <div className='Container   llog'>
-                                <Link to='/Carrinho'><Button variant="secondary">Detalhes</Button></Link>
+                                <Link to='/Carrinho'><button variant="secondary">Detalhes</button></Link>
                             </div>
-                        </Card.Body>
-                    </Card>
-                </Row>
+                        </div>
+                    </div>
+                </div>
             ))}
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
@@ -64,6 +64,6 @@ export default function Index() {
                     das 7h às 21h, inclusive feriado | Televendas: 1234-7987 | SAC – Serviço de Atendimento ao Cliente: 7987-3217, Dúvidas, elogios e reclamações:</p>
                 <p>Política de privacidade | © 2023 RD. Todos os direitos reservados.</p>
             </div>
-        </Container >
+        </div>
     )
 } 
