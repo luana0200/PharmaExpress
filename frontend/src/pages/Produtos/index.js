@@ -40,8 +40,9 @@ export default function Index() {
                 <Row className='d-flex justify-content-center'>
                     <Card className='m-2' style={{ width: '17rem' }}>
                         <br />
-                        <img src={`http://localhost:3334/CriarProdutos/${file.banner}`} alt={item.name} />
-                        {/* <Card.Img src={item.banner} />  */}
+                        {/* <Card. Img src={`http://localhost:3334/CriarProdutos/${file.banner}`}/> */}
+                        {/* <img src={`http://localhost:3334/CriarProdutos/${file.banner}`} alt={item.name} /> */}
+                        <img src={`http://localhost:3334/CriarProdutos/${file.banner}`} /> 
                         <Card.Body>
                             <Card.Title><h2>
                                 {item.name}
