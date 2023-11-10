@@ -7,14 +7,31 @@
 
 .compra{
   display: grid;
-  grid-template-columns: 50% 50%;
-  text-align: center;
+  flex-direction: column;
+ align-items: center;
+
+}
+
+
+.compra   label{
+  text-align: right;
+  margin-top: 1rem;
+
+}
+
+
+.compra  input{
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 230%;
 }
 
 b{
     font-size: 35px;
 }
 
+
+/* botoes */
 .comprar Button{
   background-color:  lightseagreen;
   cursor: pointer;

@@ -109,12 +109,7 @@
   .Container remedio img {
       width: 10.5rem;
   }
-  .compra {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-  }
+ 
 
   /* cadastro */
   .mb-3{
