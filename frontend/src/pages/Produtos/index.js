@@ -36,14 +36,18 @@ export default function Index() {
             <div className='cabecalho'><h1>Produtos</h1></div>
 
 
-            {data.map((item) => (
+            {data.map((item, file) => (
                 <Row className='d-flex justify-content-center'>
                     <Card className='m-2' style={{ width: '17rem' }}>
                         <br />
-                        <Card.Img src={item.banner} />
+                        <img src={`http://localhost:3334/CriarProdutos/${file.banner}`} alt={item.name} />
+                        {/* <Card.Img src={item.banner} />  */}
                         <Card.Body>
                             <Card.Title><h2>
-                                {item.name}</h2></Card.Title>
+                                {item.name}
+                                
+                              
+                                </h2></Card.Title>
                             <div className='Container   llog'>
                                 <Link to={item.id}><Button variant="secondary">Detalhes</Button></Link>
                             </div>

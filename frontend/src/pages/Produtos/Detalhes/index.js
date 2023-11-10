@@ -10,15 +10,22 @@ export default function Details () {
 const {id} = useParams()
 const[dados, setDados] = useState([])
 
+
+
 useEffect(() => {
-const fetchData = async () => {
-const result = await apiBack.get('/ListarPdtUnico' + id)
-setDados(result.dados)
-}
-fetchData()
+    async function listarPdt() {
+        const result = await apiBack.get('/ListarPdtUnico' + id);
+
+        setDados(result.dados);
+    }
+
+    listarPdt()
 }, [])
+
 return(
+    
     <Container>
+        <div><h1>Produtos</h1></div>
         <Card className='m-2, p-2'>
             <Card.Img className='detail' variant='top' src={dados.banner}  />
             <h4>{dados.name}</h4>
