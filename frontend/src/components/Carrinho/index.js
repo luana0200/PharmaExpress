@@ -34,9 +34,9 @@ export default function Carrinho() {
     const token = JSON.parse(iToken)
 
     if (!token) {
-      toast.warning('Faça Login')
+      toast.warning('Efetue um Login')
       navigation('/Login')
-      // return
+      return
     } else if (token) {
 
       async function verificarToken() {
@@ -46,12 +46,12 @@ export default function Carrinho() {
           }
         })
 
-        if (result.data.dados) {
-          navigation('/Login')
-          return
-        }
+        // if (result.data.dados) {
+        //   navigation('/Login')
+        //   return
+        // }
 
-        // console.log
+        console.log(result)
       }
       verificarToken()
 

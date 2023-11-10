@@ -101,7 +101,7 @@ export default function Rotas() {
                 <Route path='/Detalhes/:id' element={<Detalhes />} />
                 <Route path='/Produtos' element={<Produtos />} />
                 <Route path='/:id' element={<ProdutosPorCategoria />} />
-                <Route path='/Beleza' element={<Beleza />} />
+                {/* <Route path='/Beleza' element={<Beleza />} /> */}
 
                  {/* <Route path='/Beleza' element={<Beleza />} />
                 <Route path='/BaseUltra' element={<BaseUltra />} />
@@ -129,7 +129,7 @@ export default function Rotas() {
                 <Route path='/Simeticona' element={<Simeticona />} />
 
 
-                <Route path='/Compra' element={<Compra />} />
+                {/* <Route path='/Compra' element={<Compra />} /> */}
             </Routes>
 
         </BrowserRouter>
