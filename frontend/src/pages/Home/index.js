@@ -9,13 +9,11 @@ import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge'
 
 import base from "../Beleza/imagens/base.png"
-//import batom from '../Beleza/imagens/batom.png'
-// import shampoo from '../Beleza/imagens/shampoomorango2.png'
 import rimel from '../Beleza/imagens/rimel.png'
 import perfume1 from '../Beleza/imagens/perfume1.png'
-// import Perfume2 from '../Beleza/imagens/perfume2.png'
 import deso from '../HPessoal/imagens H/deso M.webp'
 import creme from '../HPessoal/imagens H/creme facial.png'
+import hidratante from '../Beleza/imagens/Hidratante2.png'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
@@ -41,9 +39,9 @@ export default function Home() {
 
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    {/* <Card.Img variant="top" width="220px" src={batom} /> */}
+                    <Card.Img variant="top" width="220px" src={hidratante} />
                     <Card.Body>
-                        {/* <Card.Title><h2>Batom Líquido Matte Tint Rosé </h2></Card.Title> */}
+                        <Card.Title><h2>Loção Hidratante Corporal Lyra 150ml</h2></Card.Title>
                         <div className=' Container llog'>
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>

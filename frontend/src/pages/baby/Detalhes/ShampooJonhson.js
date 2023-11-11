@@ -1,11 +1,11 @@
 import ShampooJonhson from '../imagens/ShampooJonhson.webp'
 import './baby.css'
 // import { useState } from 'react'
-import apiBack from '../../../services/apiBack'
+// import apiBack from '../../../services/apiBack'
 // import { useNavigate } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
-import Button from 'react-bootstrap/esm/Button'
+// import Button from 'react-bootstrap/esm/Button'
 import Card from 'react-bootstrap/Card'
 
 export default function shampooJonhson() {
@@ -13,18 +13,18 @@ export default function shampooJonhson() {
     // const navigation = useNavigate()
     // const [produtos, setProdutos] = useState('')
 
-    async function listarProdutos() {
-        const response = await apiBack.get('/ListarPdtUnico', {
-            params: {
-                baseURL: 'http://localhost:3334',
-                language: 'pt-BR'
+    // async function listarProdutos() {
+    //     const response = await apiBack.get('/ListarPdtUnico', {
+    //         params: {
+    //             baseURL: 'http://localhost:3334',
+    //             language: 'pt-BR'
 
-            }
-        }
-        )
-        console.log(response.data)
-        // navigation('/Carrinho')
-    }
+    //         }
+    //     }
+    //     )
+    //     console.log(response.data)
+    //      navigation('/Carrinho')
+    // }
     return (
 
         <Container >

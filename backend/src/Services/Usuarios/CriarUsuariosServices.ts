@@ -27,7 +27,7 @@ class CriarUsuariosServices {
 
         const senhaCrypt = await hash(password, 8)
 
-        const cadastro = await prismaClient.cadastro.create({
+        await prismaClient.cadastro.create({
             data: {
                 name: name,
                 dateN: dateN,

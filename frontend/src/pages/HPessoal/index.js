@@ -4,18 +4,18 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge'
+// import Badge from 'react-bootstrap/Badge'
 
 import desoF from "./imagens H/desoF.webp"
 import deso from "./imagens H/deso M.webp"
 import shampoo from "./imagens H/shampoo.webp"
 import condicionador from "./imagens H/Condicionador.webp"
-import pasta from "./imagens H/pasta de dente C.jpeg"
-import pastadental from "./imagens H/pasta dental.png"
 import absorvente from "./imagens H/absorvente.webp"
-import creme from "./imagens H/creme facial.png"
-import protetor from "./imagens H/nivea.webp"
-import sabonetedove from "./imagens H/sabonete dove.jpg"
+// import pastadental from "./imagens H/pasta dental.png"
+// import pasta from "./imagens H/pasta de dente C.jpeg"
+// import creme from "./imagens H/creme facial.png"
+// import protetor from "./imagens H/nivea.webp"
+// import sabonetedove from "./imagens H/sabonete dove.jpg"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'

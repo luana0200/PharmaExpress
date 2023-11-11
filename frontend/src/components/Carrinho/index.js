@@ -2,9 +2,7 @@ import './carrinho.css'
 import '../Header/header.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
-
 
 import Container from 'react-bootstrap/Container';
 import api from '../../services/apiBack'
@@ -19,13 +17,13 @@ export default function Carrinho() {
     setProdutos(JSON.parse(minhaLista) || [])
   }, [])
 
-  function excluirProduto(id) {
-    let filtroProdutos = produtos.filter((item) => {
-      return (item.id !== id)
-    })
-    setProdutos(filtroProdutos)
-    localStorage.setItem('@produtocarrinho', JSON.stringify(filtroProdutos))
-  }
+  // function excluirProduto(id) {
+  //   let filtroProdutos = produtos.filter((item) => {
+  //     return (item.id !== id)
+  //   })
+  //   setProdutos(filtroProdutos)
+  //   localStorage.setItem('@produtocarrinho', JSON.stringify(filtroProdutos))
+  // }
 
 
   //verificando token 
@@ -45,13 +43,6 @@ export default function Carrinho() {
             Authorization: 'Bearer ' + `${token}`
           }
         })
-
-        // if (result.data.dados) {
-        //   navigation('/Login')
-        //   return
-        // }
-
-
       }
       verificarToken()
 
@@ -70,10 +61,7 @@ export default function Carrinho() {
               </li>
             </div>
           )
-
         })}
-
-
       </div>
     </Container>
   )

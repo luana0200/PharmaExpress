@@ -5,6 +5,8 @@
     margin: 0; 
 }  */
 
+
+/*form */
 .compra{
   display: grid;
   flex-direction: column;
@@ -12,27 +14,24 @@
 
 }
 
-
-.compra   label{
+.compra label{
   text-align: right;
   margin-top: 1rem;
 
 }
 
-
-.compra  input{
+.compra input{
   border-radius: 0.5rem;
   height: 2.5rem;
-  width: 230%;
+  width:40%;
 }
 
 b{
     font-size: 35px;
 }
 
-
 /* botoes */
-.comprar Button{
+.compra Button{
   background-color:  lightseagreen;
   cursor: pointer;
   border: none;

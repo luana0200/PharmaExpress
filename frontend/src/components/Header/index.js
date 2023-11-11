@@ -3,15 +3,11 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
-import { toast } from 'react-toastify'
-import { useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import api from '../../services/apiBack'
-
 
 export default function Header() {
 

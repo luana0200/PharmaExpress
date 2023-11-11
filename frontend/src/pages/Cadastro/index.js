@@ -53,7 +53,7 @@ export default function Cadastro() {
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
             <div className="compra" >
                 <Form onSubmit={cadastraUsuario}>
-                    <Form.Group>
+                    <Form.Group >
                         <Form.Label>Nome:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -62,7 +62,6 @@ export default function Cadastro() {
                             onChange={(e) => setName(e.target.value)}
                         />
                     </Form.Group>
-
 
                     <Form.Group>
                         <Form.Label>Data de Nascimento:</Form.Label>
@@ -85,11 +84,7 @@ export default function Cadastro() {
                             onChange={(e) => setCpf_cnpj(e.target.value)}
                         />
                     </Form.Group>
-                    {/* </Form>
-            </div>
-
-            <div className="compra" >
-                <Form onSubmit={cadastraUsuario}> */}
+                    
                     <Form.Group>
                         <Form.Label>E-mail:</Form.Label>
                         <Form.Control
@@ -119,7 +114,6 @@ export default function Cadastro() {
                             onChange={(e) => setPasswordC(e.target.value)}
                         /><br />
                     </Form.Group>
-
                     <Button type="submit" variant='secondary' >Enviar</Button>
                     <a>Faça seu Login <Link to='/Login'>AQUI</Link></a>
                 </Form>

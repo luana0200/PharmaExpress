@@ -29,8 +29,6 @@ export default function Login() {
                         Authorization: 'Bearer ' + `${token}`
                     }
                 })
-
-             
                 console.log(resulta)
             }
             verificarToken()
@@ -39,11 +37,11 @@ export default function Login() {
 
     async function loginUser(e) {
         e.preventDefault()
-        if (!email || !senha) {
-            toast.warn('Existem Campos em Branco')
-            // return
-        }
         try {
+            if (!email || !senha) {
+                toast.warn('Existem Campos em Branco')
+                // return
+            }
             const result = await api.post('/Login', {
                 email,
                 senha
@@ -53,7 +51,6 @@ export default function Login() {
                 const token = result.data.token
                 localStorage.setItem('@phlogin2k23', JSON.stringify(token))
                 // console.log(token)
-                // toast.success('Login Efetuado com Sucesso')
             }
         } catch (err) {
             toast.error(err.response.data.error)
@@ -65,10 +62,9 @@ export default function Login() {
 
         <Container fluid>
             <div className='cabecalho' ><h1>CADASTRO</h1></div>
-            <Form onSubmit={loginUser}>
-                <div className="comprar" >
-                    <br />
-                    <Form.Group className="mb-3">
+            <div className="compra">
+                <Form onSubmit={loginUser}>
+                    <Form.Group>
                         <Form.Label>Email:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -78,7 +74,7 @@ export default function Login() {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Label>Senha:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
@@ -88,11 +84,10 @@ export default function Login() {
                             onChange={(e) => setSenha(e.target.value)}
                         />
                     </Form.Group>
-                    <p>   <Button type="submit" variant='secondary' >Enviar</Button></p>
-                </div>
-
-
-            </Form>
-        </Container>
+                    <br/>
+                    <Button type="submit" variant='secondary' >Enviar</Button>
+                </Form>
+            </div>
+        </Container >
     )
 }

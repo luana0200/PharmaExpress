@@ -57,9 +57,9 @@ import Dipirona from './pages/Medicamentos/Detalhes/Dipirona'
 import Doricin from './pages/Medicamentos/Detalhes/Doricin'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
 import Simeticona from './pages/Medicamentos/Detalhes/Simeticona'
-import Compra from './components/Compra/Compra'
+// import Compra from './components/Compra/Compra'
 
-import Beleza from './pages/Beleza/index'
+// import Beleza from './pages/Beleza/index'
 
 export default function Rotas() {
     return (
