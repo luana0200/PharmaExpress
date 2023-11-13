@@ -1,59 +1,59 @@
-// import { useState, useEffect } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { FiTrash2, FiEdit } from 'react-icons/fi'
-// import { toast } from 'react-toastify'
-// import apiBack from '../../services/apiBack'
+import { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { FiTrash2, FiEdit } from 'react-icons/fi'
+import { toast } from 'react-toastify'
+import apiBack from '../../services/apiBack'
 
 
-// export default function ListarUsuarios() {
-//     const navigation = useNavigate()
+export default function ListarUsuarios() {
+    const navigation = useNavigate()
 
-//     const [produtos, setProdutos] = useState([''])
+    const [produtos, setProdutos] = useState([''])
 
-//     useEffect(() => {
-//         async function listarProdutos() {
-//             const resposta = await api.get('/ListarProdutos')
-//             setProdutos(resposta.data)
-//         }
-//         listarProdutos()
-//     }, [produtos])
+    useEffect(() => {
+        async function listarProdutos() {
+            const resposta = await apiBack.get('/ListarProdutos')
+            setProdutos(resposta.data)
+        }
+        listarProdutos()
+    }, [produtos])
 
     
 
-//     return (
-//         <div className='conteinerListar'>
-//             <h1>BELEZA</h1>
-//             <div className='listarUsuarios'>
-//                 <table>
-//                     <thead>
-//                         <tr>
-//                             <th>ID</th>
-//                             <th>Nome</th>
-//                             <th>E-Mail</th>
-//                             <th>Criado</th>
-//                             <th>Alterado</th>
+    return (
+        <div className='conteinerListar'>
+            <h1>BELEZA</h1>
+            <div className='listarUsuarios'>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID - </th>
+                            <th>Nome - </th>
+                            <th> - </th>
+                            <th>Criado - </th>
+                            <th>Alterado - </th>
                             
-//                         </tr>
-//                         {produtos.map((resultado) => {
-//                             return (
-//                                 <tr>
-//                                     <td>{resultado.id}</td>
-//                                     <td>{resultado.name}</td>
-//                                     <td>{resultado.banner}</td>
-//                                     <td>{resultado.create_at}</td>
-//                                     <td>{resultado.update_at}</td>
+                        </tr>
+                        {produtos.map((resultado, file) => {
+                            return (
+                                <tr>
+                                    <td>{resultado.id}</td>
+                                    <td>{resultado.name}</td>
+                                    <td>{`C:/Users/isabella.ivsilva.SENACEDU/Documents/GitHub/PharmaExpress/backend/tmp/${file.banner_path}`}</td>
+                                    <td>{resultado.create_at}</td>
+                                    <td>{resultado.update_at}</td>
                                     
-//                                 </tr>
+                                </tr>
 
-//                             )
-//                         })}
-//                     </thead>
-//                 </table>
-//             </div>
-//             <button className='buttonInicioListar' onClick={() => navigation('/Dashboard')} >Dashboard</button>
-//         </div>
-//     )
-// }
+                            )
+                        })}
+                    </thead>
+                </table>
+            </div>
+            <button className='buttonInicioListar' onClick={() => navigation('/Dashboard')} >Dashboard</button>
+        </div>
+    )
+}
 
 // import { Link } from 'react-router-dom'
 

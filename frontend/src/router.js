@@ -30,10 +30,10 @@ import Talco from './pages/baby/Detalhes/Talco'
 // import Aptamil from './pages/baby/Detalhes/Aptamil'
 // import ShampooJonhson from './pages/baby/Detalhes/ShampooJonhson'
 
-// import Produtos from './pages/Produtos'
-// import Detalhes from './pages/Produtos/Detalhes'
-// import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
-// import Beleza from "./pages/Beleza"
+ import Produtos from './pages/Produtos'
+ import Detalhes from './pages/Produtos/Detalhes'
+ import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+ import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
 // import Deliniador from './pages/Beleza/Detalhes/Deliniador'
@@ -98,13 +98,13 @@ export default function Rotas() {
                 {/* <Route path='/ShampooJonhson' element={<ShampooJonhson />} /> */}
 
 
-                {/* <Route path='/Detalhes/:id' element={<Detalhes />} />
+                 <Route path='/Detalhes/:id' element={<Detalhes />} />
                 <Route path='/Produtos' element={<Produtos />} />
                 <Route path='/:id' element={<ProdutosPorCategoria />} />
-                <Route path='/Beleza' element={<Beleza />} /> */}
+                <Route path='/Beleza' element={<Beleza />} /> 
 
-                {/* <Route path='/Beleza' element={<Beleza />} />
-                <Route path='/BaseUltra' element={<BaseUltra />} />
+                 <Route path='/Beleza' element={<Beleza />} />
+                {/* <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />
                 <Route path='/Demaquilante' element={<Demaquilante />} />
@@ -113,7 +113,7 @@ export default function Rotas() {
                 <Route path='/Perfume1' element={<Perfume1 />} />
                 <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
-                <Route path='/Rimel' element={<Rimel />} />  */}
+                <Route path='/Rimel' element={<Rimel />} />  */} 
 
 
                 <Route path='/Medicamentos' element={<Medicamentos />} />
