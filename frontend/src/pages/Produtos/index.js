@@ -1,60 +1,46 @@
-import { Link } from 'react-router-dom'
 // import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
+// import Row from 'react-bootstrap/Row'
+// import Button from 'react-bootstrap/Button'
+// import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
 import apiBack from '../../services/apiBack'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Index() {
-    const [data, setData] = useState([]);
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const result = await apiBack.get('listarProdutos');
-
-    //         setData(result.data);
-    //     };
-
-    //     fetchData();
-    // }, []);
+    const [data, setData] = useState([''])
 
     useEffect(() => {
         async function listarPdt() {
-            const result = await apiBack.get('/ListarProdutos');
-
-            setData(result.data);
+            const result = await apiBack.get('/ListarProdutos')
+            setData(result.data)
         }
 
         listarPdt()
-    }, [])
+    }, [data])
 
 
     return (
         <div>
             <div className='cabecalho'><h1>Produtos</h1></div>
 
+            <div>
+                {data.map((item) => {
+                    return (
 
-            {data.map((item) => (
-                <div className='d-flex justify-content-center'>
-                    <div>
-                        <br />
-                        <img src={`http://localhost:3334/file/${item.banner}`} /> 
-                        {/* <img src= {item.banner}/> */}
-                        <div>
-                            <article><h2>
-                                {item.name}<br />
-                                {item.value}
-                            </h2></article>
-                            <div className='Container   llog'>
-                            <Link to={`/Carrinho/${item.id}`}>Detalhes</Link>
+
+                        <article key={item.id}>
+                            {item.name}<br />
+                            <img src={`http://localhost:3334/file/${item.banner}`} />
+                            <div className='Container llog'>
+                                <Link to={`/Carrinho/${item.id}`}>Detalhes</Link>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            ))}
+                        </article>
+                    )
+                })}
+
+            </div>
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
                 <br />
