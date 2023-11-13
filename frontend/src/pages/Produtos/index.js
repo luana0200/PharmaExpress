@@ -41,7 +41,7 @@ export default function Index() {
                 <div className='d-flex justify-content-center'>
                     <div>
                         <br />
-                        <img src={`http://localhost:3334/files/${item.banner}`} /> 
+                        <img src={`http://localhost:3334/file/${item.banner}`} /> 
                         {/* <img src= {item.banner}/> */}
                         <div>
                             <article><h2>
