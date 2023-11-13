@@ -34,7 +34,7 @@ router.post('/Login', new AuthLoginController().handle)
 router.delete('/DeletarUsuarios', new DeletarUsuariosController().handle)
 
 //categorias
-router.post('/CriarCategorias', new CriarCategoriasController().handle)
+router.post('/CriarCategorias', isAutenticado,new CriarCategoriasController().handle)
 router.get('/ListarCategorias', new ListarCategoriasController().handle)
 
 //produtos
