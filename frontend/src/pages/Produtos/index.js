@@ -37,12 +37,12 @@ export default function Index() {
             <div className='cabecalho'><h1>Produtos</h1></div>
 
 
-            {data.map((item, file) => (
+            {data.map((item) => (
                 <div className='d-flex justify-content-center'>
                     <div>
                         <br />
-                        {/* <Card.Img src={`http://localhost:3334/CriarProdutos/${file.originalname}`} />  */}
-                        <img src= {item.banner}/>
+                        <img src={`http://localhost:3334/files/${item.banner}`} /> 
+                        {/* <img src= {item.banner}/> */}
                         <div>
                             <article><h2>
                                 {item.name}<br />
