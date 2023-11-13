@@ -19,7 +19,7 @@ export function isAutenticado(
     const [, token] = authToken.split('')
 
     try {
-        const { sub } = verify(
+        const { sub } = verify( //descontroi as informacoes vinda do token e salva no SUB
             token,
             process.env.JWT_SECRET
         ) as AutToken

@@ -12,8 +12,8 @@ import base from "../Beleza/imagens/base.png"
 import rimel from '../Beleza/imagens/rimel.png'
 import perfume1 from '../Beleza/imagens/perfume1.png'
 import deso from '../HPessoal/imagens H/deso M.webp'
-import creme from '../HPessoal/imagens H/creme facial.png'
-import hidratante from '../Beleza/imagens/Hidratante2.png'
+// import creme from '../HPessoal/imagens H/creme facial.png'
+// import hidratante from '../Beleza/imagens/Hidratante2.png'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
@@ -37,7 +37,7 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-1' style={{ width: '20rem' }}>
+                {/* <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={hidratante} />
                     <Card.Body>
@@ -46,7 +46,7 @@ export default function Home() {
                             <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
-                </Card>
+                </Card> */}
 
 
 
@@ -86,7 +86,7 @@ export default function Home() {
 
 
 
-                <Card className='m-1' style={{ width: '20rem' }}>
+                {/* <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={creme} alt="creme" />
                     <Card.Body>
@@ -95,7 +95,7 @@ export default function Home() {
                             <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
                         </div>
                     </Card.Body>
-                </Card>
+                </Card> */}
             </Row>
 
 

@@ -32,9 +32,10 @@ export default function Carrinho() {
     const token = JSON.parse(iToken)
 
     if (!token) {
-      toast.warning('Faça Login')
+      // toast.warning('Sessão Expirada')
+      toast.warning('Efetue um Login')
       navigation('/Login')
-      // return
+  
     } else if (token) {
 
       async function verificarToken() {

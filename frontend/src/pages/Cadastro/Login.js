@@ -19,11 +19,11 @@ export default function Login() {
     const token = JSON.parse(iToken)
 
     useEffect(() => {
-        if (!token) {
+        if (!token) { //verifica se tem um token
             navigation('/Login')
             return
         } else if (token) {
-            async function verificarToken() {
+            async function verificarToken() { //se tiver, consulta o BD para verificar se é valido
                 const resulta = await api.get('/ListarUsuarioToken', {
                     headers: {
                         Authorization: 'Bearer ' + `${token}`
@@ -38,10 +38,6 @@ export default function Login() {
     async function loginUser(e) {
         e.preventDefault()
         try {
-            if (!email || !senha) {
-                toast.warn('Existem Campos em Branco')
-                // return
-            }
             const result = await api.post('/Login', {
                 email,
                 senha
@@ -50,12 +46,11 @@ export default function Login() {
             if (result.data.id) {
                 const token = result.data.token
                 localStorage.setItem('@phlogin2k23', JSON.stringify(token))
-                // console.log(token)
+                navigation('/')
             }
         } catch (err) {
             toast.error(err.response.data.error)
         }
-        navigation('/')
     }
 
     return (
@@ -84,7 +79,7 @@ export default function Login() {
                             onChange={(e) => setSenha(e.target.value)}
                         />
                     </Form.Group>
-                    <br/>
+                    <br />
                     <Button type="submit" variant='secondary' >Enviar</Button>
                 </Form>
             </div>

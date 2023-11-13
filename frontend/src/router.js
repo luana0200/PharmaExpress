@@ -19,20 +19,20 @@ import SaboneteDove from './pages/HPessoal/Detalhes/SaboneteDove'
 import Shampoo1 from './pages/HPessoal/Detalhes/Shampoo'
 
 import Baby from './pages/baby'
-import Fralda from './pages/baby/Detalhes/Fralda'
 import Locao from './pages/baby/Detalhes/Locao'
 import Pomada from './pages/baby/Detalhes/Pomada'
-import Aptamil from './pages/baby/Detalhes/Aptamil'
 import Lenco from './pages/baby/Detalhes/lenco'
 import Sabonete from './pages/baby/Detalhes/sabonete'
-import ShampooJonhson from './pages/baby/Detalhes/ShampooJonhson'
 import Sabao from './pages/baby/Detalhes/Sabao'
 import Lenco2 from './pages/baby/Detalhes/Lenco2'
 import Talco from './pages/baby/Detalhes/Talco'
+// import Fralda from './pages/baby/Detalhes/Fralda'
+// import Aptamil from './pages/baby/Detalhes/Aptamil'
+// import ShampooJonhson from './pages/baby/Detalhes/ShampooJonhson'
 
-import Produtos from './pages/Produtos'
-import Detalhes from './pages/Produtos/Detalhes'
-import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+// import Produtos from './pages/Produtos'
+// import Detalhes from './pages/Produtos/Detalhes'
+// import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
 // import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
@@ -86,24 +86,24 @@ export default function Rotas() {
 
 
                 <Route path='/Baby' element={<Baby />} />
-                <Route path='/Fralda' element={<Fralda />} />
                 <Route path='/Locao' element={<Locao />} />
                 <Route path='/Pomada' element={<Pomada />} />
                 <Route path='/Lenco' element={<Lenco />} />
-                <Route path='/Aptamil' element={<Aptamil />} />
                 <Route path='/Sabonete' element={<Sabonete />} />
-                <Route path='/ShampooJonhson' element={<ShampooJonhson />} />
                 <Route path='/Sabao' element={<Sabao />} />
                 <Route path='Lenco2' element={<Lenco2 />} />
                 <Route path='Talco' element={<Talco />} />
+                {/* <Route path='/Aptamil' element={<Aptamil />} /> */}
+                {/* <Route path='/Fralda' element={<Fralda />} /> */}
+                {/* <Route path='/ShampooJonhson' element={<ShampooJonhson />} /> */}
 
 
-                <Route path='/Detalhes/:id' element={<Detalhes />} />
+                {/* <Route path='/Detalhes/:id' element={<Detalhes />} />
                 <Route path='/Produtos' element={<Produtos />} />
                 <Route path='/:id' element={<ProdutosPorCategoria />} />
-                {/* <Route path='/Beleza' element={<Beleza />} /> */}
+                <Route path='/Beleza' element={<Beleza />} /> */}
 
-                 {/* <Route path='/Beleza' element={<Beleza />} />
+                {/* <Route path='/Beleza' element={<Beleza />} />
                 <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />

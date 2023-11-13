@@ -10,6 +10,11 @@ interface AuthLogin {
 
 class AuthLoginServices {
     async execute({ email, senha }: AuthLogin) {
+
+        if (!email || !senha) {
+            throw new Error('Campos em Branco Não São Permitidos')
+        }
+
         const user = await prismaClient.cadastro.findFirst({
             where: {
                 email: email
