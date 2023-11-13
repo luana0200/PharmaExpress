@@ -1,10 +1,12 @@
-// import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row'
-// import Button from 'react-bootstrap/Button'
-// import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
 import apiBack from '../../services/apiBack'
 import React, { useEffect, useState } from 'react'
+import { BiCartAdd } from "react-icons/bi";
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
@@ -22,22 +24,29 @@ export default function Index() {
 
 
     return (
-        <div>
+        <Container fluid>
             <div className='cabecalho'><h1>Produtos</h1></div>
-            <div>
+
+
+            <Row className='d-flex justify-content-center'>
+
                 {data.map((item) => {
                     return (
-                        <article key={item.id}>
-                            {item.name}<br />
-                            <img src={`http://localhost:3334/file/${item.banner}`} />
-                            <div className='Container llog'>
-                                <Link to={`/Carrinho/${item.id}`}>Detalhes</Link>
-                            </div>
-                        </article>
+                        <Card className='m-2' style={{ width: '17rem' }} key={item.id}>
+                            <Card.Img variant="top" width="220px" src={`http://localhost:3334/file/${item.banner}`} />
+                            <Card.Body>
+                                <Card.Title><h2>{item.name}</h2></Card.Title>
+                                <Card.Title><h2>{item.value}</h2></Card.Title>
+                                <div className='Container llog'>
+                                    <Link to={`/Carrinho/${item.id}`}><BiCartAdd size='1.5rem' color='lightseagreen'/></Link>
+                                </div>
+
+                            </Card.Body>
+                        </Card>
                     )
                 })}
 
-            </div>
+            </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
                 <br />
@@ -45,6 +54,6 @@ export default function Index() {
                     das 7h às 21h, inclusive feriado | Televendas: 1234-7987 | SAC – Serviço de Atendimento ao Cliente: 7987-3217, Dúvidas, elogios e reclamações:</p>
                 <p>Política de privacidade | © 2023 RD. Todos os direitos reservados.</p>
             </div>
-        </div>
+        </Container >
     )
 } 

@@ -44,7 +44,7 @@ router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
 router.get('/categoryName/:id', new ListarCategoriasController().findCategoryName)
 
 //carrinho
-router.post('/CriarCarrinho', isAutenticado, new CriarCarrinhoController().handle)
+router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
 router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
 
 
