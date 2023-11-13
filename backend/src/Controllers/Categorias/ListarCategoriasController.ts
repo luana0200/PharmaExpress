@@ -10,13 +10,13 @@ class ListarCategoriasController {
         return res.json(response)
     }
 
-    async findCategoryName(req: Request, res: Response) {
-        const {id} = req.params
-        const listarCategoriasServices = new ListarCategoriasServices()
-        const response = await listarCategoriasServices.findCategoryName({id})
+    // async findCategoryName(req: Request, res: Response) {
+    //     const {id} = req.params
+    //     const listarCategoriasServices = new ListarCategoriasServices()
+    //     const response = await listarCategoriasServices.findCategoryName({id})
 
-        return res.json(response)
-    }
+    //     return res.json(response)
+    // }
 }
 
 export { ListarCategoriasController }

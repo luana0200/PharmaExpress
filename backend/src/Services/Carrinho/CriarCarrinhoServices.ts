@@ -15,7 +15,7 @@ class CriarCarrinhoServices {
             }
         })
 
-        return response
+        console.log(response)
     }
 }
 
