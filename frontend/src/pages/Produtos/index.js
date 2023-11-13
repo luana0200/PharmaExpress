@@ -28,8 +28,6 @@ export default function Index() {
             <div>
                 {data.map((item) => {
                     return (
-
-
                         <article key={item.id}>
                             {item.name}<br />
                             <img src={`http://localhost:3334/file/${item.banner}`} />
