@@ -37,7 +37,7 @@ export default function Cadastro() {
                     password
                 })
                 toast.success(resposta.data.dados)
-                navigation('/')
+                navigation('/Login')
             }
         } catch (err) {
             toast.error(err.response.data.error)
