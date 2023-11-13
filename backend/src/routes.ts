@@ -42,7 +42,7 @@ router.get('/ListarProdutos', new ListarProdutosController().handle)
 router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
 
 //carrinho
-router.post('/CriarCarrinho', isAutenticado, new CriarCarrinhoController().handle)
+router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
 router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
 
 

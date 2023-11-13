@@ -31,8 +31,8 @@ import Talco from './pages/baby/Detalhes/Talco'
 // import ShampooJonhson from './pages/baby/Detalhes/ShampooJonhson'
 
  import Produtos from './pages/Produtos'
- import Detalhes from './pages/Produtos/Detalhes'
- import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+//  import Detalhes from './pages/Produtos/Detalhes'
+//  import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
  import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
@@ -98,9 +98,7 @@ export default function Rotas() {
                 {/* <Route path='/ShampooJonhson' element={<ShampooJonhson />} /> */}
 
 
-                 <Route path='/Detalhes/:id' element={<Detalhes />} />
                 <Route path='/Produtos' element={<Produtos />} />
-                <Route path='/:id' element={<ProdutosPorCategoria />} />
                 <Route path='/Beleza' element={<Beleza />} /> 
 
                  <Route path='/Beleza' element={<Beleza />} />
