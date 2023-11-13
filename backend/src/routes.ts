@@ -15,6 +15,7 @@ import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsua
 import { ListarProdutosController } from './Controllers/Produtos/ListarProdutosController'
 import { ListarCategoriasController } from './Controllers/Categorias/ListarCategoriasController'
 import { ListarProdutoCarrinhoController } from './Controllers/Carrinho/ListarProdutoCarrinhoController'
+
 //Deletar
 import { DeletarUsuariosController } from './Controllers/Usuarios/DeletarUsuariosController'
 import { ListarProdutosUnicoController } from './Controllers/Produtos/ListarProdutosUnicoController'
@@ -40,9 +41,10 @@ router.get('/ListarCategorias', new ListarCategoriasController().handle)
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', new ListarProdutosController().handle)
 router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
+router.get('/categoryName/:id', new ListarCategoriasController().findCategoryName)
 
 //carrinho
-router.post('/CriarCarrinho', isAutenticado, new CriarCarrinhoController().handle)
+router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
 router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
 
 
