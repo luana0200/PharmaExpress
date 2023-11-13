@@ -29,7 +29,7 @@ export default function Index() {
                 {data.map((item) => {
                     return (
                         <article key={item.id}>
-                            {item.name}<br />
+                            {item.name} - {item.value} - {item.description}<br />
                             <img src={`http://localhost:3334/file/${item.banner}`} />
                             <div className='Container llog'>
                                 <Link to={`/Carrinho/${item.id}`}>Detalhes</Link>
