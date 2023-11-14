@@ -12,7 +12,7 @@ export default function ListarUsuarios() {
 
     useEffect(() => {
         async function listarProdutos() {
-            const resposta = await apiBack.get('/ListarProdutos')
+            const resposta = await apiBack.get('/ListarCategorias')
             setProdutos(resposta.data)
         }
         listarProdutos()
@@ -34,12 +34,11 @@ export default function ListarUsuarios() {
                             <th>Alterado - </th>
                             
                         </tr>
-                        {produtos.map((resultado, file) => {
+                        {produtos.map((resultado) => {
                             return (
                                 <tr>
                                     <td>{resultado.id}</td>
                                     <td>{resultado.name}</td>
-                                    <td>{`C:/Users/isabella.ivsilva.SENACEDU/Documents/GitHub/PharmaExpress/backend/tmp/${file.banner_path}`}</td>
                                     <td>{resultado.create_at}</td>
                                     <td>{resultado.update_at}</td>
                                     

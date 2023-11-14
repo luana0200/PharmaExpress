@@ -1,7 +1,7 @@
 import prismaClient from "../../prisma";
 
 interface IdCategoria {
-    id: string
+    categoriaId : string
 }
 
 class ListarCategoriasServices {
@@ -10,10 +10,10 @@ class ListarCategoriasServices {
         return resposta
     }
 
-    async findCategoryName( {id} : IdCategoria) {
+    async findCategoryName( {categoriaId} : IdCategoria) {
         const resposta = await prismaClient.categorias.findFirst({
             where: {
-                id: id
+                id : categoriaId
             },
             select: {
                 name: true,

@@ -15,7 +15,7 @@ export default function Index() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await apiBack.get('listarProdutos/' + id)
+            const result = await apiBack.get('/ListarCategorias' + {id})
 
             setData(result.data)
         }
