@@ -8,7 +8,7 @@ import apiBack from '../../services/apiBack'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
 export default function Carrinho() {
@@ -16,10 +16,10 @@ export default function Carrinho() {
   const [produtos, setProdutos] = useState([''])
   const navigation = useNavigate()
 
-  useEffect(() => {
-    const minhaLista = localStorage.getItem('@phlogin2k23')
-    setProdutos(JSON.parse(minhaLista) || [])
-  }, [])
+  // useEffect(() => {
+  //   const minhaLista = localStorage.getItem('@phlogin2k23')
+  //   setProdutos(JSON.parse(minhaLista) || [])
+  // }, [])
 
   // function excluirProduto(id) {
   //   let filtroProdutos = produtos.filter((item) => {
@@ -29,14 +29,14 @@ export default function Carrinho() {
   //   localStorage.setItem('@produtocarrinho', JSON.stringify(filtroProdutos))
   // }
 
-  useEffect(() => {
-    async function listarPdt() {
-      const resulta = await apiBack.get('/ListarPdtUnico/:id')
-      setProdutos(resulta.produtos)
-    }
+  // useEffect(() => {
+  //   async function listarPdt() {
+  //     const resulta = await apiBack.get('/ListarPdtUnico/:id')
+  //     setProdutos(resulta.produtos)
+  //   }
 
-    listarPdt()
-  }, [produtos])
+  //   listarPdt()
+  // }, [produtos])
 
 
   //verificando token 
