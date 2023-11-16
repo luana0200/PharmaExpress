@@ -1,25 +1,19 @@
 import prismaClient from "../../prisma";
 
 interface IdCategoria {
-    categoriaId : string
+    categoriaId: string
 }
 
 class ListarCategoriasServices {
-    async execute() {
-        const resposta = await prismaClient.categorias.findMany()
+    async execute({ categoriaId }: IdCategoria) {
+        const resposta = await prismaClient.categorias.findFirst({
+            where: {
+                id: categoriaId
+            }
+        })
         return resposta
     }
 
-    async findCategoryName( {categoriaId} : IdCategoria) {
-        const resposta = await prismaClient.categorias.findFirst({
-            where: {
-                id : categoriaId
-            },
-            select: {
-                name: true,
-            }
-        })
-    }
 }
 
 export { ListarCategoriasServices }
