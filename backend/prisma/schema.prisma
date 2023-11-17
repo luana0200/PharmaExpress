@@ -24,7 +24,7 @@ model Cadastro {
 }
 
 model Produtos {
-  id          String    @id @default(uuid())
+  id          String @id @default(uuid())
   name        String
   value       String
   quantity    String
@@ -33,11 +33,12 @@ model Produtos {
   banner      String
   categoriaId String
 
-  create_at   DateTime? @default(now()) // para salvar a data que foi criado
-  update_at   DateTime? @default(now()) //para qunado tiver alteracoes salvar a data
+  create_at DateTime? @default(now()) // para salvar a data que foi criado
+  update_at DateTime? @default(now()) //para qunado tiver alteracoes salvar a data
 
-  categorias  Categorias @relation(fields: [categoriaId], references: [id])
-  carrinho Carrinho[]
+  categorias Categorias   @relation(fields: [categoriaId], references: [id])
+  carrinho   Carrinho[]
+
   @@map("produtos")
 }
 
@@ -53,23 +54,22 @@ model Categorias {
 }
 
 model Carrinho {
-  id        String    @id @default(uuid())
-  n_pedido Int
-  create_at DateTime? @default(now())
-  update_at DateTime? @default(now())
-  order_id String
+  id          String    @id @default(uuid())
+  n_pedido    Int
+  create_at   DateTime? @default(now())
+  update_at   DateTime? @default(now())
+  order_id    String
   produtos_id String
-  order Order @relation(fields: [order_id], references: [id])
-  produtos Produtos @relation(fields: [produtos_id], references: [id])
+  order       Order     @relation(fields: [order_id], references: [id])
+  produtos    Produtos  @relation(fields: [produtos_id], references: [id])
 
   @@map("carrinho")
 }
 
 model Order {
-id String @id @default(uuid())
-table Int
-create_at DateTime? @default(now())
-update_at DateTime? @default(now())
-carrinho Carrinho[]
-
+  id        String     @id @default(uuid())
+  table     Int
+  create_at DateTime?  @default(now())
+  update_at DateTime?  @default(now())
+  carrinho  Carrinho[]
 }

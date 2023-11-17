@@ -6,6 +6,7 @@ interface CriarCategorias {
 
 class CriarCategoriasServices {
     async execute({ nome }: CriarCategorias) {
+
         const resposta = await prismaClient.categorias.create({
             data: {
                 name: nome
