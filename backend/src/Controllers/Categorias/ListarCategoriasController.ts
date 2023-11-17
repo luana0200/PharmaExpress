@@ -4,18 +4,9 @@ import { ListarCategoriasServices } from '../../Services/Categorias/ListarCatego
 class ListarCategoriasController {
     async handle(req: Request, res: Response) {
         const listarCategoriasServices = new ListarCategoriasServices()
-        //const response = await listarCategoriasServices.execute()
-
-        return res.json()
+        const resposta = await listarCategoriasServices.execute()
+        return res.json(resposta)
     }
+}
 
-    //  async findCategoryName(req: Request, res: Response) {
-    //      const {categoriaId} = req.params
-    //      const listarCategoriasServices = new ListarCategoriasServices()
-    //      const response = await listarCategoriasServices.findCategoryName({categoriaId})
-
-    //      return res.json(response)
-    //  }
- }
-
-export { ListarCategoriasController }
+export { ListarCategoriasController}

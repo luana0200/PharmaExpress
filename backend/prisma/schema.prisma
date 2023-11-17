@@ -32,6 +32,7 @@ model Produtos {
   description String
   banner      String
   categoriaId String
+
   create_at   DateTime? @default(now()) // para salvar a data que foi criado
   update_at   DateTime? @default(now()) //para qunado tiver alteracoes salvar a data
 
@@ -53,7 +54,7 @@ model Categorias {
 
 model Carrinho {
   id        String    @id @default(uuid())
-  numero String
+  n_pedido Int
   create_at DateTime? @default(now())
   update_at DateTime? @default(now())
   order_id String
@@ -67,10 +68,6 @@ model Carrinho {
 model Order {
 id String @id @default(uuid())
 table Int
-status Boolean @default(false)
-draft Boolean @default(true)
-final Boolean @default(false)
-name String?
 create_at DateTime? @default(now())
 update_at DateTime? @default(now())
 carrinho Carrinho[]
