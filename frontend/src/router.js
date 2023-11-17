@@ -81,7 +81,7 @@ export default function Rotas() {
 
                 <Route path='/Cadastro' element={<Cadastro />} />
                 <Route path='/' element={<Home />} />
-                <Route path='/Carrinho' element={<Carrinho />} />
+                <Route path='/Carrinho/:id' element={<Carrinho />} />
                 <Route path='/Login' element={<Login />} />
 
 

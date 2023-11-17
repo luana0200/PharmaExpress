@@ -41,7 +41,7 @@ CREATE TABLE `categorias` (
 -- CreateTable
 CREATE TABLE `carrinho` (
     `id` VARCHAR(191) NOT NULL,
-    `numero` VARCHAR(191) NOT NULL,
+    `n_pedido` INTEGER NOT NULL,
     `create_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
     `update_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
     `order_id` VARCHAR(191) NOT NULL,
@@ -54,10 +54,6 @@ CREATE TABLE `carrinho` (
 CREATE TABLE `Order` (
     `id` VARCHAR(191) NOT NULL,
     `table` INTEGER NOT NULL,
-    `status` BOOLEAN NOT NULL DEFAULT false,
-    `draft` BOOLEAN NOT NULL DEFAULT true,
-    `final` BOOLEAN NOT NULL DEFAULT false,
-    `name` VARCHAR(191) NULL,
     `create_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
     `update_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
 

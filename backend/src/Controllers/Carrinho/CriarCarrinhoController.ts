@@ -4,10 +4,10 @@ import { CriarCarrinhoServices } from "../../Services/Carrinho/CriarCarrinhoServ
 
 class CriarCarrinhoController {
     async handle(req: Request, res: Response) {
-        const { id } = req.body
+        const { id, n_pedido, order_id, produtos_id } = req.body
         const criarCarrinhoServices = new CriarCarrinhoServices()
         const result = criarCarrinhoServices.execute({
-            id
+            id, n_pedido, order_id, produtos_id
         })
 
         return res.json(result)

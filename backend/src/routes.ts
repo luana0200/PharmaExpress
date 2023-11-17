@@ -9,6 +9,8 @@ import { CriarUsuariosController } from './Controllers/Usuarios/CriarUsuariosCon
 import { AuthLoginController } from './Controllers/Login/AuthLoginController'
 import { CriarCategoriasController } from './Controllers/Categorias/CriarCategoriasController'
 import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosController'
+import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
+import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 
 //Listar
 import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsuarioController'
@@ -19,7 +21,7 @@ import { ListarProdutoCarrinhoController } from './Controllers/Carrinho/ListarPr
 //Deletar
 import { DeletarUsuariosController } from './Controllers/Usuarios/DeletarUsuariosController'
 import { ListarProdutosUnicoController } from './Controllers/Produtos/ListarProdutosUnicoController'
-import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
+
 
 
 const router = Router()
@@ -46,6 +48,9 @@ router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
 //carrinho
 router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
 router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
+
+//order
+router.post('/CriarOrder', new CriarOrderController().handle)
 
 
 export { router }
