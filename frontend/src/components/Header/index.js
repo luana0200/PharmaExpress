@@ -6,6 +6,7 @@ import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 import { toast } from 'react-toastify'
 
+
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
@@ -21,6 +22,7 @@ export default function Header() {
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
     const [id, setId] = useState('')
+    const [busca, setBusca] = useState('')
 
     function handleSair() {
         localStorage.removeItem('@phlogin2k23')
@@ -40,19 +42,31 @@ export default function Header() {
             id
         })
 
-       setIdCategoria(result)
+        setIdCategoria(result)
         navigation('/ListarCategoria')
     }
-
-
 
     return (
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
                 <Container fluid className='dark'>
+
+                    <search>
+
+                        <input
+                            type='Search'
+                            placeholder='Pesquise...'
+                            value={busca}
+                            onChange={(e) => setBusca(e.target.value)}
+                        />
+                    </search>
+
+
+
                     <Link to='/'><img src={logo} alt='logo' /></Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
+
                         <Navbar.Collapse id='basic-navbar-nav'>
                             <select onSubmit={HandleCategoria}
                                 value={idCategoria}
@@ -66,7 +80,7 @@ export default function Header() {
                                 })}
                             </select>
                             <Nav className='Container button' >
-{/* 
+                                {/* 
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
                                 <Nav.Link href='/HPessoal'><Button variant='secondary' >Higiene Pessoal</Button ></Nav.Link>
                                 <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link> */}
