@@ -24,6 +24,7 @@ export default function Header() {
     const [id, setId] = useState('')
     const [busca, setBusca] = useState('')
 
+
     function handleSair() {
         localStorage.removeItem('@phlogin2k23')
         navigation('/')
@@ -37,13 +38,9 @@ export default function Header() {
         listarCategorias()
     }, [])
 
-    async function HandleCategoria() {
-        const result = await api.get('/ListarCategoriasUnico', {
-            id
-        })
 
-        setIdCategoria(result)
-        navigation('/ListarCategoria')
+    async function handleCategoria() {
+        console.log(idCategoria)
     }
 
     return (
@@ -68,14 +65,15 @@ export default function Header() {
                     <Nav className='Container Menu' >
 
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <select onSubmit={HandleCategoria}
+                            <select
                                 value={idCategoria}
-                                onChange={(e) => setIdCategoria(e.target.value)}>
+                                onChange={(e) => setIdCategoria(e.target.value)}
+                                onSubmit={handleCategoria}>
 
                                 <option>Selecione...</option>
                                 {categorias.map((item) => { //mapear os seus itens
                                     return (
-                                        <option key={item.id} onSubmit={HandleCategoria}>{item.name}</option>
+                                        <option key={item.id} onClick={handleCategoria} >{item.name}</option>
                                     )
                                 })}
                             </select>

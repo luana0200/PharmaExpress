@@ -5,12 +5,13 @@ import { useState, useEffect } from "react";
 
 export default function ListarCategoria() {
 
-    const [categorias, setCategorias] = useState([''])
-    const [categoriaId, setCategoriaId] = useState('')
+    const [id, setId] = useState('')
 
     useEffect(() => {
         async function listarCategorias() {
-            const resposta = await api.get('/ListarCategoriasUnico')
+            const resposta = await api.get('/ListarCategoriasUnico', {
+                id
+            })
             console.log(resposta.data) // retorna oq esta dentro de DATA
         }
         listarCategorias()
