@@ -8,11 +8,39 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 // import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+
+
 export default function Carrinho() {
-  const { id } = useParams()
+  // const { id } = useParams()
   const [produtos, setProdutos] = useState([])
   const [carrinho, setCarrinho] = useState([])
   const navigation = useNavigate()
+
+  //verificando token 
+  useEffect(() => {
+    const iToken = localStorage.getItem('@phlogin2k23')
+    const token = JSON.parse(iToken)
+
+    if (!token) {
+      // toast.warning('Sessão Expirada')
+      toast.warning('Efetue um Login')
+      navigation('/Login')
+
+    } else if (token) {
+
+      async function verificarToken() {
+        const result = await apiBack.get('/ListarUsuarioToken', {
+          headers: {
+            Authorization: 'Bearer ' + `${token}`
+          }
+        })
+        console.log(result)
+      }
+      verificarToken()
+
+    }
+  }, [])
+
 
   // useEffect(() => {
   //   const minhaLista = localStorage.getItem('@phlogin2k23')
@@ -44,48 +72,26 @@ export default function Carrinho() {
 
     criarCarrinho()
   }, [carrinho])
-  //verificando token 
-  useEffect(() => {
-    const iToken = localStorage.getItem('@phlogin2k23')
-    const token = JSON.parse(iToken)
-
-    if (!token) {
-      // toast.warning('Sessão Expirada')
-      toast.warning('Efetue um Login')
-      navigation('/Login')
-
-    } else if (token) {
-
-      async function verificarToken() {
-        const result = await apiBack.get('/ListarUsuarioToken', {
-          headers: {
-            Authorization: 'Bearer ' + `${token}`
-          }
-        })
-      }
-      verificarToken()
-
-    }
-  }, [])
 
   return (
     <div>
       <h1>CARRINHO DE COMPRAS</h1>
       <ul>
         {produtos.map((produtos) => {
-        return(
-          <article key={produtos.id}>
-          <h2>{produtos.id}</h2>
-          <h2>Nome:</h2> <h2>{produtos.name}</h2>
-          <img src={`http://localhost:3334/file/${produtos.banner}`} />
-          <h2>Valor:</h2> <h2>{produtos.value}</h2>
-         
-        </article>
-        
-        )})}
-            
-        
-        
+          return (
+            <article key={produtos.id}>
+              <h2>{produtos.id}</h2>
+              <h2>Nome:</h2> <h2>{produtos.name}</h2>
+              <img src={`http://localhost:3334/file/${produtos.banner}`} />
+              <h2>Valor:</h2> <h2>{produtos.value}</h2>
+
+            </article>
+
+          )
+        })}
+
+
+
 
       </ul>
     </div>
