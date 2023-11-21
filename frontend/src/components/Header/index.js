@@ -6,6 +6,7 @@ import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 import { toast } from 'react-toastify'
 
+
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
@@ -21,6 +22,7 @@ export default function Header() {
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
     const [id, setId] = useState('')
+    const [busca, setBusca] = useState('')
 
 
     function handleSair() {
@@ -36,6 +38,7 @@ export default function Header() {
         listarCategorias()
     }, [])
 
+
     async function handleCategoria() {
       const 
     }
@@ -44,9 +47,23 @@ export default function Header() {
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
                 <Container fluid className='dark'>
+
+                    <search>
+
+                        <input
+                            type='Search'
+                            placeholder='Pesquise...'
+                            value={busca}
+                            onChange={(e) => setBusca(e.target.value)}
+                        />
+                    </search>
+
+
+
                     <Link to='/'><img src={logo} alt='logo' /></Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
+
                         <Navbar.Collapse id='basic-navbar-nav'>
                             <select
                                 value={idCategoria}
