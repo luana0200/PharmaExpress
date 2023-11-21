@@ -38,10 +38,18 @@ export default function Header() {
         listarCategorias()
     }, [])
 
-
-    async function handleCategoria() {
-      const 
+    async function handleCategoria(e) {
+        e.preventDefault()
+         await api.post('/ListarCategoriasUnico', {
+            where: {
+                idCategoria: id
+            }
+        })
+        console.log(idCategoria)
+        navigation('/ListarCategorias')
+        
     }
+
 
     return (
         <Container fluid>
@@ -73,7 +81,7 @@ export default function Header() {
                                 <option>Selecione...</option>
                                 {categorias.map((item) => { //mapear os seus itens
                                     return (
-                                        <option key={item.id} onClick={handleCategoria} >{item.name}</option>
+                                        <option value={item.id} key={item.id} onClick={handleCategoria} >{item.name}</option>
                                     )
                                 })}
                             </select>
