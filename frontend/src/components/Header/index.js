@@ -22,6 +22,7 @@ export default function Header() {
     const [idCategoria, setIdCategoria] = useState('')
     const [id, setId] = useState('')
 
+
     function handleSair() {
         localStorage.removeItem('@phlogin2k23')
         navigation('/')
@@ -35,16 +36,9 @@ export default function Header() {
         listarCategorias()
     }, [])
 
-    async function HandleCategoria() {
-        const result = await api.get('/ListarCategoriasUnico', {
-            id
-        })
-
-       setIdCategoria(result)
-        navigation('/ListarCategoria')
+    async function handleCategoria() {
+        console.log(idCategoria)
     }
-
-
 
     return (
         <Container fluid>
@@ -54,19 +48,20 @@ export default function Header() {
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <select onSubmit={HandleCategoria}
+                            <select
                                 value={idCategoria}
-                                onChange={(e) => setIdCategoria(e.target.value)}>
+                                onChange={(e) => setIdCategoria(e.target.value)}
+                                onSubmit={handleCategoria}>
 
                                 <option>Selecione...</option>
                                 {categorias.map((item) => { //mapear os seus itens
                                     return (
-                                        <option key={item.id} onSubmit={HandleCategoria}>{item.name}</option>
+                                        <option key={item.id} onClick={handleCategoria} >{item.name}</option>
                                     )
                                 })}
                             </select>
                             <Nav className='Container button' >
-{/* 
+                                {/* 
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
                                 <Nav.Link href='/HPessoal'><Button variant='secondary' >Higiene Pessoal</Button ></Nav.Link>
                                 <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link> */}
