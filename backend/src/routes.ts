@@ -9,7 +9,7 @@ import { CriarUsuariosController } from './Controllers/Usuarios/CriarUsuariosCon
 import { AuthLoginController } from './Controllers/Login/AuthLoginController'
 import { CriarCategoriasController } from './Controllers/Categorias/CriarCategoriasController'
 import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosController'
-import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
+// import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
 import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 
 //Listar
@@ -45,12 +45,12 @@ router.get('/ListarCategoriasUnico', new ListarCategoriasUnicoController().handl
 //produtos
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', new ListarProdutosController().handle)
-router.get('/ListarPdtUnico/:id', new ListarProdutosUnicoController().handle)
+router.get('/ListarPdtUnico/${id}', new ListarProdutosUnicoController().handle)
 // router.get('/categoryName/:id', new ListarCategoriasController().findCategoryName)
 
 //carrinho
-router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
-router.get('/ListarCarrinho', new ListarProdutoCarrinhoController().handle)
+// router.post('/CriarCarrinho', new CriarCarrinhoController().handle)
+router.get('/ListarCarrinho/${id}', new ListarProdutoCarrinhoController().handle)
 
 //order
 router.post('/CriarOrder', new CriarOrderController().handle)
