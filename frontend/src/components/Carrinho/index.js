@@ -8,8 +8,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 // import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+
+
 export default function Carrinho() {
-  const { id } = useParams()
+  // const { id } = useParams()
   const [produtos, setProdutos] = useState([])
   const [carrinho, setCarrinho] = useState([])
   const navigation = useNavigate()
