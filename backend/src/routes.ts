@@ -17,7 +17,7 @@ import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosCon
 //import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
 
 
-import { CriarOrderController } from './Controllers/Order/CriarOrderController'
+//import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 
 //Listar
 import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsuarioController'
