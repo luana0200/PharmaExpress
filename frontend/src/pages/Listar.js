@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 
 export default function ListarCategoria() {
 
+    const [categorias, setCategorias] = useState([''])
+    const [categoriaId, setCategoriaId] = useState('')
     const [id, setId] = useState('')
 
     useEffect(() => {
@@ -18,13 +20,13 @@ export default function ListarCategoria() {
     }, [])
     return (
         <Container>
-            {/* {categorias.map((item) => { //mapear os seus itens
+          {categorias.map((item) => { //mapear os seus itens
                 return (
                     <div>
                         <h2>{item.nome}</h2>
                     </div>
                 )
-            })} */}
+            })}
             <div></div>
         </Container>
     )

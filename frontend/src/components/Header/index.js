@@ -72,16 +72,16 @@ export default function Header() {
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
 
-                        <Navbar.Collapse id='basic-navbar-nav'>
+                        <Navbar.Collapse  onSubmit={handleCategoria} id='basic-navbar-nav'>
                             <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
-                                onSubmit={handleCategoria}>
+                               >
 
                                 <option>Selecione...</option>
                                 {categorias.map((item) => { //mapear os seus itens
                                     return (
-                                        <option value={item.id} key={item.id} onClick={handleCategoria} >{item.name}</option>
+                                        <option value={item.id} key={item.id} onSubmit={handleCategoria} >{item.name}</option>
                                     )
                                 })}
                             </select>
