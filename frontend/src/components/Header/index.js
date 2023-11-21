@@ -37,7 +37,7 @@ export default function Header() {
     }, [])
 
     async function handleCategoria() {
-        console.log(idCategoria)
+      const 
     }
 
     return (
