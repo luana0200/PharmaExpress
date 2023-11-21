@@ -1,7 +1,8 @@
   * {
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
   }
+
   h2 {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: black;
@@ -17,20 +18,30 @@
   }
   /* Incio Botoes */
   .Container Button {
-      background-color: lightseagreen;
-      cursor: pointer;
-      border: none;
-      margin: 5px;
-      padding: auto;
-      border-radius: 9px;
-      position: relative;
+    background-color: lightseagreen;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    padding: auto;
+    border-radius: 9px;
+    position: relative;
     justify-content: center;   
     text-align: center;
   }
 
   Button a {
-      text-decoration: none;
-      color: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  select{
+    /* padding: 0.2rem;
+    border-radius: 0.3rem;
+    height: 2.4rem; */
+    width: 100%;
+    background-color: lightseagreen;
+    cursor: pointer;
+    color: #FFFFFF;
   }
 
   .test{

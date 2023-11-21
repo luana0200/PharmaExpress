@@ -39,7 +39,7 @@ class AuthLoginServices {
             process.env.JWT_SECRET,
             {
                 subject: user.id,
-                expiresIn: '2h'
+                expiresIn: '1h'
             })
         return {
             id: user.id,

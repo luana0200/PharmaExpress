@@ -11,6 +11,7 @@ export function isAutenticado(
     next: NextFunction) {
 
     const authToken = req.headers.authorization
+    // console.log(authToken)
 
     if (!authToken) {
         return res.json({ dados: 'Token Inválido' })

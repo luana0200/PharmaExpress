@@ -5,8 +5,9 @@ import Cadastro from "./pages/Cadastro"
 import Home from "./pages/Home"
 import Carrinho from './components/Carrinho'
 import Login from './pages/Cadastro/Login'
+import ListarCategoria from './pages/Listar'
 
-import HPessoal from "./pages/HPessoal"
+// import HPessoal from "./pages/HPessoal"
 import Absorvente from './pages/HPessoal/Detalhes/Absorvente'
 import Condicionador from './pages/HPessoal/Detalhes/Condicionador'
 import CremeFacial from './pages/HPessoal/Detalhes/CremeFacial'
@@ -18,7 +19,7 @@ import ProtetorNivea from './pages/HPessoal/Detalhes/ProtetorNivea'
 import SaboneteDove from './pages/HPessoal/Detalhes/SaboneteDove'
 import Shampoo1 from './pages/HPessoal/Detalhes/Shampoo'
 
-import Baby from './pages/baby'
+// import Baby from './pages/baby'
 import Locao from './pages/baby/Detalhes/Locao'
 import Pomada from './pages/baby/Detalhes/Pomada'
 import Lenco from './pages/baby/Detalhes/lenco'
@@ -26,14 +27,11 @@ import Sabonete from './pages/baby/Detalhes/sabonete'
 import Sabao from './pages/baby/Detalhes/Sabao'
 import Lenco2 from './pages/baby/Detalhes/Lenco2'
 import Talco from './pages/baby/Detalhes/Talco'
-// import Fralda from './pages/baby/Detalhes/Fralda'
-// import Aptamil from './pages/baby/Detalhes/Aptamil'
-// import ShampooJonhson from './pages/baby/Detalhes/ShampooJonhson'
 
- import Produtos from './pages/Produtos'
-//  import Detalhes from './pages/Produtos/Detalhes'
- import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
- import Beleza from "./pages/Beleza"
+
+import Produtos from './pages/Produtos'
+// import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+// import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
 // import Deliniador from './pages/Beleza/Detalhes/Deliniador'
@@ -46,7 +44,7 @@ import Talco from './pages/baby/Detalhes/Talco'
 // import Rimel from './pages/Beleza/Detalhes/Rimel'
 
 
-import Medicamentos from "./pages/Medicamentos"
+// import Medicamentos from "./pages/Medicamentos"
 import Acetilcisteína from './pages/Medicamentos/Detalhes/Acetilcisteína'
 import Ambroxol from './pages/Medicamentos/Detalhes/Ambroxol'
 import Complexob from './pages/Medicamentos/Detalhes/Complexob'
@@ -56,17 +54,14 @@ import Desloratadina from './pages/Medicamentos/Detalhes/Desloratadina'
 import Dipirona from './pages/Medicamentos/Detalhes/Dipirona'
 import Doricin from './pages/Medicamentos/Detalhes/Doricin'
 import Emsgrip from './pages/Medicamentos/Detalhes/emsgrip'
-import Simeticona from './pages/Medicamentos/Detalhes/Simeticona'
-// import Compra from './components/Compra/Compra'
 
-// import Beleza from './pages/Beleza/index'
 
 export default function Rotas() {
     return (
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='/HPessoal' element={<HPessoal />} />
+                {/* <Route path='/HPessoal' element={<HPessoal />} /> */}
                 <Route path='/Absorvente' element={<Absorvente />} />
                 <Route path='/Condicionador' element={<Condicionador />} />
                 <Route path='/CremeFacial' element={<CremeFacial />} />
@@ -78,14 +73,12 @@ export default function Rotas() {
                 <Route path='/SaboneteDove' element={<SaboneteDove />} />
                 <Route path='/Shampoo' element={<Shampoo1 />} />
 
-
                 <Route path='/Cadastro' element={<Cadastro />} />
                 <Route path='/' element={<Home />} />
                 <Route path='/Carrinho/:id' element={<Carrinho />} />
                 <Route path='/Login' element={<Login />} />
-
-
-                <Route path='/Baby' element={<Baby />} />
+              
+                {/* <Route path='/Baby' element={<Baby />} /> */}
                 <Route path='/Locao' element={<Locao />} />
                 <Route path='/Pomada' element={<Pomada />} />
                 <Route path='/Lenco' element={<Lenco />} />
@@ -99,9 +92,10 @@ export default function Rotas() {
 
 
                 <Route path='/Produtos' element={<Produtos />} />
-                <Route path='/Beleza' element={<Beleza />} /> 
+                {/* <Route path='/Beleza' element={<Beleza />} /> */}
+                <Route path='/ListarCategoria' element={<ListarCategoria />} />
 
-                <Route path='/:id' element={<ProdutosPorCategoria />} />
+                {/* <Route path='/:id' element={<ProdutosPorCategoria />} /> */}
                 {/* <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />
@@ -111,10 +105,10 @@ export default function Rotas() {
                 <Route path='/Perfume1' element={<Perfume1 />} />
                 <Route path='/Perfume4' element={<Perfume4 />} />
                 <Route path='/ProtetorSolar' element={<ProtetorSolar />} />
-                <Route path='/Rimel' element={<Rimel />} />  */} 
+                <Route path='/Rimel' element={<Rimel />} />  */}
 
 
-                <Route path='/Medicamentos' element={<Medicamentos />} />
+                {/* <Route path='/Medicamentos' element={<Medicamentos />} /> */}
                 <Route path='/Acetilcisteína' element={<Acetilcisteína />} />
                 <Route path='/Ambroxol' element={<Ambroxol />} />
                 <Route path='/Complexob' element={<Complexob />} />
@@ -124,7 +118,6 @@ export default function Rotas() {
                 <Route path='/Dipirona' element={<Dipirona />} />
                 <Route path='/Doricin' element={<Doricin />} />
                 <Route path='/emsgrip' element={<Emsgrip />} />
-                <Route path='/Simeticona' element={<Simeticona />} />
 
 
                 {/* <Route path='/Compra' element={<Compra />} /> */}

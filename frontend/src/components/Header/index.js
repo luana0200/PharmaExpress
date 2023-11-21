@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
+import { toast } from 'react-toastify'
+
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
@@ -11,12 +13,14 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
 import api from '../../services/apiBack'
+import ListarCategoria from '../../pages/Listar'
 
 export default function Header() {
 
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
-    const [categoriaId, setCategoriaId] = useState('')
+    const [idCategoria, setIdCategoria] = useState('')
+    const [id, setId] = useState('')
 
     function handleSair() {
         localStorage.removeItem('@phlogin2k23')
@@ -24,22 +28,25 @@ export default function Header() {
     }
 
     useEffect(() => {
-        const iToken = localStorage.getItem('@phlogin2k23')  // pegando o token
-        const token = JSON.parse(iToken)
-
         async function listarCategorias() {
-            const resposta = await api.get('/ListarCategorias', {
-                headers: {
-                    Authorization: 'Bearer ' + `${token}`
-                }
-            })
+            const resposta = await api.get('/ListarCategorias')
             setCategorias(resposta.data) // retorna oq esta dentro de DATA
         }
         listarCategorias()
-    }, [categorias])
+    }, [])
+
+    async function HandleCategoria() {
+        const result = await api.get('/ListarCategoriasUnico', {
+            id
+        })
+
+       setIdCategoria(result)
+        navigation('/ListarCategoria')
+    }
+
+
 
     return (
-
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
                 <Container fluid className='dark'>
@@ -47,22 +54,23 @@ export default function Header() {
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <Nav className='Container button' >
+                            <select onSubmit={HandleCategoria}
+                                value={idCategoria}
+                                onChange={(e) => setIdCategoria(e.target.value)}>
 
+                                <option>Selecione...</option>
+                                {categorias.map((item) => { //mapear os seus itens
+                                    return (
+                                        <option key={item.id} onSubmit={HandleCategoria}>{item.name}</option>
+                                    )
+                                })}
+                            </select>
+                            <Nav className='Container button' >
+{/* 
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
                                 <Nav.Link href='/HPessoal'><Button variant='secondary' >Higiene Pessoal</Button ></Nav.Link>
-                                <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link>
-                                <select
-                                    value={categoriaId}
-                                    onChange={(e) => setCategoriaId(e.target.value)}>
+                                <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link> */}
 
-                                    <option >Selecione...</option>
-                                    {categorias.map((item) => { //mapear os seus itens
-                                        return (
-                                            <option value={item.id} key={item.id} >{item.nome}</option>
-                                        )
-                                    })}
-                                </select>
                                 {/* <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link> */}
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>

@@ -16,6 +16,7 @@ import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsuarioController'
 import { ListarProdutosController } from './Controllers/Produtos/ListarProdutosController'
 import { ListarCategoriasController } from './Controllers/Categorias/ListarCategoriasController'
+import { ListarCategoriasUnicoController } from './Controllers/Categorias/ListarCategoriasUnicoController'
 import { ListarProdutoCarrinhoController } from './Controllers/Carrinho/ListarProdutoCarrinhoController'
 
 //Deletar
@@ -36,8 +37,10 @@ router.post('/Login', new AuthLoginController().handle)
 router.delete('/DeletarUsuarios', new DeletarUsuariosController().handle)
 
 //categorias
-router.post('/CriarCategorias', isAutenticado,new CriarCategoriasController().handle)
+router.post('/CriarCategorias', new CriarCategoriasController().handle)
 router.get('/ListarCategorias', new ListarCategoriasController().handle)
+router.get('/ListarCategoriasUnico', new ListarCategoriasUnicoController().handle)
+
 
 //produtos
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
