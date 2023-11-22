@@ -2,14 +2,18 @@ import prismaClient from "../../prisma";
 
 interface ListarUnico {
     id: string
+    name: string
+    value: string
 }
 
 class ListarProdutosUnicoServices {
-    async execute({ id }: ListarUnico) {
+    async execute({ id, name, value }: ListarUnico) {
 
         const resposta = await prismaClient.produtos.findFirst({
             where: {
-                id: id
+                id: id,
+                name:name,
+                value:value
             },
             select: {
                 name: true
