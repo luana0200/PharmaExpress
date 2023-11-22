@@ -23,7 +23,7 @@ export default function ListarCategoria() {
           {categorias.map((item) => { //mapear os seus itens
                 return (
                     <div>
-                        <h2>{item.nome}</h2>
+                        <h2>{item.name}</h2>
                     </div>
                 )
             })}

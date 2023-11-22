@@ -37,7 +37,7 @@ export default function Header() {
         }
         listarCategorias()
     }, [])
-    
+
     async function handleCategoria(e) {
         e.preventDefault()
         await api.post('/ListarCategoriasUnico', {
@@ -45,10 +45,10 @@ export default function Header() {
                 idCategoria: id
             }
         })
-        alert(idCategoria)
-        
+        console.log(idCategoria)
+
     }
-    navigation('/ListarCategoria')
+    //navigation('/ListarCategoria')
 
 
     return (
