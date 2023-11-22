@@ -17,7 +17,7 @@ export default function Index() {
 
     useEffect(() => {
         async function listarPdt() {
-            const result = await apiBack.get('/ListarProdutos')
+            const result = await apiBack.get('/ListarCarrinho')
             setData(result.data)
         }
 
@@ -41,7 +41,7 @@ export default function Index() {
 
     return (
         <Container fluid>
-            <div className='cabecalho'><h1>Produtos</h1></div>
+            <div className='cabecalho'><h1>detalhes</h1></div>
 
 
             <Row className='d-flex justify-content-center'>
@@ -51,6 +51,8 @@ export default function Index() {
                         <Card className='m-2' style={{ width: '17rem' }} key={item.id}>
                             <Card.Img variant="top" width="220px" src={`http://localhost:3334/file/${item.banner}`} />
                             <Card.Body>
+                                <h2>Detalhes
+                                </h2>
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Title><h2>{item.description}</h2></Card.Title>
                                 <div className='Container llog'>

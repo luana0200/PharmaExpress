@@ -13,11 +13,11 @@ import visa12 from '../../components/Header/imagens/visa12.png'
 export default function Index() {
     const {id} = useParams()
     const [data, setData] = useState([''])
-    const [produto, setProduto] = useState([''])
+    const [produto] = useState([''])
 
     useEffect(() => {
         async function listarPdt() {
-            const result = await apiBack.get('/ListarPdtUnico/${id}')
+            const result = await apiBack.get('/ListarProdutos')
             setData(result.data)
         }
 
@@ -52,9 +52,9 @@ export default function Index() {
                             <Card.Img variant="top" width="220px" src={`http://localhost:3334/file/${item.banner}`} />
                             <Card.Body>
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
-                                <Card.Title><h2>{item.description}</h2></Card.Title>
+                                <Card.Title><h2>{item.value}</h2></Card.Title>
                                 <div className='Container llog'>
-                                <button onClick={adicionarCarrinho}><Link to={`/Detalhes/${id}`}>Carrinho</Link></button>
+                                <button onClick={adicionarCarrinho}><Link to={`/ProdutosPorCategoria/${item.id}`}>Detalhes</Link></button>
                                 {/* <BiCartAdd size='1.5rem' color='lightseagreen'/> */}
                                 </div>
 

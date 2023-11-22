@@ -47,8 +47,8 @@ export default function Header() {
         })
         alert(idCategoria)
         
+        navigation('/ListarCategoria')
     }
-    navigation('/ListarCategoria')
 
 
     return (

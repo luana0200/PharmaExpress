@@ -95,7 +95,7 @@ export default function Rotas() {
                 {/* <Route path='/Beleza' element={<Beleza />} /> */}
                 <Route path='/ListarCategoria' element={<ListarCategoria />} />
 
-                 <Route path='/Detalhes/${id}' element={<ProdutosPorCategoria />} /> 
+                 <Route path='/ProdutosPorCategoria/:id' element={<ProdutosPorCategoria />} /> 
                 {/* <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />
