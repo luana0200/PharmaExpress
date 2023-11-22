@@ -36,7 +36,7 @@ export default function Index() {
                             <Card.Img variant="top" width="220px" src={`http://localhost:3334/file/${item.banner}`} />
                             <Card.Body>
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
-                                <Card.Title><h2>{item.value}</h2></Card.Title>
+                                <Card.Title><h2>{item.description}</h2></Card.Title>
                                 <div className='Container llog'>
                                     <Link to={`/Carrinho/${item.id}`}><BiCartAdd size='1.5rem' color='lightseagreen'/></Link>
                                 </div>
