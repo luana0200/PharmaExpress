@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import apiBack from '../../services/apiBack'
 import React, { useEffect, useState } from 'react'
 import { BiCartAdd } from "react-icons/bi";
@@ -11,16 +11,32 @@ import Card from 'react-bootstrap/Card'
 import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Index() {
+    const {id} = useParams()
     const [data, setData] = useState([''])
+    const [produto, setProduto] = useState([''])
 
     useEffect(() => {
         async function listarPdt() {
-            const result = await apiBack.get('/ListarProdutos')
+            const result = await apiBack.get('/ListarPdtUnico/${id}')
             setData(result.data)
         }
 
         listarPdt()
     }, [data])
+
+    function adicionarCarrinho(){
+        const minhaLista = localStorage.getItem('@produtoscarrinho')
+        let pdtAdicionado = JSON.parse(minhaLista) || []
+        const verificarProdutos = pdtAdicionado.some( (produto) => produto.id === produto.id )
+        if(verificarProdutos){
+           
+            return
+        }
+        produto.push(produto)
+        localStorage.setItem('@produtoscarrinho', JSON.stringify(pdtAdicionado))
+              
+    }
+
 
 
     return (
@@ -38,7 +54,8 @@ export default function Index() {
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Title><h2>{item.description}</h2></Card.Title>
                                 <div className='Container llog'>
-                                    <Link to={`/Carrinho/${item.id}`}><BiCartAdd size='1.5rem' color='lightseagreen'/></Link>
+                                <button onClick={adicionarCarrinho}><Link to={`/Detalhes/${id}`}>Carrinho</Link></button>
+                                {/* <BiCartAdd size='1.5rem' color='lightseagreen'/> */}
                                 </div>
 
                             </Card.Body>

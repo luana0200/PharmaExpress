@@ -30,7 +30,7 @@ import Talco from './pages/baby/Detalhes/Talco'
 
 
 import Produtos from './pages/Produtos'
-// import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
 // import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
@@ -95,7 +95,7 @@ export default function Rotas() {
                 {/* <Route path='/Beleza' element={<Beleza />} /> */}
                 <Route path='/ListarCategoria' element={<ListarCategoria />} />
 
-                {/* <Route path='/:id' element={<ProdutosPorCategoria />} /> */}
+                 <Route path='/Detalhes/${id}' element={<ProdutosPorCategoria />} /> 
                 {/* <Route path='/BaseUltra' element={<BaseUltra />} />
                 <Route path='/Batom' element={<Batom />} />
                 <Route path='/Deliniador' element={<Deliniador />} />
