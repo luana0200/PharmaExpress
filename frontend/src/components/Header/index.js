@@ -45,10 +45,13 @@ export default function Header() {
                 idCategoria: id
             }
         })
-        console.log(idCategoria)
 
     }
     //navigation('/ListarCategoria')
+
+    alert(idCategoria)
+
+    navigation('/ListarCategoria')
 
 
     return (
@@ -110,5 +113,3 @@ export default function Header() {
 
     )
 }
-
-
