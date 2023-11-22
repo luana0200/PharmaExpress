@@ -30,7 +30,7 @@ import Talco from './pages/baby/Detalhes/Talco'
 
 
 import Produtos from './pages/Produtos'
-import ProdutosPorCategoria from './pages/Produtos/ProdutosPorCategoria'
+import ProdutosPorCategoria from './pages/ProdutosPorCategoria'
 // import Beleza from "./pages/Beleza"
 // import Batom from './pages/Beleza/Detalhes/Batom'
 // import BaseUltra from './pages/Beleza/Detalhes/Baseultra'
