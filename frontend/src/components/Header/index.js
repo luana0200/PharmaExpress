@@ -4,25 +4,20 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
-import { toast } from 'react-toastify'
-
 
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
 import logo from './imagens/logo1.png'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
 import api from '../../services/apiBack'
-import ListarCategoria from '../../pages/Listar'
 
 export default function Header() {
 
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
-    const [id, setId] = useState('')
-    const [busca, setBusca] = useState('')
+    // const [id, setId] = useState('')
 
 
     function handleSair() {
@@ -32,45 +27,39 @@ export default function Header() {
 
     useEffect(() => {
         async function listarCategorias() {
-            const resposta = await api.get('/ListarCategorias')
-            setCategorias(resposta.data) // retorna oq esta dentro de DATA
+            try {
+                const resposta = await api.get('/ListarCategorias')
+                setCategorias(resposta.data)
+            } catch (erro) {
+                // console.error('Erro ao listar categorias:', erro)
+            }
         }
+
         listarCategorias()
     }, [])
 
+
     async function handleCategoria(e) {
         e.preventDefault()
-        await api.post('/ListarCategoriasUnico', {
+        try {
+          console.log('Categoria selecionada:', idCategoria)
+          const resposta = await api.get('/ListarCategoriasUnico', {
             where: {
-                idCategoria: id
-            }
-        })
-
-    }
-    //navigation('/ListarCategoria')
-
-    alert(idCategoria)
-
-    navigation('/ListarCategoria')
-
+              idCategoria: idCategoria,
+            },
+          })
+        //   console.log('Dados da categoria:', resposta.data)
+    
+         navigation('/ListarCategoria')
+        } catch (erro) {
+        //   console.error('Erro de categoria:', erro)
+        }
+      }
 
     return (
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
-                <Container fluid className='dark'>
-
-                    <search>
-
-                        <input
-                            type='Search'
-                            placeholder='Pesquise...'
-                            value={busca}
-                            onChange={(e) => setBusca(e.target.value)}
-                        />
-                    </search>
-
-
-
+                <Container fluid className='dark'>                
                     <Link to='/'><img src={logo} alt='logo' /></Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
@@ -79,12 +68,13 @@ export default function Header() {
                             <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
+                                onBlur={handleCategoria} 
                             >
 
                                 <option>Selecione...</option>
                                 {categorias.map((item) => { //mapear os seus itens
                                     return (
-                                        <option value={item.id} key={item.id} onClick={handleCategoria} >{item.name}</option>
+                                        <option value={item.id} key={item.id}>{item.name}</option>
                                     )
                                 })}
                             </select>
