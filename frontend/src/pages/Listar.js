@@ -34,18 +34,17 @@ export default function ListarCategoria() {
     // }, [])
 
     useEffect(() => {
-        async function listarProdutosPorCategoria() {
+        async function listarCategorias() {
             try {
                 const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-                setProdutos(resposta.data)
+                setProdutos(resposta.data || [])
                 console.log(idCategoria)
             } catch (erro) {
                 console.error('Erro ao listar produtos por categoria:', erro)
             }
         }
-
-        listarProdutosPorCategoria()
-    }, [])
+        listarCategorias()
+    }, [idCategoria])
 
 
     return (
