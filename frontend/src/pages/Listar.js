@@ -36,15 +36,15 @@ export default function ListarCategoria() {
     useEffect(() => {
         async function listarCategorias() {
             try {
-                const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-                setProdutos(resposta.data || [])
                 console.log(idCategoria)
+                const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+                setProdutos(resposta.data)
             } catch (erro) {
                 console.error('Erro ao listar produtos por categoria:', erro)
             }
         }
         listarCategorias()
-    }, [idCategoria])
+    }, [])
 
 
     return (

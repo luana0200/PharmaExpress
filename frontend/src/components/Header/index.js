@@ -13,7 +13,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import api from '../../services/apiBack'
 
 export default function Header() {
-    const { id } = useParams
+    const { id } = useParams()
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
@@ -34,7 +34,6 @@ export default function Header() {
                 // console.error('Erro ao listar categorias:', erro)
             }
         }
-
         listarCategorias()
     }, [])
 
@@ -48,7 +47,7 @@ export default function Header() {
                     idCategoria: idCategoria,
                 },
             })
-            //   console.log('Dados da categoria:', resposta.data)
+              console.log('Dados da categoria:', resposta.data)
 
             navigation(`/ListarCategoria/${idCategoria}`)
         } catch (erro) {
