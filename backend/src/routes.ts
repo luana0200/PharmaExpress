@@ -10,14 +10,9 @@ import { AuthLoginController } from './Controllers/Login/AuthLoginController'
 import { CriarCategoriasController } from './Controllers/Categorias/CriarCategoriasController'
 import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosController'
 
-// import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
-
-
 //DESCOMENTAR
 //import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
 
-
-//import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 
 //Listar
 import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsuarioController'

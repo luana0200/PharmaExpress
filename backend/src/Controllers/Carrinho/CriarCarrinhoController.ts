@@ -4,10 +4,10 @@
 
 // class CriarCarrinhoController {
 //     async handle(req: Request, res: Response) {
-//         const { id, n_pedido, order_id, produtos_id } = req.body
+//         const { id } = req.body
 //         const criarCarrinhoServices = new CriarCarrinhoServices()
 //         const result = criarCarrinhoServices.execute({
-//             id, n_pedido, order_id, produtos_id
+//             id
 //         })
 
 //         return res.json(result)

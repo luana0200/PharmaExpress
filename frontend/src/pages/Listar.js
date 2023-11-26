@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import Header from '../components/Header'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
@@ -9,16 +9,19 @@ import api from '../services/apiBack'
 export default function ListarCategoria() {
 
     const [categorias, setCategorias] = useState([''])
+    const [idCategoria, setIdCategoria] = useState('')
     const [id, setId] = useState('')
 
     useEffect(() => {
         async function listarCategorias() {
+            const idCategoria = { idCategoria }
             try {
                 const resposta = await api.get('/ListarCategoriasUnico', {
-                    id
+                    where: {
+                        categoriaId: idCategoria
+                    }
                 })
                 setCategorias(resposta.data)
-                // console.log(resposta.data)
             } catch (erro) {
                 console.error('Erro ao listar categorias:', erro)
             }
@@ -29,6 +32,7 @@ export default function ListarCategoria() {
     return (
         <Container fluid>
             <div className='cabecalho'><h1>Produtos</h1></div>
+
             <Row className='d-flex justify-content-center'>
                 {categorias.map((item) => { //mapear os seus itens
                     return (
@@ -42,6 +46,6 @@ export default function ListarCategoria() {
                     )
                 })}
             </Row>
-F        </Container>
+        </Container>
     )
 }

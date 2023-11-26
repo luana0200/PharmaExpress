@@ -5,7 +5,7 @@ interface Listar {
 }
 class ListarProdutoCarrinhoServices {
     async execute({ id }: Listar) {
-        const resposta = await prismaClient.produtos.findMany({
+        const resposta = await prismaClient.produtos.findUnique({
             where: {
                 id: id
             },
@@ -13,7 +13,7 @@ class ListarProdutoCarrinhoServices {
                 name: true
             }
         })
-        return (resposta)
+        return resposta
     }
 
 

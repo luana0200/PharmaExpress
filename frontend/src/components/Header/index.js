@@ -1,6 +1,6 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
@@ -13,7 +13,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import api from '../../services/apiBack'
 
 export default function Header() {
-
+    const { id } = useParams
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
@@ -42,24 +42,24 @@ export default function Header() {
     async function handleCategoria(e) {
         e.preventDefault()
         try {
-          console.log('Categoria selecionada:', idCategoria)
-          const resposta = await api.get('/ListarCategoriasUnico', {
-            where: {
-              idCategoria: idCategoria,
-            },
-          })
-        //   console.log('Dados da categoria:', resposta.data)
-    
-         navigation('/ListarCategoria')
+            console.log('Categoria selecionada:', idCategoria)
+            const resposta = await api.get('/ListarCategoriasUnico', {
+                where: {
+                    idCategoria: idCategoria,
+                },
+            })
+            //   console.log('Dados da categoria:', resposta.data)
+
+            navigation(`/ListarCategoria/${idCategoria}`)
         } catch (erro) {
-        //   console.error('Erro de categoria:', erro)
+            console.error('Erro de categoria:', erro)
         }
-      }
+    }
 
     return (
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
-                <Container fluid className='dark'>                
+                <Container fluid className='dark'>
                     <Link to='/'><img src={logo} alt='logo' /></Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
@@ -68,7 +68,7 @@ export default function Header() {
                             <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
-                                onBlur={handleCategoria} 
+                                onBlur={handleCategoria}
                             >
 
                                 <option>Selecione...</option>
