@@ -41,7 +41,7 @@ router.delete('/DeletarUsuarios', new DeletarUsuariosController().handle)
 //categorias
 router.post('/CriarCategorias', new CriarCategoriasController().handle)
 router.get('/ListarCategorias', new ListarCategoriasController().handle)
-router.get('/ListarCategoriasUnico', new ListarCategoriasUnicoController().handle)
+router.get('/ListarCategoriasUnico/:idCategoria', new ListarCategoriasUnicoController().handle)
 
 
 //produtos

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Header from '../components/Header'
+import { useParams } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
@@ -8,43 +8,62 @@ import api from '../services/apiBack'
 
 export default function ListarCategoria() {
 
-    const [categorias, setCategorias] = useState([''])
-    const [idCategoria, setIdCategoria] = useState('')
-    const [id, setId] = useState('')
+    // const [categorias, setCategorias] = useState([''])
+    // const [idCategorias, setIdCategoris] = useState('')
+    // const [id, setId] = useState([''])
+
+    const { idCategoria } = useParams()
+    const [produtos, setProdutos] = useState([])
+
+
+    // useEffect(() => {
+    //     async function listarCategorias() {
+
+    //         try {
+    //             const resposta = await api.get('/ListarCategoriasUnico', {
+    //                 where: {
+    //                     categoriaId: id
+    //                 }
+    //             })
+    //             setCategorias(resposta.data)
+    //         } catch (erro) {
+    //             console.error('Erro ao listar categorias:', erro)
+    //         }
+    //     }
+    //     listarCategorias()
+    // }, [])
 
     useEffect(() => {
-        async function listarCategorias() {
-            const idCategoria = { idCategoria }
+        async function listarProdutosPorCategoria() {
             try {
-                const resposta = await api.get('/ListarCategoriasUnico', {
-                    where: {
-                        categoriaId: idCategoria
-                    }
-                })
-                setCategorias(resposta.data)
+                const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+                setProdutos(resposta.data)
+                console.log(idCategoria)
             } catch (erro) {
-                console.error('Erro ao listar categorias:', erro)
+                console.error('Erro ao listar produtos por categoria:', erro)
             }
         }
-        listarCategorias()
+
+        listarProdutosPorCategoria()
     }, [])
+
 
     return (
         <Container fluid>
             <div className='cabecalho'><h1>Produtos</h1></div>
 
             <Row className='d-flex justify-content-center'>
-                {categorias.map((item) => { //mapear os seus itens
-                    return (
-                        <Card className='m-2' style={{ width: '17rem' }} key={item.id}>
-                            <Card.Body>
-                                <Card.Title><h2>{item.name}</h2></Card.Title>
-                                {/* <Card.Title><h2>{item.value}</h2></Card.Title> */}
 
-                            </Card.Body>
-                        </Card>
-                    )
-                })}
+
+                <ul>
+                    {produtos.map((produto) => (
+                        <li key={produto.id}>
+                            <h2>{produto.nome}</h2>
+                            <p>{produto.descricao}</p>
+                            {/* Adicione mais informações do produto conforme necessário */}
+                        </li>
+                    ))}
+                </ul>
             </Row>
         </Container>
     )

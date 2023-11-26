@@ -43,7 +43,7 @@ export default function Header() {
         e.preventDefault()
         try {
             console.log('Categoria selecionada:', idCategoria)
-            const resposta = await api.get('/ListarCategoriasUnico', {
+            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`, {
                 where: {
                     idCategoria: idCategoria,
                 },
