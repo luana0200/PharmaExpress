@@ -2,22 +2,22 @@ import prismaClient from "../../prisma";
 
 interface ListarUnico {
     id: string
-    name: string
-    value: string
+
 }
 
 class ListarProdutosUnicoServices {
-    async execute({ id, name, value }: ListarUnico) {
+    async execute({ id }: ListarUnico) {
 
-        const resposta = await prismaClient.produtos.findFirst({
+        const resposta = await prismaClient.produtos.findMany({
             where: {
-                id: id,
-                name:name,
-                value:value
+                id: id
             },
             select: {
-                name: true
-            }
+                id: true,
+                name: true,
+                value: true,
+                banner:true       
+                 }
         })
 
         return (resposta)

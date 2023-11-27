@@ -22,6 +22,7 @@ CREATE TABLE `produtos` (
     `description` VARCHAR(191) NOT NULL,
     `banner` VARCHAR(191) NOT NULL,
     `categoriaId` VARCHAR(191) NOT NULL,
+    `carrinhoId` VARCHAR(191) NOT NULL,
     `create_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
     `update_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
 
@@ -41,10 +42,8 @@ CREATE TABLE `categorias` (
 -- CreateTable
 CREATE TABLE `carrinho` (
     `id` VARCHAR(191) NOT NULL,
-    `n_pedido` INTEGER NOT NULL,
     `create_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
     `update_at` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
-    `order_id` VARCHAR(191) NOT NULL,
     `produtos_id` VARCHAR(191) NOT NULL,
 
     PRIMARY KEY (`id`)
@@ -64,7 +63,4 @@ CREATE TABLE `Order` (
 ALTER TABLE `produtos` ADD CONSTRAINT `produtos_categoriaId_fkey` FOREIGN KEY (`categoriaId`) REFERENCES `categorias`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE `carrinho` ADD CONSTRAINT `carrinho_order_id_fkey` FOREIGN KEY (`order_id`) REFERENCES `Order`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE `carrinho` ADD CONSTRAINT `carrinho_produtos_id_fkey` FOREIGN KEY (`produtos_id`) REFERENCES `produtos`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `produtos` ADD CONSTRAINT `produtos_carrinhoId_fkey` FOREIGN KEY (`carrinhoId`) REFERENCES `carrinho`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

@@ -7,36 +7,37 @@ export default function Produtos() {
   const navigation = useNavigate()
   const [produtos, setProdutos] = useState([])
   const [data, setData] = useState([''])
+  //const [produtos, setProdutos] = useState([''])
 
 
-  useEffect(() => {
-      const minhaLista = localStorage.getItem('@produtoscarrinho')
-      setProdutos(JSON.parse(minhaLista) || [])
-  }, [])
+  // useEffect(() => {
+  //     const minhaLista = localStorage.getItem('@produtoscarrinho')
+  //     setProdutos(JSON.parse(minhaLista) || [])
+  // }, [])
   //verificando token 
-  useEffect(() => {
-    const iToken = localStorage.getItem('@phlogin2k23')
-    const token = JSON.parse(iToken)
+  // useEffect(() => {
+  //   const iToken = localStorage.getItem('@phlogin2k23')
+  //   const token = JSON.parse(iToken)
 
-    if (!token) {
-      // toast.warning('Sessão Expirada')
-      toast.warning('Efetue um Login')
-      navigation('/Login')
+  //   if (!token) {
+  //     // toast.warning('Sessão Expirada')
+  //     toast.warning('Efetue um Login')
+  //     navigation('/Login')
 
-    } else if (token) {
+  //   } else if (token) {
 
-      async function verificarToken() {
-        const result = await apiBack.get('/ListarUsuarioToken', {
-          headers: {
-            Authorization: 'Bearer ' + `${token}`
-          }
-        })
-        console.log(result)
-      }
-      verificarToken()
+  //     async function verificarToken() {
+  //       const result = await apiBack.get('/ListarUsuarioToken', {
+  //         headers: {
+  //           Authorization: 'Bearer ' + `${token}`
+  //         }
+  //       })
+  //       console.log(result)
+  //     }
+  //     verificarToken()
 
-    }
-  }, [])
+  //   }
+  // }, [])
 
 
   // useEffect(() => {
@@ -49,11 +50,11 @@ export default function Produtos() {
 
   useEffect(() => {
     async function listarPdt() {
-        const result = await apiBack.get('/ListarCarrinho/${id}')
+        const result = await apiBack.get('/ListarPdtUnico')
         setData(result.data)
-    }
+      }
+      listarPdt()
 
-    listarPdt()
 }, [data])
 
 
@@ -67,18 +68,19 @@ export default function Produtos() {
                       <div className='containerGeral'>
                           <div>
                               <li key={item.id}>
+                                  <img variant="top" width="100px" src={`http://localhost:3334/file/${item.banner}`} /><br />
                                   <span>{item.name}</span><br/>
                                   <span>{item.value}</span>
                               </li>
                           </div>
                           <div>
                              
-                              <button><Link to={'/'}> Continuar comprando</Link></button>
                           </div>
                       </div>
                   )
-              })}
+                })}
           </ul>
+                <button><Link to={'/'}> Continuar comprando</Link></button>
           </div>
         )
         }
