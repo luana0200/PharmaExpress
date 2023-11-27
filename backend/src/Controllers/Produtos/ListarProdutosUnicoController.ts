@@ -3,10 +3,10 @@ import { ListarProdutosUnicoServices } from "../../Services/Produtos/ListarProdu
 
 class ListarProdutosUnicoController {
     async handle(req: Request, res: Response) {
-        const { id, name, value} = req.body
+        const { id } = req.params
         const listarProdutosUnicoServices = new ListarProdutosUnicoServices()
         const resposta = await listarProdutosUnicoServices.execute({
-            id, name, value
+            id
         })
 
         return res.json(resposta)

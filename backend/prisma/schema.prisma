@@ -32,12 +32,14 @@ model Produtos {
   description String
   banner      String
   categoriaId String
+  carrinhoId  String
 
   create_at DateTime? @default(now()) // para salvar a data que foi criado
   update_at DateTime? @default(now()) //para qunado tiver alteracoes salvar a data
 
-  categorias Categorias   @relation(fields: [categoriaId], references: [id])
-  carrinho   Carrinho[]
+  categorias Categorias @relation(fields: [categoriaId], references: [id])
+
+  Carrinho Carrinho @relation(fields: [carrinhoId], references: [id])
 
   @@map("produtos")
 }
@@ -54,22 +56,18 @@ model Categorias {
 }
 
 model Carrinho {
-  id          String    @id @default(uuid())
-  n_pedido    Int
-  create_at   DateTime? @default(now())
-  update_at   DateTime? @default(now())
-  order_id    String
+  id          String     @id @default(uuid())
+  create_at   DateTime?  @default(now())
+  update_at   DateTime?  @default(now())
   produtos_id String
-  order       Order     @relation(fields: [order_id], references: [id])
-  produtos    Produtos  @relation(fields: [produtos_id], references: [id])
+  produtos    Produtos[]
 
   @@map("carrinho")
 }
 
 model Order {
-  id        String     @id @default(uuid())
+  id        String    @id @default(uuid())
   table     Int
-  create_at DateTime?  @default(now())
-  update_at DateTime?  @default(now())
-  carrinho  Carrinho[]
+  create_at DateTime? @default(now())
+  update_at DateTime? @default(now())
 }
