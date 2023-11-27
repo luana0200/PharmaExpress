@@ -1,5 +1,5 @@
 import prismaClient from '../../prisma'
-
+ 
 interface CriarProdutos {
     nome: string
     preco: string
@@ -9,10 +9,10 @@ interface CriarProdutos {
     banner: string
     categoriasID: string
 }
-
+ 
 class CriarProdutosServices {
     async execute({ nome, preco, fornecedor, quantidade, descricao, banner, categoriasID }: CriarProdutos) {
-
+ 
         const produtos = await prismaClient.produtos.create({
             data: {
                 name: nome,
@@ -27,5 +27,5 @@ class CriarProdutosServices {
         return produtos
     }
 }
-
+ 
 export { CriarProdutosServices }
