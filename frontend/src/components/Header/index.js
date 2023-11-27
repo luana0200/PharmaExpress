@@ -26,31 +26,31 @@ export default function Header() {
         navigation('/')
     }
 
-    // useEffect(() => {
-    //     async function listarCategorias() {
-    //         try {
-    //             const resposta = await api.get('/ListarCategorias')
-    //             setCategorias(resposta.data)
-    //         } catch (erro) {
-    //             // console.error('Erro ao listar categorias:', erro)
-    //         }
-    //     }
-    //     listarCategorias()
-    // }, [])
+    useEffect(() => {
+        async function listarCategorias() {
+            try {
+                const resposta = await api.get('/ListarCategorias')
+                setCategorias(resposta.data)
+            } catch (erro) {
+                // console.error('Erro ao listar categorias:', erro)
+            }
+        }
+        listarCategorias()
+    }, [])
 
 
-    // async function handleCategoria(e) {
-    //     e.preventDefault()
-    //     try {
-    //        // console.log('Categoria selecionada:', idCategoria)
-    //          const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-    //         // console.log('Dados da categoria:', resposta.data)
+    async function handleCategoria(e) {
+        e.preventDefault()
+        try {
+           // console.log('Categoria selecionada:', idCategoria)
+             const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+            // console.log('Dados da categoria:', resposta.data)
 
-    //         navigation('/ListarCategoria', resposta)
-    //     } catch (erro) {
-    //         console.error('Erro de categoria:', erro)
-    //     }
-    // }        
+            navigation('/Produtos')
+        } catch (erro) {
+            console.error('Erro de categoria:', erro)
+        }
+    }        
 
     return (
         <Container fluid>
@@ -61,7 +61,7 @@ export default function Header() {
                     <Nav className='Container Menu' >
 
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            {/* <select
+                            <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
                                 onBlur={handleCategoria}
@@ -73,7 +73,7 @@ export default function Header() {
                                         <option value={item.id} key={item.id}>{item.name}</option>
                                     )
                                 })}
-                            </select> */}
+                            </select>
                             <Nav className='Container button' >
                                 {/* 
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
