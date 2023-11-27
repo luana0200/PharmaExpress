@@ -13,11 +13,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import api from '../../services/apiBack'
 
 export default function Header() {
-    const { id } = useParams()
+    // const { id } = useParams()
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
-    // const [id, setId] = useState('')
+    const [id, setId] = useState('')
 
 
     function handleSair() {
@@ -42,12 +42,12 @@ export default function Header() {
         e.preventDefault()
         try {
             console.log('Categoria selecionada:', idCategoria)
-            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`, {
+            const resposta = await api.get(`/ListarCategoriasUnico`, {
                 where: {
-                    idCategoria: idCategoria,
+                    idCategoria: idCategoria
                 },
             })
-              console.log('Dados da categoria:', resposta.data)
+            console.log('Dados da categoria:', resposta.data)
 
             navigation(`/ListarCategoria/${idCategoria}`)
         } catch (erro) {
