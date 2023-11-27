@@ -5,39 +5,19 @@ import Card from 'react-bootstrap/Card'
 import api from '../services/apiBack'
 
 
-export default function ListarCategoria() {
+export default function ListarCategoria(resposta) {
 
     const [categorias, setCategorias] = useState([''])
-    const [idCategoria, setIdCategoris] = useState('')
-    // const [id, setId] = useState([''])
+    const [idCategorias, setIdCategorias] = useState([''])
 
     useEffect(() => {
-        async function listarCategorias() {
-            try {
-                const resposta = await api.get('/ListarCategoriasUnico', {
-                    params: { idCategoria }
-                })
-                setCategorias(resposta.data)
-            } catch (erro) {
-                console.error('Erro ao listar categorias:', erro)
-            }
+        function loadCate() {
+            setIdCategorias(resposta)
         }
-        listarCategorias()
-    }, [idCategoria])
+        loadCate()
+    }, [resposta])
 
-    // useEffect(() => {
-    //     async function listarCategorias() {
-    //         try {
-    //             console.log(idCategoria)
-    //             const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-    //             setProdutos(resposta.data)
-    //         } catch (erro) {
-    //             console.error('Erro ao listar produtos por categoria:', erro)
-    //         }
-    //     }
-    //     listarCategorias()
-    // }, [])
-
+    console.log(idCategorias)
 
     return (
         <Container fluid>
@@ -47,7 +27,7 @@ export default function ListarCategoria() {
                 {categorias.map((item) => { //mapear os seus itens
                     return (
                         <Card className='m-2' style={{ width: '17rem' }}
-                            value={idCategoria} key={item.id}>
+                            value={idCategorias} key={item.id}>
                             <Card.Body>
                                 <Card.Title>
                                     <h2>{item.name}</h2>

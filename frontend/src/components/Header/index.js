@@ -1,6 +1,6 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
@@ -9,9 +9,6 @@ import logo from './imagens/logo1.png'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
-
 import api from '../../services/apiBack'
 
 export default function Header() {
@@ -42,15 +39,11 @@ export default function Header() {
     async function handleCategoria(e) {
         e.preventDefault()
         try {
-            console.log('Categoria selecionada:', idCategoria)
-            const resposta = await api.get(`/ListarCategoriasUnico`, {
-                where: {
-                    idCategoria: idCategoria
-                },
-            })
-            console.log('Dados da categoria:', resposta.data)
+            // console.log('Categoria selecionada:', idCategoria)
+            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+            // console.log('Dados da categoria:', resposta.data)
 
-            navigation(`/ListarCategoria/${idCategoria}`)
+            navigation('/ListarCategoria', resposta)
         } catch (erro) {
             console.error('Erro de categoria:', erro)
         }
