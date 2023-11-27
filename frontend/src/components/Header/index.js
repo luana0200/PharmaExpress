@@ -5,15 +5,16 @@ import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 
-import Container from 'react-bootstrap/Container'
 import logo from './imagens/logo1.png'
+import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import Row from 'react-bootstrap/Row'
+import Card from 'react-bootstrap/Card'
 
 import api from '../../services/apiBack'
 
 export default function Header() {
-    // const { id } = useParams()
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')

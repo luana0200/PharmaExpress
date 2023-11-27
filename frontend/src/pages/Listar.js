@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
@@ -9,17 +8,14 @@ import api from '../services/apiBack'
 export default function ListarCategoria() {
 
     const [categorias, setCategorias] = useState([''])
-    const [idCategorias, setIdCategoris] = useState([''])
+    const [idCategoria, setIdCategoris] = useState('')
     // const [id, setId] = useState([''])
 
     useEffect(() => {
         async function listarCategorias() {
-
             try {
                 const resposta = await api.get('/ListarCategoriasUnico', {
-                    where: {
-                        id: categorias
-                    },
+                    params: { idCategoria }
                 })
                 setCategorias(resposta.data)
             } catch (erro) {
@@ -27,7 +23,7 @@ export default function ListarCategoria() {
             }
         }
         listarCategorias()
-    }, [])
+    }, [idCategoria])
 
     // useEffect(() => {
     //     async function listarCategorias() {
@@ -51,11 +47,12 @@ export default function ListarCategoria() {
                 {categorias.map((item) => { //mapear os seus itens
                     return (
                         <Card className='m-2' style={{ width: '17rem' }}
-                            value={idCategorias} key={item.id}>
+                            value={idCategoria} key={item.id}>
                             <Card.Body>
-                                <Card.Title><h2>{item.name}</h2></Card.Title>
-                                <Card.Title><h2>{item.description}</h2></Card.Title>
-
+                                <Card.Title>
+                                    <h2>{item.name}</h2>
+                                    <h2>{item.description}</h2>
+                                </Card.Title>
                             </Card.Body>
                         </Card>
                     )
