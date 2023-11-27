@@ -54,6 +54,7 @@
     /* padding: 0.2rem;
     border-radius: 0.3rem;
     height: 2.4rem; */
+    border: solid 1px lightseagreen;
     width: 100%;
     background-color: lightseagreen;
     cursor: pointer;
