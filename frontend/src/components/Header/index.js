@@ -19,7 +19,6 @@ export default function Header() {
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
-    const [id, setId] = useState('')
 
 
     function handleSair() {
@@ -33,7 +32,7 @@ export default function Header() {
                 const resposta = await api.get('/ListarCategorias')
                 setCategorias(resposta.data)
             } catch (erro) {
-                // console.error('Erro ao listar categorias:', erro)
+                console.error('Erro ao listar categorias:', erro)
             }
         }
         listarCategorias()
@@ -43,11 +42,8 @@ export default function Header() {
     async function handleCategoria(e) {
         e.preventDefault()
         try {
-            // console.log('Categoria selecionada:', idCategoria)
             const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-            // console.log('Dados da categoria:', resposta.data)
-
-            navigation('/Produtos')
+            navigation('/Produtos', resposta)
         } catch (erro) {
             console.error('Erro de categoria:', erro)
         }
@@ -77,7 +73,7 @@ export default function Header() {
                                 </select>
                             </Button>
                             <Nav className='Container button' >
-                                <Nav.Link href='/Produtos'><Button variant='secondary' >Produtos</Button ></Nav.Link>
+                                {/* <Nav.Link href='/Produtos'><Button variant='secondary' >Produtos</Button ></Nav.Link> */}
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
                                     {/* <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}
