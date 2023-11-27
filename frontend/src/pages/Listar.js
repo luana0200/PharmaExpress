@@ -5,17 +5,22 @@ import Card from 'react-bootstrap/Card'
 import api from '../services/apiBack'
 
 
-export default function ListarCategoria(resposta) {
+export default function ListarCategoria() {
 
     const [categorias, setCategorias] = useState([''])
     const [idCategorias, setIdCategorias] = useState([''])
 
     useEffect(() => {
-        function loadCate() {
-            setIdCategorias(resposta)
+        async function loadCate() {
+            const resposta = await api.get(`/ListarCategoriasUnico/${idCategorias}`, {
+                data: {
+                    idCategoria: idCategorias
+                }
+            })
+            setIdCategorias(idCategorias)
         }
         loadCate()
-    }, [resposta])
+    }, [])
 
     console.log(idCategorias)
 

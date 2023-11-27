@@ -41,9 +41,10 @@ export default function Header() {
         try {
             // console.log('Categoria selecionada:', idCategoria)
             const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-            // console.log('Dados da categoria:', resposta.data)
+            // console.log(resposta.data)
 
-            navigation('/ListarCategoria', resposta)
+           navigation(`/ListarCategoria/${idCategoria}`, resposta)
+            // navigation(`/ListarCategoria/${idCategoria}`, resposta.data)
         } catch (erro) {
             console.error('Erro de categoria:', erro)
         }
