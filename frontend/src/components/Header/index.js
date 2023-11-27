@@ -9,6 +9,7 @@ import logo from './imagens/logo1.png'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
 
@@ -42,15 +43,15 @@ export default function Header() {
     async function handleCategoria(e) {
         e.preventDefault()
         try {
-           // console.log('Categoria selecionada:', idCategoria)
-             const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+            // console.log('Categoria selecionada:', idCategoria)
+            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
             // console.log('Dados da categoria:', resposta.data)
 
             navigation('/Produtos')
         } catch (erro) {
             console.error('Erro de categoria:', erro)
         }
-    }        
+    }
 
     return (
         <Container fluid>
@@ -61,30 +62,25 @@ export default function Header() {
                     <Nav className='Container Menu' >
 
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <select
-                                value={idCategoria}
-                                onChange={(e) => setIdCategoria(e.target.value)}
-                                onBlur={handleCategoria}
-                            >
+                            <Button variant='secondary'>
+                                <select
+                                    value={idCategoria}
+                                    onChange={(e) => setIdCategoria(e.target.value)}
+                                    onBlur={handleCategoria}>
 
-                                <option>Selecione...</option>
-                                {categorias.map((item) => { //mapear os seus itens
-                                    return (
-                                        <option value={item.id} key={item.id}>{item.name}</option>
-                                    )
-                                })}
-                            </select>
+                                    <option>Selecione...</option>
+                                    {categorias.map((item) => { //mapear os seus itens
+                                        return (
+                                            <option value={item.id} key={item.id}>{item.name}</option>
+                                        )
+                                    })}
+                                </select>
+                            </Button>
                             <Nav className='Container button' >
-                                {/* 
-                                <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
-                                <Nav.Link href='/HPessoal'><Button variant='secondary' >Higiene Pessoal</Button ></Nav.Link>
-                                <Nav.Link href='/Medicamentos'><Button variant='secondary'> Medicamentos</Button ></Nav.Link> */}
-
-                                {/* <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link> */}
+                                <Nav.Link href='/Produtos'><Button variant='secondary' >Produtos</Button ></Nav.Link>
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
-                                    {/* <Nav.Link href='/Produtos'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}
-                                    <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
+                                    {/* <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}
                                     <Nav.Link href='/'><LiaHomeSolid size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link onClick={handleSair}><IoExitOutline size='1.5rem' color='white' /></Nav.Link>
 
