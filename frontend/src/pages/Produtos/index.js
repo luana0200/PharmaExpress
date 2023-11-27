@@ -57,6 +57,7 @@ export default function Index() {
                                {/* <button onClick={adicionarCarrinho}><Link to={`/ProdutosPorCategoria/${item.id}`}>Detalhes</Link></button> */}
                                
                                 {/* <BiCartAdd size='1.5rem' color='lightseagreen'/> */}
+                                
                                 </div>
 
                             </Card.Body>
