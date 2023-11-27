@@ -1,6 +1,6 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate  } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
