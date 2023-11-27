@@ -1,23 +1,21 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate  } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 
-import Container from 'react-bootstrap/Container'
 import logo from './imagens/logo1.png'
+import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-
 import api from '../../services/apiBack'
 
 export default function Header() {
-
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
-    // const [id, setId] = useState('')
+    const [id, setId] = useState('')
 
 
     function handleSair() {
@@ -34,7 +32,6 @@ export default function Header() {
                 // console.error('Erro ao listar categorias:', erro)
             }
         }
-
         listarCategorias()
     }, [])
 
@@ -42,24 +39,21 @@ export default function Header() {
     async function handleCategoria(e) {
         e.preventDefault()
         try {
-          console.log('Categoria selecionada:', idCategoria)
-          const resposta = await api.get('/ListarCategoriasUnico', {
-            where: {
-              idCategoria: idCategoria,
-            },
-          })
-        //   console.log('Dados da categoria:', resposta.data)
-    
-         navigation('/ListarCategoria')
+            // console.log('Categoria selecionada:', idCategoria)
+            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+            // console.log(resposta.data)
+
+           navigation(`/ListarCategoria/${idCategoria}`, resposta)
+            // navigation(`/ListarCategoria/${idCategoria}`, resposta.data)
         } catch (erro) {
-        //   console.error('Erro de categoria:', erro)
+            console.error('Erro de categoria:', erro)
         }
-      }
+    }
 
     return (
         <Container fluid>
             <Navbar expand='xxl' className='nave'>
-                <Container fluid className='dark'>                
+                <Container fluid className='dark'>
                     <Link to='/'><img src={logo} alt='logo' /></Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' id='Row' />
                     <Nav className='Container Menu' >
@@ -68,7 +62,7 @@ export default function Header() {
                             <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
-                                onBlur={handleCategoria} 
+                                onBlur={handleCategoria}
                             >
 
                                 <option>Selecione...</option>

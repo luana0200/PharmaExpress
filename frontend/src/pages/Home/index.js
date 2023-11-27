@@ -31,9 +31,9 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
                         <Card.Title><h2>Base Líquida Ultra Matte</h2></Card.Title>
-                        <div className='Container llog'>
+                        {/* <div className='Container llog'>
                             <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
+                        </div> */}
                     </Card.Body>
                 </Card>
 
@@ -55,9 +55,9 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
                         <Card.Title><h2>Máscara Para Cílios Super Up</h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
+                        {/* <div className=' Container llog'>
+                        <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
+                        </div> */}
                     </Card.Body>
                 </Card>
 
@@ -66,9 +66,9 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={perfume1} />
                     <Card.Body>
                         <Card.Title><h2>Desodorante Colônia 95ml</h2></Card.Title>
-                        <div className=' Container llog'>
+                        {/* <div className=' Container llog'>
                             <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
+                        </div> */}
                     </Card.Body>
                 </Card>
 
@@ -78,9 +78,9 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={deso} alt="sabonete liq" />
                     <Card.Body>
                         <Card.Title><h2>Desodorante Rexona Masc 200 ml</h2></Card.Title>
-                        <div className=' Container llog'>
+                        {/* <div className=' Container llog'>
                             <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
+                        </div> */}
                     </Card.Body>
                 </Card>
 
@@ -98,6 +98,9 @@ export default function Home() {
                 </Card> */}
             </Row>
 
+            <div className=' Container llog'>
+                            <Link to='/Produtos'><Button variant="secondary">Mais Produtos</Button></Link>
+                        </div>
 
             <div className='fluid '>
                 <img src={visa12} alt="creme" /> <br />

@@ -10,14 +10,9 @@ import { AuthLoginController } from './Controllers/Login/AuthLoginController'
 import { CriarCategoriasController } from './Controllers/Categorias/CriarCategoriasController'
 import { CriarProdutosController } from './Controllers/Produtos/CriarProdutosController'
 
-// import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
-
-
 //DESCOMENTAR
 //import { CriarCarrinhoController } from './Controllers/Carrinho/CriarCarrinhoController'
 
-
-//import { CriarOrderController } from './Controllers/Order/CriarOrderController'
 
 //Listar
 import { ListarUsuariosTokenController } from './Controllers/Usuarios/ListarUsuarioController'
@@ -46,7 +41,7 @@ router.delete('/DeletarUsuarios', new DeletarUsuariosController().handle)
 //categorias
 router.post('/CriarCategorias', new CriarCategoriasController().handle)
 router.get('/ListarCategorias', new ListarCategoriasController().handle)
-router.get('/ListarCategoriasUnico', new ListarCategoriasUnicoController().handle)
+router.get('/ListarCategoriasUnico/:id', new ListarCategoriasUnicoController().handle)
 
 
 //produtos

@@ -3,12 +3,13 @@ import { ListarCategoriasUnicoServices } from '../../Services/Categorias/ListarC
 
 class ListarCategoriasUnicoController {
     async handle(req: Request, res: Response) {
-        const { id } = req.body
+        const {id}  = req.params
+        //console.log(id)
         const listarCategoriasUnicoServices = new ListarCategoriasUnicoServices()
         const resposta = await listarCategoriasUnicoServices.execute({
             id
         })
-        return res.json(resposta)
+       return res.json(resposta)
     }
 }
 

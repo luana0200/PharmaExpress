@@ -54,7 +54,8 @@ export default function Index() {
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Title><h2>{item.value}</h2></Card.Title>
                                 <div className='Container llog'>
-                                <button onClick={adicionarCarrinho}><Link to={`/ProdutosPorCategoria/${item.id}`}>Detalhes</Link></button>
+                               {/* <button onClick={adicionarCarrinho}><Link to={`/ProdutosPorCategoria/${item.id}`}>Detalhes</Link></button> */}
+                               
                                 {/* <BiCartAdd size='1.5rem' color='lightseagreen'/> */}
                                 </div>
 

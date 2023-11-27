@@ -84,7 +84,6 @@ export default function Produtos() {
           </div>
         )
         }
-
   {/* useEffect(() => {
     async function criarCarrinho() {
       const resulta = await apiBack.post('/CriarCarrinho')
@@ -111,27 +110,6 @@ export default function Produtos() {
           )
         })}
  */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import './carrinho.css'
 // import '../Header/header.css'

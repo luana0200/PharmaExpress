@@ -5,7 +5,9 @@ interface Listar {
 }
 class ListarProdutoCarrinhoServices {
     async execute({ id }: Listar) {
+
         const resposta = await prismaClient.produtos.findFirst({
+
             where: {
                 id: id,
             },
@@ -14,7 +16,7 @@ class ListarProdutoCarrinhoServices {
                 value:true
             }
         })
-        return (resposta)
+        return resposta
     }
 
 
