@@ -31,6 +31,14 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={base} />
                     <Card.Body>
                         <Card.Title><h2>Base Líquida Ultra Matte</h2></Card.Title>
+
+                        <Card.Text>
+                            Base Líquida Soul Ultra Matte proporciona uma make a prova de photos e pele sequinha o dia todo
+                            Conta com vitamina E que hidratada a pele, efeito antipoluição e FPS 15 é perfeita para usar no dia a dia
+                        </Card.Text>
+
+
+
                         {/* <div className='Container llog'>
                             <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
                         </div> */}
@@ -55,9 +63,10 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={rimel} />
                     <Card.Body>
                         <Card.Title><h2>Máscara Para Cílios Super Up</h2></Card.Title>
-                        {/* <div className=' Container llog'>
-                        <Link to='/Rimel'><Button variant="secondary">Detalhes</Button></Link>
-                        </div> */}
+                        <Card.Text>
+                            Máscara Super Up Niina Secrets Eudora: 13x mais volume e curvatura nas alturas.
+                            Fórmula com fibras e exclusiva tecnologia Secrets, com óleo de rosas e vitaminas
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
@@ -66,9 +75,11 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={perfume1} />
                     <Card.Body>
                         <Card.Title><h2>Desodorante Colônia 95ml</h2></Card.Title>
-                        {/* <div className=' Container llog'>
-                            <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
-                        </div> */}
+                        <Card.Text>
+                            Indicado para todos os tipos de pele.
+                            Protege 3 vezes mais do que os antitranspirantes comuns.
+                            Controla o suor excessivo e previne o mau odor por 96 horas.
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
@@ -78,9 +89,11 @@ export default function Home() {
                     <Card.Img variant="top" width="220px" src={deso} alt="sabonete liq" />
                     <Card.Body>
                         <Card.Title><h2>Desodorante Rexona Masc 200 ml</h2></Card.Title>
-                        {/* <div className=' Container llog'>
-                            <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
-                        </div> */}
+                        <Card.Text>
+                            Indicado para todos os tipos de pele.
+                            Protege 3 vezes mais do que os antitranspirantes comuns.
+                            Controla o suor excessivo e previne o mau odor por 96 horas.
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
@@ -99,15 +112,15 @@ export default function Home() {
             </Row>
 
             <div className=' Container llog'>
-                            <Link to='/Produtos'><Button variant="secondary">Mais Produtos</Button></Link>
-                        </div>
+                <Link to='/Produtos'><Button variant="secondary">Mais Produtos</Button></Link>
+            </div>
 
             <div className='fluid '>
                 <img src={visa12} alt="creme" /> <br />
                 <h2>Pharma Express| Rua Saint Martin 10-12| Bauru| São Paulo| CEP:18010-180| Horário de Atendimento: De Segunda à Domingo
                     das 7h às 21h, inclusive feriado | Televendas: 1234-6987 | SAC – Serviço de Atendimento ao Cliente: 6987-3218, Dúvidas, elogios e reclamações:
                     atendimento@pharmaexpress.com.br.</h2><br />
-                <h2>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h2> 
+                <h2>Política de privacidade | © 2023 RD. Todos os direitos reservados.</h2>
             </div>
         </Container>
     )

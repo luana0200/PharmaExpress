@@ -83,7 +83,7 @@ export default function Header() {
                                 {/* <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link> */}
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
-                                    <Nav.Link href='/Produtos'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
+                                    {/* <Nav.Link href='/Produtos'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}
                                     <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
                                     <Nav.Link href='/'><LiaHomeSolid size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link onClick={handleSair}><IoExitOutline size='1.5rem' color='white' /></Nav.Link>
