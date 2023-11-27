@@ -3,17 +3,15 @@ import CarroselHome from '../../bootstrap/carroselHome.js'
 import '../../components/Header/header.css'
 
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 import Badge from 'react-bootstrap/Badge'
 
-import base from "../Beleza/imagens/base.png"
-import rimel from '../Beleza/imagens/rimel.png'
-import perfume1 from '../Beleza/imagens/perfume1.png'
-import deso from '../HPessoal/imagens H/deso M.webp'
-// import creme from '../HPessoal/imagens H/creme facial.png'
-// import hidratante from '../Beleza/imagens/Hidratante2.png'
+import base from '../Home/imagens/base.png'
+import rimel from '../Home/imagens/rimel.png'
+import perfume1 from '../Home/imagens/perfume1.png'
+import deso from '../Home/imagens/deso M.webp'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
@@ -36,28 +34,10 @@ export default function Home() {
                             Base Líquida Soul Ultra Matte proporciona uma make a prova de photos e pele sequinha o dia todo
                             Conta com vitamina E que hidratada a pele, efeito antipoluição e FPS 15 é perfeita para usar no dia a dia
                         </Card.Text>
-
-
-
-                        {/* <div className='Container llog'>
-                            <Link to='/BaseUltra'><Button variant="secondary">Detalhes</Button></Link>
-                        </div> */}
                     </Card.Body>
                 </Card>
 
-                {/* <Card className='m-1' style={{ width: '20rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={hidratante} />
-                    <Card.Body>
-                        <Card.Title><h2>Loção Hidratante Corporal Lyra 150ml</h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/Batom'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card> */}
-
-
-
+             
                 <Card className='m-1' style={{ width: '20rem' }}>
                     <Badge bg="danger">PROMOÇAO 10%</Badge>
                     <Card.Img variant="top" width="220px" src={rimel} />
@@ -97,18 +77,6 @@ export default function Home() {
                     </Card.Body>
                 </Card>
 
-
-
-                {/* <Card className='m-1' style={{ width: '20rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={creme} alt="creme" />
-                    <Card.Body>
-                        <Card.Title><h2>Creme Facial 100 g </h2></Card.Title>
-                        <div className=' Container llog'>
-                            <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card> */}
             </Row>
 
             <div className=' Container llog'>
