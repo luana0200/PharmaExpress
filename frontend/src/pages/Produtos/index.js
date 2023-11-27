@@ -11,6 +11,7 @@ import Card from 'react-bootstrap/Card'
 import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Index() {
+    
     const [data, setData] = useState([''])
     const [produto] = useState([''])
 

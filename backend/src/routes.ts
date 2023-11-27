@@ -19,6 +19,9 @@ import { ListarCategoriasUnicoController } from './Controllers/Categorias/Listar
 import { DeletarUsuariosController } from './Controllers/Usuarios/DeletarUsuariosController'
 import { ListarProdutosUnicoController } from './Controllers/Produtos/ListarProdutosUnicoController'
 
+//Deletar Produtos
+import { ExcluirProdutosController } from './Controllers/Produtos/ExcluirProdutosController'
+
 const router = Router()
 const upload = multer(uploadConfig.upload('./tmp'))
 
@@ -39,6 +42,8 @@ router.get('/ListarCategoriasUnico/:id', new ListarCategoriasUnicoController().h
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
 router.get('/ListarProdutos', isAutenticado, new ListarProdutosController().handle)
 router.get('/ListarPdtUnico', new ListarProdutosUnicoController().handle)
+
+router.delete('/DeletarProdutos', new ExcluirProdutosController().handle)
 
 export { router }
 
