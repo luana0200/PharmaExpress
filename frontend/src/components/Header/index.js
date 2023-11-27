@@ -1,6 +1,6 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate  } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { BsCart2 } from 'react-icons/bs'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
@@ -9,6 +9,9 @@ import logo from './imagens/logo1.png'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import Row from 'react-bootstrap/Row'
+import Card from 'react-bootstrap/Card'
+
 import api from '../../services/apiBack'
 
 export default function Header() {
@@ -23,32 +26,31 @@ export default function Header() {
         navigation('/')
     }
 
-    useEffect(() => {
-        async function listarCategorias() {
-            try {
-                const resposta = await api.get('/ListarCategorias')
-                setCategorias(resposta.data)
-            } catch (erro) {
-                // console.error('Erro ao listar categorias:', erro)
-            }
-        }
-        listarCategorias()
-    }, [])
+    // useEffect(() => {
+    //     async function listarCategorias() {
+    //         try {
+    //             const resposta = await api.get('/ListarCategorias')
+    //             setCategorias(resposta.data)
+    //         } catch (erro) {
+    //             // console.error('Erro ao listar categorias:', erro)
+    //         }
+    //     }
+    //     listarCategorias()
+    // }, [])
 
 
-    async function handleCategoria(e) {
-        e.preventDefault()
-        try {
-            // console.log('Categoria selecionada:', idCategoria)
-            const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
-            // console.log(resposta.data)
+    // async function handleCategoria(e) {
+    //     e.preventDefault()
+    //     try {
+    //        // console.log('Categoria selecionada:', idCategoria)
+    //          const resposta = await api.get(`/ListarCategoriasUnico/${idCategoria}`)
+    //         // console.log('Dados da categoria:', resposta.data)
 
-           navigation(`/ListarCategoria/${idCategoria}`, resposta)
-            // navigation(`/ListarCategoria/${idCategoria}`, resposta.data)
-        } catch (erro) {
-            console.error('Erro de categoria:', erro)
-        }
-    }
+    //         navigation('/ListarCategoria', resposta)
+    //     } catch (erro) {
+    //         console.error('Erro de categoria:', erro)
+    //     }
+    // }        
 
     return (
         <Container fluid>
@@ -59,7 +61,7 @@ export default function Header() {
                     <Nav className='Container Menu' >
 
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <select
+                            {/* <select
                                 value={idCategoria}
                                 onChange={(e) => setIdCategoria(e.target.value)}
                                 onBlur={handleCategoria}
@@ -71,7 +73,7 @@ export default function Header() {
                                         <option value={item.id} key={item.id}>{item.name}</option>
                                     )
                                 })}
-                            </select>
+                            </select> */}
                             <Nav className='Container button' >
                                 {/* 
                                 <Nav.Link href='/Baby'><Button variant='secondary' >Baby</Button ></Nav.Link>
@@ -81,6 +83,7 @@ export default function Header() {
                                 {/* <Nav.Link href='/Beleza'><Button variant='secondary' >Beleza</Button ></Nav.Link> */}
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
+                                    <Nav.Link href='/Produtos'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
                                     <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link>
                                     <Nav.Link href='/'><LiaHomeSolid size='1.5rem' color='white' /></Nav.Link>
                                     <Nav.Link onClick={handleSair}><IoExitOutline size='1.5rem' color='white' /></Nav.Link>
