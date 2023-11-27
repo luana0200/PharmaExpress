@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card'
 import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Index() {
-    const { id } = useParams()
+    const {id} = useParams()
     const [data, setData] = useState([''])
     const [produto] = useState([''])
 
@@ -24,17 +24,17 @@ export default function Index() {
         listarPdt()
     }, [data])
 
-    function adicionarCarrinho() {
+    function adicionarCarrinho(){
         const minhaLista = localStorage.getItem('@produtoscarrinho')
         let pdtAdicionado = JSON.parse(minhaLista) || []
-        const verificarProdutos = pdtAdicionado.some((produto) => produto.id === produto.id)
-        if (verificarProdutos) {
-
+        const verificarProdutos = pdtAdicionado.some( (produto) => produto.id === produto.id )
+        if(verificarProdutos){
+           
             return
         }
         produto.push(produto)
         localStorage.setItem('@produtoscarrinho', JSON.stringify(pdtAdicionado))
-
+              
     }
 
 
@@ -53,13 +53,10 @@ export default function Index() {
                             <Card.Body>
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Title><h2>{item.value}</h2></Card.Title>
-
-
-                                <Card.Text>
-                                    {item.description}
-                                </Card.Text>
-
-
+                                <div className='Container llog'>
+                                <button onClick={adicionarCarrinho}><Link to={`/ProdutosPorCategoria/${item.id}`}>Detalhes</Link></button>
+                                {/* <BiCartAdd size='1.5rem' color='lightseagreen'/> */}
+                                </div>
 
                             </Card.Body>
                         </Card>
