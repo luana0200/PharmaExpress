@@ -27,6 +27,23 @@ export default function CriarProdutos() {
     const iToken = localStorage.getItem('@phlogin2k23')
     const token = JSON.parse(iToken)
 
+    //token
+    useEffect(() => {
+        if (!token) { //verifica se tem um token
+            navigation('/Login')
+            return
+        } else if (token) {
+            async function verificarToken() { //se tiver, consulta o BD para verificar se é valido
+                const resulta = await apiBack.get('/ListarUsuarioToken', {
+                    headers: {
+                        Authorization: 'Bearer ' + `${token}`
+                    }
+                })
+                console.log(resulta)
+            }
+            verificarToken()
+        }
+    }, [])
 
 
     //listarCategorias
