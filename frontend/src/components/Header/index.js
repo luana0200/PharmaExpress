@@ -1,7 +1,6 @@
 import './header.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { BsCart2 } from 'react-icons/bs'
+import { Link, useNavigate } from 'react-router-dom'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { IoExitOutline, IoPersonOutline } from 'react-icons/io5'
 
@@ -10,12 +9,11 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
 
 import api from '../../services/apiBack'
 
 export default function Header() {
+    
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')
@@ -73,7 +71,7 @@ export default function Header() {
                                 </select>
                             </Button>
                             <Nav className='Container button' >
-                                {/* <Nav.Link href='/Produtos'><Button variant='secondary' >Produtos</Button ></Nav.Link> */}
+                                <Nav.Link href='/CriarProdutos'><Button variant='secondary' >Cadastrar Produtos</Button ></Nav.Link>
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
                                     {/* <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}
