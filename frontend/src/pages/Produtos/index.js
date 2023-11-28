@@ -1,11 +1,10 @@
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import apiBack from '../../services/apiBack'
 import React, { useEffect, useState } from 'react'
-import { BiCartAdd } from "react-icons/bi";
+// import { BiCartAdd } from "react-icons/bi";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-// import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -16,7 +15,6 @@ export default function Index() {
     const navigation = useNavigate()
 
     const [data, setData] = useState([''])
-    const [produto] = useState([''])
 
     const iToken = localStorage.getItem('@phlogin2k23')
     const token = JSON.parse(iToken)
@@ -51,10 +49,7 @@ export default function Index() {
     return (
         <Container fluid>
             <div className='cabecalho'><h1>PRODUTOS</h1></div>
-
-
             <Row className='d-flex justify-content-center'>
-
                 {data.map((item) => {
                     return (
                         <Card className='m-2' style={{ width: '17rem' }} key={item.id}>

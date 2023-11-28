@@ -6,11 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD:frontend/package.json
     "axios": "^1.6.1",
-=======
-    "axios": "^1.5.1",
->>>>>>> f7207580addaa713c70180c826d28c8621e3ca4a:package.json
     "bootstrap": "^5.2.3",
     "build": "^0.1.4",
     "react": "^18.2.0",
