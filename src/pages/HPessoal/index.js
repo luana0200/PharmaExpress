@@ -15,12 +15,7 @@ import pastadental from "./imagens H/pasta dental.png"
 import absorvente from "./imagens H/absorvente.webp"
 import creme from "./imagens H/creme facial.png"
 import protetor from "./imagens H/nivea.webp"
-import escovacarvao from "./imagens H/escova colgate carvao.jpg"
-import listerine from "./imagens H/listerine.webp"
-import escova from './imagens H/escova de dente.webp'
 import sabonetedove from "./imagens H/sabonete dove.jpg"
-import sabonete from "./imagens H/sabonete protex.webp"
-import saboneteliq from "./imagens H/sabonete liq.png"
 
 
 import visa12 from '../../components/Header/imagens/visa12.png'
@@ -76,27 +71,7 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={pasta} alt="pasta" />
-                    <Card.Body>
-                        <Card.Title><h2>Pasta de Dente Colgate 90 g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/PastaDenteColgate'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={pastadental} alt="pasta dental" />
-                    <Card.Body>
-                        <Card.Title><h2>Pasta de Dente Oral-B</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/PastaDentalOral'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+         
 
                 <Card className='m-2' style={{ width: '17rem' }}>
                     <br />
@@ -109,94 +84,9 @@ export default function HPessoal() {
                     </Card.Body>
                 </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={creme} alt="creme" />
-                    <Card.Body> 
-                        <Card.Title><h2>Creme Facial 100 g </h2></Card.Title> 
-                        <div className='Container Container llog'>
-                            <Link to='/CremeFacial'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={protetor} alt="protetor nivea" />
-                    <Card.Body>
-                        <Card.Title><h2>Protetor Solar Nivea 200 ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/ProtetorNivea'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+            
 
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={sabonetedove} alt="sabonete dove" />
-                    <Card.Body>
-                        <Card.Title><h2>Sabonete Dove 87 g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/SaboneteDove'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={saboneteliq} alt="sabonete liq" />
-                    <Card.Body>
-                        <Card.Title><h2>Sabonete Liquido Luz 200ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Saboneteliq'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={sabonete} alt="sabonete" />
-                    <Card.Body>
-                        <Card.Title><h2>Sabonete Protex em Barra 87 g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/SaboneteProtex'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={listerine} alt="listerine" />
-                    <Card.Body>
-                        <Card.Title><h2>Listerine 700 ml</h2></Card.Title>  
-                        <div className='Container llog'>
-                            <Link to='/Listerine'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={escovacarvao} alt="escova de dente" />
-                    <Card.Body>
-                        <Card.Title><h2>Escova Dental 4 unidades </h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/EscovaColgate'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={escova} alt="escova de dente" />
-                    <Card.Body>
-                        <Card.Title><h2>Escova Dental  2 unidades </h2></Card.Title>  
-                        <div className='Container llog'>
-                            <Link to='/EscovaDental'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
             </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" /><br/>

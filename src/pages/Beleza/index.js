@@ -16,11 +16,11 @@ import perfume4 from "./imagens/perfume4.png"
 import hidratante from './imagens/Hidratante2.png'
 import protetorsolar from "./imagens/protetorsolar.png"
 import demaquilante from "./imagens/Demaquilante2.png"
-import esfoliante from "./imagens/Esfoliante2.png"
-import shampoomorango from "./imagens/shampoomorango2.png"
-import shampooacai from "./imagens/shampooacai2.png"
-import esmaltepreto from "./imagens/esmaltepreto.png"
-import esmaltevermelho from "./imagens/esmaltevermelho.png"
+// import esfoliante from "./imagens/Esfoliante2.png"
+// import shampoomorango from "./imagens/shampoomorango2.png"
+// import shampooacai from "./imagens/shampooacai2.png"
+// import esmaltepreto from "./imagens/esmaltepreto.png"
+// import esmaltevermelho from "./imagens/esmaltevermelho.png"
 
 import visa12 from '../../components/Header/imagens/visa12.png'
 
@@ -90,134 +90,18 @@ export default function Beleza() {
                         </div>
                     </Card.Body>
                 </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                 <Badge bg="danger">PROMOÇAO 10%</Badge>
-                    <Card.Img variant="top" width="220px" src={perfume1} alt="Perfume" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Desodorante Colônia </h2></Card.Title>
-
-                        <div className='Container llog'>
-                            <Link to='/Perfume1'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-
-        
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={perfume4} alt="Perfume" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Magnific Audaz Eau de Parfum </h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Perfume4'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={protetorsolar} alt="Protetor Solar" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Protetor Solar Facial FPS 70 </h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/ProtetorSolar'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={hidratante} alt="Hidratante" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Loção Hidratante Desodorante Corporal 170ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Hidratante'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="150px" src={demaquilante} alt="demaquilante" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Demaquilante 100ml</h2></Card.Title>
-                        <br />
-                        <div className='Container llog'>
-                            <Link to='/Demaquilante'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={esfoliante} alt="Esfoliante" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Máscara Esfoliante Enzimática 77g</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esfoliante'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={shampooacai} alt="Shampoo Acai" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Combo Açai e Bambu</h2></Card.Title>
-                        <br />
-                        <div className='Container llog'>
-                            <Link to='/Shampooacai'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                   
-                    <Card.Img variant="top" width="220px" src={shampoomorango} />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Combo Frutas Vermelhas</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Shampoomorango'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                    <br />
-                    <Card.Img variant="top" width="220px" src={esmaltepreto} alt="Esmalte Preto" />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Esmalte Preto Essencial 7ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esmaltepreto'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
-                <Card className='m-2' style={{ width: '17rem' }}>
-                   
-                    <Card.Img variant="top" width="220px" src={esmaltevermelho} />
-                    <Card.Body>
-                        <br />
-                        <Card.Title><h2>Esmalte Vermelho Sofisticado 7ml</h2></Card.Title>
-                        <div className='Container llog'>
-                            <Link to='/Esmaltevermelho'><Button variant="secondary">Detalhes</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/> 
+                <p/>
+                <br/>
+                <p/>
+                <br/>
             </Row>
             <div className='fluid '>
                 <img src={visa12} alt="creme" />
