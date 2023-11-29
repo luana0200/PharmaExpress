@@ -56,7 +56,7 @@ export default function Header() {
                     <Nav className='Container Menu' >
 
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <Button variant='secondary'>
+                            {/* <Button variant='secondary'>
                                 <select
                                     value={idCategoria}
                                     onChange={(e) => setIdCategoria(e.target.value)}
@@ -69,9 +69,9 @@ export default function Header() {
                                         )
                                     })}
                                 </select>
-                            </Button>
+                            </Button> */}
                             <Nav className='Container button' >
-                                {/* <Nav.Link href='/CriarProdutos'><Button variant='secondary' >Cadastrar Produtos</Button ></Nav.Link> */}
+                                <Nav.Link href='/Produtos'><Button variant='secondary' >Produtos</Button ></Nav.Link>
                                 <Nav className='test'>
                                     <Nav.Link href='/Cadastro'><IoPersonOutline size='1.5rem' color='white' /></Nav.Link>
                                     {/* <Nav.Link href='/Carrinho'><BsCart2 size='1.5rem' color='white' /> </Nav.Link> */}

@@ -10,12 +10,10 @@ import Card from 'react-bootstrap/Card'
 import visa12 from '../../components/Header/imagens/visa12.png'
 
 export default function Index() {
-
     
     const navigation = useNavigate()
 
     const [data, setData] = useState([''])
-
     const iToken = localStorage.getItem('@phlogin2k23')
     const token = JSON.parse(iToken)
 
