@@ -18,6 +18,8 @@ export default function Index() {
     const iToken = localStorage.getItem('@phlogin2k23')
     const token = JSON.parse(iToken)
 
+
+    console.log(data)
     useEffect(() => {
         if (!token) { //verifica se tem um token
             navigation('/Login')
@@ -37,8 +39,12 @@ export default function Index() {
 
     useEffect(() => {
         async function listarPdt() {
-            const result = await apiBack.get('/ListarProdutos')
-            setData(result.data)
+            const resposta = await apiBack.get('/ListarProdutos', {
+                headers:{
+                    Authorization: 'Bearer ' + `${token}`
+                }
+            })
+            setData(resposta.data)
         }
 
         listarPdt()
@@ -56,9 +62,9 @@ export default function Index() {
                     return (
                         <Card className='m-2' style={{ width: '17rem' }} key={item.id}>
                             <Card.Img variant="top" width="220px" src={`http://localhost:3334/file/${item.banner}`} />
-                            <Card.Body>
+                            <Card.Body key={item.id} >
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
-                                <Card.Title><h2>{item.value}</h2></Card.Title>
+                                <Card.Title><h3>{item.value}</h3></Card.Title>
                                 <Card.Text>
                                     {item.description}
                                 </Card.Text>

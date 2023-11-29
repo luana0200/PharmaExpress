@@ -56,7 +56,7 @@ export default function Login() {
     return (
 
         <Container fluid>
-            <div className='cabecalho' ><h1>CADASTRO</h1></div>
+            <div className='cabecalho' ><h1>LOGIN</h1></div>
             <div className="compra">
                 <Form onSubmit={loginUser}>
                     <Form.Group>

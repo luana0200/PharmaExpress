@@ -37,7 +37,7 @@ router.get('/ListarCategoriasUnico/:id', new ListarCategoriasUnicoController().h
 
 //produtos
 router.post('/CriarProdutos', upload.single('file'), new CriarProdutosController().handle)
-router.get('/ListarProdutos', isAutenticado, new ListarProdutosController().handle)
+router.get('/ListarProdutos', new ListarProdutosController().handle)
 router.get('/ListarPdtUnico', new ListarProdutosUnicoController().handle)
 
 export { router }
