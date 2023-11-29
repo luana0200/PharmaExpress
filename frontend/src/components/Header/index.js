@@ -13,6 +13,7 @@ import Button from 'react-bootstrap/Button';
 import api from '../../services/apiBack'
 
 export default function Header() {
+    
     const navigation = useNavigate()
     const [categorias, setCategorias] = useState([''])
     const [idCategoria, setIdCategoria] = useState('')

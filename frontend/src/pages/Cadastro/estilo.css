@@ -1,25 +1,13 @@
-
-/* input[type="number"]::-webkit-outer-spin-button, 
- input[type="number"]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    margin: 0; 
-}  */
-
-
-
-
 /*form */
 .compra{
   display: grid;
   flex-direction: column;
  align-items: center;
-
 }
 
 .compra label{
   text-align: right;
   margin-top: 1rem;
-
 }
 
 .compra input{

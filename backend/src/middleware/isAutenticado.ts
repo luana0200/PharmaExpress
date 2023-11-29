@@ -17,7 +17,7 @@ export function isAutenticado(
         return res.json({ dados: 'Token Inválido' })
     }
 
-    const [, token] = authToken.split('')
+    const [, token] = authToken.split(' ')
 
     try {
         const { sub } = verify( //desconstroi as informacoes vinda do token e salva no SUB
@@ -26,6 +26,7 @@ export function isAutenticado(
         ) as AutToken
         req.usuario_id = sub
         return next()
+
     } catch (err) {
         return res.json({ dados: 'Token  Expirado' })
     }

@@ -1,52 +1,147 @@
-import './estilo.css'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IMaskInput } from 'react-imask'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+
 import Form from 'react-bootstrap/Form'
 import Container from "react-bootstrap/esm/Container"
 import Button from "react-bootstrap/esm/Button"
 import api from '../../services/apiBack'
 
+import '../Cadastro/estilo.css'
 
-export default function Cadastro() {
+export default function CriarProdutos() {
 
     const navigation = useNavigate()
-    const [nome, setNome] = useState('')
-    const [preco, setPreco] = useState('')
-    const [fornecedor, setFornecedor] = useState('')
-    const [quantidade, setQuantidade] = useState('')
-    const [descricao, setDescricao] = useState('')
-    const [categoriasID, setCategoriasID] = useState('')
 
-    async function cadastraUsuario(e) {
+    const [categorias, setCategorias] = useState([''])
+    const [name, setName] = useState('')
+    const [value, setValue] = useState('')
+    const [provider, setProvider] = useState('')
+    const [quantity, setQuantity] = useState('')
+    const [description, setDescription] = useState('')
+
+    const [idCategoria, setIdCategoria] = useState('')
+    const [imagem, setImagem] = useState(null)
+
+    const iToken = localStorage.getItem('@phlogin2k23')
+    const token = JSON.parse(iToken)
+
+    //token
+    useEffect(() => {
+        if (!token) { //verifica se tem um token
+            navigation('/Login')
+            return
+        } else if (token) {
+            async function verificarToken() { //se tiver, consulta o BD para verificar se é valido
+                const resulta = await api.get('/ListarUsuarioToken', {
+                    headers: {
+                        Authorization: 'Bearer ' + `${token}`
+                    }
+                })
+                console.log(resulta)
+            }
+            verificarToken()
+        }
+    }, [])
+
+
+    //listarCategorias
+    useEffect(() => {
+        async function listarCategorias() {
+            try {
+                const resposta = await api.get('/ListarCategorias', {
+                    headers: {
+                        Authorization: 'Bearer ' + `${token}`
+                    }
+                })
+                setCategorias(resposta.data)
+            } catch (erro) {
+                console.error('Erro ao listar categorias:', erro)
+            }
+        }
+        listarCategorias()
+    }, [])
+
+    function handleImagem(e) {
+        if (!e.target.files) {
+            return
+        }
+        const image = e.target.files[0]
+        if (image.type === 'image/png' || image.type === 'image/jpeg') {
+            setImagem(image)
+        }
+    }
+
+    // async function handleCadastro(e) {
+    //     try {
+    //         e.preventDefault()
+    //         const categoriaId = idCategoria
+    //         const data = new FormData()
+
+    //         data.append('nome', name)
+    //         data.append('preco', value)
+    //         data.append('fornecedor', provider)
+    //         data.append('quantidade', quantity)
+    //         data.append('categoriasId', categoriaId)
+    //         data.append('descricao', description)
+    //         data.append('banner', imagem)
+
+    //         const resposta = await api.post('/CriarProdutos', data, {
+
+    //         })
+    //         toast.success('Enviado com Sucesso')
+    //         console.log(resposta)
+    //     } catch (err) {
+    //         console.error(err)
+    //         // console.log(categoriaId)
+    //     }
+    //     setName('')
+    //     setValue('')
+    //     setProvider('')
+    //     setQuantity('')
+    //     setDescription('')
+    //     setImagem(null)
+    // }
+
+    async function handleCadastro(e) {
         e.preventDefault()
         try {
-            if (nome === '' || preco === '' || fornecedor === '' || quantidade === '' || descricao === '') {
+            if (name === '' || value === '' || provider === '' || quantity === '' || description === '' ) {
                 toast.error('Existem Campos em Branco!')
                 return
             }
+            const result = await api.post('/CriarProdutos', {
+                name,
+                value,
+                provider,
+                quantity,
+                description,
+                imagem
+            })
+            console.log(result.data.id)
+            // if (result.data.id) {
+            //     const token = result.data.token
+            //     localStorage.setItem('@phlogin2k23', JSON.stringify(token))
+            //     navigation('/')
+            // }
         } catch (err) {
             toast.error(err.response.data.error)
         }
-
-
-        // navigation('/Baby')
     }
 
     return (
-
         <Container fluid>
-            <div classnome='cabecalho' ><h1>CADASTRO</h1></div>
-            <div classnome="compra" >
-                <Form onSubmit={cadastraUsuario}>
+            <div className='cabecalho' ><h1>CRIAR PRODUTOS</h1></div>
+            <div className="compra" >
+                <Form onSubmit={handleCadastro}>
                     <Form.Group >
                         <Form.Label>Nome:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
                             placeholder="Digite seu Nome"
-                            value={nome}
-                            onChange={(e) => setNome(e.target.value)}
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                         />
                     </Form.Group>
 
@@ -54,10 +149,9 @@ export default function Cadastro() {
                         <Form.Label>Valor:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
-                            mask="00/00/0000"
-                            placeholder="Digite sua Data de Nascimento"
-                            value={preco}
-                            onChange={(e) => setPreco(e.target.value)}
+                            placeholder="Digite o Valor"
+                            value={value}
+                            onChange={(e) => setValue(e.target.value)}
                         />
                     </Form.Group>
 
@@ -65,10 +159,9 @@ export default function Cadastro() {
                         <Form.Label>Fornecedor:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
-                            mask="000.000.000-00"
-                            placeholder="Digite seu CPF"
-                            value={fornecedor}
-                            onChange={(e) => setFornecedor(e.target.value)}
+                            placeholder="Digite seu Fornecedor"
+                            value={provider}
+                            onChange={(e) => setProvider(e.target.value)}
                         />
                     </Form.Group>
 
@@ -76,33 +169,45 @@ export default function Cadastro() {
                         <Form.Label>Quantidade:</Form.Label>
                         <Form.Control
                             as={IMaskInput}
-                            placeholder="Digite seu E-mail"
-                            value={quantidade}
-                            onChange={(e) => setQuantidade(e.target.value)}
+                            placeholder="Digite a Quantidade"
+                            value={quantity}
+                            onChange={(e) => setQuantity(e.target.value)}
                         />
                     </Form.Group>
 
                     <Form.Group>
                         <Form.Label>Descrição:</Form.Label>
                         <Form.Control
-                            type="descricao"
-                            placeholder="Digite sua Senha"
-                            value={descricao}
-                            onChange={(e) => setDescricao(e.target.value)}
+                            type="description"
+                            placeholder="Digite a Descrição"
+                            value={description}
+                            onChange={(e) => setDescription(e.target.value)}
                         />
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Label>Categoria:</Form.Label>
+                        <Form.Label>Imagem:</Form.Label>
                         <Form.Control
-                            type="descricao"
-                            placeholder="Confirme sua Senha"
-                            value={categoriasID}
-                            onChange={(e) => setCategoriasID(e.target.value)}
+                            type="file"
+                            accept='image/jpeg, image/png'
+                            onChange={handleImagem}
                         /><br />
                     </Form.Group>
+
+                    <select
+                        value={idCategoria}
+                        onChange={(e) => setIdCategoria(e.target.value)}>
+
+                        <option >Selecione...</option>
+                        {categorias.map((item) => { //mapear os seus itens
+                            return (
+                                <option value={item.id} key={item.id} >{item.nome}</option>
+                            )
+                        })}
+                    </select>
+
                     <Button type="submit" variant='secondary'>Cadastrar</Button>
-                
+
                 </Form>
             </div >
         </Container >
